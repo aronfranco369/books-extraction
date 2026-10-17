@@ -14,16 +14,18 @@ Workspace for the `books_extraction` skill: textbook PDFs -> page-based JSON.
 Inside each output subject the skill makes `form one` ... `form six` folders for
 finished pages and a `temp` folder for unfinished pages and session records.
 
-## Agent session start
+## Agent session start (fast)
 
-    source ./setup.sh
+    curl -fsSL https://raw.githubusercontent.com/aronfranco369/books-extraction/main/get.sh | bash -s csee physics
+    cd books-extraction && source ./setup.sh          # add --chem for chemistry books
 
-This sets TETEA_ROOT to the repo root, installs PyMuPDF/Pillow and the Linux
-build of Tectonic. Then invoke, e.g.:
+get.sh downloads only the skill and the one subject's PDFs (not every book).
+setup.sh skips anything already installed and only installs Tectonic with --chem.
+Then invoke, e.g.:
 
     $books_extraction csee biology form2 20-30
 
-Commit and push tie/output, assets/books and pages/books at the end of each
+Commit and push tie/output and assets (pages/ renders are not needed) at the end of each
 session, or the work is lost when the agent workspace is reset.
 
 ## PDF notes
