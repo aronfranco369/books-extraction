@@ -1,0 +1,49 @@
+{
+  "pdf": "/workspace/books-extraction/tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+  "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+  "pdf_page_count": 234,
+  "pages": [
+    {
+      "pdf_page": 1,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "render": "pages/books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/page-0001.png",
+      "dpi": 150,
+      "embedded_images": [
+        {
+          "width": 1240,
+          "height": 1754
+        }
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "render": "pages/books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/page-0002.png",
+      "dpi": 150,
+      "embedded_images": [
+        {
+          "width": 1240,
+          "height": 1754
+        }
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "render": "pages/books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/page-0003.png",
+      "dpi": 150,
+      "embedded_images": [
+        {
+          "width": 1240,
+          "height": 1754
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "source_sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+  "pages": [
+    {
+      "pdf_page": 2,
+      "transcribed": true,
+      "surfaces": [
+        {
+          "surface_id": "s-p0002-01",
+          "printed_page": null,
+          "printed_page_status": "not_printed",
+          "printed_page_system": "none",
+          "render_size_px": [1240, 1754],
+          "elements": [
+            {
+              "key": "heading_physics",
+              "type": "heading",
+              "bbox": [200, 70, 980, 205],
+              "text": "Physics",
+              "payload": {"level": 1, "role": "title"}
+            },
+            {
+              "key": "heading_for_secondary",
+              "type": "heading",
+              "bbox": [285, 212, 745, 248],
+              "text": "for Secondary Schools",
+              "payload": {"level": 2, "role": "other"}
+            },
+            {
+              "key": "heading_students_book",
+              "type": "heading",
+              "bbox": [375, 295, 625, 332],
+              "text": "Student's Book",
+              "payload": {"level": 2, "role": "other"}
+            },
+            {
+              "key": "heading_form_four",
+              "type": "heading",
+              "bbox": [285, 350, 745, 408],
+              "text": "Form Four",
+              "payload": {"level": 2, "role": "other"}
+            },
+            {
+              "key": "text_publisher",
+              "type": "paragraph",
+              "bbox": [335, 1645, 990, 1680],
+              "text": "Tanzania Institute of Education"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "review": [],
+  "exclusions": [
+    {
+      "pdf_page": 2,
+      "surface_id": "s-p0002-01",
+      "reason": "peripheral_front_matter_out_of_scope",
+      "bbox_pt": [100.8, 206.4, 460.8, 758.5],
+      "description": "Certificate of Approval image (ISBN, publisher, author, approval statement, signature) — copyright/approval peripheral front matter"
+    },
+    {
+      "pdf_page": 2,
+      "surface_id": "s-p0002-01",
+      "reason": "acquisition_noise",
+      "bbox_pt": [485.0, 810.5, 576.0, 828.5],
+      "description": "CamScanner watermark (bottom-right)"
+    },
+    {
+      "pdf_page": 2,
+      "surface_id": "s-p0002-01",
+      "reason": "acquisition_noise",
+      "bbox_pt": [37.0, 26.4, 558.2, 57.4],
+      "description": "Top scan-edge / light watermark band"
+    }
+  ]
+}

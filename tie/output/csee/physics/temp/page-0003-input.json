@@ -1,0 +1,60 @@
+{
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "source_sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+  "pages": [
+    {
+      "pdf_page": 3,
+      "transcribed": true,
+      "surfaces": [
+        {
+          "surface_id": "s-p0003-01",
+          "printed_page": "ii",
+          "printed_page_status": "observed",
+          "printed_page_system": "roman",
+          "render_size_px": [1240, 1754],
+          "elements": [
+            {
+              "key": "number_ii",
+              "type": "page_number",
+              "bbox": [70, 1605, 115, 1665],
+              "text": "ii"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "review": [],
+  "exclusions": [
+    {
+      "pdf_page": 3,
+      "surface_id": "s-p0003-01",
+      "reason": "peripheral_front_matter_out_of_scope",
+      "bbox_pt": [33.6, 67.2, 340.0, 720.0],
+      "description": "Copyright/imprint block: © Tanzania Institute of Education 2022, Published 2022, ISBN, publisher name, P.O. Box, address, mobile, e-mail, website, and 'All rights reserved' statement"
+    },
+    {
+      "pdf_page": 3,
+      "surface_id": "s-p0003-01",
+      "reason": "acquisition_noise",
+      "bbox_pt": [0.0, 0.0, 200.0, 28.0],
+      "description": "Top scan-edge artifact, hand/finger, and partial green cover banner showing at top-left"
+    },
+    {
+      "pdf_page": 3,
+      "surface_id": "s-p0003-01",
+      "reason": "acquisition_noise",
+      "bbox_pt": [100.0, 100.0, 540.0, 700.0],
+      "description": "Background page watermarks (faint cover bleed-through: large 'Physics', 'Form Four', and other reversed text)"
+    },
+    {
+      "pdf_page": 3,
+      "surface_id": "s-p0003-01",
+      "reason": "acquisition_noise",
+      "bbox_pt": [485.0, 810.5, 576.0, 828.5],
+      "description": "CamScanner watermark (bottom-right)"
+    }
+  ]
+}
