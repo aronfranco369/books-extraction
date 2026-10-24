@@ -1,0 +1,801 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      8
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 8,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0008-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "1",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0008-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0008-01",
+              "order": 0,
+              "bbox_pt": [
+                460.8588,
+                22.5592,
+                499.2637,
+                42.7185
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-chapter",
+              "type": "heading",
+              "surface_id": "s-p0008-01",
+              "order": 1,
+              "bbox_pt": [
+                88.8113,
+                62.8778,
+                497.3435,
+                119.9957
+              ],
+              "group_refs": [
+                "g-group_chapter"
+              ],
+              "payload": {
+                "level": 1,
+                "role": "chapter",
+                "text": "Chapter One",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Chapter One"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-title",
+              "type": "heading",
+              "surface_id": "s-p0008-01",
+              "order": 2,
+              "bbox_pt": [
+                257.3129,
+                131.0353,
+                333.1625,
+                152.6346
+              ],
+              "group_refs": [
+                "g-group_chapter"
+              ],
+              "payload": {
+                "level": 2,
+                "role": "chapter",
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-introduction",
+              "type": "heading",
+              "surface_id": "s-p0008-01",
+              "order": 3,
+              "bbox_pt": [
+                88.8113,
+                201.5928,
+                216.0276,
+                228.9518
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 2,
+                "role": "section",
+                "text": "Introduction",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-intro",
+              "type": "paragraph",
+              "surface_id": "s-p0008-01",
+              "order": 4,
+              "bbox_pt": [
+                88.8113,
+                237.1116,
+                513.6656,
+                442.0643
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "*In your daily activities, you may have experienced phenomena such as ripples in a water pond, musical sound from a guitar and tremors caused by earthquakes. All these are wave phenomena. Devices such as television, cellphones, radios, microwave ovens and medical diagnostic machines such as X-ray and ultrasound make use of waves in their operations. Generally, waves are important in our daily activities. In this chapter, you will learn about the concept of waves, propagation of waves, behaviour of waves, sound waves, musical sounds and electromagnetic waves. The competencies developed will enable you to explore how waves are involved in various fields including communication and medicine. You will also acquire skills that will enable you to design and repair some musical instruments and other devices that apply wave principles.*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In your daily activities, you may have experienced phenomena such as ripples in a water pond, musical sound from a guitar and tremors caused by earthquakes. All these are wave phenomena. Devices such as television, cellphones, radios, microwave ovens and medical diagnostic machines such as X-ray and ultrasound make use of waves in their operations. Generally, waves are important in our daily activities. In this chapter, you will learn about the concept of waves, propagation of waves, behaviour of waves, sound waves, musical sounds and electromagnetic waves. The competencies developed will enable you to explore how waves are involved in various fields including communication and medicine. You will also acquire skills that will enable you to design and repair some musical instruments and other devices that apply wave principles.",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-concept",
+              "type": "heading",
+              "surface_id": "s-p0008-01",
+              "order": 5,
+              "bbox_pt": [
+                71.5291,
+                470.8632,
+                292.8374,
+                487.6626
+              ],
+              "group_refs": [
+                "g-group_concept"
+              ],
+              "payload": {
+                "level": 2,
+                "role": "section",
+                "text": "Concept of wave",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Concept of wave"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-stone",
+              "type": "paragraph",
+              "surface_id": "s-p0008-01",
+              "order": 6,
+              "bbox_pt": [
+                71.5291,
+                489.1026,
+                295.2377,
+                594.6988
+              ],
+              "group_refs": [
+                "g-group_concept"
+              ],
+              "payload": {
+                "text": "If you drop a stone into a pond of still water, some disturbance will be created on the water surface. The disturbance, in form of ripples, spreads outward in a circular pattern as shown in Figure 1.1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If you drop a stone into a pond of still water, some disturbance will be created on the water surface. The disturbance, in form of ripples, spreads outward in a circular pattern as shown in Figure 1.1."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-ripples",
+              "type": "figure",
+              "surface_id": "s-p0008-01",
+              "order": 7,
+              "bbox_pt": [
+                73.4494,
+                600.4586,
+                297.638,
+                723.8142
+              ],
+              "group_refs": [
+                "g-group_concept"
+              ],
+              "payload": {
+                "ref": "f-p0008-01-ripples"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0008-01",
+              "order": 8,
+              "bbox_pt": [
+                129.1365,
+                730.054,
+                295.2377,
+                744.9335
+              ],
+              "group_refs": [
+                "g-group_concept"
+              ],
+              "payload": {
+                "target_refs": [
+                  "e-p0008-01-ripples"
+                ],
+                "text": "**Figure 1.1:** *Water ripples*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.1:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Water ripples",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-transfer",
+              "type": "paragraph",
+              "surface_id": "s-p0008-01",
+              "order": 9,
+              "bbox_pt": [
+                311.0797,
+                470.8632,
+                533.8282,
+                744.9335
+              ],
+              "group_refs": [
+                "g-group_concept"
+              ],
+              "payload": {
+                "text": "This happens because when the stone hits the water surface, the energy of the stone is transferred to the water molecules at the point of contact. The molecules then vibrate up and down, disturbing the neighbouring water molecules in the process. This results into transfer of energy which is observed as the movement of the disturbance outwards. Basically, the water molecules do not move outwards with the disturbance, only the disturbance moves. The movement of the disturbance is called a wave. A wave can also be observed when you shake one end of a rope up and down. Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This happens because when the stone hits the water surface, the energy of the stone is transferred to the water molecules at the point of contact. The molecules then vibrate up and down, disturbing the neighbouring water molecules in the process. This results into transfer of energy which is observed as the movement of the disturbance outwards. Basically, the water molecules do not move outwards with the disturbance, only the disturbance moves. The movement of the disturbance is called a wave. A wave can also be observed when you shake one end of a rope up and down. Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0008-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0008-01",
+              "order": 10,
+              "bbox_pt": [
+                504.0644,
+                757.893,
+                523.2668,
+                777.5723
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "1",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-group_chapter",
+      "kind": "chapter",
+      "label_printed": null,
+      "title": "Chapter One: Waves",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0008-01-chapter",
+        "e-p0008-01-title"
+      ]
+    },
+    {
+      "id": "g-group_concept",
+      "kind": "section",
+      "label_printed": null,
+      "title": "Concept of wave",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0008-01-concept",
+        "e-p0008-01-stone",
+        "e-p0008-01-ripples",
+        "e-p0008-01-caption",
+        "e-p0008-01-transfer"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-p0008-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0008-01-caption",
+      "to_ref": "e-p0008-01-ripples",
+      "printed_text": "**Figure 1.1:** *Water ripples*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0008-01-ripples",
+      "kind": "photo",
+      "page": 8,
+      "surface_id": "s-p0008-01",
+      "bbox": [
+        73.4494,
+        600.4586,
+        297.638,
+        723.8142
+      ],
+      "bbox_norm": [
+        0.1233871345048427,
+        0.713226893718111,
+        0.4999999991797397,
+        0.8597491209136808
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0008-01-ripples-16a5827ad672.jpg",
+      "format": "jpg",
+      "pixel_size": [
+        468,
+        258
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0008-01-ripples"
+      ],
+      "printed_label": "Figure 1.1",
+      "description": "Water ripples, with arrows labelled Ripples.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "16a5827ad6728d385c06ab162c5aefd3765872128dac6d56b2a215e84e691449",
+      "transform": {
+        "clip_bbox_pt": [
+          73.44940185546875,
+          600.4586181640625,
+          297.63800048828125,
+          723.814208984375
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 8,
+      "surface_id": "s-p0008-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 11,
+    "types": {
+      "running_header": 1,
+      "heading": 4,
+      "paragraph": 3,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

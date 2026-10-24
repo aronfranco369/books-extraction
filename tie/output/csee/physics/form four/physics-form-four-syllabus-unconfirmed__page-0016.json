@@ -1,0 +1,812 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      16
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 16,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0016-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "9",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0016-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0016-01",
+              "order": 0,
+              "bbox_pt": [
+                465.6595,
+                21.5992,
+                499.2637,
+                40.7985
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-continued",
+              "type": "paragraph",
+              "surface_id": "s-p0016-01",
+              "order": 1,
+              "bbox_pt": [
+                58.5675,
+                57.118,
+                523.7469,
+                172.7938
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "wave. The transmitted wave will have a higher speed and longer wavelength. According to the principle of conservation of energy, when the wave breaks up into a reflected wave and a transmitted wave at the boundary, the sum of the energies of these two waves must be equal to the energy of the incident wave. Because the reflected wave contains only part of the energy of the incident wave, its amplitude must be smaller. Reflection and other behaviours of waves may be demonstrated using water waves. This is done using a ripple tank.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "wave. The transmitted wave will have a higher speed and longer wavelength. According to the principle of conservation of energy, when the wave breaks up into a reflected wave and a transmitted wave at the boundary, the sum of the energies of these two waves must be equal to the energy of the incident wave. Because the reflected wave contains only part of the energy of the incident wave, its amplitude must be smaller. Reflection and other behaviours of waves may be demonstrated using water waves. This is done using a ripple tank."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-lessdensefig",
+              "type": "figure",
+              "surface_id": "s-p0016-01",
+              "order": 2,
+              "bbox_pt": [
+                162.2607,
+                185.7534,
+                492.0628,
+                309.589
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0016-01-lessdensefig"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-capless",
+              "type": "caption",
+              "surface_id": "s-p0016-01",
+              "order": 3,
+              "bbox_pt": [
+                79.2101,
+                324.9484,
+                505.0245,
+                337.908
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0016-01-lessdensefig"
+                ],
+                "text": "**Figure 1.12:** *Reflection of a wave travelling from a denser medium to a less dense medium*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.12:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Reflection of a wave travelling from a denser medium to a less dense medium",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-tank",
+              "type": "heading",
+              "surface_id": "s-p0016-01",
+              "order": 4,
+              "bbox_pt": [
+                60.4877,
+                360.9471,
+                523.7469,
+                377.7465
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "Ripple tank",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Ripple tank"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-tankintro",
+              "type": "paragraph",
+              "surface_id": "s-p0016-01",
+              "order": 5,
+              "bbox_pt": [
+                60.4877,
+                383.9863,
+                523.7469,
+                452.6239
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "A ripple tank is an example of an instrument used to demonstrate the behaviour of waves. The structure of a ripple tank is shown in Figure 1.13. It consists of a power supply used to run an electric motor. When the motor runs it makes the oscillating paddle attached to an elastic band to vibrate on the water surface. The vibration of the paddle",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A ripple tank is an example of an instrument used to demonstrate the behaviour of waves. The structure of a ripple tank is shown in Figure 1.13. It consists of a power supply used to run an electric motor. When the motor runs it makes the oscillating paddle attached to an elastic band to vibrate on the water surface. The vibration of the paddle"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-tankcontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0016-01",
+              "order": 6,
+              "bbox_pt": [
+                60.4877,
+                455.9838,
+                213.6273,
+                744.9335
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "generates parallel water waves (ripples). The oscillating paddle is used to transform mechanical energy generated by the motor to ripples in a shallow tank of water. A bulb/lamp shines light through the water and a shadow of the wave pattern is produced on a sheet of paper or glass placed under the tank. The paper or glass act as viewing screen. All behaviours of waves can be demonstrated with the aid of a ripple tank.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "generates parallel water waves (ripples). The oscillating paddle is used to transform mechanical energy generated by the motor to ripples in a shallow tank of water. A bulb/lamp shines light through the water and a shadow of the wave pattern is produced on a sheet of paper or glass placed under the tank. The paper or glass act as viewing screen. All behaviours of waves can be demonstrated with the aid of a ripple tank."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-tankfig",
+              "type": "figure",
+              "surface_id": "s-p0016-01",
+              "order": 7,
+              "bbox_pt": [
+                220.8282,
+                463.1835,
+                525.6671,
+                730.054
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0016-01-tankfig"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-captank",
+              "type": "caption",
+              "surface_id": "s-p0016-01",
+              "order": 8,
+              "bbox_pt": [
+                316.8405,
+                735.3338,
+                448.8573,
+                750.6933
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0016-01-tankfig"
+                ],
+                "text": "**Figure 1.13:** *Ripple tank*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.13:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Ripple tank",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0016-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0016-01",
+              "order": 9,
+              "bbox_pt": [
+                489.6625,
+                759.333,
+                513.6656,
+                779.9722
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "9",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "9"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0016-01-tankcontinued",
+      "to_ref": "e-p0016-01-tankintro",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-tank_continues"
+    },
+    {
+      "kind": "continues",
+      "from_ref": "e-p0016-01-continued",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+        "pdf_page": 15,
+        "printed_page": "8",
+        "label_printed": null
+      },
+      "id": "r-previous_continues"
+    },
+    {
+      "id": "r-caption-p0016-01-capless-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0016-01-capless",
+      "to_ref": "e-p0016-01-lessdensefig",
+      "printed_text": "**Figure 1.12:** *Reflection of a wave travelling from a denser medium to a less dense medium*",
+      "resolution": "resolved"
+    },
+    {
+      "id": "r-caption-p0016-01-captank-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0016-01-captank",
+      "to_ref": "e-p0016-01-tankfig",
+      "printed_text": "**Figure 1.13:** *Ripple tank*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0016-01-lessdensefig",
+      "kind": "diagram",
+      "page": 16,
+      "surface_id": "s-p0016-01",
+      "bbox": [
+        162.2607,
+        185.7534,
+        492.0628,
+        309.589
+      ],
+      "bbox_norm": [
+        0.2725806176190675,
+        0.22063855939373297,
+        0.8266128639366628,
+        0.3677309323228883
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0016-01-lessdensefig-dbc45ccd30c2.png",
+      "format": "png",
+      "pixel_size": [
+        688,
+        259
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0016-01-lessdensefig"
+      ],
+      "printed_label": "Figure 1.12",
+      "description": "Reflection and transmission from denser to less dense medium, with wave labels and arrows.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "dbc45ccd30c2fbec09a9fafb36e69f8d4568ef05621f98b6dc9206bb4c0a547c",
+      "transform": {
+        "clip_bbox_pt": [
+          162.2606964111328,
+          185.75340270996094,
+          492.06280517578125,
+          309.5889892578125
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    },
+    {
+      "id": "f-p0016-01-tankfig",
+      "kind": "diagram",
+      "page": 16,
+      "surface_id": "s-p0016-01",
+      "bbox": [
+        220.8282,
+        463.1835,
+        525.6671,
+        730.054
+      ],
+      "bbox_norm": [
+        0.37096775216492317,
+        0.5501710341503688,
+        0.8830644930043078,
+        0.8671607778895694
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0016-01-tankfig-d8a8f12a3841.png",
+      "format": "png",
+      "pixel_size": [
+        636,
+        557
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0016-01-tankfig"
+      ],
+      "printed_label": "Figure 1.13",
+      "description": "Ripple tank: power supply, bulb, support, shallow tank, oscillating paddle, elastic band, motor and viewing screen wave patterns.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "d8a8f12a3841263f21bba93453aa7a0aeda9c938c0b1ba01b640a02d0320c385",
+      "transform": {
+        "clip_bbox_pt": [
+          220.8282012939453,
+          463.1835021972656,
+          525.6671142578125,
+          730.0540161132812
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 16,
+      "surface_id": "s-p0016-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 10,
+    "types": {
+      "running_header": 1,
+      "paragraph": 3,
+      "figure": 2,
+      "caption": 2,
+      "heading": 1,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 0
+  }
+}

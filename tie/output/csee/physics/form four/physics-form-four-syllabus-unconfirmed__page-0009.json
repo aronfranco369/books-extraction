@@ -1,0 +1,1059 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      9
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 9,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0009-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "2",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0009-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0009-01",
+              "order": 0,
+              "bbox_pt": [
+                110.4141,
+                16.7994,
+                244.8313,
+                40.7985
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-continued",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 1,
+              "bbox_pt": [
+                82.5705,
+                59.9979,
+                303.8788,
+                214.0724
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "produced by dropping a stone into a water pond or by shaking a rope require a medium for their travel. For the case of dropped stone, the medium is water while for the case of the rope, the medium is the rope itself. Generally, the medium can be a solid, liquid or gas.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "produced by dropping a stone into a water pond or by shaking a rope require a medium for their travel. For the case of dropped stone, the medium is water while for the case of the rope, the medium is the rope itself. Generally, the medium can be a solid, liquid or gas."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-definition",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 2,
+              "bbox_pt": [
+                87.8512,
+                250.5511,
+                297.638,
+                335.988
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "*A wave is a periodically repeating disturbance that travels through a medium from one location to another, without a net movement of the medium or particles of the medium.*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A wave is a periodically repeating disturbance that travels through a medium from one location to another, without a net movement of the medium or particles of the medium.",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-task",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 3,
+              "bbox_pt": [
+                134.4172,
+                374.3867,
+                220.8282,
+                393.586
+              ],
+              "group_refs": [
+                "g-g_task"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Task 1.1",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Task 1.1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-materials",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 4,
+              "bbox_pt": [
+                87.8512,
+                407.9855,
+                297.638,
+                447.3441
+              ],
+              "group_refs": [
+                "g-g_task"
+              ],
+              "payload": {
+                "text": "Given a rope, small stone, basin, water, and slinky spring",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Given a rope, small stone, basin, water, and slinky spring"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-steps",
+              "type": "list",
+              "surface_id": "s-p0009-01",
+              "order": 5,
+              "bbox_pt": [
+                87.8512,
+                455.0238,
+                297.638,
+                763.1728
+              ],
+              "group_refs": [
+                "g-g_task"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Tie one end of a stretched rope to a fixed object. Hold the loose end of the rope and gently shake it up and down. Observe the wave motion of the rope.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Tie one end of a stretched rope to a fixed object. Hold the loose end of the rope and gently shake it up and down. Observe the wave motion of the rope."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Drop a small stone in a basin that is three quarter filled with water. Observe the wave motion in the water.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Drop a small stone in a basin that is three quarter filled with water. Observe the wave motion in the water."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Place the slinky spring on a flat surface. Hold it on one end and allow one of your friends to displace the spring sideways by approximately one centimetre and then release it. Observe the motion.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Place the slinky spring on a flat surface. Hold it on one end and allow one of your friends to displace the spring sideways by approximately one centimetre and then release it. Observe the motion."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Discuss your observations with your colleagues in class.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Discuss your observations with your colleagues in class."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-terminology",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 6,
+              "bbox_pt": [
+                320.2009,
+                59.9979,
+                538.6288,
+                76.7973
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Wave terminologies and parameters",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Wave terminologies and parameters"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-termsintro",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 7,
+              "bbox_pt": [
+                320.2009,
+                76.7973,
+                538.6288,
+                163.1942
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Different terminologies and parameters are used to describe waves. These terminologies and the wave parameters can be explained well using the displacement-distance graph shown in Figure 1.2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Different terminologies and parameters are used to describe waves. These terminologies and the wave parameters can be explained well using the displacement-distance graph shown in Figure 1.2."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-crest",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 8,
+              "bbox_pt": [
+                320.2009,
+                173.2738,
+                537.1886,
+                191.0332
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "1. Crest",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1. Crest"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-crestdef",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 9,
+              "bbox_pt": [
+                320.2009,
+                191.9932,
+                537.1886,
+                242.8713
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "It is the point of maximum positive displacement of the medium particles from the equilibrium position.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "It is the point of maximum positive displacement of the medium particles from the equilibrium position."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-trough",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 10,
+              "bbox_pt": [
+                320.2009,
+                250.5511,
+                535.2683,
+                271.1903
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "2. Trough",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "2. Trough"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-troughdef",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 11,
+              "bbox_pt": [
+                320.2009,
+                273.5903,
+                535.2683,
+                326.3884
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "It is the point of maximum negative displacement of the medium particles from the equilibrium position (still position).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "It is the point of maximum negative displacement of the medium particles from the equilibrium position (still position)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-amplitude",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 12,
+              "bbox_pt": [
+                320.2009,
+                331.1882,
+                535.2683,
+                346.5477
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "3. Amplitude",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "3. Amplitude"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-ampdef",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 13,
+              "bbox_pt": [
+                320.2009,
+                347.9876,
+                533.8282,
+                447.3441
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "The amplitude, represented by \\(A\\), is the maximum displacement of the medium particles from the equilibrium position. It is the distance from the central line to the top of a crest or to the bottom of a trough. The SI unit of amplitude is metre (m).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The amplitude, represented by "
+                  },
+                  {
+                    "t": "math",
+                    "v": "A"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", is the maximum displacement of the medium particles from the equilibrium position. It is the distance from the central line to the top of a crest or to the bottom of a trough. The SI unit of amplitude is metre (m)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-wavelength",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 14,
+              "bbox_pt": [
+                320.2009,
+                455.0238,
+                531.9079,
+                472.3032
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "4. Wavelength",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "4. Wavelength"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-wldef",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 15,
+              "bbox_pt": [
+                320.2009,
+                475.1831,
+                531.9079,
+                575.4995
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "This is the distance between two successive crests or two adjacent troughs as shown in Figure 1.2. It is also the distance that the wave travels in one complete cycle WXY. The wavelength is represented by the Greek letter lambda, \\(\\lambda\\) and its SI unit is metre (m).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This is the distance between two successive crests or two adjacent troughs as shown in Figure 1.2. It is also the distance that the wave travels in one complete cycle WXY. The wavelength is represented by the Greek letter lambda, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\lambda"
+                  },
+                  {
+                    "t": "text",
+                    "v": " and its SI unit is metre (m)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-profile",
+              "type": "figure",
+              "surface_id": "s-p0009-01",
+              "order": 16,
+              "bbox_pt": [
+                316.8405,
+                577.4194,
+                531.4278,
+                747.8134
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0009-01-profile"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0009-01",
+              "order": 17,
+              "bbox_pt": [
+                336.0429,
+                747.8134,
+                528.0674,
+                763.1728
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0009-01-profile"
+                ],
+                "text": "**Figure 1.2:** *Features of a wave profile*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.2:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Features of a wave profile",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0009-01",
+              "order": 18,
+              "bbox_pt": [
+                98.4126,
+                767.9726,
+                117.615,
+                789.5719
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "2",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-01-footer",
+              "type": "running_footer",
+              "surface_id": "s-p0009-01",
+              "order": 19,
+              "bbox_pt": [
+                410.4524,
+                777.5723,
+                523.2668,
+                796.7716
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Student’s Book Form Four",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Student’s Book Form Four"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-g_task",
+      "kind": "task",
+      "label_printed": null,
+      "title": "Task 1.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0009-01-task",
+        "e-p0009-01-materials",
+        "e-p0009-01-steps"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0009-01-continued",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+        "pdf_page": 8,
+        "printed_page": "1",
+        "label_printed": null
+      },
+      "id": "r-continued_from_previous"
+    },
+    {
+      "id": "r-caption-p0009-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0009-01-caption",
+      "to_ref": "e-p0009-01-profile",
+      "printed_text": "**Figure 1.2:** *Features of a wave profile*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0009-01-profile",
+      "kind": "graph",
+      "page": 9,
+      "surface_id": "s-p0009-01",
+      "bbox": [
+        316.8405,
+        577.4194,
+        531.4278,
+        747.8134
+      ],
+      "bbox_norm": [
+        0.532258144928095,
+        0.6858608487488985,
+        0.8927418527341634,
+        0.8882554573500641
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0009-01-profile-671f38785948.png",
+      "format": "png",
+      "pixel_size": [
+        448,
+        356
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0009-01-profile"
+      ],
+      "printed_label": "Figure 1.2",
+      "description": "Features of a wave profile: crests, trough, amplitude, wavelength, equilibrium, displacement and distance axes.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "671f387859485d3dc23a74705414fedbb00c9d84fb302a7d898adf070e7de114",
+      "transform": {
+        "clip_bbox_pt": [
+          316.84051513671875,
+          577.4193725585938,
+          531.4277954101562,
+          747.8134155273438
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 9,
+      "surface_id": "s-p0009-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 20,
+    "types": {
+      "running_header": 1,
+      "paragraph": 8,
+      "heading": 6,
+      "list": 1,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1,
+      "running_footer": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

@@ -1,0 +1,861 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      14
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 14,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0014-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "7",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0014-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0014-01",
+              "order": 0,
+              "bbox_pt": [
+                470.4601,
+                20.1593,
+                504.0644,
+                40.7985
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-soundfig",
+              "type": "figure",
+              "surface_id": "s-p0014-01",
+              "order": 1,
+              "bbox_pt": [
+                56.1672,
+                57.5979,
+                343.7239,
+                245.2713
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0014-01-soundfig"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0014-01",
+              "order": 2,
+              "bbox_pt": [
+                87.8512,
+                259.1908,
+                340.8435,
+                271.6703
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0014-01-soundfig"
+                ],
+                "text": "**Figure 1.9:** *Propagation of sound waves in air*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.9:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Propagation of sound waves in air",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-mixed",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 3,
+              "bbox_pt": [
+                58.5675,
+                291.8296,
+                343.7239,
+                374.3867
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Note that, in some cases, waves are neither purely transverse nor purely longitudinal. For example, water waves at the surface of a large water body involve components of both longitudinal and transverse waves.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Note that, in some cases, waves are neither purely transverse nor purely longitudinal. For example, water waves at the surface of a large water body involve components of both longitudinal and transverse waves."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-em",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 4,
+              "bbox_pt": [
+                60.0077,
+                387.8262,
+                343.7239,
+                457.9037
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "For all electromagnetic waves, oscillations are perpendicular to the direction of wave propagation. Therefore, electromagnetic waves are classified as transverse waves.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For all electromagnetic waves, oscillations are perpendicular to the direction of wave propagation. Therefore, electromagnetic waves are classified as transverse waves."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-task",
+              "type": "heading",
+              "surface_id": "s-p0014-01",
+              "order": 5,
+              "bbox_pt": [
+                134.4172,
+                476.143,
+                211.227,
+                501.5821
+              ],
+              "group_refs": [
+                "g-g_task"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Task 1.2",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Task 1.2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-tasktext",
+              "type": "task",
+              "surface_id": "s-p0014-01",
+              "order": 6,
+              "bbox_pt": [
+                61.4478,
+                503.5021,
+                343.7239,
+                576.9395
+              ],
+              "group_refs": [
+                "g-g_task"
+              ],
+              "payload": {
+                "text": "Use your own creativity to create longitudinal and transverse waves and share your experience with your classmates by demonstrating how you create those waves.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Use your own creativity to create longitudinal and transverse waves and share your experience with your classmates by demonstrating how you create those waves."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-behaviour",
+              "type": "heading",
+              "surface_id": "s-p0014-01",
+              "order": 7,
+              "bbox_pt": [
+                61.4478,
+                600.9386,
+                343.7239,
+                618.698
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 2,
+                "role": "section",
+                "text": "Behaviour of waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Behaviour of waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-behaviourstart",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 8,
+              "bbox_pt": [
+                61.4478,
+                619.1779,
+                343.7239,
+                754.5331
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "In a medium of uniform properties, waves propagate at constant speeds. Any change in medium properties results in a change in the speed of a wave. For example, the propagation speed of sound depends on the type, composition, and temperature of a medium through which it propagates. A change in the speed of the wave means a change in its wavelength, since the frequency remains constant. Thus, in a medium",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In a medium of uniform properties, waves propagate at constant speeds. Any change in medium properties results in a change in the speed of a wave. For example, the propagation speed of sound depends on the type, composition, and temperature of a medium through which it propagates. A change in the speed of the wave means a change in its wavelength, since the frequency remains constant. Thus, in a medium"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-behaviourcontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 9,
+              "bbox_pt": [
+                361.9662,
+                57.5979,
+                530.9478,
+                287.9897
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "of uniform properties the speed of a wave remains constant so the wavelength varies inversely proportional to the frequency. The amplitude of the wave depends on the amount of energy being transmitted. A decrease in the amplitude of a wave shows that the wave has lost some energy. Change of medium properties result to different behaviours of a waves. These behaviours include reflection, refraction, diffraction and interference.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "of uniform properties the speed of a wave remains constant so the wavelength varies inversely proportional to the frequency. The amplitude of the wave depends on the amount of energy being transmitted. A decrease in the amplitude of a wave shows that the wave has lost some energy. Change of medium properties result to different behaviours of a waves. These behaviours include reflection, refraction, diffraction and interference."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-reflection",
+              "type": "heading",
+              "surface_id": "s-p0014-01",
+              "order": 10,
+              "bbox_pt": [
+                361.9662,
+                308.629,
+                529.9877,
+                323.5085
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Reflection of waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Reflection of waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-reflectiondef",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 11,
+              "bbox_pt": [
+                361.9662,
+                325.4284,
+                529.9877,
+                592.7789
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "A travelling wave may encounter a boundary between two media of different properties. If the boundary does not allow the wave to pass through, the wave bounces back to the medium in which it was propagating before striking the boundary. This phenomenon is referred to as *reflection*. For example, a wave travelling through a string which is fixed at one end will be reflected upon reaching the fixed end of the string. In this case, the fixed end of the string acts as the boundary.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A travelling wave may encounter a boundary between two media of different properties. If the boundary does not allow the wave to pass through, the wave bounces back to the medium in which it was propagating before striking the boundary. This phenomenon is referred to as "
+                  },
+                  {
+                    "t": "text",
+                    "v": "reflection",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": ". For example, a wave travelling through a string which is fixed at one end will be reflected upon reaching the fixed end of the string. In this case, the fixed end of the string acts as the boundary."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-fixed",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 12,
+              "bbox_pt": [
+                361.9662,
+                604.7785,
+                529.9877,
+                743.4935
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Consider the situation where a string is fixed to a rigid wall at its right end. This end is called a fixed end. When a wave is allowed to propagate through the string, the wave reaches the fixed end, and gets reflected. The reflected wave will be inverted as shown in Figure 1.10 (a). In this case, the",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Consider the situation where a string is fixed to a rigid wall at its right end. This end is called a fixed end. When a wave is allowed to propagate through the string, the wave reaches the fixed end, and gets reflected. The reflected wave will be inverted as shown in Figure 1.10 (a). In this case, the"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0014-01",
+              "order": 13,
+              "bbox_pt": [
+                494.4631,
+                748.7733,
+                518.4662,
+                770.3726
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "7",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "7"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-g_task",
+      "kind": "task",
+      "label_printed": null,
+      "title": "Task 1.2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0014-01-task",
+        "e-p0014-01-tasktext"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0014-01-behaviourcontinued",
+      "to_ref": "e-p0014-01-behaviourstart",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-behaviour_continues"
+    },
+    {
+      "id": "r-caption-p0014-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0014-01-caption",
+      "to_ref": "e-p0014-01-soundfig",
+      "printed_text": "**Figure 1.9:** *Propagation of sound waves in air*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0014-01-soundfig",
+      "kind": "diagram",
+      "page": 14,
+      "surface_id": "s-p0014-01",
+      "bbox": [
+        56.1672,
+        57.5979,
+        343.7239,
+        245.2713
+      ],
+      "bbox_norm": [
+        0.0943548873259741,
+        0.06841499364266976,
+        0.5774193809864901,
+        0.29133413597074453
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0014-01-soundfig-bce49c16ae22.png",
+      "format": "png",
+      "pixel_size": [
+        600,
+        392
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0014-01-soundfig"
+      ],
+      "printed_label": "Figure 1.9",
+      "description": "Propagation of sound waves in air, increased/decreased pressure, undisturbed air pressure, wavelength, molecule motion and wave direction.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "bce49c16ae22fda4f2ff073329926559f29f32cae1680df4597a861ff504566a",
+      "transform": {
+        "clip_bbox_pt": [
+          56.167198181152344,
+          57.597900390625,
+          343.7239074707031,
+          245.27130126953125
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 14,
+      "surface_id": "s-p0014-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 14,
+    "types": {
+      "running_header": 1,
+      "figure": 1,
+      "caption": 1,
+      "paragraph": 6,
+      "heading": 3,
+      "task": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

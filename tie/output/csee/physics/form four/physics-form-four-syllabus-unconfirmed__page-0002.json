@@ -356,8 +356,8 @@
     "level": "csee",
     "subject": "physics",
     "form": 4,
-    "title_printed": null,
-    "language": null,
+    "title_printed": "Physics for Secondary Schools Student’s Book Form Four",
+    "language": "en",
     "edition_year_printed": null
   },
   "source": {
@@ -398,15 +398,15 @@
           "printed_page_status": "not_printed",
           "elements": [
             {
-              "id": "e-p0002-01-heading_physics",
+              "id": "e-p0002-01-title",
               "type": "heading",
               "surface_id": "s-p0002-01",
               "order": 0,
               "bbox_pt": [
-                96.0123,
-                33.5988,
-                470.4601,
-                98.3965
+                100.8129,
+                76.7973,
+                461.3389,
+                194.3931
               ],
               "group_refs": [],
               "payload": {
@@ -423,15 +423,15 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-heading_for_secondary",
+              "id": "e-p0002-01-subtitle",
               "type": "heading",
               "surface_id": "s-p0002-01",
               "order": 1,
               "bbox_pt": [
-                136.8175,
-                101.7564,
-                357.6457,
-                119.0358
+                155.5399,
+                212.1524,
+                402.2914,
+                239.9915
               ],
               "group_refs": [],
               "payload": {
@@ -448,40 +448,40 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-heading_students_book",
+              "id": "e-p0002-01-student",
               "type": "heading",
               "surface_id": "s-p0002-01",
               "order": 2,
               "bbox_pt": [
-                180.023,
-                141.595,
-                300.0383,
-                159.3543
+                204.5061,
+                266.8705,
+                356.2055,
+                286.0698
               ],
               "group_refs": [],
               "payload": {
                 "level": 2,
                 "role": "other",
-                "text": "Student's Book",
+                "text": "Student’s Book",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "Student's Book"
+                    "v": "Student’s Book"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-heading_form_four",
+              "id": "e-p0002-01-form",
               "type": "heading",
               "surface_id": "s-p0002-01",
               "order": 3,
               "bbox_pt": [
-                136.8175,
-                167.994,
-                357.6457,
-                195.833
+                197.7853,
+                307.1891,
+                363.8865,
+                336.468
               ],
               "group_refs": [],
               "payload": {
@@ -498,15 +498,15 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-text_publisher",
+              "id": "e-p0002-01-publisher",
               "type": "paragraph",
               "surface_id": "s-p0002-01",
               "order": 4,
               "bbox_pt": [
-                160.8205,
-                789.5719,
-                475.2607,
-                806.3713
+                172.342,
+                732.4539,
+                389.3297,
+                749.7333
               ],
               "group_refs": [],
               "payload": {
@@ -532,38 +532,26 @@
     {
       "pdf_page": 2,
       "surface_id": "s-p0002-01",
+      "bbox_pt": [
+        158.4202258064516,
+        346.60425161290317,
+        403.2514838709677,
+        725.8526709677419
+      ],
       "reason": "peripheral_front_matter_out_of_scope",
-      "bbox_pt": [
-        100.8,
-        206.4,
-        460.8,
-        758.5
-      ],
-      "description": "Certificate of Approval image (ISBN, publisher, author, approval statement, signature) — copyright/approval peripheral front matter"
+      "description": "Certificate of Approval, administrative publication details and signature."
     },
     {
       "pdf_page": 2,
       "surface_id": "s-p0002-01",
-      "reason": "acquisition_noise",
       "bbox_pt": [
-        485.0,
-        810.5,
-        576.0,
-        828.5
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
       ],
-      "description": "CamScanner watermark (bottom-right)"
-    },
-    {
-      "pdf_page": 2,
-      "surface_id": "s-p0002-01",
       "reason": "acquisition_noise",
-      "bbox_pt": [
-        37.0,
-        26.4,
-        558.2,
-        57.4
-      ],
-      "description": "Top scan-edge / light watermark band"
+      "description": "CamScanner watermark."
     }
   ],
   "review": [],

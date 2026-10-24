@@ -1,0 +1,871 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      13
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 13,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0013-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "6",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0013-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0013-01",
+              "order": 0,
+              "bbox_pt": [
+                105.6135,
+                19.1993,
+                240.0306,
+                35.9987
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-waterwaves",
+              "type": "paragraph",
+              "surface_id": "s-p0013-01",
+              "order": 1,
+              "bbox_pt": [
+                72.4893,
+                61.4378,
+                537.1886,
+                128.6354
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Water waves are another example of transverse waves. The water particles move up and down while the waves move in a horizontal direction. That is why a boat on the ocean moves up and down while the waves themselves move towards the shore (Figure 1.7).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Water waves are another example of transverse waves. The water particles move up and down while the waves move in a horizontal direction. That is why a boat on the ocean moves up and down while the waves themselves move towards the shore (Figure 1.7)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-boat",
+              "type": "figure",
+              "surface_id": "s-p0013-01",
+              "order": 2,
+              "bbox_pt": [
+                76.3297,
+                137.2751,
+                537.1886,
+                330.7082
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0013-01-boat"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-capboat",
+              "type": "caption",
+              "surface_id": "s-p0013-01",
+              "order": 3,
+              "bbox_pt": [
+                248.6717,
+                344.6277,
+                362.4463,
+                355.1873
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0013-01-boat"
+                ],
+                "text": "**Figure 1.7:** *Water waves*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.7:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Water waves",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-longitudinal",
+              "type": "heading",
+              "surface_id": "s-p0013-01",
+              "order": 4,
+              "bbox_pt": [
+                73.4494,
+                369.5868,
+                300.0383,
+                386.8662
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "Longitudinal waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Longitudinal waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-longdef",
+              "type": "paragraph",
+              "surface_id": "s-p0013-01",
+              "order": 5,
+              "bbox_pt": [
+                73.4494,
+                387.8262,
+                300.0383,
+                527.5012
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "In longitudinal waves, particles of a material medium vibrate in a direction parallel to the direction of the wave propagation. A longitudinal wave consists of regions of high and low particle density. These regions are respectively termed as *compression* and *rarefaction regions*. Compression regions",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In longitudinal waves, particles of a material medium vibrate in a direction parallel to the direction of the wave propagation. A longitudinal wave consists of regions of high and low particle density. These regions are respectively termed as "
+                  },
+                  {
+                    "t": "text",
+                    "v": "compression",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " and "
+                  },
+                  {
+                    "t": "text",
+                    "v": "rarefaction regions",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Compression regions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-longcontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0013-01",
+              "order": 6,
+              "bbox_pt": [
+                316.3604,
+                369.5868,
+                535.2683,
+                527.5012
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "are regions of high pressure and high density since particles are being compressed close together. Conversely, rarefaction regions are regions of low pressure and low density as particles are being spread further apart as illustrated in Figure 1.8. The distance between the centres of two consecutive regions of compression or adjacent regions of the rarefaction is the wavelength, \\(\\lambda\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "are regions of high pressure and high density since particles are being compressed close together. Conversely, rarefaction regions are regions of low pressure and low density as particles are being spread further apart as illustrated in Figure 1.8. The distance between the centres of two consecutive regions of compression or adjacent regions of the rarefaction is the wavelength, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\lambda"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-spring",
+              "type": "figure",
+              "surface_id": "s-p0013-01",
+              "order": 7,
+              "bbox_pt": [
+                70.569,
+                540.4608,
+                529.9877,
+                629.2576
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0013-01-spring"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-capspring",
+              "type": "caption",
+              "surface_id": "s-p0013-01",
+              "order": 8,
+              "bbox_pt": [
+                204.026,
+                651.3368,
+                406.6119,
+                665.2563
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0013-01-spring"
+                ],
+                "text": "**Figure 1.8:** *A longitudinal wave in a spring*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.8:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "A longitudinal wave in a spring",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-sound",
+              "type": "paragraph",
+              "surface_id": "s-p0013-01",
+              "order": 9,
+              "bbox_pt": [
+                75.3696,
+                676.7759,
+                529.9877,
+                754.0531
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "A sound wave is an example of a longitudinal wave. It is produced by the vibration of particles and travels through a medium such as air. The amplitude of a sound wave is the difference between the maximum pressure caused by the disturbance and the pressure of the undisturbed particles in a medium as illustrated in Figure 1.9.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A sound wave is an example of a longitudinal wave. It is produced by the vibration of particles and travels through a medium such as air. The amplitude of a sound wave is the difference between the maximum pressure caused by the disturbance and the pressure of the undisturbed particles in a medium as illustrated in Figure 1.9."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0013-01",
+              "order": 10,
+              "bbox_pt": [
+                86.411,
+                772.7725,
+                108.0138,
+                794.3717
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "6",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "6"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0013-01-footer",
+              "type": "running_footer",
+              "surface_id": "s-p0013-01",
+              "order": 11,
+              "bbox_pt": [
+                410.4524,
+                767.9726,
+                525.6671,
+                788.6119
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Student’s Book Form Four",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Student’s Book Form Four"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0013-01-longcontinued",
+      "to_ref": "e-p0013-01-longdef",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-long_continues"
+    },
+    {
+      "id": "r-caption-p0013-01-capboat-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0013-01-capboat",
+      "to_ref": "e-p0013-01-boat",
+      "printed_text": "**Figure 1.7:** *Water waves*",
+      "resolution": "resolved"
+    },
+    {
+      "id": "r-caption-p0013-01-capspring-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0013-01-capspring",
+      "to_ref": "e-p0013-01-spring",
+      "printed_text": "**Figure 1.8:** *A longitudinal wave in a spring*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0013-01-boat",
+      "kind": "photo",
+      "page": 13,
+      "surface_id": "s-p0013-01",
+      "bbox": [
+        76.3297,
+        137.2751,
+        537.1886,
+        330.7082
+      ],
+      "bbox_norm": [
+        0.1282257303751194,
+        0.16305585956774216,
+        0.9024193804533208,
+        0.39281639435775884
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0013-01-boat-daa5298ae702.jpg",
+      "format": "jpg",
+      "pixel_size": [
+        961,
+        404
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0013-01-boat"
+      ],
+      "printed_label": "Figure 1.7",
+      "description": "A boat on water waves.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "daa5298ae702d3db3cdfc8261ea80a687bfed88b2715de72609bd39c8238d29d",
+      "transform": {
+        "clip_bbox_pt": [
+          76.32969665527344,
+          137.2751007080078,
+          537.1885986328125,
+          330.70819091796875
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    },
+    {
+      "id": "f-p0013-01-spring",
+      "kind": "diagram",
+      "page": 13,
+      "surface_id": "s-p0013-01",
+      "bbox": [
+        70.569,
+        540.4608,
+        529.9877,
+        629.2576
+      ],
+      "bbox_norm": [
+        0.1185483706452639,
+        0.6419612901878751,
+        0.8903226387936761,
+        0.7474344499296265
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0013-01-spring-1431586cd69d.png",
+      "format": "png",
+      "pixel_size": [
+        958,
+        186
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0013-01-spring"
+      ],
+      "printed_label": "Figure 1.8",
+      "description": "Longitudinal wave in a spring: direction of wave motion, compression, rarefaction, wavelength and fixed end.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "1431586cd69d9d5044ab2780a73bcc3fc822f0a0ff673dcd1bec475c4c074f87",
+      "transform": {
+        "clip_bbox_pt": [
+          70.56900024414062,
+          540.4608154296875,
+          529.9876708984375,
+          629.2576293945312
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 13,
+      "surface_id": "s-p0013-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 12,
+    "types": {
+      "running_header": 1,
+      "paragraph": 4,
+      "figure": 2,
+      "caption": 2,
+      "heading": 1,
+      "page_number": 1,
+      "running_footer": 1
+    },
+    "figures": 2,
+    "open_issues": 0
+  }
+}

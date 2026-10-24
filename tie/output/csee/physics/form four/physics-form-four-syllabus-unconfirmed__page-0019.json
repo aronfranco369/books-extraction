@@ -1,0 +1,961 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      19
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 19,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0019-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "12",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0019-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0019-01",
+              "order": 0,
+              "bbox_pt": [
+                110.4141,
+                11.9996,
+                244.8313,
+                28.799
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-curvedfig",
+              "type": "figure",
+              "surface_id": "s-p0019-01",
+              "order": 1,
+              "bbox_pt": [
+                79.6902,
+                50.8782,
+                542.4693,
+                215.0323
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0019-01-curvedfig"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0019-01",
+              "order": 2,
+              "bbox_pt": [
+                84.0107,
+                225.112,
+                541.5091,
+                239.9915
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0019-01-curvedfig"
+                ],
+                "text": "**Figure 1.17:** *Reflection of linear waves from curved barriers (a) concave barrier (b) convex barrier*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.17:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Reflection of linear waves from curved barriers (a) concave barrier (b) convex barrier",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-applications",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 3,
+              "bbox_pt": [
+                79.6902,
+                263.0306,
+                307.2392,
+                278.8701
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "Applications of reflection of waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Applications of reflection of waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-appintro",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 4,
+              "bbox_pt": [
+                79.6902,
+                284.1499,
+                307.2392,
+                329.7483
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Reflection of waves is used in various human activities. Some of the applications of wave reflections are hereby described.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Reflection of waves is used in various human activities. Some of the applications of wave reflections are hereby described."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-apps",
+              "type": "list",
+              "surface_id": "s-p0019-01",
+              "order": 5,
+              "bbox_pt": [
+                90.2515,
+                330.2282,
+                307.2392,
+                752.6132
+              ],
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Reflection of light waves is used in designing mirrors. Light waves bounce upon striking a silvery surface of glass.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Reflection of light waves is used in designing mirrors. Light waves bounce upon striking a silvery surface of glass."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Sonar (sound navigation and ranging) systems rely on the reflection of sound waves to measure the distance and speed of underwater objects.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Sonar (sound navigation and ranging) systems rely on the reflection of sound waves to measure the distance and speed of underwater objects."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "The reflection of sound is what makes a hearing aid operate. Sound waves are reflected into a smaller region in a hearing aid, which directs the sound to the ear.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The reflection of sound is what makes a hearing aid operate. Sound waves are reflected into a smaller region in a hearing aid, which directs the sound to the ear."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "The soundboard is built upon sound reflection. Here, sound waves are uniformly reflected in an auditorium. This aids in the enhancement of sound quality.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The soundboard is built upon sound reflection. Here, sound waves are uniformly reflected in an auditorium. This aids in the enhancement of sound quality."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "The working of a stethoscope is based on the reflection of sound. In the stethoscope, the sound of a patient’s heartbeat reaches a doctor’s ear by multiple reflections of sound.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The working of a stethoscope is based on the reflection of sound. In the stethoscope, the sound of a patient’s heartbeat reaches a doctor’s ear by multiple reflections of sound."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-refraction",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 6,
+              "bbox_pt": [
+                322.6012,
+                257.7508,
+                541.5091,
+                274.0702
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Refraction of waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Refraction of waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-refractiondef",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 7,
+              "bbox_pt": [
+                322.6012,
+                278.8701,
+                541.5091,
+                467.5033
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "When waves travel from one medium to another, they tend to change their travelling speed. This phenomenon is known as refraction of waves. Refraction of waves occurs because the speed of a wave depends on the medium through which the wave is travelling. If the medium is changed, the speed of the wave will also change. The change in speed results in a change in the wavelength of the wave.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When waves travel from one medium to another, they tend to change their travelling speed. This phenomenon is known as refraction of waves. Refraction of waves occurs because the speed of a wave depends on the medium through which the wave is travelling. If the medium is changed, the speed of the wave will also change. The change in speed results in a change in the wavelength of the wave."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-activity",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 8,
+              "bbox_pt": [
+                389.8098,
+                491.9825,
+                465.6595,
+                516.4616
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Activity 1.2",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 1.2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-aim",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 9,
+              "bbox_pt": [
+                329.322,
+                521.2614,
+                539.5889,
+                568.2998
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "text": "**Aim:** To observe the refraction of water waves in a ripple tank.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " To observe the refraction of water waves in a ripple tank."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-materials",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 10,
+              "bbox_pt": [
+                329.322,
+                577.8994,
+                539.5889,
+                627.8176
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "text": "**Materials:** Ripple tank and its accessories, rectangular glass plates and metre rule",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Materials:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " Ripple tank and its accessories, rectangular glass plates and metre rule"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-procedure",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 11,
+              "bbox_pt": [
+                329.322,
+                637.4173,
+                539.5889,
+                654.6967
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "level": 4,
+                "role": "other",
+                "text": "Procedure",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-steps",
+              "type": "list",
+              "surface_id": "s-p0019-01",
+              "order": 12,
+              "bbox_pt": [
+                326.4417,
+                654.6967,
+                539.5889,
+                752.6132
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Set a ripple tank as illustrated in Figure 1.13",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Set a ripple tank as illustrated in Figure 1.13"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Fill the ripple tank with water.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Fill the ripple tank with water."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Gently place a rectangular glass plate in one part of the ripple tank to make it shallower than other parts",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Gently place a rectangular glass plate in one part of the ripple tank to make it shallower than other parts"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0019-01",
+              "order": 13,
+              "bbox_pt": [
+                91.2116,
+                763.1728,
+                115.2147,
+                785.252
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "12",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "12"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-01-footer",
+              "type": "running_footer",
+              "surface_id": "s-p0019-01",
+              "order": 14,
+              "bbox_pt": [
+                422.4539,
+                765.5727,
+                528.0674,
+                790.5318
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Student’s Book Form Four",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Student’s Book Form Four"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-g_activity",
+      "kind": "activity",
+      "label_printed": null,
+      "title": "Activity 1.2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0019-01-activity",
+        "e-p0019-01-aim",
+        "e-p0019-01-materials",
+        "e-p0019-01-procedure",
+        "e-p0019-01-steps"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-p0019-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0019-01-caption",
+      "to_ref": "e-p0019-01-curvedfig",
+      "printed_text": "**Figure 1.17:** *Reflection of linear waves from curved barriers (a) concave barrier (b) convex barrier*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0019-01-curvedfig",
+      "kind": "diagram",
+      "page": 19,
+      "surface_id": "s-p0019-01",
+      "bbox": [
+        79.6902,
+        50.8782,
+        542.4693,
+        215.0323
+      ],
+      "bbox_norm": [
+        0.1338710108743954,
+        0.060433309713556926,
+        0.9112903915327814,
+        0.2554161425584727
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0019-01-curvedfig-0ff5074e8c7c.png",
+      "format": "png",
+      "pixel_size": [
+        965,
+        343
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0019-01-curvedfig"
+      ],
+      "printed_label": "Figure 1.17",
+      "description": "Reflection of linear waves from (a) concave and (b) convex barriers, showing reflected waves and focal points.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "0ff5074e8c7c5fc0fd5bc4e7169b9385713da0934eb0bb7a43b5798d2e45e028",
+      "transform": {
+        "clip_bbox_pt": [
+          79.69020080566406,
+          50.87820053100586,
+          542.4692993164062,
+          215.0323028564453
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 19,
+      "surface_id": "s-p0019-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 15,
+    "types": {
+      "running_header": 1,
+      "figure": 1,
+      "caption": 1,
+      "heading": 4,
+      "paragraph": 4,
+      "list": 2,
+      "page_number": 1,
+      "running_footer": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

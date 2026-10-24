@@ -356,8 +356,8 @@
     "level": "csee",
     "subject": "physics",
     "form": 4,
-    "title_printed": null,
-    "language": null,
+    "title_printed": "Physics For Secondary Schools Student’s Book Form Four",
+    "language": "en",
     "edition_year_printed": null
   },
   "source": {
@@ -398,15 +398,15 @@
           "printed_page_status": "not_printed",
           "elements": [
             {
-              "id": "e-p0001-01-heading_physics",
+              "id": "e-p0001-01-title",
               "type": "heading",
               "surface_id": "s-p0001-01",
               "order": 0,
               "bbox_pt": [
-                86.411,
-                28.799,
-                456.0582,
-                124.7956
+                117.135,
+                14.3995,
+                480.0613,
+                122.6356
               ],
               "group_refs": [],
               "payload": {
@@ -423,15 +423,15 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0001-01-heading_for_secondary",
+              "id": "e-p0001-01-subtitle",
               "type": "heading",
               "surface_id": "s-p0001-01",
               "order": 1,
               "bbox_pt": [
-                96.0123,
-                127.1955,
-                432.0552,
-                148.7947
+                115.2147,
+                115.1959,
+                491.5828,
+                153.5945
               ],
               "group_refs": [],
               "payload": {
@@ -448,40 +448,40 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0001-01-heading_form_four",
+              "id": "e-p0001-01-form",
               "type": "heading",
               "surface_id": "s-p0001-01",
               "order": 2,
               "bbox_pt": [
-                134.4172,
-                170.3939,
-                475.2607,
-                196.793
+                134.8972,
+                172.7938,
+                476.2208,
+                195.593
               ],
               "group_refs": [],
               "payload": {
                 "level": 2,
                 "role": "other",
-                "text": "Student's Book Form Four",
+                "text": "Student’s Book Form Four",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "Student's Book Form Four"
+                    "v": "Student’s Book Form Four"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0001-01-text_publisher",
+              "id": "e-p0001-01-publisher",
               "type": "paragraph",
               "surface_id": "s-p0001-01",
               "order": 3,
               "bbox_pt": [
-                163.2208,
-                806.3713,
-                460.8588,
-                830.3704
+                134.8972,
+                695.9752,
+                408.0521,
+                724.7742
               ],
               "group_refs": [],
               "payload": {
@@ -507,38 +507,26 @@
     {
       "pdf_page": 1,
       "surface_id": "s-p0001-01",
-      "reason": "peripheral_front_matter_out_of_scope",
       "bbox_pt": [
-        19.2,
-        206.4,
-        576.0,
-        796.8
+        19,
+        210,
+        576,
+        695
       ],
-      "description": "Cover photograph (satellite dish) — decorative front cover artwork"
+      "reason": "peripheral_front_matter_out_of_scope",
+      "description": "Decorative cover photograph and publisher emblem."
     },
     {
       "pdf_page": 1,
       "surface_id": "s-p0001-01",
-      "reason": "peripheral_front_matter_out_of_scope",
       "bbox_pt": [
-        480.0,
-        777.6,
-        537.6,
-        830.4
+        480,
+        810,
+        580,
+        840
       ],
-      "description": "TIE publisher logo emblem (circular)"
-    },
-    {
-      "pdf_page": 1,
-      "surface_id": "s-p0001-01",
       "reason": "acquisition_noise",
-      "bbox_pt": [
-        504.0,
-        816.0,
-        576.0,
-        840.0
-      ],
-      "description": "CamScanner watermark (bottom-right)"
+      "description": "CamScanner watermark."
     }
   ],
   "review": [],

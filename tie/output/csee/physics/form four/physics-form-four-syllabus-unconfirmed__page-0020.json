@@ -1,7 +1,7 @@
 {
   "schema_version": "book-pages-1.1",
   "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
-  "status": "partial",
+  "status": "complete",
   "schema": {
     "registry": {
       "schema_version": "book-pages-1.1",
@@ -381,8 +381,8 @@
       "width_pt": 595.2760009765625,
       "height_pt": 841.8900146484375,
       "rotation": 0,
-      "state": "transcribed",
-      "visual_qa": "pending",
+      "state": "verified",
+      "visual_qa": "passed",
       "surfaces": [
         {
           "id": "s-p0020-01",
@@ -398,17 +398,42 @@
           "printed_page_status": "observed",
           "elements": [
             {
-              "id": "e-p0020-01-p20of",
-              "type": "paragraph",
+              "id": "e-p0020-01-header",
+              "type": "running_header",
               "surface_id": "s-p0020-01",
               "order": 0,
               "bbox_pt": [
-                57.6074,
-                49.4382,
-                196.8251,
-                95.9966
+                468.5398,
+                3.8399,
+                499.2637,
+                29.279
               ],
               "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0020-01-step3continued",
+              "type": "paragraph",
+              "surface_id": "s-p0020-01",
+              "order": 1,
+              "bbox_pt": [
+                78.7301,
+                49.4382,
+                281.3159,
+                95.9966
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
               "payload": {
                 "text": "of the tank. The glass plate should be placed at the end opposite to that of the vibrator.",
                 "runs": [
@@ -421,17 +446,19 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-l20proc",
+              "id": "e-p0020-01-steps",
               "type": "list",
               "surface_id": "s-p0020-01",
-              "order": 1,
+              "order": 2,
               "bbox_pt": [
-                55.207,
+                56.6472,
                 103.1963,
-                196.8251,
-                172.7938
+                281.3159,
+                192.9531
               ],
-              "group_refs": [],
+              "group_refs": [
+                "g-g_activity"
+              ],
               "payload": {
                 "style": "numbered",
                 "items": [
@@ -476,22 +503,22 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-h20q",
+              "id": "e-p0020-01-questions",
               "type": "heading",
               "surface_id": "s-p0020-01",
-              "order": 2,
+              "order": 3,
               "bbox_pt": [
-                76.8098,
-                176.6337,
-                139.2178,
-                203.5128
+                58.5675,
+                218.3922,
+                281.3159,
+                234.2317
               ],
               "group_refs": [
-                "g-g20questions"
+                "g-g_activity"
               ],
               "payload": {
-                "level": 2,
-                "role": "section",
+                "level": 4,
+                "role": "other",
                 "text": "Questions",
                 "runs": [
                   {
@@ -503,25 +530,25 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-l20q",
+              "id": "e-p0020-01-qs",
               "type": "list",
               "surface_id": "s-p0020-01",
-              "order": 3,
+              "order": 4,
               "bbox_pt": [
-                57.6074,
-                210.2325,
-                196.8251,
-                271.1903
+                58.5675,
+                234.2317,
+                281.3159,
+                323.0285
               ],
               "group_refs": [
-                "g-g20questions"
+                "g-g_activity"
               ],
               "payload": {
                 "style": "lettered",
                 "items": [
                   {
                     "label_printed": "(a)",
-                    "text": "Work out the ratio \\(\\frac{\\lambda}{\\lambda_1}\\).",
+                    "text": "Work out the ratio \\(\\tfrac{\\lambda}{\\lambda_1}\\).",
                     "runs": [
                       {
                         "t": "text",
@@ -529,7 +556,7 @@
                       },
                       {
                         "t": "math",
-                        "v": "\\frac{\\lambda}{\\lambda_1}"
+                        "v": "\\tfrac{\\lambda}{\\lambda_1}"
                       },
                       {
                         "t": "text",
@@ -552,27 +579,35 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20when",
+              "id": "e-p0020-01-wavelength",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
-              "order": 4,
+              "order": 5,
               "bbox_pt": [
-                57.6074,
-                272.6303,
-                196.8251,
-                322.5485
+                53.7669,
+                349.4276,
+                288.0368,
+                476.143
               ],
               "group_refs": [],
               "payload": {
-                "text": "When water waves travel from a deep part to a shallow part, the wavelength decreases as illustrated in Figure 1.18. However, the frequency of the waves does not change. Since velocity, v, is given by \\(f\\lambda\\), the velocity of the waves decreases with decrease in wavelength.",
+                "text": "When water waves travel from a deep part to a shallow part, the wavelength decreases as illustrated in Figure 1.18. However, the frequency of the waves does not change. Since velocity, \\(v\\), is given by \\(\\lambda f\\), the velocity of the waves decreases with decrease in wavelength.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "When water waves travel from a deep part to a shallow part, the wavelength decreases as illustrated in Figure 1.18. However, the frequency of the waves does not change. Since velocity, v, is given by "
+                    "v": "When water waves travel from a deep part to a shallow part, the wavelength decreases as illustrated in Figure 1.18. However, the frequency of the waves does not change. Since velocity, "
                   },
                   {
                     "t": "math",
-                    "v": "f\\lambda"
+                    "v": "v"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", is given by "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\lambda f"
                   },
                   {
                     "t": "text",
@@ -583,39 +618,39 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-fig20_1",
+              "id": "e-p0020-01-depth",
               "type": "figure",
               "surface_id": "s-p0020-01",
-              "order": 5,
+              "order": 6,
               "bbox_pt": [
                 53.7669,
-                349.4276,
-                196.8251,
-                479.9829
+                482.3828,
+                288.9969,
+                626.8577
               ],
               "group_refs": [],
               "payload": {
-                "ref": "f-p0020-01-fig20_1"
+                "ref": "f-p0020-01-depth"
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-cap20_1",
+              "id": "e-p0020-01-capdepth",
               "type": "caption",
               "surface_id": "s-p0020-01",
-              "order": 6,
+              "order": 7,
               "bbox_pt": [
-                69.6089,
-                482.3828,
-                196.8251,
-                493.4224
+                74.8896,
+                638.3773,
+                288.0368,
+                667.1762
               ],
               "group_refs": [],
               "payload": {
                 "target_refs": [
-                  "e-p0020-01-fig20_1"
+                  "e-p0020-01-depth"
                 ],
-                "text": "**Figure 1.18:** Change in the wavelength of water waves",
+                "text": "**Figure 1.18:** *Change in the wavelength of water waves*",
                 "runs": [
                   {
                     "t": "text",
@@ -624,26 +659,31 @@
                   },
                   {
                     "t": "text",
-                    "v": " Change in the wavelength of water waves"
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Change in the wavelength of water waves",
+                    "i": true
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20ratio",
+              "id": "e-p0020-01-ratio",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
-              "order": 7,
+              "order": 8,
               "bbox_pt": [
-                55.207,
-                496.3023,
-                196.8251,
-                626.3777
+                60.9678,
+                687.3355,
+                288.9969,
+                760.7729
               ],
               "group_refs": [],
               "payload": {
-                "text": "The ratio \\(\\frac{\\lambda}{\\lambda_1}\\) is equal to the ratio of the velocities of water waves in the deep water, v to that in the shallow water, \\(v_1\\)",
+                "text": "The ratio \\(\\tfrac{\\lambda}{\\lambda_1}\\) is equal to the ratio of the velocities of water waves in the deep water, \\(v\\) to that in the shallow water, \\(v_1\\)",
                 "runs": [
                   {
                     "t": "text",
@@ -651,11 +691,19 @@
                   },
                   {
                     "t": "math",
-                    "v": "\\frac{\\lambda}{\\lambda_1}"
+                    "v": "\\tfrac{\\lambda}{\\lambda_1}"
                   },
                   {
                     "t": "text",
-                    "v": " is equal to the ratio of the velocities of water waves in the deep water, v to that in the shallow water, "
+                    "v": " is equal to the ratio of the velocities of water waves in the deep water, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "v"
+                  },
+                  {
+                    "t": "text",
+                    "v": " to that in the shallow water, "
                   },
                   {
                     "t": "math",
@@ -666,19 +714,19 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20v1is",
+              "id": "e-p0020-01-ratiocontinued",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
-              "order": 8,
+              "order": 9,
               "bbox_pt": [
-                460.8588,
+                305.319,
                 57.5979,
-                532.868,
-                74.3974
+                530.4677,
+                95.9966
               ],
               "group_refs": [],
               "payload": {
-                "text": "\\(v_1\\), that is,",
+                "text": "\\(v_1\\), that is, \\(\\tfrac{\\lambda}{\\lambda_1}=\\tfrac{v}{v_1}\\).",
                 "runs": [
                   {
                     "t": "math",
@@ -686,39 +734,30 @@
                   },
                   {
                     "t": "text",
-                    "v": ", that is,"
+                    "v": ", that is, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\tfrac{\\lambda}{\\lambda_1}=\\tfrac{v}{v_1}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-m20ratio",
-              "type": "math",
-              "surface_id": "s-p0020-01",
-              "order": 9,
-              "bbox_pt": [
-                369.6472,
-                76.7973,
-                484.8619,
-                103.1963
-              ],
-              "group_refs": [],
-              "payload": {
-                "latex": "\\frac{\\lambda}{\\lambda_1}=\\frac{v}{v_1}"
-              },
-              "legibility": "clear"
-            },
-            {
-              "id": "e-p0020-01-p20vel",
+              "id": "e-p0020-01-velocity",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
               "order": 10,
               "bbox_pt": [
                 302.4386,
-                110.3961,
-                532.868,
-                148.7947
+                108.4761,
+                530.9478,
+                139.675
               ],
               "group_refs": [],
               "payload": {
@@ -733,21 +772,19 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-h20ri",
+              "id": "e-p0020-01-index",
               "type": "heading",
               "surface_id": "s-p0020-01",
               "order": 11,
               "bbox_pt": [
-                307.2392,
+                302.4386,
                 156.4744,
-                398.4509,
-                170.8739
+                530.9478,
+                171.3539
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
-                "level": 3,
+                "level": 4,
                 "role": "subsection",
                 "text": "Refractive index",
                 "runs": [
@@ -760,19 +797,17 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20refr",
+              "id": "e-p0020-01-indexintro",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
               "order": 12,
               "bbox_pt": [
                 302.4386,
                 176.6337,
-                532.868,
-                322.5485
+                531.4278,
+                340.3079
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The refraction of water waves can be further observed if the boundary between the deep and shallow regions is at a certain angle to the incident wavefronts. In this case the deep region acts as the first medium while the shallow region acts as the second medium. If in Activity 1.2, the glass plate was placed at some angle, water waves would be refracted as shown in Figure 1.19.",
                 "runs": [
@@ -785,43 +820,39 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-fig20_2",
+              "id": "e-p0020-01-refractionfig",
               "type": "figure",
               "surface_id": "s-p0020-01",
               "order": 13,
               "bbox_pt": [
-                304.8389,
-                349.4276,
-                530.4677,
-                479.9829
+                305.319,
+                346.5477,
+                532.868,
+                465.5834
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
-                "ref": "f-p0020-01-fig20_2"
+                "ref": "f-p0020-01-refractionfig"
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-cap20_2",
+              "id": "e-p0020-01-caprefraction",
               "type": "caption",
               "surface_id": "s-p0020-01",
               "order": 14,
               "bbox_pt": [
-                304.8389,
-                482.3828,
-                528.0674,
-                493.4224
+                323.5613,
+                469.4233,
+                531.9079,
+                482.3828
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
                 "target_refs": [
-                  "e-p0020-01-fig20_2"
+                  "e-p0020-01-refractionfig"
                 ],
-                "text": "**Figure 1.19:** Refraction of water waves",
+                "text": "**Figure 1.19:** *Refraction of water waves*",
                 "runs": [
                   {
                     "t": "text",
@@ -830,72 +861,71 @@
                   },
                   {
                     "t": "text",
-                    "v": " Refraction of water waves"
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Refraction of water waves",
+                    "i": true
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20exp",
+              "id": "e-p0020-01-snell",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
               "order": 15,
               "bbox_pt": [
-                302.4386,
+                306.2791,
                 496.3023,
-                532.868,
-                531.8211
+                533.8282,
+                546.2205
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
-                "text": "Experimental observations have shown that water waves obey Snell's Law of refraction. That is,",
+                "text": "Experimental observations have shown that water waves obey Snell’s Law of refraction. That is,",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "Experimental observations have shown that water waves obey Snell's Law of refraction. That is,"
+                    "v": "Experimental observations have shown that water waves obey Snell’s Law of refraction. That is,"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-m20eta",
+              "id": "e-p0020-01-snellformula",
               "type": "math",
               "surface_id": "s-p0020-01",
               "order": 16,
               "bbox_pt": [
-                393.6503,
-                536.6209,
-                460.8588,
-                566.3798
+                348.5245,
+                551.9803,
+                456.0582,
+                592.7789
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
                 "latex": "\\eta=\\frac{\\sin i}{\\sin r}"
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20where",
+              "id": "e-p0020-01-definitions",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
               "order": 17,
               "bbox_pt": [
-                302.4386,
-                573.5796,
+                308.6794,
+                595.1788,
                 532.868,
-                608.6183
+                667.1762
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
-                "text": "where \\(\\eta\\) is the refractive index of the second medium relative to the first medium, i is the angle of incidence and r is the angle of refraction.",
+                "text": "where \\(\\eta\\) is the refractive index of the second medium relative to the first medium, \\(i\\) is the angle of incidence and \\(r\\) is the angle of refraction.",
                 "runs": [
                   {
                     "t": "text",
@@ -907,28 +937,42 @@
                   },
                   {
                     "t": "text",
-                    "v": " is the refractive index of the second medium relative to the first medium, i is the angle of incidence and r is the angle of refraction."
+                    "v": " is the refractive index of the second medium relative to the first medium, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "i"
+                  },
+                  {
+                    "t": "text",
+                    "v": " is the angle of incidence and "
+                  },
+                  {
+                    "t": "math",
+                    "v": "r"
+                  },
+                  {
+                    "t": "text",
+                    "v": " is the angle of refraction."
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-p20also",
+              "id": "e-p0020-01-indexratio",
               "type": "paragraph",
               "surface_id": "s-p0020-01",
               "order": 18,
               "bbox_pt": [
-                302.4386,
-                614.3781,
-                532.868,
-                651.8168
+                308.6794,
+                671.4961,
+                534.7883,
+                725.2542
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
-                "text": "The refractive index, \\(\\eta\\) is also the ratio of the velocity of the wave in the first medium to that in the second medium, that is,",
+                "text": "The refractive index, \\(\\eta\\) is also the ratio of the velocity of the wave in the first medium to that in the second medium, that is;",
                 "runs": [
                   {
                     "t": "text",
@@ -940,41 +984,39 @@
                   },
                   {
                     "t": "text",
-                    "v": " is also the ratio of the velocity of the wave in the first medium to that in the second medium, that is,"
+                    "v": " is also the ratio of the velocity of the wave in the first medium to that in the second medium, that is;"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-m20snell",
+              "id": "e-p0020-01-indexformula",
               "type": "math",
               "surface_id": "s-p0020-01",
               "order": 19,
               "bbox_pt": [
-                369.6472,
-                657.5766,
-                480.0613,
-                686.3756
+                355.2454,
+                728.614,
+                456.0582,
+                760.7729
               ],
-              "group_refs": [
-                "g-g20refractive"
-              ],
+              "group_refs": [],
               "payload": {
-                "latex": "\\frac{\\sin i}{\\sin r}=\\frac{v}{v_1}"
+                "latex": "\\frac{\\sin i}{\\sin r}=\\frac{v}{v_1}."
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0020-01-num20",
+              "id": "e-p0020-01-number",
               "type": "page_number",
               "surface_id": "s-p0020-01",
               "order": 20,
               "bbox_pt": [
-                513.6656,
-                815.9709,
-                547.2699,
-                835.1703
+                501.664,
+                772.2925,
+                523.2668,
+                794.3717
               ],
               "group_refs": [],
               "payload": {
@@ -995,137 +1037,143 @@
   ],
   "groups": [
     {
-      "id": "g-g20questions",
-      "kind": "section",
+      "id": "g-g_activity",
+      "kind": "activity",
       "label_printed": null,
-      "title": "Questions",
+      "title": "Activity 1.2 (continued)",
       "parent_ref": null,
       "element_refs": [
-        "e-p0020-01-h20q",
-        "e-p0020-01-l20q"
-      ]
-    },
-    {
-      "id": "g-g20refractive",
-      "kind": "subsection",
-      "label_printed": null,
-      "title": "Refractive index",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0020-01-h20ri",
-        "e-p0020-01-p20refr",
-        "e-p0020-01-fig20_2",
-        "e-p0020-01-cap20_2",
-        "e-p0020-01-p20exp",
-        "e-p0020-01-m20eta",
-        "e-p0020-01-p20where",
-        "e-p0020-01-p20also",
-        "e-p0020-01-m20snell"
+        "e-p0020-01-step3continued",
+        "e-p0020-01-steps",
+        "e-p0020-01-questions",
+        "e-p0020-01-qs"
       ]
     }
   ],
   "relations": [
     {
-      "id": "r-caption-p0020-01-cap20_1-1",
+      "kind": "continues",
+      "from_ref": "e-p0020-01-ratiocontinued",
+      "to_ref": "e-p0020-01-ratio",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-ratio_continues"
+    },
+    {
+      "kind": "continues",
+      "from_ref": "e-p0020-01-step3continued",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+        "pdf_page": 19,
+        "printed_page": "12",
+        "label_printed": "3."
+      },
+      "id": "r-step_continues"
+    },
+    {
+      "id": "r-caption-p0020-01-capdepth-1",
       "kind": "caption_of",
-      "from_ref": "e-p0020-01-cap20_1",
-      "to_ref": "e-p0020-01-fig20_1",
-      "printed_text": "**Figure 1.18:** Change in the wavelength of water waves",
+      "from_ref": "e-p0020-01-capdepth",
+      "to_ref": "e-p0020-01-depth",
+      "printed_text": "**Figure 1.18:** *Change in the wavelength of water waves*",
       "resolution": "resolved"
     },
     {
-      "id": "r-caption-p0020-01-cap20_2-1",
+      "id": "r-caption-p0020-01-caprefraction-1",
       "kind": "caption_of",
-      "from_ref": "e-p0020-01-cap20_2",
-      "to_ref": "e-p0020-01-fig20_2",
-      "printed_text": "**Figure 1.19:** Refraction of water waves",
+      "from_ref": "e-p0020-01-caprefraction",
+      "to_ref": "e-p0020-01-refractionfig",
+      "printed_text": "**Figure 1.19:** *Refraction of water waves*",
       "resolution": "resolved"
     }
   ],
   "figures": [
     {
-      "id": "f-p0020-01-fig20_1",
+      "id": "f-p0020-01-depth",
       "kind": "diagram",
       "page": 20,
       "surface_id": "s-p0020-01",
       "bbox": [
         53.7669,
-        349.4276,
-        196.8251,
-        479.9829
+        482.3828,
+        288.9969,
+        626.8577
       ],
       "bbox_norm": [
         0.09032264010609246,
-        0.41505136528542447,
-        0.3306451119768047,
-        0.5701254221436926
+        0.5729760320312587,
+        0.48548387559030537,
+        0.7445838400420604
       ],
-      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0020-01-fig20_1-77fa9bf9cb34.png",
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0020-01-depth-deb0b96f1f04.png",
       "format": "png",
       "pixel_size": [
-        299,
-        273
+        491,
+        302
       ],
       "dpi": 150,
       "deskew_deg": null,
       "used_by": [
-        "e-p0020-01-fig20_1"
+        "e-p0020-01-depth"
       ],
       "printed_label": "Figure 1.18",
-      "description": "Diagram of a ripple tank seen from the side: a deep region on the left with longer-wavelength water waves and a shallow region on the right over a glass plate with shorter-wavelength waves; the equilibrium water level is marked, and wavelengths are labelled lambda in the deep part and lambda_1 in the shallow part.",
-      "crop_check": "pending",
+      "description": "Change in wavelength of water waves over a glass plate; equilibrium water level and wavelengths lambda and lambda1 labelled.",
+      "crop_check": "ok",
       "crop_issue": null,
-      "sha256": "77fa9bf9cb34a2d693e94cb79e79ae98a2150dd95abcc5949a430a546b28eb9a",
+      "sha256": "deb0b96f1f0439aa4f748b71de96fa55422911575153e927b9aed80791c2dd90",
       "transform": {
         "clip_bbox_pt": [
           53.76689910888672,
-          349.4276123046875,
-          196.82510375976562,
-          479.98291015625
+          482.3828125,
+          288.99688720703125,
+          626.8577270507812
         ],
         "trim_px": null,
         "rotation_applied": 0
       }
     },
     {
-      "id": "f-p0020-01-fig20_2",
+      "id": "f-p0020-01-refractionfig",
       "kind": "diagram",
       "page": 20,
       "surface_id": "s-p0020-01",
       "bbox": [
-        304.8389,
-        349.4276,
-        530.4677,
-        479.9829
+        305.319,
+        346.5477,
+        532.868,
+        465.5834
       ],
       "bbox_norm": [
-        0.5120967408393847,
-        0.41505136528542447,
-        0.8911289874440711,
-        0.5701254221436926
+        0.5129032574790818,
+        0.41163060966427295,
+        0.8951612346639528,
+        0.5530216440379349
       ],
-      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0020-01-fig20_2-24888811567c.png",
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0020-01-refractionfig-d2d6dd3c0de5.png",
       "format": "png",
       "pixel_size": [
-        471,
-        273
+        475,
+        249
       ],
       "dpi": 150,
       "deskew_deg": null,
       "used_by": [
-        "e-p0020-01-fig20_2"
+        "e-p0020-01-refractionfig"
       ],
       "printed_label": "Figure 1.19",
-      "description": "Diagram showing refraction of straight water wavefronts at an angled boundary between Medium 1 (deeper, wave velocity v) and Medium 2 (shallower, wave velocity v_1); incident and refracted wavefronts are drawn with the normal N, the angle of incidence i and the angle of refraction r.",
-      "crop_check": "pending",
+      "description": "Refraction of water waves between Medium 1 and Medium 2, incident and refracted wavefronts, normals N, angles i and r and velocities v and v1.",
+      "crop_check": "ok",
       "crop_issue": null,
-      "sha256": "24888811567c271c43d16605b020507158153d1644b7744c80059e709abd63bb",
+      "sha256": "d2d6dd3c0de5755bc52624e59a53e31ddb87abbc4324b0b1ea688b65c24bd7fe",
       "transform": {
         "clip_bbox_pt": [
-          304.8388977050781,
-          349.4276123046875,
-          530.4677124023438,
-          479.98291015625
+          305.3190002441406,
+          346.5476989746094,
+          532.8679809570312,
+          465.5834045410156
         ],
         "trim_px": null,
         "rotation_applied": 0
@@ -1137,37 +1185,13 @@
       "pdf_page": 20,
       "surface_id": "s-p0020-01",
       "bbox_pt": [
-        48,
-        26,
-        568,
-        57
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
       ],
       "reason": "acquisition_noise",
-      "note": "Light-grey top watermark band across the page."
-    },
-    {
-      "pdf_page": 20,
-      "surface_id": "s-p0020-01",
-      "bbox_pt": [
-        416,
-        4,
-        576,
-        24
-      ],
-      "reason": "acquisition_noise",
-      "note": "Top-right scanner header tag."
-    },
-    {
-      "pdf_page": 20,
-      "surface_id": "s-p0020-01",
-      "bbox_pt": [
-        0,
-        821,
-        595,
-        841
-      ],
-      "reason": "acquisition_noise",
-      "note": "Bottom scanner watermark (CamScanner band)."
+      "description": "CamScanner watermark."
     }
   ],
   "review": [],
@@ -1176,12 +1200,13 @@
     "surfaces": 1,
     "elements": 21,
     "types": {
+      "running_header": 1,
       "paragraph": 9,
       "list": 2,
       "heading": 2,
       "figure": 2,
       "caption": 2,
-      "math": 3,
+      "math": 2,
       "page_number": 1
     },
     "figures": 2,

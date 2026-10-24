@@ -1,0 +1,888 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      12
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 12,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0012-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "5",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0012-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0012-01",
+              "order": 0,
+              "bbox_pt": [
+                465.6595,
+                24.9591,
+                499.2637,
+                45.5984
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-propagation",
+              "type": "heading",
+              "surface_id": "s-p0012-01",
+              "order": 1,
+              "bbox_pt": [
+                56.1672,
+                54.7181,
+                216.0276,
+                69.5975
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 2,
+                "role": "section",
+                "text": "Propagation of waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Propagation of waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-propdef",
+              "type": "paragraph",
+              "surface_id": "s-p0012-01",
+              "order": 2,
+              "bbox_pt": [
+                55.6871,
+                71.9974,
+                218.4279,
+                292.7896
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "The movement of waves in space and time is referred to as wave propagation. Some waves require a medium to propagate, while others do not. Waves that require a material medium to propagate are called mechanical waves. Those waves which do not require material medium to propagate are called electromagnetic waves.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The movement of waves in space and time is referred to as wave propagation. Some waves require a medium to propagate, while others do not. Waves that require a material medium to propagate are called mechanical waves. Those waves which do not require material medium to propagate are called electromagnetic waves."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-mechanical",
+              "type": "heading",
+              "surface_id": "s-p0012-01",
+              "order": 3,
+              "bbox_pt": [
+                55.6871,
+                309.589,
+                218.4279,
+                325.4284
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Mechanical waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mechanical waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-mechdef",
+              "type": "paragraph",
+              "surface_id": "s-p0012-01",
+              "order": 4,
+              "bbox_pt": [
+                55.6871,
+                327.3483,
+                218.4279,
+                629.7376
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "A mechanical wave is the wave that is produced when particles vibrate in a medium (solid, liquid or gas) in which the wave propagates. The propagation of a mechanical wave through a medium depends on the elastic and inertia properties of that medium. A typical example of a mechanical wave is sound wave. Other examples, of mechanical waves are water waves and waves on strings. As the mechanical wave propagates, particles of the medium vibrate about their equilibrium positions.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A mechanical wave is the wave that is produced when particles vibrate in a medium (solid, liquid or gas) in which the wave propagates. The propagation of a mechanical wave through a medium depends on the elastic and inertia properties of that medium. A typical example of a mechanical wave is sound wave. Other examples, of mechanical waves are water waves and waves on strings. As the mechanical wave propagates, particles of the medium vibrate about their equilibrium positions."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-electromagnetic",
+              "type": "heading",
+              "surface_id": "s-p0012-01",
+              "order": 5,
+              "bbox_pt": [
+                55.6871,
+                647.9769,
+                218.4279,
+                663.3364
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Electromagnetic waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electromagnetic waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-emstart",
+              "type": "paragraph",
+              "surface_id": "s-p0012-01",
+              "order": 6,
+              "bbox_pt": [
+                55.6871,
+                664.7763,
+                218.4279,
+                746.3734
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "An electromagnetic wave is a wave that is created as a result of vibrations between an electric field and a magnetic field. The electric",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "An electromagnetic wave is a wave that is created as a result of vibrations between an electric field and a magnetic field. The electric"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-emcontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0012-01",
+              "order": 7,
+              "bbox_pt": [
+                234.2699,
+                54.7181,
+                528.0674,
+                149.2747
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "and magnetic fields propagate in phase and at right angle to each other. All electromagnetic waves travel through vacuum at the speed of \\(3\\times10^{8}\\,\\mathrm{m\\,s^{-1}}\\). Examples of electromagnetic waves include: visible light, radio waves, microwaves, and X-rays.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "and magnetic fields propagate in phase and at right angle to each other. All electromagnetic waves travel through vacuum at the speed of "
+                  },
+                  {
+                    "t": "math",
+                    "v": "3\\times10^{8}\\,\\mathrm{m\\,s^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Examples of electromagnetic waves include: visible light, radio waves, microwaves, and X-rays."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-modes",
+              "type": "heading",
+              "surface_id": "s-p0012-01",
+              "order": 8,
+              "bbox_pt": [
+                234.2699,
+                166.5541,
+                528.0674,
+                181.9135
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Modes of wave propagation",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Modes of wave propagation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-modesdef",
+              "type": "paragraph",
+              "surface_id": "s-p0012-01",
+              "order": 9,
+              "bbox_pt": [
+                234.2699,
+                184.3134,
+                526.1472,
+                343.1878
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "All waves can be classified in terms of their modes of propagation. There are two modes of wave propagation; transverse propagation and longitudinal propagation. Waves that propagate in a direction perpendicular to the direction of particle vibrations are called *transverse waves*. On the other hand, waves that propagate in a direction that is parallel to the direction of particle vibrations are referred to as *longitudinal waves*.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "All waves can be classified in terms of their modes of propagation. There are two modes of wave propagation; transverse propagation and longitudinal propagation. Waves that propagate in a direction perpendicular to the direction of particle vibrations are called "
+                  },
+                  {
+                    "t": "text",
+                    "v": "transverse waves",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": ". On the other hand, waves that propagate in a direction that is parallel to the direction of particle vibrations are referred to as "
+                  },
+                  {
+                    "t": "text",
+                    "v": "longitudinal waves",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-transverse",
+              "type": "heading",
+              "surface_id": "s-p0012-01",
+              "order": 10,
+              "bbox_pt": [
+                234.2699,
+                362.3871,
+                526.1472,
+                378.7065
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "Transverse waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transverse waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-transversedef",
+              "type": "paragraph",
+              "surface_id": "s-p0012-01",
+              "order": 11,
+              "bbox_pt": [
+                234.2699,
+                382.0664,
+                526.1472,
+                503.982
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "In a transverse wave, the motion of particles make a right angle with the direction of propagation of the wave. For example, when the string or rope under tension oscillates up and down at one end, the disturbance moves along the rope. The particles in the rope vibrate perpendicular to the direction of the disturbance. Figure 1.6 illustrates the propagation of a transverse wave.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In a transverse wave, the motion of particles make a right angle with the direction of propagation of the wave. For example, when the string or rope under tension oscillates up and down at one end, the disturbance moves along the rope. The particles in the rope vibrate perpendicular to the direction of the disturbance. Figure 1.6 illustrates the propagation of a transverse wave."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-transversefig",
+              "type": "figure",
+              "surface_id": "s-p0012-01",
+              "order": 12,
+              "bbox_pt": [
+                235.23,
+                530.3811,
+                532.868,
+                703.175
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0012-01-transversefig"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0012-01",
+              "order": 13,
+              "bbox_pt": [
+                283.2362,
+                717.5744,
+                482.4616,
+                736.2938
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0012-01-transversefig"
+                ],
+                "text": "**Figure 1.6:** *A transverse wave in a string*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.6:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "A transverse wave in a string",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0012-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0012-01",
+              "order": 14,
+              "bbox_pt": [
+                484.8619,
+                755.4931,
+                508.865,
+                777.5723
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "5",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "5"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0012-01-emcontinued",
+      "to_ref": "e-p0012-01-emstart",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-em_continuation"
+    },
+    {
+      "id": "r-caption-p0012-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0012-01-caption",
+      "to_ref": "e-p0012-01-transversefig",
+      "printed_text": "**Figure 1.6:** *A transverse wave in a string*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0012-01-transversefig",
+      "kind": "diagram",
+      "page": 12,
+      "surface_id": "s-p0012-01",
+      "bbox": [
+        235.23,
+        530.3811,
+        532.868,
+        703.175
+      ],
+      "bbox_norm": [
+        0.39516123548421295,
+        0.629988586123664,
+        0.8951612346639528,
+        0.8352338046123956
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0012-01-transversefig-1278df527704.png",
+      "format": "png",
+      "pixel_size": [
+        621,
+        361
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0012-01-transversefig"
+      ],
+      "printed_label": "Figure 1.6",
+      "description": "A transverse wave in a string with wave direction, particle vibrations and equilibrium position.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "1278df527704cc0b9193fc57d372f70c503201590ced10f331bfdfe39ef71243",
+      "transform": {
+        "clip_bbox_pt": [
+          235.22999572753906,
+          530.381103515625,
+          532.8679809570312,
+          703.1749877929688
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 12,
+      "surface_id": "s-p0012-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 15,
+    "types": {
+      "running_header": 1,
+      "heading": 5,
+      "paragraph": 6,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

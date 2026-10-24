@@ -1,0 +1,1090 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      17
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 17,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0017-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "10",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0017-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0017-01",
+              "order": 0,
+              "bbox_pt": [
+                105.6135,
+                9.5997,
+                240.0306,
+                28.799
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-intro",
+              "type": "paragraph",
+              "surface_id": "s-p0017-01",
+              "order": 1,
+              "bbox_pt": [
+                72.9693,
+                54.7181,
+                300.0383,
+                187.1933
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Reflection of water waves can be observed by placing various obstacles in the tray of the ripple tank. The depth of the water can also be varied by laying glass plates of different thicknesses in the tray. This allows the observation of waves travelling from one medium to another.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Reflection of water waves can be observed by placing various obstacles in the tray of the ripple tank. The depth of the water can also be varied by laying glass plates of different thicknesses in the tray. This allows the observation of waves travelling from one medium to another."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-activity",
+              "type": "heading",
+              "surface_id": "s-p0017-01",
+              "order": 2,
+              "bbox_pt": [
+                136.8175,
+                215.0323,
+                218.4279,
+                238.5515
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Activity 1.1",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 1.1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-aim",
+              "type": "paragraph",
+              "surface_id": "s-p0017-01",
+              "order": 3,
+              "bbox_pt": [
+                81.6104,
+                245.7512,
+                300.0383,
+                305.7491
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "text": "**Aim:** To observe the reflection of water waves in a ripple tank.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " To observe the reflection of water waves in a ripple tank."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-material",
+              "type": "paragraph",
+              "surface_id": "s-p0017-01",
+              "order": 4,
+              "bbox_pt": [
+                80.6503,
+                309.589,
+                300.0383,
+                407.5055
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "text": "**Material:** Ripple tank, barriers of different shapes (straight barrier, wooden block, concave and convex barriers), and droppers",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Material:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " Ripple tank, barriers of different shapes (straight barrier, wooden block, concave and convex barriers), and droppers"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-procedure",
+              "type": "heading",
+              "surface_id": "s-p0017-01",
+              "order": 5,
+              "bbox_pt": [
+                79.6902,
+                411.8253,
+                300.0383,
+                427.1848
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "level": 4,
+                "role": "other",
+                "text": "Procedure",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-steps1",
+              "type": "list",
+              "surface_id": "s-p0017-01",
+              "order": 6,
+              "bbox_pt": [
+                79.6902,
+                431.5046,
+                300.0383,
+                739.6537
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Assemble the ripple tank as illustrated in Figure 1.13.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Assemble the ripple tank as illustrated in Figure 1.13."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Set up the barrier in the ripple tank as shown in Figure 1.14",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Set up the barrier in the ripple tank as shown in Figure 1.14"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Switch ON the motor to run the oscillating paddle that generates some waves in the ripple tank.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Switch ON the motor to run the oscillating paddle that generates some waves in the ripple tank."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Record your observations.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Record your observations."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "Remove the oscillating paddle.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Remove the oscillating paddle."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Put some water into a dropper.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Put some water into a dropper."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "7.",
+                    "text": "Hold the dropper about \\(2\\,\\mathrm{cm}\\) above the water surface.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Hold the dropper about "
+                      },
+                      {
+                        "t": "math",
+                        "v": "2\\,\\mathrm{cm}"
+                      },
+                      {
+                        "t": "text",
+                        "v": " above the water surface."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "8.",
+                    "text": "Let one drop of water fall at the middle of the ripple tank.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Let one drop of water fall at the middle of the ripple tank."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "9.",
+                    "text": "Observe how the water waves will be reflected after striking the barrier.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Observe how the water waves will be reflected after striking the barrier."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-straight",
+              "type": "figure",
+              "surface_id": "s-p0017-01",
+              "order": 7,
+              "bbox_pt": [
+                325.4816,
+                61.4378,
+                539.5889,
+                235.1916
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "ref": "f-p0017-01-straight"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-capstraight",
+              "type": "caption",
+              "surface_id": "s-p0017-01",
+              "order": 8,
+              "bbox_pt": [
+                398.4509,
+                245.7512,
+                470.4601,
+                264.4706
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "target_refs": [
+                  "e-p0017-01-straight"
+                ],
+                "text": "**Figure 1.14**",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.14",
+                    "b": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-steps2",
+              "type": "list",
+              "surface_id": "s-p0017-01",
+              "order": 9,
+              "bbox_pt": [
+                324.0414,
+                271.1903,
+                532.388,
+                423.3449
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "10.",
+                    "text": "Draw the incident and the reflected wave patterns in steps 4 and 9.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Draw the incident and the reflected wave patterns in steps 4 and 9."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "11.",
+                    "text": "Change the angle of the barrier and repeat steps 3-9. Observe any changes in the reflected waves.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Change the angle of the barrier and repeat steps 3-9. Observe any changes in the reflected waves."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "12.",
+                    "text": "Replace the rectangular barrier with a curved one (concave) as shown in Figure 1.15, and repeat steps 3-9.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Replace the rectangular barrier with a curved one (concave) as shown in Figure 1.15, and repeat steps 3-9."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-curved",
+              "type": "figure",
+              "surface_id": "s-p0017-01",
+              "order": 10,
+              "bbox_pt": [
+                325.4816,
+                411.8253,
+                529.5076,
+                625.8977
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "ref": "f-p0017-01-curved"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-capcurved",
+              "type": "caption",
+              "surface_id": "s-p0017-01",
+              "order": 11,
+              "bbox_pt": [
+                398.4509,
+                632.6175,
+                470.4601,
+                646.537
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "target_refs": [
+                  "e-p0017-01-curved"
+                ],
+                "text": "**Figure 1.15**",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.15",
+                    "b": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-steps3",
+              "type": "list",
+              "surface_id": "s-p0017-01",
+              "order": 12,
+              "bbox_pt": [
+                324.0414,
+                650.8568,
+                529.9877,
+                739.6537
+              ],
+              "group_refs": [
+                "g-g_activity"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "13.",
+                    "text": "Record all your observations.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Record all your observations."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "14.",
+                    "text": "Replace the concave barrier with a convex one and repeat steps 3-9.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Replace the concave barrier with a convex one and repeat steps 3-9."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "15.",
+                    "text": "Observe any changes in the reflected waves.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Observe any changes in the reflected waves."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0017-01",
+              "order": 13,
+              "bbox_pt": [
+                85.4509,
+                756.4531,
+                105.6135,
+                779.9722
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "10",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "10"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0017-01-footer",
+              "type": "running_footer",
+              "surface_id": "s-p0017-01",
+              "order": 14,
+              "bbox_pt": [
+                417.6533,
+                760.7729,
+                528.0674,
+                782.3721
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Student’s Book Form Four",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Student’s Book Form Four"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-g_activity",
+      "kind": "activity",
+      "label_printed": null,
+      "title": "Activity 1.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0017-01-activity",
+        "e-p0017-01-aim",
+        "e-p0017-01-material",
+        "e-p0017-01-procedure",
+        "e-p0017-01-steps1",
+        "e-p0017-01-straight",
+        "e-p0017-01-capstraight",
+        "e-p0017-01-steps2",
+        "e-p0017-01-curved",
+        "e-p0017-01-capcurved",
+        "e-p0017-01-steps3"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-p0017-01-capstraight-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0017-01-capstraight",
+      "to_ref": "e-p0017-01-straight",
+      "printed_text": "**Figure 1.14**",
+      "resolution": "resolved"
+    },
+    {
+      "id": "r-caption-p0017-01-capcurved-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0017-01-capcurved",
+      "to_ref": "e-p0017-01-curved",
+      "printed_text": "**Figure 1.15**",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0017-01-straight",
+      "kind": "diagram",
+      "page": 17,
+      "surface_id": "s-p0017-01",
+      "bbox": [
+        325.4816,
+        61.4378,
+        539.5889,
+        235.1916
+      ],
+      "bbox_norm": [
+        0.5467742685175293,
+        0.0729760407309922,
+        0.9064516276732025,
+        0.27936143190653356
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0017-01-straight-079050143479.png",
+      "format": "png",
+      "pixel_size": [
+        447,
+        363
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0017-01-straight"
+      ],
+      "printed_label": "Figure 1.14",
+      "description": "Ripple tank with straight barrier at 45 degrees and incident wavefronts.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "079050143479cbf1f6a574adda40dc38c64a33dd3f6d240a2a4dfb270adc8aef",
+      "transform": {
+        "clip_bbox_pt": [
+          325.4815979003906,
+          61.437801361083984,
+          539.5889282226562,
+          235.1916046142578
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    },
+    {
+      "id": "f-p0017-01-curved",
+      "kind": "diagram",
+      "page": 17,
+      "surface_id": "s-p0017-01",
+      "bbox": [
+        325.4816,
+        411.8253,
+        529.5076,
+        625.8977
+      ],
+      "bbox_norm": [
+        0.5467742685175293,
+        0.48916757870322647,
+        0.8895161221539789,
+        0.7434435485748894
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0017-01-curved-9362a48a9b83.png",
+      "format": "png",
+      "pixel_size": [
+        426,
+        447
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0017-01-curved"
+      ],
+      "printed_label": "Figure 1.15",
+      "description": "Ripple tank with concave curved barrier, direction arrow and incident wavefronts.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "9362a48a9b83de12a39dde7a9fa018c5f3c3b29a018b40154b1c864ea3de6d1e",
+      "transform": {
+        "clip_bbox_pt": [
+          325.4815979003906,
+          411.8252868652344,
+          529.5076293945312,
+          625.897705078125
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 17,
+      "surface_id": "s-p0017-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 15,
+    "types": {
+      "running_header": 1,
+      "paragraph": 3,
+      "heading": 2,
+      "list": 3,
+      "figure": 2,
+      "caption": 2,
+      "page_number": 1,
+      "running_footer": 1
+    },
+    "figures": 2,
+    "open_issues": 0
+  }
+}

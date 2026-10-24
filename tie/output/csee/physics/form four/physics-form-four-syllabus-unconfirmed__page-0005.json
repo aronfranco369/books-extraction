@@ -1,0 +1,1129 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      5
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 5,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0005-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "iv",
+          "printed_page_system": "roman",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0005-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0005-01",
+              "order": 0,
+              "bbox_pt": [
+                86.411,
+                0.0,
+                225.6288,
+                26.3991
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0005-01-contents",
+              "type": "table",
+              "surface_id": "s-p0005-01",
+              "order": 1,
+              "bbox_pt": [
+                64.3282,
+                48.9583,
+                552.0705,
+                711.8146
+              ],
+              "group_refs": [],
+              "payload": {
+                "columns": 2,
+                "header_rows": 0,
+                "rows": [
+                  [
+                    {
+                      "text": "**Chapter Five: Electronics**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chapter Five: Electronics",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "125",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "125"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Concept of electronics",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Concept of electronics"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "125",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "125"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Band theory in solid materials",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Band theory in solid materials"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "128",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "128"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Classification of solid materials in terms of conductivity",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Classification of solid materials in terms of conductivity"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "129",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "129"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Types of semiconductors",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Types of semiconductors"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "132",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "132"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Diodes",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Diodes"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "140",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "140"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Transistors",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Transistors"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "146",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "146"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Electronic amplifiers",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Electronic amplifiers"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "150",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "150"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Chapter summary",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chapter summary"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "153",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "153"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Revision exercise 5",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Revision exercise 5"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "154",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "154"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Chapter Six: Elementary astronomy**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chapter Six: Elementary astronomy",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "157",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "157"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Concept of astronomy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Concept of astronomy"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "157",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "157"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Constellations",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Constellations"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "161",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "161"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "The solar system",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "The solar system"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "167",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "167"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Gravitational force",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Gravitational force"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "175",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "175"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "The Earth and its Moon",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "The Earth and its Moon"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "177",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "177"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Chapter summary",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chapter summary"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "183",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "183"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Revision exercise 6",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Revision exercise 6"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "184",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "184"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Chapter Seven: Physics of the Earth and its atmosphere**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chapter Seven: Physics of the Earth and its atmosphere",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "186",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "186"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "The concept of the Earth and its atmosphere",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "The concept of the Earth and its atmosphere"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "186",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "186"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "The structure and composition of the Earth",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "The structure and composition of the Earth"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "187",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "187"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Earthquakes and volcanoes",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Earthquakes and volcanoes"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "191",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "191"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Structure and composition of the atmosphere",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Structure and composition of the atmosphere"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "203",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "203"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "The greenhouse effect and global warming",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "The greenhouse effect and global warming"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "206",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "206"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Chapter summary",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chapter summary"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "211",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "211"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Revision exercise 7",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Revision exercise 7"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "212",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "212"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Answers to numerical questions**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Answers to numerical questions",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "214",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "214"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Appendix 1: Periodic table**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Appendix 1: Periodic table",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "216",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "216"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Glossary**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Glossary",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "217",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "217"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Bibliography**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Bibliography",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "223",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "223"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Index**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Index",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "224",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "224"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0005-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0005-01",
+              "order": 2,
+              "bbox_pt": [
+                79.2101,
+                777.5723,
+                100.8129,
+                796.7716
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "iv",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "iv"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [
+    {
+      "pdf_page": 5,
+      "surface_id": "s-p0005-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 3,
+    "types": {
+      "running_header": 1,
+      "table": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 0
+  }
+}

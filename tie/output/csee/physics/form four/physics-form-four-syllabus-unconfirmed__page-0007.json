@@ -1,7 +1,7 @@
 {
   "schema_version": "book-pages-1.1",
   "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
-  "status": "partial",
+  "status": "complete",
   "schema": {
     "registry": {
       "schema_version": "book-pages-1.1",
@@ -370,32 +370,252 @@
     "prompt_version": "books-extraction-1.1",
     "method": "visual",
     "requested_pdf_pages": [
-      1
+      7
     ],
-    "front_details_in_scope": true,
+    "front_details_in_scope": false,
     "runs": []
   },
   "pages": [
     {
-      "pdf_page": 1,
+      "pdf_page": 7,
       "width_pt": 595.2760009765625,
       "height_pt": 841.8900146484375,
       "rotation": 0,
-      "state": "pending",
-      "visual_qa": "pending",
-      "surfaces": []
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0007-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "vi",
+          "printed_page_system": "roman",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0007-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0007-01",
+              "order": 0,
+              "bbox_pt": [
+                100.8129,
+                20.1593,
+                230.4294,
+                40.7985
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-01-title",
+              "type": "heading",
+              "surface_id": "s-p0007-01",
+              "order": 1,
+              "bbox_pt": [
+                265.954,
+                65.7577,
+                337.003,
+                83.037
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 1,
+                "role": "other",
+                "text": "Preface",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Preface"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-01-intro",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 2,
+              "bbox_pt": [
+                76.3297,
+                131.0353,
+                533.8282,
+                212.6324
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "This textbook, *Physics for Secondary Schools* is written specifically for Form Four students in the United Republic of Tanzania. It is written in accordance with the 2007 Physics Syllabus for Ordinary Secondary Schools, Form I-IV, issued by the then Ministry of Education and Vocational Training.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This textbook, "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " is written specifically for Form Four students in the United Republic of Tanzania. It is written in accordance with the 2007 Physics Syllabus for Ordinary Secondary Schools, Form I-IV, issued by the then Ministry of Education and Vocational Training."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-01-overview",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 3,
+              "bbox_pt": [
+                78.25,
+                230.3918,
+                534.3082,
+                346.0677
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "The book consists of seven chapters, namely Waves, Electromagnetism, Physics of the atom, Thermionic emission, Electronics, Elementary astronomy and the Earth and the atmosphere. Each chapter contains illustrations, activities, tasks and exercises. You are encouraged to do all the activities, tasks and exercises as well as other assignments that your teacher will provide. Doing so will enable you to develop the intended competencies.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The book consists of seven chapters, namely Waves, Electromagnetism, Physics of the atom, Thermionic emission, Electronics, Elementary astronomy and the Earth and the atmosphere. Each chapter contains illustrations, activities, tasks and exercises. You are encouraged to do all the activities, tasks and exercises as well as other assignments that your teacher will provide. Doing so will enable you to develop the intended competencies."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-01-publisher",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 4,
+              "bbox_pt": [
+                355.2454,
+                378.2265,
+                533.8282,
+                390.7061
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "**Tanzania Institute of Education**",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Tanzania Institute of Education",
+                    "b": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0007-01",
+              "order": 5,
+              "bbox_pt": [
+                96.0123,
+                761.2529,
+                115.2147,
+                781.4122
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "vi",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "vi"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-01-footer",
+              "type": "running_footer",
+              "surface_id": "s-p0007-01",
+              "order": 6,
+              "bbox_pt": [
+                417.6533,
+                776.6123,
+                533.8282,
+                793.4117
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Student’s Book Form Four",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Student’s Book Form Four"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
     }
   ],
   "groups": [],
   "relations": [],
   "figures": [],
-  "exclusions": [],
+  "exclusions": [
+    {
+      "pdf_page": 7,
+      "surface_id": "s-p0007-01",
+      "bbox_pt": [
+        39.36502580645161,
+        532.8680322580645,
+        52.80674193548386,
+        590.4753870967742
+      ],
+      "reason": "acquisition_noise",
+      "description": "Finger along scan edge."
+    },
+    {
+      "pdf_page": 7,
+      "surface_id": "s-p0007-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
   "review": [],
   "stats": {
     "pdf_pages": 1,
-    "surfaces": 0,
-    "elements": 0,
-    "types": {},
+    "surfaces": 1,
+    "elements": 7,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "paragraph": 3,
+      "page_number": 1,
+      "running_footer": 1
+    },
     "figures": 0,
     "open_issues": 0
   }

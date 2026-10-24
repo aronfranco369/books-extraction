@@ -357,8 +357,8 @@
     "subject": "physics",
     "form": 4,
     "title_printed": null,
-    "language": null,
-    "edition_year_printed": null
+    "language": "en",
+    "edition_year_printed": "2022"
   },
   "source": {
     "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
@@ -398,15 +398,61 @@
           "printed_page_status": "observed",
           "elements": [
             {
-              "id": "e-p0003-01-number_ii",
-              "type": "page_number",
+              "id": "e-p0003-01-header",
+              "type": "running_header",
               "surface_id": "s-p0003-01",
               "order": 0,
               "bbox_pt": [
-                33.6043,
-                770.3726,
-                55.207,
-                799.1715
+                86.8911,
+                16.7994,
+                254.4325,
+                40.7985
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0003-01-year",
+              "type": "paragraph",
+              "surface_id": "s-p0003-01",
+              "order": 1,
+              "bbox_pt": [
+                86.8911,
+                167.514,
+                163.7009,
+                181.9135
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Published 2022",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Published 2022"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0003-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0003-01",
+              "order": 2,
+              "bbox_pt": [
+                86.411,
+                777.5723,
+                105.6135,
+                796.7716
               ],
               "group_refs": [],
               "payload": {
@@ -432,58 +478,60 @@
     {
       "pdf_page": 3,
       "surface_id": "s-p0003-01",
+      "bbox_pt": [
+        86.89109354838709,
+        64.80827419354839,
+        532.3879709677419,
+        721.5321193548386
+      ],
       "reason": "peripheral_front_matter_out_of_scope",
-      "bbox_pt": [
-        33.6,
-        67.2,
-        340.0,
-        720.0
-      ],
-      "description": "Copyright/imprint block: © Tanzania Institute of Education 2022, Published 2022, ISBN, publisher name, P.O. Box, address, mobile, e-mail, website, and 'All rights reserved' statement"
+      "description": "Copyright, ISBN, publisher address and contact details and rights statement; publication year retained separately."
     },
     {
       "pdf_page": 3,
       "surface_id": "s-p0003-01",
-      "reason": "acquisition_noise",
       "bbox_pt": [
+        33.604290322580646,
         0.0,
-        0.0,
-        200.0,
-        28.0
+        86.41103225806451,
+        88.33127741935483
       ],
-      "description": "Top scan-edge artifact, hand/finger, and partial green cover banner showing at top-left"
+      "reason": "acquisition_noise",
+      "description": "Scan edge and fingers."
     },
     {
       "pdf_page": 3,
       "surface_id": "s-p0003-01",
-      "reason": "acquisition_noise",
       "bbox_pt": [
-        100.0,
-        100.0,
-        540.0,
-        700.0
+        100.81287096774193,
+        100.81287096774193,
+        528.0674193548386,
+        624.0796774193548
       ],
-      "description": "Background page watermarks (faint cover bleed-through: large 'Physics', 'Form Four', and other reversed text)"
+      "reason": "acquisition_noise",
+      "description": "Faint reversed cover bleed-through."
     },
     {
       "pdf_page": 3,
       "surface_id": "s-p0003-01",
-      "reason": "acquisition_noise",
       "bbox_pt": [
-        485.0,
-        810.5,
-        576.0,
-        828.5
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
       ],
-      "description": "CamScanner watermark (bottom-right)"
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
     }
   ],
   "review": [],
   "stats": {
     "pdf_pages": 1,
     "surfaces": 1,
-    "elements": 1,
+    "elements": 3,
     "types": {
+      "running_header": 1,
+      "paragraph": 1,
       "page_number": 1
     },
     "figures": 0,

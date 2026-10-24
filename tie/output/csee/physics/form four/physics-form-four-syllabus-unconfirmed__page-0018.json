@@ -1,0 +1,894 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      18
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 18,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0018-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "11",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0018-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0018-01",
+              "order": 0,
+              "bbox_pt": [
+                456.0582,
+                12.9595,
+                489.6625,
+                34.0788
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-questions",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 1,
+              "bbox_pt": [
+                67.2086,
+                53.7581,
+                220.8282,
+                67.6776
+              ],
+              "group_refs": [
+                "g-g_questions"
+              ],
+              "payload": {
+                "level": 4,
+                "role": "other",
+                "text": "Questions",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-qs",
+              "type": "list",
+              "surface_id": "s-p0018-01",
+              "order": 2,
+              "bbox_pt": [
+                69.6089,
+                71.0375,
+                220.8282,
+                218.3922
+              ],
+              "group_refs": [
+                "g-g_questions"
+              ],
+              "payload": {
+                "style": "lettered",
+                "items": [
+                  {
+                    "label_printed": "(a)",
+                    "text": "What happens to the incident water waves when they reach the rectangular barrier?",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "What happens to the incident water waves when they reach the rectangular barrier?"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(b)",
+                    "text": "Describe the wave pattern produced when the incident water waves strike the concave or convex barriers.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Describe the wave pattern produced when the incident water waves strike the concave or convex barriers."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-reflection",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 3,
+              "bbox_pt": [
+                64.3282,
+                239.9915,
+                230.4294,
+                290.3897
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Reflection involves a change in the direction of waves when they fall on a barrier.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Reflection involves a change in the direction of waves when they fall on a barrier."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-ray",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 4,
+              "bbox_pt": [
+                64.3282,
+                308.629,
+                230.4294,
+                664.7763
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "The direction in which a wave is travelling is represented by an arrow. The arrow is called a ray and is drawn perpendicular to the wavefronts. Upon reaching the barrier placed within the water, water waves bounce off the barrier and head in a different direction. Regardless of the angle at which the wavefronts approach the barrier, the waves will always be reflected in such a way that the angle of incidence at the barrier with respect to the normal is equal to the angle at which the waves are reflected off the barrier (Figure 1.16). This is in accordance to the laws of reflection which states that:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The direction in which a wave is travelling is represented by an arrow. The arrow is called a ray and is drawn perpendicular to the wavefronts. Upon reaching the barrier placed within the water, water waves bounce off the barrier and head in a different direction. Regardless of the angle at which the wavefronts approach the barrier, the waves will always be reflected in such a way that the angle of incidence at the barrier with respect to the normal is equal to the angle at which the waves are reflected off the barrier (Figure 1.16). This is in accordance to the laws of reflection which states that:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-law1",
+              "type": "list",
+              "surface_id": "s-p0018-01",
+              "order": 5,
+              "bbox_pt": [
+                74.4095,
+                667.1762,
+                230.4294,
+                743.0135
+              ],
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Upon reflection from a straight barrier, the angle of the reflected ray, \\(r\\) is equal to the angle of",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Upon reflection from a straight barrier, the angle of the reflected ray, "
+                      },
+                      {
+                        "t": "math",
+                        "v": "r"
+                      },
+                      {
+                        "t": "text",
+                        "v": " is equal to the angle of"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-law1continued",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 6,
+              "bbox_pt": [
+                277.4754,
+                53.7581,
+                510.3052,
+                102.7163
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "incident ray, \\(i\\) with respect to the normal, \\(N\\) (a line that is perpendicular to the surface at the point of contact). That is, \\(i=r\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "incident ray, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "i"
+                  },
+                  {
+                    "t": "text",
+                    "v": " with respect to the normal, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "N"
+                  },
+                  {
+                    "t": "text",
+                    "v": " (a line that is perpendicular to the surface at the point of contact). That is, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "i=r"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-law2",
+              "type": "list",
+              "surface_id": "s-p0018-01",
+              "order": 7,
+              "bbox_pt": [
+                256.8328,
+                115.1959,
+                510.7852,
+                168.474
+              ],
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "2.",
+                    "text": "The incident line of propagation, the normal line and the reflected line of propagation all lie in the same plane.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The incident line of propagation, the normal line and the reflected line of propagation all lie in the same plane."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-reflectionfig",
+              "type": "figure",
+              "surface_id": "s-p0018-01",
+              "order": 8,
+              "bbox_pt": [
+                263.0736,
+                172.7938,
+                509.8251,
+                439.6643
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0018-01-reflectionfig"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0018-01",
+              "order": 9,
+              "bbox_pt": [
+                297.638,
+                446.3841,
+                477.661,
+                461.2636
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0018-01-reflectionfig"
+                ],
+                "text": "**Figure 1.16:** *Reflection of water waves*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.16:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Reflection of water waves",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-curved",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 10,
+              "bbox_pt": [
+                258.273,
+                477.583,
+                521.3466,
+                675.3359
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "When a *straight water wave* strikes a curved barrier, the principles of reflection still apply, but the pattern becomes more complex. Consider a rubber tube having the shape of a parabola placed within the water. Upon reflection on the parabolic barrier, the water wave will change direction and head towards a point known as the focal point. This is the point at which the wave energy concentrates. After passing through the focal point, the waves spread out as shown in Figure 1.17. This is also the case when circular water waves strike a straight or an outward curved (convex) barrier.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When a "
+                  },
+                  {
+                    "t": "text",
+                    "v": "straight water wave",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " strikes a curved barrier, the principles of reflection still apply, but the pattern becomes more complex. Consider a rubber tube having the shape of a parabola placed within the water. Upon reflection on the parabolic barrier, the water wave will change direction and head towards a point known as the focal point. This is the point at which the wave energy concentrates. After passing through the focal point, the waves spread out as shown in Figure 1.17. This is also the case when circular water waves strike a straight or an outward curved (convex) barrier."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-focusnote",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 11,
+              "bbox_pt": [
+                261.6334,
+                695.9752,
+                521.3466,
+                743.0135
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Note that the parabolic barrier focusses the water waves exactly at half the distance from the centre of curvature.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Note that the parabolic barrier focusses the water waves exactly at half the distance from the centre of curvature."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0018-01",
+              "order": 12,
+              "bbox_pt": [
+                489.6625,
+                753.5732,
+                513.6656,
+                777.5723
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "11",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "11"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-g_questions",
+      "kind": "activity",
+      "label_printed": null,
+      "title": "Activity 1.1 (continued)",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0018-01-questions",
+        "e-p0018-01-qs"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0018-01-law1continued",
+      "to_ref": "e-p0018-01-law1",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-law_continues"
+    },
+    {
+      "id": "r-caption-p0018-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0018-01-caption",
+      "to_ref": "e-p0018-01-reflectionfig",
+      "printed_text": "**Figure 1.16:** *Reflection of water waves*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0018-01-reflectionfig",
+      "kind": "diagram",
+      "page": 18,
+      "surface_id": "s-p0018-01",
+      "bbox": [
+        263.0736,
+        172.7938,
+        509.8251,
+        439.6643
+      ],
+      "bbox_norm": [
+        0.4419355048220025,
+        0.20524509970837043,
+        0.8564516277552287,
+        0.522234843447571
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0018-01-reflectionfig-c912366467b1.png",
+      "format": "png",
+      "pixel_size": [
+        515,
+        557
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0018-01-reflectionfig"
+      ],
+      "printed_label": "Figure 1.16",
+      "description": "Reflection of water waves, incident and reflected wavefronts, rays, angles i and r and normal N.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "c912366467b1132b73d438b698938d3b4da9f493c4ebb5791e5d208c65e614fc",
+      "transform": {
+        "clip_bbox_pt": [
+          263.0736083984375,
+          172.79379272460938,
+          509.8251037597656,
+          439.664306640625
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 18,
+      "surface_id": "s-p0018-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 13,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "list": 3,
+      "paragraph": 5,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

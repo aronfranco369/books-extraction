@@ -1,0 +1,1116 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      10
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 10,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0010-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "3",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0010-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0010-01",
+              "order": 0,
+              "bbox_pt": [
+                470.4601,
+                24.9591,
+                504.0644,
+                42.7185
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Waves",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Waves"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-period",
+              "type": "heading",
+              "surface_id": "s-p0010-01",
+              "order": 1,
+              "bbox_pt": [
+                60.0077,
+                55.678,
+                288.0368,
+                70.0775
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "5. Period",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "5. Period"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-perioddef",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 2,
+              "bbox_pt": [
+                60.0077,
+                71.9974,
+                288.0368,
+                213.1124
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "This is the time taken for the wave to travel from a crest to the next crest or from a trough to the next trough. It is also the time taken to make one complete cycle WXY as illustrated in Figure 1.3. Period is represented by the letter \\(T\\) and can be calculated by dividing the time of travel, \\(t\\) by the number of complete cycles, \\(n\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This is the time taken for the wave to travel from a crest to the next crest or from a trough to the next trough. It is also the time taken to make one complete cycle WXY as illustrated in Figure 1.3. Period is represented by the letter "
+                  },
+                  {
+                    "t": "math",
+                    "v": "T"
+                  },
+                  {
+                    "t": "text",
+                    "v": " and can be calculated by dividing the time of travel, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "t"
+                  },
+                  {
+                    "t": "text",
+                    "v": " by the number of complete cycles, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "n"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-periodformula",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 3,
+              "bbox_pt": [
+                60.0077,
+                216.9523,
+                288.0368,
+                262.5506
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "That is, \\(T=\\tfrac{t}{n}\\). The SI unit of period is second (s).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "That is, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "T=\\tfrac{t}{n}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". The SI unit of period is second (s)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-periodgraph",
+              "type": "figure",
+              "surface_id": "s-p0010-01",
+              "order": 4,
+              "bbox_pt": [
+                57.6074,
+                263.9906,
+                287.0767,
+                436.3045
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0010-01-periodgraph"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-caption",
+              "type": "caption",
+              "surface_id": "s-p0010-01",
+              "order": 5,
+              "bbox_pt": [
+                106.0935,
+                437.2644,
+                283.2362,
+                452.1439
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0010-01-periodgraph"
+                ],
+                "text": "**Figure 1.3:** *Period of a wave*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.3:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Period of a wave",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-frequency",
+              "type": "heading",
+              "surface_id": "s-p0010-01",
+              "order": 6,
+              "bbox_pt": [
+                62.408,
+                470.3832,
+                288.0368,
+                485.7427
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "6. Frequency",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "6. Frequency"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-freqdef",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 7,
+              "bbox_pt": [
+                61.9279,
+                486.2227,
+                288.0368,
+                584.6192
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "The number of waves that pass a certain point per specified amount of time is referred to as *frequency*, represented by the letter \\(f\\). Frequency can be expressed as the number of wave cycles completed in one second. That is,",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The number of waves that pass a certain point per specified amount of time is referred to as "
+                  },
+                  {
+                    "t": "text",
+                    "v": "frequency",
+                    "i": true
+                  },
+                  {
+                    "t": "text",
+                    "v": ", represented by the letter "
+                  },
+                  {
+                    "t": "math",
+                    "v": "f"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Frequency can be expressed as the number of wave cycles completed in one second. That is,"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-freqformula",
+              "type": "math",
+              "surface_id": "s-p0010-01",
+              "order": 8,
+              "bbox_pt": [
+                75.3696,
+                587.0191,
+                288.0368,
+                633.0975
+              ],
+              "group_refs": [],
+              "payload": {
+                "latex": "Frequency,\\ f=\\frac{Number\\ of\\ cycles}{Time}=\\frac{n}{t},"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-periodrelation",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 9,
+              "bbox_pt": [
+                69.1288,
+                643.6571,
+                268.8343,
+                656.1366
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "From the definition of period, \\(t=nT\\)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "From the definition of period, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "t=nT"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-thus",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 10,
+              "bbox_pt": [
+                69.1288,
+                669.5762,
+                288.0368,
+                703.175
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Thus, \\(f=\\tfrac{n}{nT}=\\tfrac{1}{T}\\)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Thus, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "f=\\tfrac{n}{nT}=\\tfrac{1}{T}"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-hence",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 11,
+              "bbox_pt": [
+                70.569,
+                708.9348,
+                288.0368,
+                738.6937
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Hence, \\(f=\\tfrac{1}{T}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Hence, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "f=\\tfrac{1}{T}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-freqcontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 12,
+              "bbox_pt": [
+                306.2791,
+                55.678,
+                529.9877,
+                129.5954
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "This is the relationship between the period, \\(T\\) and frequency, \\(f\\) of a wave. Since \\(T\\) is measured in seconds, then the SI unit of frequency is cycles per second.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This is the relationship between the period, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "T"
+                  },
+                  {
+                    "t": "text",
+                    "v": " and frequency, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "f"
+                  },
+                  {
+                    "t": "text",
+                    "v": " of a wave. Since "
+                  },
+                  {
+                    "t": "math",
+                    "v": "T"
+                  },
+                  {
+                    "t": "text",
+                    "v": " is measured in seconds, then the SI unit of frequency is cycles per second."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-freqexample",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 13,
+              "bbox_pt": [
+                306.2791,
+                146.3948,
+                529.9877,
+                262.5506
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "For example, if the end of the rope is moved up and down thrice in a second, three waves are produced in this time. Therefore, the frequency of the wave is 3 wave cycles per second. The SI unit of frequency is also known as Hertz (Hz). One Hertz is the same as one cycle per second",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For example, if the end of the rope is moved up and down thrice in a second, three waves are produced in this time. Therefore, the frequency of the wave is 3 wave cycles per second. The SI unit of frequency is also known as Hertz (Hz). One Hertz is the same as one cycle per second"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-velocity",
+              "type": "heading",
+              "surface_id": "s-p0010-01",
+              "order": 14,
+              "bbox_pt": [
+                306.2791,
+                284.1499,
+                528.5475,
+                301.9092
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "7. Wave velocity",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "7. Wave velocity"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-velocitydef",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 15,
+              "bbox_pt": [
+                306.2791,
+                303.3492,
+                528.5475,
+                403.1856
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "This is the velocity at which the wave moves through a medium. It is commonly referred to as speed. It is the distance travelled by a wave per unit time. The SI unit of wave velocity is metre per second (\\(\\mathrm{m\\,s^{-1}}\\)).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This is the velocity at which the wave moves through a medium. It is commonly referred to as speed. It is the distance travelled by a wave per unit time. The SI unit of wave velocity is metre per second ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\mathrm{m\\,s^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ")."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-phase",
+              "type": "heading",
+              "surface_id": "s-p0010-01",
+              "order": 16,
+              "bbox_pt": [
+                306.2791,
+                417.5851,
+                528.5475,
+                433.9045
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 4,
+                "role": "subsection",
+                "text": "8. Phase",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "8. Phase"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-phasedef",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 17,
+              "bbox_pt": [
+                306.2791,
+                437.2644,
+                526.1472,
+                633.0975
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "It refers to the angle-like quantity that represents the fraction of a cycle covered in a certain time, \\(t\\). Phase is normally denoted by “phi”, \\(\\phi\\). If we consider the points W, X, Y and Z, in Figure 1.3, the velocity of particles corresponding to points W and Y is the same in magnitude and direction. Thus, W and Y are said to be in phase. At points W and X, the particle has the same velocity in magnitude but it takes different directions. Therefore, at these points the wave is out of phase.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "It refers to the angle-like quantity that represents the fraction of a cycle covered in a certain time, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "t"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Phase is normally denoted by “phi”, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\phi"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". If we consider the points W, X, Y and Z, in Figure 1.3, the velocity of particles corresponding to points W and Y is the same in magnitude and direction. Thus, W and Y are said to be in phase. At points W and X, the particle has the same velocity in magnitude but it takes different directions. Therefore, at these points the wave is out of phase."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-relationship",
+              "type": "heading",
+              "surface_id": "s-p0010-01",
+              "order": 18,
+              "bbox_pt": [
+                306.2791,
+                656.6166,
+                525.1871,
+                669.0962
+              ],
+              "group_refs": [],
+              "payload": {
+                "level": 3,
+                "role": "subsection",
+                "text": "Relationship between wave parameters",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Relationship between wave parameters"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-relationshipintro",
+              "type": "paragraph",
+              "surface_id": "s-p0010-01",
+              "order": 19,
+              "bbox_pt": [
+                306.2791,
+                669.5762,
+                525.1871,
+                738.6937
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "When a wave completes one cycle, it has travelled a distance, \\(l=\\lambda\\). Since the time taken to complete one cycle is \\(T\\), then wave speed can be determined from the",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When a wave completes one cycle, it has travelled a distance, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "l=\\lambda"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Since the time taken to complete one cycle is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "T"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", then wave speed can be determined from the"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0010-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0010-01",
+              "order": 20,
+              "bbox_pt": [
+                489.6625,
+                755.4931,
+                518.4662,
+                777.5723
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "3",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-caption-p0010-01-caption-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0010-01-caption",
+      "to_ref": "e-p0010-01-periodgraph",
+      "printed_text": "**Figure 1.3:** *Period of a wave*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0010-01-periodgraph",
+      "kind": "graph",
+      "page": 10,
+      "surface_id": "s-p0010-01",
+      "bbox": [
+        57.6074,
+        263.9906,
+        287.0767,
+        436.3045
+      ],
+      "bbox_norm": [
+        0.0967742692557635,
+        0.31356898811804895,
+        0.482258145010121,
+        0.5182440608731952
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0010-01-periodgraph-1485bb2def7b.png",
+      "format": "png",
+      "pixel_size": [
+        479,
+        360
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0010-01-periodgraph"
+      ],
+      "printed_label": "Figure 1.3",
+      "description": "Displacement-time wave graph showing period T and points W, X, Y, Z.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "1485bb2def7bbb008c951dd824c0e50f7f02bd94e113e85cd781845cd7ab085a",
+      "transform": {
+        "clip_bbox_pt": [
+          57.607398986816406,
+          263.9906005859375,
+          287.0766906738281,
+          436.30450439453125
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 10,
+      "surface_id": "s-p0010-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 21,
+    "types": {
+      "running_header": 1,
+      "heading": 5,
+      "paragraph": 11,
+      "figure": 1,
+      "caption": 1,
+      "math": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 0
+  }
+}

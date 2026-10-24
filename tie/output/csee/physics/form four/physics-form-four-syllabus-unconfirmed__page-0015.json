@@ -1,0 +1,856 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      15
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 15,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0015-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "8",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0015-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0015-01",
+              "order": 0,
+              "bbox_pt": [
+                99.8527,
+                15.3595,
+                235.23,
+                32.6388
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-fixedcontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0015-01",
+              "order": 1,
+              "bbox_pt": [
+                65.2883,
+                57.118,
+                294.2776,
+                88.3169
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "amplitudes of both the incident and reflected waves are the same.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "amplitudes of both the incident and reflected waves are the same."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-free",
+              "type": "paragraph",
+              "surface_id": "s-p0015-01",
+              "order": 2,
+              "bbox_pt": [
+                65.2883,
+                107.9962,
+                294.2776,
+                213.1124
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "If the right end of the string is tied to a ring, which can slide up and down on a rod without any friction, the end is termed as a free end. In this case, when the wave arrives at the free end, the ring moves up and down. The motion of the free",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If the right end of the string is tied to a ring, which can slide up and down on a rod without any friction, the end is termed as a free end. In this case, when the wave arrives at the free end, the ring moves up and down. The motion of the free"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-freecontinued",
+              "type": "paragraph",
+              "surface_id": "s-p0015-01",
+              "order": 3,
+              "bbox_pt": [
+                313.48,
+                57.118,
+                544.3895,
+                213.1124
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "end results into a reflected wave which is not inverted. The reflected wave will have the same speed and wavelength as the incident wave. However, the reflected wave will have a smaller amplitude as shown in Figure 1.10 (b). The decrease in amplitude indicates that the wave lost some of its energy at the boundary.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "end results into a reflected wave which is not inverted. The reflected wave will have the same speed and wavelength as the incident wave. However, the reflected wave will have a smaller amplitude as shown in Figure 1.10 (b). The decrease in amplitude indicates that the wave lost some of its energy at the boundary."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-ends",
+              "type": "figure",
+              "surface_id": "s-p0015-01",
+              "order": 4,
+              "bbox_pt": [
+                67.6886,
+                226.0719,
+                535.7484,
+                408.4655
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0015-01-ends"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-capends",
+              "type": "caption",
+              "surface_id": "s-p0015-01",
+              "order": 5,
+              "bbox_pt": [
+                144.9785,
+                415.6652,
+                458.9386,
+                433.4246
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0015-01-ends"
+                ],
+                "text": "**Figure 1.10:** *Reflection of waves at fixed and free ends of a string*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.10:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Reflection of waves at fixed and free ends of a string",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-boundary",
+              "type": "paragraph",
+              "surface_id": "s-p0015-01",
+              "order": 6,
+              "bbox_pt": [
+                68.1687,
+                439.1844,
+                535.7484,
+                593.7389
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "When a wave encounters a boundary that allows it to pass through, part of the wave will be reflected and part will be transmitted into the new medium. Consider two ropes of different thicknesses tied together end-to-end and suppose that, a transverse wave is produced in the thinner rope. When the wave reaches the boundary between the two ropes, it will split into an inverted reflected wave and an upright transmitted wave. The reflected wave will have the same speed and wavelength as the incident wave. The transmitted wave will have a lower speed and a shorter wavelength than the incident wave. Each wave will have an amplitude less than that of the incident wave since the energy of the incident wave is split into the two waves. See Figure 1.11.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When a wave encounters a boundary that allows it to pass through, part of the wave will be reflected and part will be transmitted into the new medium. Consider two ropes of different thicknesses tied together end-to-end and suppose that, a transverse wave is produced in the thinner rope. When the wave reaches the boundary between the two ropes, it will split into an inverted reflected wave and an upright transmitted wave. The reflected wave will have the same speed and wavelength as the incident wave. The transmitted wave will have a lower speed and a shorter wavelength than the incident wave. Each wave will have an amplitude less than that of the incident wave since the energy of the incident wave is split into the two waves. See Figure 1.11."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-denser",
+              "type": "figure",
+              "surface_id": "s-p0015-01",
+              "order": 7,
+              "bbox_pt": [
+                148.819,
+                599.4986,
+                470.4601,
+                688.2955
+              ],
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0015-01-denser"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-capdenser",
+              "type": "caption",
+              "surface_id": "s-p0015-01",
+              "order": 8,
+              "bbox_pt": [
+                90.2515,
+                691.1754,
+                518.4662,
+                711.3347
+              ],
+              "group_refs": [],
+              "payload": {
+                "target_refs": [
+                  "e-p0015-01-denser"
+                ],
+                "text": "**Figure 1.11:** *Reflection of a wave travelling from a less dense medium to a denser medium*",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.11:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Reflection of a wave travelling from a less dense medium to a denser medium",
+                    "i": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-lessdense",
+              "type": "paragraph",
+              "surface_id": "s-p0015-01",
+              "order": 9,
+              "bbox_pt": [
+                71.5291,
+                715.6545,
+                529.9877,
+                754.5331
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "If the new medium has a lower density, the reflected wave will not be inverted, as illustrated in Figure 1.12. It will have the same speed and wavelength as the incident",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If the new medium has a lower density, the reflected wave will not be inverted, as illustrated in Figure 1.12. It will have the same speed and wavelength as the incident"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0015-01",
+              "order": 10,
+              "bbox_pt": [
+                81.6104,
+                755.9731,
+                105.6135,
+                777.5723
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "8",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "8"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0015-01-footer",
+              "type": "running_footer",
+              "surface_id": "s-p0015-01",
+              "order": 11,
+              "bbox_pt": [
+                408.0521,
+                775.1724,
+                525.6671,
+                794.3717
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Student’s Book Form Four",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Student’s Book Form Four"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "kind": "continues",
+      "from_ref": "e-p0015-01-freecontinued",
+      "to_ref": "e-p0015-01-free",
+      "resolution": "resolved",
+      "printed_text": null,
+      "id": "r-free_continues"
+    },
+    {
+      "kind": "continues",
+      "from_ref": "e-p0015-01-fixedcontinued",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+        "pdf_page": 14,
+        "printed_page": "7",
+        "label_printed": null
+      },
+      "id": "r-fixed_continues"
+    },
+    {
+      "id": "r-caption-p0015-01-capends-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0015-01-capends",
+      "to_ref": "e-p0015-01-ends",
+      "printed_text": "**Figure 1.10:** *Reflection of waves at fixed and free ends of a string*",
+      "resolution": "resolved"
+    },
+    {
+      "id": "r-caption-p0015-01-capdenser-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0015-01-capdenser",
+      "to_ref": "e-p0015-01-denser",
+      "printed_text": "**Figure 1.11:** *Reflection of a wave travelling from a less dense medium to a denser medium*",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0015-01-ends",
+      "kind": "diagram",
+      "page": 15,
+      "surface_id": "s-p0015-01",
+      "bbox": [
+        67.6886,
+        226.0719,
+        535.7484,
+        408.4655
+      ],
+      "bbox_norm": [
+        0.11370960678568505,
+        0.26852901930949347,
+        0.8999999985235314,
+        0.4851767961288506
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0015-01-ends-a26236d973f6.png",
+      "format": "png",
+      "pixel_size": [
+        976,
+        381
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0015-01-ends"
+      ],
+      "printed_label": "Figure 1.10",
+      "description": "(a) Fixed end, (b) Free end: incident and reflected waves and direction arrows.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "a26236d973f6a7c5fd2af6f3e50684a1f2362e29ab8b69d7da26ac9d552ce6eb",
+      "transform": {
+        "clip_bbox_pt": [
+          67.6885986328125,
+          226.0718994140625,
+          535.7484130859375,
+          408.46551513671875
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    },
+    {
+      "id": "f-p0015-01-denser",
+      "kind": "diagram",
+      "page": 15,
+      "surface_id": "s-p0015-01",
+      "bbox": [
+        148.819,
+        599.4986,
+        470.4601,
+        688.2955
+      ],
+      "bbox_norm": [
+        0.24999999958986985,
+        0.71208660225094,
+        0.7903226389577281,
+        0.8175598807730524
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0015-01-denser-e281de064982.png",
+      "format": "png",
+      "pixel_size": [
+        671,
+        186
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0015-01-denser"
+      ],
+      "printed_label": "Figure 1.11",
+      "description": "Incident, inverted reflected and transmitted waves at a less dense to denser boundary.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "e281de06498230cedc6c912b644bbe222a08e0b418d4811d9363ce2afad4556b",
+      "transform": {
+        "clip_bbox_pt": [
+          148.81900024414062,
+          599.4985961914062,
+          470.4601135253906,
+          688.2954711914062
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 15,
+      "surface_id": "s-p0015-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 12,
+    "types": {
+      "running_header": 1,
+      "paragraph": 5,
+      "figure": 2,
+      "caption": 2,
+      "page_number": 1,
+      "running_footer": 1
+    },
+    "figures": 2,
+    "open_issues": 0
+  }
+}

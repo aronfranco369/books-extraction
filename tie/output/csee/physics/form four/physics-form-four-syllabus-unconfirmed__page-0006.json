@@ -1,7 +1,7 @@
 {
   "schema_version": "book-pages-1.1",
   "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
-  "status": "partial",
+  "status": "complete",
   "schema": {
     "registry": {
       "schema_version": "book-pages-1.1",
@@ -370,22 +370,22 @@
     "prompt_version": "books-extraction-1.1",
     "method": "visual",
     "requested_pdf_pages": [
-      2
+      6
     ],
     "front_details_in_scope": false,
     "runs": []
   },
   "pages": [
     {
-      "pdf_page": 2,
+      "pdf_page": 6,
       "width_pt": 595.2760009765625,
       "height_pt": 841.8900146484375,
       "rotation": 0,
-      "state": "transcribed",
-      "visual_qa": "pending",
+      "state": "verified",
+      "visual_qa": "passed",
       "surfaces": [
         {
-          "id": "s-p0002-01",
+          "id": "s-p0006-01",
           "order": 0,
           "bbox_pt": [
             0,
@@ -393,128 +393,270 @@
             595.2760009765625,
             841.8900146484375
           ],
-          "printed_page": null,
-          "printed_page_system": "none",
-          "printed_page_status": "not_printed",
+          "printed_page": "v",
+          "printed_page_system": "roman",
+          "printed_page_status": "observed",
           "elements": [
             {
-              "id": "e-p0002-01-heading_physics",
+              "id": "e-p0006-01-title",
               "type": "heading",
-              "surface_id": "s-p0002-01",
+              "surface_id": "s-p0006-01",
               "order": 0,
               "bbox_pt": [
-                96.0123,
-                33.5988,
-                470.4601,
-                98.3965
+                212.6672,
+                42.2385,
+                391.73,
+                73.4374
               ],
               "group_refs": [],
               "payload": {
                 "level": 1,
-                "role": "title",
-                "text": "Physics",
+                "role": "other",
+                "text": "Acknowledgements",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "Physics"
+                    "v": "Acknowledgements"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-heading_for_secondary",
-              "type": "heading",
-              "surface_id": "s-p0002-01",
+              "id": "e-p0006-01-intro",
+              "type": "paragraph",
+              "surface_id": "s-p0006-01",
               "order": 1,
               "bbox_pt": [
-                136.8175,
-                101.7564,
-                357.6457,
-                119.0358
+                66.7285,
+                91.1968,
+                524.707,
+                231.8317
               ],
               "group_refs": [],
               "payload": {
-                "level": 2,
-                "role": "other",
-                "text": "for Secondary Schools",
+                "text": "The Tanzania Institute of Education (TIE) would like to acknowledge the contributions of all the organisations and individuals who participated in designing and developing this textbook. In particular, TIE wishes to thank the University of Dar-es-Salaam (UDSM), the University of Dodoma (UDOM), Mkwawa University College of Education (MUCE), Tanzania Atomic Energy Commission (TAEC), School Quality Assurance (SQA) Department, Teachers’ colleges and secondary schools. Besides, the following categories of individuals are acknowledged:",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "for Secondary Schools"
+                    "v": "The Tanzania Institute of Education (TIE) would like to acknowledge the contributions of all the organisations and individuals who participated in designing and developing this textbook. In particular, TIE wishes to thank the University of Dar-es-Salaam (UDSM), the University of Dodoma (UDOM), Mkwawa University College of Education (MUCE), Tanzania Atomic Energy Commission (TAEC), School Quality Assurance (SQA) Department, Teachers’ colleges and secondary schools. Besides, the following categories of individuals are acknowledged:"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-heading_students_book",
-              "type": "heading",
-              "surface_id": "s-p0002-01",
+              "id": "e-p0006-01-credits",
+              "type": "table",
+              "surface_id": "s-p0006-01",
               "order": 2,
               "bbox_pt": [
-                180.023,
-                141.595,
-                300.0383,
-                159.3543
+                67.2086,
+                237.1116,
+                521.8266,
+                474.7031
               ],
               "group_refs": [],
               "payload": {
-                "level": 2,
-                "role": "other",
-                "text": "Student's Book",
-                "runs": [
-                  {
-                    "t": "text",
-                    "v": "Student's Book"
-                  }
+                "columns": 2,
+                "header_rows": 0,
+                "rows": [
+                  [
+                    {
+                      "text": "**Writers:**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Writers:",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Ms Auguster F. Kayombo (TIE), Mr Shaban J. Baya (TIE), Dr Emmanuel D. Sulungu (UDOM), Mr Daudi T. Mazengo (UDOM) & Mr Mkomwa A. Mtiga (Loyola high school)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Ms Auguster F. Kayombo (TIE), Mr Shaban J. Baya (TIE), Dr Emmanuel D. Sulungu (UDOM), Mr Daudi T. Mazengo (UDOM) & Mr Mkomwa A. Mtiga (Loyola high school)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Editors:**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Editors:",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Dr Ismael N. Makundi (UDSM), Dr Innocent J. Lugendo (UDSM), Dr Talam E. Kibona (MUCE), Dr Bernard S. Mwankemwa (UDOM), Dr Suleiman A. Suleiman (TAEC), Mr Tungu C. Chagu (MOTCO) & Mr Alphonce A. Mbalwa (Marian girls’ secondary school)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Dr Ismael N. Makundi (UDSM), Dr Innocent J. Lugendo (UDSM), Dr Talam E. Kibona (MUCE), Dr Bernard S. Mwankemwa (UDOM), Dr Suleiman A. Suleiman (TAEC), Mr Tungu C. Chagu (MOTCO) & Mr Alphonce A. Mbalwa (Marian girls’ secondary school)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Designer:**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Designer:",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Mr Amani J. Kweka",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Mr Amani J. Kweka"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Illustrators:**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Illustrators:",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Mr Fikiri A. Msimbe (TIE), Ms Rehema H. Maganga (TIE), Mr Godlove S. Kyando (TIE) & Alama Art and Media Production Co. Ltd",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Mr Fikiri A. Msimbe (TIE), Ms Rehema H. Maganga (TIE), Mr Godlove S. Kyando (TIE) & Alama Art and Media Production Co. Ltd"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "**Coordinator:**",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Coordinator:",
+                          "b": true
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Ms Auguster F. Kayombo",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Ms Auguster F. Kayombo"
+                        }
+                      ]
+                    }
+                  ]
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-heading_form_four",
-              "type": "heading",
-              "surface_id": "s-p0002-01",
+              "id": "e-p0006-01-thanks",
+              "type": "paragraph",
+              "surface_id": "s-p0006-01",
               "order": 3,
               "bbox_pt": [
-                136.8175,
-                167.994,
-                357.6457,
-                195.833
+                69.1288,
+                485.7427,
+                518.9463,
+                552.9403
               ],
               "group_refs": [],
               "payload": {
-                "level": 2,
-                "role": "other",
-                "text": "Form Four",
+                "text": "Furthermore, TIE extends its sincere appreciation to the United States Agency for International Development (USAID)-Tanzania for granting permission to use the materials from 2011 Physics for Secondary Schools, Forms 4, (Revised Edition) textbook.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "Form Four"
+                    "v": "Furthermore, TIE extends its sincere appreciation to the United States Agency for International Development (USAID)-Tanzania for granting permission to use the materials from 2011 Physics for Secondary Schools, Forms 4, (Revised Edition) textbook."
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0002-01-text_publisher",
+              "id": "e-p0006-01-thanks2",
               "type": "paragraph",
-              "surface_id": "s-p0002-01",
+              "surface_id": "s-p0006-01",
               "order": 4,
               "bbox_pt": [
-                160.8205,
-                789.5719,
-                475.2607,
-                806.3713
+                69.1288,
+                569.7397,
+                520.8665,
+                642.6971
               ],
               "group_refs": [],
               "payload": {
-                "text": "Tanzania Institute of Education",
+                "text": "TIE also appreciates the participation of the secondary school teachers and students in the trial phase of the manuscript. Likewise, the Institute would like to thank the Ministry of Education, Science and Technology for facilitating the writing and printing of this textbook.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "Tanzania Institute of Education"
+                    "v": "TIE also appreciates the participation of the secondary school teachers and students in the trial phase of the manuscript. Likewise, the Institute would like to thank the Ministry of Education, Science and Technology for facilitating the writing and printing of this textbook."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0006-01-signatory",
+              "type": "paragraph",
+              "surface_id": "s-p0006-01",
+              "order": 5,
+              "bbox_pt": [
+                73.4494,
+                701.735,
+                249.6319,
+                747.8134
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Dr Aneth A. Komba\nDirector General\nTanzania Institute of Education",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Dr Aneth A. Komba\nDirector General\nTanzania Institute of Education"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0006-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0006-01",
+              "order": 6,
+              "bbox_pt": [
+                487.2622,
+                743.9735,
+                511.2653,
+                767.9726
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "v",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "v"
                   }
                 ]
               },
@@ -530,50 +672,40 @@
   "figures": [],
   "exclusions": [
     {
-      "pdf_page": 2,
-      "surface_id": "s-p0002-01",
+      "pdf_page": 6,
+      "surface_id": "s-p0006-01",
+      "bbox_pt": [
+        83.05060322580644,
+        668.2453161290322,
+        177.62267741935483,
+        694.1686258064516
+      ],
       "reason": "peripheral_front_matter_out_of_scope",
-      "bbox_pt": [
-        100.8,
-        206.4,
-        460.8,
-        758.5
-      ],
-      "description": "Certificate of Approval image (ISBN, publisher, author, approval statement, signature) — copyright/approval peripheral front matter"
+      "description": "Administrative signature."
     },
     {
-      "pdf_page": 2,
-      "surface_id": "s-p0002-01",
-      "reason": "acquisition_noise",
+      "pdf_page": 6,
+      "surface_id": "s-p0006-01",
       "bbox_pt": [
-        485.0,
-        810.5,
-        576.0,
-        828.5
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
       ],
-      "description": "CamScanner watermark (bottom-right)"
-    },
-    {
-      "pdf_page": 2,
-      "surface_id": "s-p0002-01",
       "reason": "acquisition_noise",
-      "bbox_pt": [
-        37.0,
-        26.4,
-        558.2,
-        57.4
-      ],
-      "description": "Top scan-edge / light watermark band"
+      "description": "CamScanner watermark."
     }
   ],
   "review": [],
   "stats": {
     "pdf_pages": 1,
     "surfaces": 1,
-    "elements": 5,
+    "elements": 7,
     "types": {
-      "heading": 4,
-      "paragraph": 1
+      "heading": 1,
+      "paragraph": 4,
+      "table": 1,
+      "page_number": 1
     },
     "figures": 0,
     "open_issues": 0

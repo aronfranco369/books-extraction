@@ -356,9 +356,9 @@
     "level": "csee",
     "subject": "physics",
     "form": 4,
-    "title_printed": null,
-    "language": null,
-    "edition_year_printed": null
+    "title_printed": "Physics For Secondary Schools Student’s Book Form Four",
+    "language": "en",
+    "edition_year_printed": "2022"
   },
   "source": {
     "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
@@ -370,122 +370,222 @@
     "prompt_version": "books-extraction-1.1",
     "method": "visual",
     "requested_pdf_pages": [
-      3
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
     ],
-    "front_details_in_scope": false,
+    "front_details_in_scope": true,
     "runs": []
   },
   "pages": [
+    {
+      "pdf_page": 1,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 2,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
     {
       "pdf_page": 3,
       "width_pt": 595.2760009765625,
       "height_pt": 841.8900146484375,
       "rotation": 0,
-      "state": "transcribed",
+      "state": "pending",
       "visual_qa": "pending",
-      "surfaces": [
-        {
-          "id": "s-p0003-01",
-          "order": 0,
-          "bbox_pt": [
-            0,
-            0,
-            595.2760009765625,
-            841.8900146484375
-          ],
-          "printed_page": "ii",
-          "printed_page_system": "roman",
-          "printed_page_status": "observed",
-          "elements": [
-            {
-              "id": "e-p0003-01-number_ii",
-              "type": "page_number",
-              "surface_id": "s-p0003-01",
-              "order": 0,
-              "bbox_pt": [
-                33.6043,
-                770.3726,
-                55.207,
-                799.1715
-              ],
-              "group_refs": [],
-              "payload": {
-                "text": "ii",
-                "runs": [
-                  {
-                    "t": "text",
-                    "v": "ii"
-                  }
-                ]
-              },
-              "legibility": "clear"
-            }
-          ]
-        }
-      ]
+      "surfaces": []
+    },
+    {
+      "pdf_page": 4,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 5,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 6,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 7,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 8,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 9,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 10,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 11,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 12,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 13,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 14,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 15,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 16,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 17,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 18,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 19,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
+    },
+    {
+      "pdf_page": 20,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "pending",
+      "visual_qa": "pending",
+      "surfaces": []
     }
   ],
   "groups": [],
   "relations": [],
   "figures": [],
-  "exclusions": [
-    {
-      "pdf_page": 3,
-      "surface_id": "s-p0003-01",
-      "reason": "peripheral_front_matter_out_of_scope",
-      "bbox_pt": [
-        33.6,
-        67.2,
-        340.0,
-        720.0
-      ],
-      "description": "Copyright/imprint block: © Tanzania Institute of Education 2022, Published 2022, ISBN, publisher name, P.O. Box, address, mobile, e-mail, website, and 'All rights reserved' statement"
-    },
-    {
-      "pdf_page": 3,
-      "surface_id": "s-p0003-01",
-      "reason": "acquisition_noise",
-      "bbox_pt": [
-        0.0,
-        0.0,
-        200.0,
-        28.0
-      ],
-      "description": "Top scan-edge artifact, hand/finger, and partial green cover banner showing at top-left"
-    },
-    {
-      "pdf_page": 3,
-      "surface_id": "s-p0003-01",
-      "reason": "acquisition_noise",
-      "bbox_pt": [
-        100.0,
-        100.0,
-        540.0,
-        700.0
-      ],
-      "description": "Background page watermarks (faint cover bleed-through: large 'Physics', 'Form Four', and other reversed text)"
-    },
-    {
-      "pdf_page": 3,
-      "surface_id": "s-p0003-01",
-      "reason": "acquisition_noise",
-      "bbox_pt": [
-        485.0,
-        810.5,
-        576.0,
-        828.5
-      ],
-      "description": "CamScanner watermark (bottom-right)"
-    }
-  ],
+  "exclusions": [],
   "review": [],
   "stats": {
-    "pdf_pages": 1,
-    "surfaces": 1,
-    "elements": 1,
-    "types": {
-      "page_number": 1
-    },
+    "pdf_pages": 20,
+    "surfaces": 0,
+    "elements": 0,
+    "types": {},
     "figures": 0,
     "open_issues": 0
   }

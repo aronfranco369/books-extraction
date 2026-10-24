@@ -1,0 +1,1555 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-four-syllabus-unconfirmed-efa0b6eda0ac",
+  "status": "complete",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 4,
+    "title_printed": null,
+    "language": null,
+    "edition_year_printed": null
+  },
+  "source": {
+    "pdf": "tie/books/csee/physics/Physics_Form-four_syllabus-unconfirmed.pdf",
+    "sha256": "efa0b6eda0ac6e3edc18f649a4dba453a61ec010eaf6e7946d1eed77e8caaec7",
+    "pdf_page_count": 234,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "prompt_version": "books-extraction-1.1",
+    "method": "visual",
+    "requested_pdf_pages": [
+      11
+    ],
+    "front_details_in_scope": false,
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 11,
+      "width_pt": 595.2760009765625,
+      "height_pt": 841.8900146484375,
+      "rotation": 0,
+      "state": "verified",
+      "visual_qa": "passed",
+      "surfaces": [
+        {
+          "id": "s-p0011-01",
+          "order": 0,
+          "bbox_pt": [
+            0,
+            0,
+            595.2760009765625,
+            841.8900146484375
+          ],
+          "printed_page": "4",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0011-01-header",
+              "type": "running_header",
+              "surface_id": "s-p0011-01",
+              "order": 0,
+              "bbox_pt": [
+                93.612,
+                11.9996,
+                228.0291,
+                28.799
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-relation",
+              "type": "paragraph",
+              "surface_id": "s-p0011-01",
+              "order": 1,
+              "bbox_pt": [
+                63.3681,
+                56.158,
+                292.8374,
+                72.4774
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "relation,",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "relation,"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-speed",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 2,
+              "bbox_pt": [
+                104.6534,
+                71.9974,
+                172.8221,
+                98.8765
+              ],
+              "group_refs": [],
+              "payload": {
+                "latex": "v=\\frac{\\lambda}{T}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-but",
+              "type": "paragraph",
+              "surface_id": "s-p0011-01",
+              "order": 3,
+              "bbox_pt": [
+                63.8482,
+                118.5558,
+                292.8374,
+                150.2346
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "But \\(f=\\tfrac{1}{T}\\)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "But "
+                  },
+                  {
+                    "t": "math",
+                    "v": "f=\\tfrac{1}{T}"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-therefore",
+              "type": "paragraph",
+              "surface_id": "s-p0011-01",
+              "order": 4,
+              "bbox_pt": [
+                63.8482,
+                167.994,
+                292.8374,
+                184.7934
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "Therefore, \\(v=\\lambda f\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Therefore, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "v=\\lambda f"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-ex1",
+              "type": "heading",
+              "surface_id": "s-p0011-01",
+              "order": 5,
+              "bbox_pt": [
+                98.4126,
+                205.9127,
+                182.4233,
+                225.592
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Example 1.1",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 1.1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-q1",
+              "type": "example",
+              "surface_id": "s-p0011-01",
+              "order": 6,
+              "bbox_pt": [
+                70.569,
+                233.7517,
+                292.8374,
+                299.9893
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "text": "Determine the amplitude, period and frequency of the wave represented in the displacement-time graph shown in Figure 1.4.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Determine the amplitude, period and frequency of the wave represented in the displacement-time graph shown in Figure 1.4."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-graph1",
+              "type": "figure",
+              "surface_id": "s-p0011-01",
+              "order": 7,
+              "bbox_pt": [
+                67.2086,
+                311.0289,
+                288.0368,
+                425.7448
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "ref": "f-p0011-01-graph1"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-cap1",
+              "type": "caption",
+              "surface_id": "s-p0011-01",
+              "order": 8,
+              "bbox_pt": [
+                157.9402,
+                432.9446,
+                216.0276,
+                445.4241
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "target_refs": [
+                  "e-p0011-01-graph1"
+                ],
+                "text": "**Figure 1.4**",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.4",
+                    "b": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-s1",
+              "type": "heading",
+              "surface_id": "s-p0011-01",
+              "order": 9,
+              "bbox_pt": [
+                75.8497,
+                454.5438,
+                292.8374,
+                473.2631
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "level": 4,
+                "role": "other",
+                "text": "Solution",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Solution"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-amp",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 10,
+              "bbox_pt": [
+                75.8497,
+                479.5029,
+                292.8374,
+                527.9812
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "text": "The maximum position is measured from equilibrium 0 to \\(0.5\\,\\mathrm{m}\\). Therefore, amplitude of the wave is \\(0.5\\,\\mathrm{m}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The maximum position is measured from equilibrium 0 to "
+                  },
+                  {
+                    "t": "math",
+                    "v": "0.5\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Therefore, amplitude of the wave is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "0.5\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-period",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 11,
+              "bbox_pt": [
+                75.8497,
+                537.5809,
+                292.8374,
+                618.698
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "text": "The period of the wave, is the time taken to complete one cycle. In Figure 1.4, the time taken to complete one cycle is \\(0.2\\,\\mathrm{s}\\). Therefore, the period is \\(0.2\\,\\mathrm{s}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The period of the wave, is the time taken to complete one cycle. In Figure 1.4, the time taken to complete one cycle is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "0.2\\,\\mathrm{s}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Therefore, the period is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "0.2\\,\\mathrm{s}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-freqintro",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 12,
+              "bbox_pt": [
+                82.0905,
+                623.0178,
+                292.8374,
+                651.3368
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "text": "The frequency of the wave is given by:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The frequency of the wave is given by:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-freq1",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 13,
+              "bbox_pt": [
+                101.773,
+                657.5766,
+                292.8374,
+                693.5753
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "latex": "f=\\frac{1}{T}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-freq2",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 14,
+              "bbox_pt": [
+                103.2132,
+                696.9352,
+                292.8374,
+                734.8538
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "latex": "f=\\frac{1}{0.2\\,\\mathrm{s}}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-freq3",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 15,
+              "bbox_pt": [
+                104.1733,
+                740.6136,
+                292.8374,
+                757.413
+              ],
+              "group_refs": [
+                "g-g_ex1"
+              ],
+              "payload": {
+                "latex": "f=5\\,\\mathrm{Hz}."
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-ex2",
+              "type": "heading",
+              "surface_id": "s-p0011-01",
+              "order": 16,
+              "bbox_pt": [
+                345.6441,
+                56.158,
+                441.6564,
+                78.2372
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Example 1.2",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 1.2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-q2",
+              "type": "example",
+              "surface_id": "s-p0011-01",
+              "order": 17,
+              "bbox_pt": [
+                316.3604,
+                82.0771,
+                540.069,
+                164.1542
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "text": "The displacement-distance graph corresponding to a wave in example 1.1 is shown in Figure 1.5. Use the graph to determine the wavelength and velocity of the wave.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The displacement-distance graph corresponding to a wave in example 1.1 is shown in Figure 1.5. Use the graph to determine the wavelength and velocity of the wave."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-graph2",
+              "type": "figure",
+              "surface_id": "s-p0011-01",
+              "order": 18,
+              "bbox_pt": [
+                311.0797,
+                167.994,
+                542.4693,
+                294.2295
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "ref": "f-p0011-01-graph2"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-cap2",
+              "type": "caption",
+              "surface_id": "s-p0011-01",
+              "order": 19,
+              "bbox_pt": [
+                398.4509,
+                296.6294,
+                472.8604,
+                309.109
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "target_refs": [
+                  "e-p0011-01-graph2"
+                ],
+                "text": "**Figure 1.5**",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.5",
+                    "b": true
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-s2",
+              "type": "heading",
+              "surface_id": "s-p0011-01",
+              "order": 20,
+              "bbox_pt": [
+                317.3205,
+                320.6286,
+                538.6288,
+                336.468
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "level": 4,
+                "role": "other",
+                "text": "Solution",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Solution"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-wl",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 21,
+              "bbox_pt": [
+                317.3205,
+                338.8679,
+                538.6288,
+                386.3862
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "text": "From the graph, the wavelength is the distance between two successive crests and its value is \\(2\\,\\mathrm{m}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "From the graph, the wavelength is the distance between two successive crests and its value is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "2\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-velintro",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 22,
+              "bbox_pt": [
+                317.3205,
+                393.586,
+                538.6288,
+                409.9054
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "text": "The velocity of the wave, \\(v\\) is given by:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The velocity of the wave, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "v"
+                  },
+                  {
+                    "t": "text",
+                    "v": " is given by:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-vel1",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 23,
+              "bbox_pt": [
+                321.6411,
+                410.3854,
+                538.6288,
+                426.2248
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "latex": "v=f\\lambda"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-vel2",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 24,
+              "bbox_pt": [
+                321.6411,
+                429.5847,
+                538.6288,
+                445.9041
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "latex": "v=5\\,\\mathrm{Hz}\\times2\\,\\mathrm{m}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-vel3",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 25,
+              "bbox_pt": [
+                321.6411,
+                454.5438,
+                538.6288,
+                473.2631
+              ],
+              "group_refs": [
+                "g-g_ex2"
+              ],
+              "payload": {
+                "latex": "v=10\\,\\mathrm{m\\,s^{-1}}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-ex3",
+              "type": "heading",
+              "surface_id": "s-p0011-01",
+              "order": 26,
+              "bbox_pt": [
+                345.6441,
+                479.5029,
+                441.6564,
+                501.1022
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "level": 3,
+                "role": "other",
+                "text": "Example 1.3",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 1.3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-q3",
+              "type": "example",
+              "surface_id": "s-p0011-01",
+              "order": 27,
+              "bbox_pt": [
+                321.6411,
+                503.982,
+                545.8297,
+                551.9803
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "text": "What is the wavelength of a wave whose speed is \\(4\\,\\mathrm{m\\,s^{-1}}\\) and frequency is \\(2\\,\\mathrm{Hz}\\)?",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What is the wavelength of a wave whose speed is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "4\\,\\mathrm{m\\,s^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " and frequency is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "2\\,\\mathrm{Hz}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-s3",
+              "type": "heading",
+              "surface_id": "s-p0011-01",
+              "order": 28,
+              "bbox_pt": [
+                321.6411,
+                563.9799,
+                545.8297,
+                579.8193
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "level": 4,
+                "role": "other",
+                "text": "Solution",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Solution"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-speed3",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 29,
+              "bbox_pt": [
+                321.6411,
+                580.7793,
+                545.8297,
+                601.8986
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "text": "Speed, \\(v=4\\,\\mathrm{m\\,s^{-1}}\\)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Speed, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "v=4\\,\\mathrm{m\\,s^{-1}}"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-frequency3",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 30,
+              "bbox_pt": [
+                321.6411,
+                603.8185,
+                545.8297,
+                618.698
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "text": "Frequency, \\(f=2\\,\\mathrm{Hz}=2\\,\\mathrm{s^{-1}}\\)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Frequency, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "f=2\\,\\mathrm{Hz}=2\\,\\mathrm{s^{-1}}"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-then",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 31,
+              "bbox_pt": [
+                321.6411,
+                623.0178,
+                545.8297,
+                638.3773
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "text": "Then from,",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Then from,"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-eq3",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 32,
+              "bbox_pt": [
+                355.2454,
+                638.3773,
+                545.8297,
+                652.7768
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "latex": "v=f\\lambda"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-thus3",
+              "type": "solution",
+              "surface_id": "s-p0011-01",
+              "order": 33,
+              "bbox_pt": [
+                321.6411,
+                657.5766,
+                545.8297,
+                693.5753
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "text": "Thus, \\(\\lambda=\\tfrac{v}{f}\\)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Thus, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\lambda=\\tfrac{v}{f}"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-eq4",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 34,
+              "bbox_pt": [
+                369.6472,
+                696.9352,
+                545.8297,
+                734.8538
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "latex": "=\\frac{4\\,\\mathrm{m\\,s^{-1}}}{2\\,\\mathrm{s^{-1}}}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-eq5",
+              "type": "math",
+              "surface_id": "s-p0011-01",
+              "order": 35,
+              "bbox_pt": [
+                369.6472,
+                740.6136,
+                545.8297,
+                757.413
+              ],
+              "group_refs": [
+                "g-g_ex3"
+              ],
+              "payload": {
+                "latex": "=2\\,\\mathrm{m}."
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0011-01-number",
+              "type": "page_number",
+              "surface_id": "s-p0011-01",
+              "order": 36,
+              "bbox_pt": [
+                91.2116,
+                776.1324,
+                112.8144,
+                796.7716
+              ],
+              "group_refs": [],
+              "payload": {
+                "text": "4",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "4"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-g_ex1",
+      "kind": "example",
+      "label_printed": null,
+      "title": "Example 1.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0011-01-ex1",
+        "e-p0011-01-q1",
+        "e-p0011-01-graph1",
+        "e-p0011-01-cap1",
+        "e-p0011-01-s1",
+        "e-p0011-01-amp",
+        "e-p0011-01-period",
+        "e-p0011-01-freqintro",
+        "e-p0011-01-freq1",
+        "e-p0011-01-freq2",
+        "e-p0011-01-freq3"
+      ]
+    },
+    {
+      "id": "g-g_ex2",
+      "kind": "example",
+      "label_printed": null,
+      "title": "Example 1.2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0011-01-ex2",
+        "e-p0011-01-q2",
+        "e-p0011-01-graph2",
+        "e-p0011-01-cap2",
+        "e-p0011-01-s2",
+        "e-p0011-01-wl",
+        "e-p0011-01-velintro",
+        "e-p0011-01-vel1",
+        "e-p0011-01-vel2",
+        "e-p0011-01-vel3"
+      ]
+    },
+    {
+      "id": "g-g_ex3",
+      "kind": "example",
+      "label_printed": null,
+      "title": "Example 1.3",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0011-01-ex3",
+        "e-p0011-01-q3",
+        "e-p0011-01-s3",
+        "e-p0011-01-speed3",
+        "e-p0011-01-frequency3",
+        "e-p0011-01-then",
+        "e-p0011-01-eq3",
+        "e-p0011-01-thus3",
+        "e-p0011-01-eq4",
+        "e-p0011-01-eq5"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-p0011-01-cap1-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0011-01-cap1",
+      "to_ref": "e-p0011-01-graph1",
+      "printed_text": "**Figure 1.4**",
+      "resolution": "resolved"
+    },
+    {
+      "id": "r-caption-p0011-01-cap2-1",
+      "kind": "caption_of",
+      "from_ref": "e-p0011-01-cap2",
+      "to_ref": "e-p0011-01-graph2",
+      "printed_text": "**Figure 1.5**",
+      "resolution": "resolved"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0011-01-graph1",
+      "kind": "graph",
+      "page": 11,
+      "surface_id": "s-p0011-01",
+      "bbox": [
+        67.2086,
+        311.0289,
+        288.0368,
+        425.7448
+      ],
+      "bbox_norm": [
+        0.11290325813529005,
+        0.3694412507432835,
+        0.48387101030021323,
+        0.5057012110753987
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0011-01-graph1-f821ab0bd3df.png",
+      "format": "png",
+      "pixel_size": [
+        461,
+        240
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0011-01-graph1"
+      ],
+      "printed_label": "Figure 1.4",
+      "description": "Displacement-time graph, amplitude 0.5 m and period 0.2 s.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "f821ab0bd3df4e290a812ba13cd9e7f0545b801b92fbf55aa3c3aa77103c095f",
+      "transform": {
+        "clip_bbox_pt": [
+          67.20860290527344,
+          311.0289001464844,
+          288.03680419921875,
+          425.74481201171875
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    },
+    {
+      "id": "f-p0011-01-graph2",
+      "kind": "graph",
+      "page": 11,
+      "surface_id": "s-p0011-01",
+      "bbox": [
+        311.0797,
+        167.994,
+        542.4693,
+        294.2295
+      ],
+      "bbox_norm": [
+        0.5225806172089373,
+        0.19954387993323824,
+        0.9112903915327814,
+        0.3494868627499596
+      ],
+      "file": "books/physics-form-four-syllabus-unconfirmed-efa0b6eda0ac/f-p0011-01-graph2-55a83c6380aa.png",
+      "format": "png",
+      "pixel_size": [
+        483,
+        264
+      ],
+      "dpi": 150,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0011-01-graph2"
+      ],
+      "printed_label": "Figure 1.5",
+      "description": "Displacement-distance graph with wavelength 2 m.",
+      "crop_check": "ok",
+      "crop_issue": null,
+      "sha256": "55a83c6380aa468eaec5a619902d008de334b6374467de1896154a91e70316b8",
+      "transform": {
+        "clip_bbox_pt": [
+          311.0797119140625,
+          167.99400329589844,
+          542.4692993164062,
+          294.2294921875
+        ],
+        "trim_px": null,
+        "rotation_applied": 0
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "pdf_page": 11,
+      "surface_id": "s-p0011-01",
+      "bbox_pt": [
+        484.8619032258065,
+        810.8235193548386,
+        576.0735483870967,
+        829.0658483870967
+      ],
+      "reason": "acquisition_noise",
+      "description": "CamScanner watermark."
+    }
+  ],
+  "review": [],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 37,
+    "types": {
+      "running_header": 1,
+      "paragraph": 3,
+      "math": 10,
+      "heading": 6,
+      "example": 3,
+      "figure": 2,
+      "caption": 2,
+      "solution": 9,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 0
+  }
+}
