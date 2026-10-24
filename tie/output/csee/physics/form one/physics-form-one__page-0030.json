@@ -1,0 +1,959 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      30
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 30,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0030-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "24",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0030-0001",
+              "type": "running_header",
+              "surface_id": "s-p0030-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0002",
+              "type": "heading",
+              "surface_id": "s-p0030-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "Revision exercise 1",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Revision exercise 1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0003",
+              "type": "heading",
+              "surface_id": "s-p0030-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "Section A",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Section A"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0004",
+              "type": "question",
+              "surface_id": "s-p0030-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "Choose the most correct answer",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Choose the most correct answer"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0005",
+              "type": "question",
+              "surface_id": "s-p0030-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "How does studying physics contribute to our understanding of the natural world and the universe?",
+                "label_printed": "(i)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How does studying physics contribute to our understanding of the natural world and the universe?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0030-0006",
+              "type": "mcq_options",
+              "surface_id": "s-p0030-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "Physics is not related to the study of the natural world and the universe.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics is not related to the study of the natural world and the universe."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "Physics helps us understand the behaviour of matter and energy, from subatomic particles to celestial bodies.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics helps us understand the behaviour of matter and energy, from subatomic particles to celestial bodies."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "Physics only deals with artificial and human-made systems.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics only deals with artificial and human-made systems."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "Physics is not essential for understanding the natural world and the universe.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics is not essential for understanding the natural world and the universe."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0007",
+              "type": "question",
+              "surface_id": "s-p0030-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "When a large body of experimental evidence supports the hypothesis or does not support the hypothesis, what may the hypothesis eventually be considered?",
+                "label_printed": "(ii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When a large body of experimental evidence supports the hypothesis or does not support the hypothesis, what may the hypothesis eventually be considered?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0030-0008",
+              "type": "mcq_options",
+              "surface_id": "s-p0030-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "an observation.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "an observation."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "an insight.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "an insight."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "a conclusion.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "a conclusion."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "a law.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "a law."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0009",
+              "type": "question",
+              "surface_id": "s-p0030-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "Which of the following best describes a variable?",
+                "label_printed": "(iii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Which of the following best describes a variable?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0030-0010",
+              "type": "mcq_options",
+              "surface_id": "s-p0030-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "A trend that shows an exponential relationship.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "A trend that shows an exponential relationship."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "Something whose value can change over multiple measurements.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Something whose value can change over multiple measurements."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "A measure of how much a plot line changes along the y-axis.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "A measure of how much a plot line changes along the y-axis."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "Something that remains constant over multiple measurements.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Something that remains constant over multiple measurements."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0011",
+              "type": "question",
+              "surface_id": "s-p0030-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "Physics is the fundamental branch of science, because the knowledge obtained in studying Physics is strongly connected to other branches of science. Which among the following statements describes how physics is connected to other disciplines like chemistry and biology?",
+                "label_printed": "(iv)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics is the fundamental branch of science, because the knowledge obtained in studying Physics is strongly connected to other branches of science. Which among the following statements describes how physics is connected to other disciplines like chemistry and biology?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0030-0012",
+              "type": "mcq_options",
+              "surface_id": "s-p0030-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "Physics studies the properties of matter and energy, which are fundamental to all sciences.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics studies the properties of matter and energy, which are fundamental to all sciences."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "Physics focuses solely on celestial bodies and space exploration.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics focuses solely on celestial bodies and space exploration."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "Physics deals with the human mind and cognitive processes.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics deals with the human mind and cognitive processes."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "Physics has many application in medical field.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics has many application in medical field."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0013",
+              "type": "question",
+              "surface_id": "s-p0030-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "text": "Physics is the study of matter, energy and the interaction existing between them. What is the significance of the interaction of matter and energy in physics?",
+                "label_printed": "(v)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics is the study of matter, energy and the interaction existing between them. What is the significance of the interaction of matter and energy in physics?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0030-0014",
+              "type": "mcq_options",
+              "surface_id": "s-p0030-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0030-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "It helps us understand the human body and its functions.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "It helps us understand the human body and its functions."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "It allows us to explore different planets and their atmospheres.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "It allows us to explore different planets and their atmospheres."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "It helps explain the behaviour of objects and phenomena in the universe.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "It helps explain the behaviour of objects and phenomena in the universe."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "It is not relevant to the study of physics.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "It is not relevant to the study of physics."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0030-0015",
+              "type": "page_number",
+              "surface_id": "s-p0030-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "24",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "24"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0030-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 1",
+      "title": "Revision exercise 1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0030-0002",
+        "e-p0030-0003",
+        "e-p0030-0004",
+        "e-p0030-0005",
+        "e-p0030-0006",
+        "e-p0030-0007",
+        "e-p0030-0008",
+        "e-p0030-0009",
+        "e-p0030-0010",
+        "e-p0030-0011",
+        "e-p0030-0012",
+        "e-p0030-0013",
+        "e-p0030-0014"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0030-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 30,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 15,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "question": 6,
+      "mcq_options": 5,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

@@ -1,0 +1,803 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      214
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 214,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0214-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "208",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0214-0001",
+              "type": "running_header",
+              "surface_id": "s-p0214-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Work, energy and power",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Work, energy and power"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0002",
+              "type": "figure",
+              "surface_id": "s-p0214-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0214-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0003",
+              "type": "caption",
+              "surface_id": "s-p0214-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 9.23: Walking upstairs",
+                "target_refs": [
+                  "e-p0214-0002"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 9.23: Walking upstairs"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0004",
+              "type": "figure",
+              "surface_id": "s-p0214-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0214-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0005",
+              "type": "caption",
+              "surface_id": "s-p0214-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 9.24: An elephant crossing a river",
+                "target_refs": [
+                  "e-p0214-0004"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 9.24: An elephant crossing a river"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0006",
+              "type": "example",
+              "surface_id": "s-p0214-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "How much power is required for a car of mass 1 000 kg to change speed from 10 m/s to 40 m/s in 8 s?",
+                "label_printed": "Example 9.11",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How much power is required for a car of mass 1 000 kg to change speed from 10 m/s to 40 m/s in 8 s?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0007",
+              "type": "solution",
+              "surface_id": "s-p0214-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "\\(\\Delta\\mathrm{KE} = \\frac{1}{2}m(v^{2} - u^{2}) = \\frac{1}{2} \\times 1000\\,\\mathrm{kg} \\times (40^{2} - 10^{2})\\,\\mathrm{m^{2}\\,s^{-2}} = 500 \\times 1500 = 750\\,000\\,\\mathrm{J}\\). \\(\\mathrm{Power} = \\frac{\\Delta\\mathrm{KE}}{t} = \\frac{750\\,000\\,\\mathrm{J}}{8\\,\\mathrm{s}} = 93\\,750\\,\\mathrm{W} = 93.75\\,\\mathrm{kW}\\).",
+                "runs": [
+                  {
+                    "t": "math",
+                    "v": "\\Delta\\mathrm{KE} = \\frac{1}{2}m(v^{2} - u^{2}) = \\frac{1}{2} \\times 1000\\,\\mathrm{kg} \\times (40^{2} - 10^{2})\\,\\mathrm{m^{2}\\,s^{-2}} = 500 \\times 1500 = 750\\,000\\,\\mathrm{J}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\mathrm{Power} = \\frac{\\Delta\\mathrm{KE}}{t} = \\frac{750\\,000\\,\\mathrm{J}}{8\\,\\mathrm{s}} = 93\\,750\\,\\mathrm{W} = 93.75\\,\\mathrm{kW}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0008",
+              "type": "figure",
+              "surface_id": "s-p0214-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0214-003"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0009",
+              "type": "caption",
+              "surface_id": "s-p0214-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 9.25: Running upstairs",
+                "target_refs": [
+                  "e-p0214-0008"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 9.25: Running upstairs"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0010",
+              "type": "example",
+              "surface_id": "s-p0214-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A man whose mass is 80 kg walks up a flight of 25 steps each 20 cm high in 10 seconds. Find the power developed by the man in kilowatts.",
+                "label_printed": "Example 9.12",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A man whose mass is 80 kg walks up a flight of 25 steps each 20 cm high in 10 seconds. Find the power developed by the man in kilowatts."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0011",
+              "type": "solution",
+              "surface_id": "s-p0214-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "\\(m = 80\\,\\mathrm{kg}\\), \\(n = 25\\), \\(h = 20\\,\\mathrm{cm} = 0.2\\,\\mathrm{m}\\), \\(t = 10\\,\\mathrm{s}\\). \\(P = \\frac{nmgh}{t} = \\frac{25 \\times 80\\,\\mathrm{kg} \\times 10\\,\\mathrm{N\\,kg^{-1}} \\times 0.2\\,\\mathrm{m}}{10\\,\\mathrm{s}} = 400\\,\\mathrm{W} = 0.4\\,\\mathrm{kW}\\).",
+                "runs": [
+                  {
+                    "t": "math",
+                    "v": "m = 80\\,\\mathrm{kg}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "n = 25"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "h = 20\\,\\mathrm{cm} = 0.2\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "t = 10\\,\\mathrm{s}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". "
+                  },
+                  {
+                    "t": "math",
+                    "v": "P = \\frac{nmgh}{t} = \\frac{25 \\times 80\\,\\mathrm{kg} \\times 10\\,\\mathrm{N\\,kg^{-1}} \\times 0.2\\,\\mathrm{m}}{10\\,\\mathrm{s}} = 400\\,\\mathrm{W} = 0.4\\,\\mathrm{kW}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0214-0012",
+              "type": "page_number",
+              "surface_id": "s-p0214-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "208",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "208"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-caption-e-p0214-0003",
+      "kind": "caption_of",
+      "from_ref": "e-p0214-0003",
+      "to_ref": "e-p0214-0002",
+      "resolution": "resolved",
+      "printed_text": "Figure 9.23: Walking upstairs"
+    },
+    {
+      "id": "r-caption-e-p0214-0005",
+      "kind": "caption_of",
+      "from_ref": "e-p0214-0005",
+      "to_ref": "e-p0214-0004",
+      "resolution": "resolved",
+      "printed_text": "Figure 9.24: An elephant crossing a river"
+    },
+    {
+      "id": "r-caption-e-p0214-0009",
+      "kind": "caption_of",
+      "from_ref": "e-p0214-0009",
+      "to_ref": "e-p0214-0008",
+      "resolution": "resolved",
+      "printed_text": "Figure 9.25: Running upstairs"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0214-001",
+      "kind": "diagram",
+      "page": 214,
+      "surface_id": "s-p0214-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0214-0002"
+      ],
+      "printed_label": "Figure 9.23",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0214-002",
+      "kind": "diagram",
+      "page": 214,
+      "surface_id": "s-p0214-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0214-0004"
+      ],
+      "printed_label": "Figure 9.24",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0214-003",
+      "kind": "diagram",
+      "page": 214,
+      "surface_id": "s-p0214-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0214-0008"
+      ],
+      "printed_label": "Figure 9.25",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0214-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 214,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0214-002",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 214,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0214-003",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 214,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 12,
+    "types": {
+      "running_header": 1,
+      "figure": 3,
+      "caption": 3,
+      "example": 2,
+      "solution": 2,
+      "page_number": 1
+    },
+    "figures": 3,
+    "open_issues": 3
+  }
+}

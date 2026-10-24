@@ -1,0 +1,956 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      22
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 22,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0022-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "16",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0022-0001",
+              "type": "running_header",
+              "surface_id": "s-p0022-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0002",
+              "type": "objectives",
+              "surface_id": "s-p0022-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "text": "Aim: Measurement of reaction time",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: Measurement of reaction time"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0003",
+              "type": "instruction",
+              "surface_id": "s-p0022-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "text": "Material needed: stopwatch",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Material needed: stopwatch"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Transcript MATERIALS block; rendered as an instruction."
+              ]
+            },
+            {
+              "id": "e-p0022-0004",
+              "type": "instruction",
+              "surface_id": "s-p0022-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "text": "Procedure",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0005",
+              "type": "list",
+              "surface_id": "s-p0022-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Start the stopwatch and stop after 10 seconds.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Start the stopwatch and stop after 10 seconds."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Repeat the procedure for 5 observations.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Repeat the procedure for 5 observations."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Tabulate your observations",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Tabulate your observations"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0006",
+              "type": "table",
+              "surface_id": "s-p0022-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "columns": 2,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Number of observations",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Number of observations"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Time (seconds)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Time (seconds)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "First reading",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "First reading"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Second reading",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Second reading"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Third reading",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Third reading"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Fourth reading",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Fourth reading"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Fifth reading",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Fifth reading"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ]
+                ],
+                "printed_label": "Table 1.2",
+                "caption": "Table 1.2:"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0007",
+              "type": "heading",
+              "surface_id": "s-p0022-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "text": "Questions",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0008",
+              "type": "question",
+              "surface_id": "s-p0022-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "text": "Do the observations yield the same results? Why?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Do the observations yield the same results? Why?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0009",
+              "type": "question",
+              "surface_id": "s-p0022-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0022-001"
+              ],
+              "payload": {
+                "text": "What should be done to improve the accuracy?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What should be done to improve the accuracy?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0022-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measuring reaction time is an essential aspect of various scientific studies, sports performance analysis, and even everyday activities. It refers to the time it takes for a person to respond to a given stimulus. The stimulus can be visual, audio, or tactile, and the response can involve any action like pressing a button, vocalizing, or moving a body part.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measuring reaction time is an essential aspect of various scientific studies, sports performance analysis, and even everyday activities. It refers to the time it takes for a person to respond to a given stimulus. The stimulus can be visual, audio, or tactile, and the response can involve any action like pressing a button, vocalizing, or moving a body part."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0011",
+              "type": "heading",
+              "surface_id": "s-p0022-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "5. Data presentation and interpretation",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "5. Data presentation and interpretation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0012",
+              "type": "paragraph",
+              "surface_id": "s-p0022-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Data presentation involves the use of charts, graphs and mathematical formulae.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Data presentation involves the use of charts, graphs and mathematical formulae."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0013",
+              "type": "heading",
+              "surface_id": "s-p0022-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Drawing graphs in Physics",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Drawing graphs in Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0014",
+              "type": "paragraph",
+              "surface_id": "s-p0022-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "For all graphs plotted from experimental data, it is important to remember that you should not just connect the dots. Data do not always follow a line or curve perfectly. By obtaining several experimental data points any discrepancies in each data point can be removed. The data points plotted should be fitted by drawing the best line that describes the distribution of data points.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For all graphs plotted from experimental data, it is important to remember that you should not just connect the dots. Data do not always follow a line or curve perfectly. By obtaining several experimental data points any discrepancies in each data point can be removed. The data points plotted should be fitted by drawing the best line that describes the distribution of data points."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0015",
+              "type": "paragraph",
+              "surface_id": "s-p0022-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The graphs you plot must have the following features:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The graphs you plot must have the following features:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0016",
+              "type": "list",
+              "surface_id": "s-p0022-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "lettered",
+                "items": [
+                  {
+                    "label_printed": "(a)",
+                    "text": "The graph must have a clear descriptive title which outlines the relationship between dependent and independent variables with their appropriate units in brackets e,g A graph of temperature (°C) against time t (s).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The graph must have a clear descriptive title which outlines the relationship between dependent and independent variables with their appropriate units in brackets e,g A graph of temperature (°C) against time t (s)."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(b)",
+                    "text": "An appropriate scale is used for each axis so that the plotted points must occupy enough axis/space (work out the range of the data and the highest and lowest points). The scale must remain the same along the entire axis and should use easy intervals such as 10 s, 20 s and 50 s. Use graph paper for accuracy.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "An appropriate scale is used for each axis so that the plotted points must occupy enough axis/space (work out the range of the data and the highest and lowest points). The scale must remain the same along the entire axis and should use easy intervals such as 10 s, 20 s and 50 s. Use graph paper for accuracy."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(c)",
+                    "text": "Each axis must be labelled with what is shown on the axis and must include the appropriate units in brackets, e.g. Temperature (°C), time (s) and height (cm).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Each axis must be labelled with what is shown on the axis and must include the appropriate units in brackets, e.g. Temperature (°C), time (s) and height (cm)."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(d)",
+                    "text": "The independent variable is generally plotted along the x-axis, while the dependent variable is generally plotted along the y-axis. Each point has an x and y co-ordinate and should be plotted with a symbol which can be easily seen, e.g., a cross or circle.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The independent variable is generally plotted along the x-axis, while the dependent variable is generally plotted along the y-axis. Each point has an x and y co-ordinate and should be plotted with a symbol which can be easily seen, e.g., a cross or circle."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0022-0017",
+              "type": "page_number",
+              "surface_id": "s-p0022-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "16",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "16"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0022-001",
+      "kind": "activity",
+      "label_printed": "Activity 1.2",
+      "title": "Activity 1.2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0022-0002",
+        "e-p0022-0003",
+        "e-p0022-0004",
+        "e-p0022-0005",
+        "e-p0022-0006",
+        "e-p0022-0007",
+        "e-p0022-0008",
+        "e-p0022-0009"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0022-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 22,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 17,
+    "types": {
+      "running_header": 1,
+      "objectives": 1,
+      "instruction": 2,
+      "list": 2,
+      "table": 1,
+      "heading": 3,
+      "question": 2,
+      "paragraph": 4,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

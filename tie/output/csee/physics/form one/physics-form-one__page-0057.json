@@ -1,0 +1,1082 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      57
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 57,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0057-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "51",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0057-0001",
+              "type": "running_header",
+              "surface_id": "s-p0057-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0002",
+              "type": "list",
+              "surface_id": "s-p0057-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "4.",
+                    "text": "The object will displace some water which will be collected in the beaker, shown in Figure 2.37.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The object will displace some water which will be collected in the beaker, shown in Figure 2.37."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0003",
+              "type": "figure",
+              "surface_id": "s-p0057-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0057-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0004",
+              "type": "caption",
+              "surface_id": "s-p0057-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.37: Water displaced",
+                "target_refs": [
+                  "e-p0057-0003"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.37: Water displaced"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0005",
+              "type": "list",
+              "surface_id": "s-p0057-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "5.",
+                    "text": "Transfer the displaced water into a measuring cylinder, shown in Figure 2.38.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Transfer the displaced water into a measuring cylinder, shown in Figure 2.38."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Measure the volume of the displaced water. The volume of the displaced water is equal to the volume of the object under study.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Measure the volume of the displaced water. The volume of the displaced water is equal to the volume of the object under study."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0006",
+              "type": "figure",
+              "surface_id": "s-p0057-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0057-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0007",
+              "type": "caption",
+              "surface_id": "s-p0057-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.38: Reading the volume of the stone",
+                "target_refs": [
+                  "e-p0057-0006"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.38: Reading the volume of the stone"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0008",
+              "type": "note",
+              "surface_id": "s-p0057-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001"
+              ],
+              "payload": {
+                "text": "The volume of solid objects with irregular shape can be determined by using immersion methods.",
+                "note_kind": "note",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The volume of solid objects with irregular shape can be determined by using immersion methods."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0009",
+              "type": "heading",
+              "surface_id": "s-p0057-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Activity 2.6",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 2.6"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0010",
+              "type": "objectives",
+              "surface_id": "s-p0057-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Aim: To measure volume of an irregular object using a eureka can.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: To measure volume of an irregular object using a eureka can."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0011",
+              "type": "instruction",
+              "surface_id": "s-p0057-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Materials: eureka can, stone, water, beaker, measuring cylinder and string",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Materials: eureka can, stone, water, beaker, measuring cylinder and string"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0012",
+              "type": "figure",
+              "surface_id": "s-p0057-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "ref": "f-p0057-003"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0013",
+              "type": "caption",
+              "surface_id": "s-p0057-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Figure 2.39",
+                "target_refs": [
+                  "e-p0057-0012"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.39"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0014",
+              "type": "instruction",
+              "surface_id": "s-p0057-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Procedure:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0015",
+              "type": "list",
+              "surface_id": "s-p0057-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Set up the apparatus as in Figure 2.39.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Set up the apparatus as in Figure 2.39."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Tie the stone with a string and gently lower it into the water contained in the eureka can.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Tie the stone with a string and gently lower it into the water contained in the eureka can."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Collect the overflowing water in the beaker below the spout.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Collect the overflowing water in the beaker below the spout."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Measure and record the volume of the displaced water using a measuring cylinder.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Measure and record the volume of the displaced water using a measuring cylinder."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0016",
+              "type": "heading",
+              "surface_id": "s-p0057-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Questions",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0017",
+              "type": "question",
+              "surface_id": "s-p0057-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Why must the stone be tied and gently lowered into the water?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Why must the stone be tied and gently lowered into the water?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0018",
+              "type": "question",
+              "surface_id": "s-p0057-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001",
+                "g-p0057-002"
+              ],
+              "payload": {
+                "text": "Why is the water in the eureka can displaced when the stone is immersed?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Why is the water in the eureka can displaced when the stone is immersed?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0019",
+              "type": "paragraph",
+              "surface_id": "s-p0057-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001"
+              ],
+              "payload": {
+                "text": "The stone is tied before lowering so that it can be gently lowered to prevent water from splashing. If water splashes wrong results may be recorded as the remaining water level would be lower than the spout level. It would also interfere with the volume to be measured.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The stone is tied before lowering so that it can be gently lowered to prevent water from splashing. If water splashes wrong results may be recorded as the remaining water level would be lower than the spout level. It would also interfere with the volume to be measured."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0020",
+              "type": "paragraph",
+              "surface_id": "s-p0057-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001"
+              ],
+              "payload": {
+                "text": "The water in the eureka can is displaced so as to give room for the stone. The stone occupies a volume which is equal to the volume of water displaced.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The water in the eureka can is displaced so as to give room for the stone. The stone occupies a volume which is equal to the volume of water displaced."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0021",
+              "type": "paragraph",
+              "surface_id": "s-p0057-01",
+              "order": 20,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0057-001"
+              ],
+              "payload": {
+                "text": "If the solid has an irregular shape such as a stone, it is submerged in a measuring cylinder containing water and the volume of water displaced is taken as the volume of the solid. Note that, the method of immersion can also be used to measure the volume of regular object.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If the solid has an irregular shape such as a stone, it is submerged in a measuring cylinder containing water and the volume of water displaced is taken as the volume of the solid. Note that, the method of immersion can also be used to measure the volume of regular object."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0057-0022",
+              "type": "page_number",
+              "surface_id": "s-p0057-01",
+              "order": 21,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "51",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "51"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0057-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "note",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0057-0008",
+        "e-p0057-0009",
+        "e-p0057-0010",
+        "e-p0057-0011",
+        "e-p0057-0012",
+        "e-p0057-0013",
+        "e-p0057-0014",
+        "e-p0057-0015",
+        "e-p0057-0016",
+        "e-p0057-0017",
+        "e-p0057-0018",
+        "e-p0057-0019",
+        "e-p0057-0020",
+        "e-p0057-0021"
+      ],
+      "notes": [
+        "Transcript group: note"
+      ]
+    },
+    {
+      "id": "g-p0057-002",
+      "kind": "activity",
+      "label_printed": "Activity 2.6",
+      "title": "Activity 2.6",
+      "parent_ref": "g-p0057-001",
+      "element_refs": [
+        "e-p0057-0009",
+        "e-p0057-0010",
+        "e-p0057-0011",
+        "e-p0057-0012",
+        "e-p0057-0013",
+        "e-p0057-0014",
+        "e-p0057-0015",
+        "e-p0057-0016",
+        "e-p0057-0017",
+        "e-p0057-0018"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0057-0004",
+      "kind": "caption_of",
+      "from_ref": "e-p0057-0004",
+      "to_ref": "e-p0057-0003",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.37: Water displaced"
+    },
+    {
+      "id": "r-caption-e-p0057-0007",
+      "kind": "caption_of",
+      "from_ref": "e-p0057-0007",
+      "to_ref": "e-p0057-0006",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.38: Reading the volume of the stone"
+    },
+    {
+      "id": "r-caption-e-p0057-0013",
+      "kind": "caption_of",
+      "from_ref": "e-p0057-0013",
+      "to_ref": "e-p0057-0012",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.39"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0057-001",
+      "kind": "diagram",
+      "page": 57,
+      "surface_id": "s-p0057-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0057-0003"
+      ],
+      "printed_label": "Figure 2.37",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0057-002",
+      "kind": "diagram",
+      "page": 57,
+      "surface_id": "s-p0057-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0057-0006"
+      ],
+      "printed_label": "Figure 2.38",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0057-003",
+      "kind": "diagram",
+      "page": 57,
+      "surface_id": "s-p0057-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0057-0012"
+      ],
+      "printed_label": "Figure 2.39",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0057-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 57,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0057-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 57,
+      "element_ref": null,
+      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 22,
+    "types": {
+      "running_header": 1,
+      "list": 3,
+      "figure": 3,
+      "caption": 3,
+      "note": 1,
+      "heading": 2,
+      "objectives": 1,
+      "instruction": 2,
+      "question": 2,
+      "paragraph": 3,
+      "page_number": 1
+    },
+    "figures": 3,
+    "open_issues": 2
+  }
+}

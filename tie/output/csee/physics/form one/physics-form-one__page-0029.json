@@ -1,0 +1,753 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      29
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 29,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0029-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "23",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0029-0001",
+              "type": "running_header",
+              "surface_id": "s-p0029-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Introduction to Physics",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction to Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0002",
+              "type": "heading",
+              "surface_id": "s-p0029-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Pascal's principle",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Pascal's principle"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0029-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Pascal's principle accounts for the transmission of pressure in fluid. Pascal's principle states that \"When pressure is applied at any point on the surface of a fluid contained in a closed container, the pressure is transmitted undiminished to all parts of the fluid and to the walls of the container\".",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Pascal's principle accounts for the transmission of pressure in fluid. Pascal's principle states that \"When pressure is applied at any point on the surface of a fluid contained in a closed container, the pressure is transmitted undiminished to all parts of the fluid and to the walls of the container\"."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0004",
+              "type": "heading",
+              "surface_id": "s-p0029-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The principle of conservation of energy",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The principle of conservation of energy"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0029-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The principle of conservation of energy emphasises that the total energy in a system is conserved. This principle allows us to analyse complex systems, predict their behaviour, and understand how energy flows and transforms, providing a fundamental framework for understanding the physical world. The principle states that \"Energy can neither be created nor destroyed but it can be transformed from one form to another\".",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The principle of conservation of energy emphasises that the total energy in a system is conserved. This principle allows us to analyse complex systems, predict their behaviour, and understand how energy flows and transforms, providing a fundamental framework for understanding the physical world. The principle states that \"Energy can neither be created nor destroyed but it can be transformed from one form to another\"."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0006",
+              "type": "note",
+              "surface_id": "s-p0029-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0029-001"
+              ],
+              "payload": {
+                "text": "ICT corner: To build scientific literacy use simulations or visit (SGR) https://phet.colorado.edu select the simulation titled pendulum lab and simulation titled curve fitting, to help students collect data, drawing graph and choose the best line of fit.",
+                "note_kind": "note",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "ICT corner: To build scientific literacy use simulations or visit (SGR) https://phet.colorado.edu select the simulation titled pendulum lab and simulation titled curve fitting, to help students collect data, drawing graph and choose the best line of fit."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0007",
+              "type": "heading",
+              "surface_id": "s-p0029-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0029-001"
+              ],
+              "payload": {
+                "text": "Chapter summary",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Chapter summary"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0008",
+              "type": "list",
+              "surface_id": "s-p0029-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0029-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Physics is the study of the relationship between matter and energy.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics is the study of the relationship between matter and energy."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "People who study and work professionally in the field of physics are known as physicists.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "People who study and work professionally in the field of physics are known as physicists."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Physicists use results from experiments to develop scientific laws that are normally expressed in the language of mathematics.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physicists use results from experiments to develop scientific laws that are normally expressed in the language of mathematics."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Physics is regarded as the 'fundamental' of natural sciences and it is related to other subjects. These subjects include, chemistry, biology, and mathematics.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics is regarded as the 'fundamental' of natural sciences and it is related to other subjects. These subjects include, chemistry, biology, and mathematics."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "Physics is applied in many areas of our lives. Some of the areas where it is evident are homes, hospitals, schools, communication, transport and industry.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics is applied in many areas of our lives. Some of the areas where it is evident are homes, hospitals, schools, communication, transport and industry."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Physics is important since it explains the behaviour of the universe while answering many questions. It is also important in:",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics is important since it explains the behaviour of the universe while answering many questions. It is also important in:"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(a)",
+                    "text": "career development;",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "career development;"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(b)",
+                    "text": "manufacturing industries; and",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "manufacturing industries; and"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(c)",
+                    "text": "physics practicals.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "physics practicals."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "7.",
+                    "text": "The scientific method is a procedure used by scientists to investigate a problem or answer questions.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The scientific method is a procedure used by scientists to investigate a problem or answer questions."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "8.",
+                    "text": "The scientific investigation method is divided into several steps, namely: problem identification, asking questions, formulating a testable hypothesis, performing an experiment, data collection and analysis, data presentation, data interpretation, and drawing a conclusion.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The scientific investigation method is divided into several steps, namely: problem identification, asking questions, formulating a testable hypothesis, performing an experiment, data collection and analysis, data presentation, data interpretation, and drawing a conclusion."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "9.",
+                    "text": "Physics uses theories, laws, and principles to describe the universe. These includes theory of gravity, Hooke's law, law of floatation, Pascal principle and the principle of conservation of energy.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Physics uses theories, laws, and principles to describe the universe. These includes theory of gravity, Hooke's law, law of floatation, Pascal principle and the principle of conservation of energy."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0029-0009",
+              "type": "page_number",
+              "surface_id": "s-p0029-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "23",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "23"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0029-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "note",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0029-0006",
+        "e-p0029-0007",
+        "e-p0029-0008"
+      ],
+      "notes": [
+        "Transcript group: note"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0029-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 29,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0029-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 29,
+      "element_ref": null,
+      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 9,
+    "types": {
+      "running_header": 1,
+      "heading": 3,
+      "paragraph": 2,
+      "note": 1,
+      "list": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

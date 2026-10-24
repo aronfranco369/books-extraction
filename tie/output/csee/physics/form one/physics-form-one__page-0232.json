@@ -1,0 +1,905 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      232
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 232,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0232-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "226",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0232-0001",
+              "type": "index",
+              "surface_id": "s-p0232-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "entries": [
+                  {
+                    "term": "magnets",
+                    "page_refs_printed": [
+                      "6",
+                      "73",
+                      "76"
+                    ]
+                  },
+                  {
+                    "term": "mathematics",
+                    "page_refs_printed": [
+                      "4",
+                      "5",
+                      "23",
+                      "228"
+                    ]
+                  },
+                  {
+                    "term": "matter",
+                    "page_refs_printed": [
+                      "1",
+                      "2",
+                      "3",
+                      "4",
+                      "5",
+                      "6",
+                      "23",
+                      "24",
+                      "25",
+                      "43",
+                      "56",
+                      "78",
+                      "121",
+                      "204",
+                      "205",
+                      "206",
+                      "226",
+                      "228",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "Measurement",
+                    "page_refs_printed": [
+                      "1",
+                      "16",
+                      "27",
+                      "29",
+                      "32",
+                      "37",
+                      "41",
+                      "43",
+                      "45",
+                      "46",
+                      "47",
+                      "48",
+                      "52",
+                      "63",
+                      "77",
+                      "154",
+                      "228"
+                    ]
+                  },
+                  {
+                    "term": "Mechanics",
+                    "page_refs_printed": [
+                      "3"
+                    ]
+                  },
+                  {
+                    "term": "Meteorology",
+                    "page_refs_printed": [
+                      "5",
+                      "228"
+                    ]
+                  },
+                  {
+                    "term": "mother's womb",
+                    "page_refs_printed": [
+                      "7"
+                    ]
+                  },
+                  {
+                    "term": "motors",
+                    "page_refs_printed": [
+                      "3"
+                    ]
+                  },
+                  {
+                    "term": "mutual interactions",
+                    "page_refs_printed": [
+                      "2"
+                    ]
+                  },
+                  {
+                    "term": "natural phenomena",
+                    "page_refs_printed": [
+                      "1"
+                    ]
+                  },
+                  {
+                    "term": "nucleus",
+                    "page_refs_printed": [
+                      "65",
+                      "205"
+                    ]
+                  },
+                  {
+                    "term": "organisms",
+                    "page_refs_printed": [
+                      "25",
+                      "139",
+                      "226"
+                    ]
+                  },
+                  {
+                    "term": "Parallax",
+                    "page_refs_printed": [
+                      "52",
+                      "53",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "Parallax error",
+                    "page_refs_printed": [
+                      "52",
+                      "53",
+                      "229",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "Pascal's principle",
+                    "page_refs_printed": [
+                      "22",
+                      "23",
+                      "146",
+                      "147",
+                      "161",
+                      "164",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "photosynthesis",
+                    "page_refs_printed": [
+                      "4"
+                    ]
+                  },
+                  {
+                    "term": "Plane mirrors",
+                    "page_refs_printed": [
+                      "12"
+                    ]
+                  },
+                  {
+                    "term": "planet",
+                    "page_refs_printed": [
+                      "1",
+                      "63",
+                      "134"
+                    ]
+                  },
+                  {
+                    "term": "plants",
+                    "page_refs_printed": [
+                      "126",
+                      "132"
+                    ]
+                  },
+                  {
+                    "term": "Power",
+                    "page_refs_printed": [
+                      "217",
+                      "218"
+                    ]
+                  },
+                  {
+                    "term": "premature",
+                    "page_refs_printed": [
+                      "7"
+                    ]
+                  },
+                  {
+                    "term": "pulleys",
+                    "page_refs_printed": [
+                      "6",
+                      "7"
+                    ]
+                  },
+                  {
+                    "term": "radiation",
+                    "page_refs_printed": [
+                      "3",
+                      "4",
+                      "14",
+                      "206"
+                    ]
+                  },
+                  {
+                    "term": "radio",
+                    "page_refs_printed": [
+                      "3",
+                      "9",
+                      "18"
+                    ]
+                  },
+                  {
+                    "term": "rain gauge",
+                    "page_refs_printed": [
+                      "5",
+                      "157"
+                    ]
+                  },
+                  {
+                    "term": "Siphon",
+                    "page_refs_printed": [
+                      "156",
+                      "157",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "skills",
+                    "page_refs_printed": [
+                      "6",
+                      "7",
+                      "11",
+                      "14",
+                      "32",
+                      "54",
+                      "77",
+                      "121",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "sky",
+                    "page_refs_printed": [
+                      "1",
+                      "6",
+                      "25"
+                    ]
+                  },
+                  {
+                    "term": "solar system",
+                    "page_refs_printed": [
+                      "1",
+                      "5",
+                      "21",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "space",
+                    "page_refs_printed": [
+                      "1",
+                      "2",
+                      "5",
+                      "16",
+                      "21",
+                      "25",
+                      "29",
+                      "38",
+                      "45",
+                      "66",
+                      "75",
+                      "96",
+                      "97",
+                      "111",
+                      "113",
+                      "130",
+                      "151",
+                      "164",
+                      "204",
+                      "223",
+                      "228",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "stars",
+                    "page_refs_printed": [
+                      "3",
+                      "5",
+                      "225"
+                    ]
+                  },
+                  {
+                    "term": "technology",
+                    "page_refs_printed": [
+                      "3",
+                      "5",
+                      "6",
+                      "21"
+                    ]
+                  },
+                  {
+                    "term": "televisions",
+                    "page_refs_printed": [
+                      "8",
+                      "10"
+                    ]
+                  },
+                  {
+                    "term": "thermos flask",
+                    "page_refs_printed": [
+                      "6",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "Time",
+                    "page_refs_printed": [
+                      "15",
+                      "16",
+                      "26",
+                      "28",
+                      "29",
+                      "41",
+                      "171",
+                      "175",
+                      "177",
+                      "191",
+                      "197",
+                      "199",
+                      "218",
+                      "220",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "transistor",
+                    "page_refs_printed": [
+                      "3"
+                    ]
+                  },
+                  {
+                    "term": "trigonometry",
+                    "page_refs_printed": [
+                      "4",
+                      "228"
+                    ]
+                  },
+                  {
+                    "term": "Triple beam balance",
+                    "page_refs_printed": [
+                      "43",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "ultrasound",
+                    "page_refs_printed": [
+                      "7",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "universe",
+                    "page_refs_printed": [
+                      "1",
+                      "3",
+                      "5",
+                      "22",
+                      "23",
+                      "24",
+                      "25",
+                      "204",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "vacuum flask",
+                    "page_refs_printed": [
+                      "6",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "vector",
+                    "page_refs_printed": [
+                      "28",
+                      "29",
+                      "169",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "Vernier calliper",
+                    "page_refs_printed": [
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "Viscous force",
+                    "page_refs_printed": [
+                      "70",
+                      "229",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "Visual Compact Disk",
+                    "page_refs_printed": [
+                      "10"
+                    ]
+                  },
+                  {
+                    "term": "weather",
+                    "page_refs_printed": [
+                      "5",
+                      "25",
+                      "116",
+                      "228",
+                      "235"
+                    ]
+                  },
+                  {
+                    "term": "Work",
+                    "page_refs_printed": [
+                      "29",
+                      "200",
+                      "202",
+                      "204",
+                      "213",
+                      "219",
+                      "221",
+                      "229"
+                    ]
+                  },
+                  {
+                    "term": "Zero error",
+                    "page_refs_printed": [
+                      "52",
+                      "53",
+                      "229"
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0232-0002",
+              "type": "page_number",
+              "surface_id": "s-p0232-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "226",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "226"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0232-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 232,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 2,
+    "types": {
+      "index": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

@@ -1,0 +1,774 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      169
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 169,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0169-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "163",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0169-0001",
+              "type": "running_header",
+              "surface_id": "s-p0169-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Light",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Light"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0002",
+              "type": "heading",
+              "surface_id": "s-p0169-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Shadows and eclipses",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Shadows and eclipses"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0169-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A shadow is a dark region formed behind an opaque object when it blocks light rays from a light source, direct consequence of rectilinear propagation of light.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A shadow is a dark region formed behind an opaque object when it blocks light rays from a light source, direct consequence of rectilinear propagation of light."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0004",
+              "type": "heading",
+              "surface_id": "s-p0169-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "1. Umbra and Penumbra",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1. Umbra and Penumbra"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0005",
+              "type": "list",
+              "surface_id": "s-p0169-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "bullet",
+                "items": [
+                  {
+                    "label_printed": "*",
+                    "text": "**Umbra:** The central, completely dark region of a shadow where all light rays from the source are blocked by the opaque object.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Umbra:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " The central, completely dark region of a shadow where all light rays from the source are blocked by the opaque object."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Penumbra:** The partial shadow surrounding the umbra where light from only a portion of an extended light source is blocked.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Penumbra:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " The partial shadow surrounding the umbra where light from only a portion of an extended light source is blocked."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0006",
+              "type": "heading",
+              "surface_id": "s-p0169-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "2. Eclipses",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "2. Eclipses"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0169-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "An eclipse occurs when a celestial body passes into the shadow of another celestial body.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "An eclipse occurs when a celestial body passes into the shadow of another celestial body."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0008",
+              "type": "list",
+              "surface_id": "s-p0169-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "bullet",
+                "items": [
+                  {
+                    "label_printed": "*",
+                    "text": "**Solar eclipse (Eclipse of the Sun):** Occurs when the Moon passes directly between the Earth and the Sun during a new moon, casting its shadow on the Earth.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Solar eclipse (Eclipse of the Sun):",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Occurs when the Moon passes directly between the Earth and the Sun during a new moon, casting its shadow on the Earth."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Lunar eclipse (Eclipse of the Moon):** Occurs when the Earth passes directly between the Sun and the Moon during a full moon, casting its shadow over the Moon.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Lunar eclipse (Eclipse of the Moon):",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Occurs when the Earth passes directly between the Sun and the Moon during a full moon, casting its shadow over the Moon."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0009",
+              "type": "heading",
+              "surface_id": "s-p0169-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Pinhole camera",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Pinhole camera"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0169-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A pinhole camera is a simple light-proof box with a tiny aperture (pinhole) on one side and a translucent screen (tracing paper) on the opposite side. It operates on the principle of rectilinear propagation of light to produce a real, inverted, and diminished image of an illuminated object.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A pinhole camera is a simple light-proof box with a tiny aperture (pinhole) on one side and a translucent screen (tracing paper) on the opposite side. It operates on the principle of rectilinear propagation of light to produce a real, inverted, and diminished image of an illuminated object."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0169-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The magnification (\\(m\\)) of a pinhole camera is defined as the ratio of image height (\\(h_i\\)) to object height (\\(h_o\\)), which equals the ratio of image distance (\\(v\\)) to object distance (\\(u\\)):",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The magnification ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "m"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") of a pinhole camera is defined as the ratio of image height ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "h_i"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") to object height ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "h_o"
+                  },
+                  {
+                    "t": "text",
+                    "v": "), which equals the ratio of image distance ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "v"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") to object distance ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "u"
+                  },
+                  {
+                    "t": "text",
+                    "v": "):"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0012",
+              "type": "math",
+              "surface_id": "s-p0169-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "m = \\frac{h_i}{h_o} = \\frac{v}{u}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0169-0013",
+              "type": "page_number",
+              "surface_id": "s-p0169-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "163",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "163"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0169-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 169,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0169-002",
+      "issue": "transcript_sequence_needs_source_review",
+      "pdf_page": 169,
+      "element_ref": null,
+      "detail": "This part of the upload introduces chapters and end matter inconsistent with its contents. Page 200 claims the end of the textbook, but page 201 resumes Work, energy and power. Preserved for comparison; do not accept as source-verified.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 13,
+    "types": {
+      "running_header": 1,
+      "heading": 4,
+      "paragraph": 4,
+      "list": 2,
+      "math": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

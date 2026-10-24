@@ -1,0 +1,764 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      92
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 92,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0092-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "86",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0092-0001",
+              "type": "running_header",
+              "surface_id": "s-p0092-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Density and relative density",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Density and relative density"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0002",
+              "type": "heading",
+              "surface_id": "s-p0092-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Relative density of a substance",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Relative density of a substance"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0092-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "It is common practice to express the density of a substance such as solid, liquid and gas (air) in relation to the density of water. The ratio between density of substance to the density of water is called relative density, R.D. Mathematically, it can be expressed as;",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "It is common practice to express the density of a substance such as solid, liquid and gas (air) in relation to the density of water. The ratio between density of substance to the density of water is called relative density, R.D. Mathematically, it can be expressed as;"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0004",
+              "type": "math",
+              "surface_id": "s-p0092-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\mathrm{R.D} = \\frac{\\mathrm{Density\\,of\\,substance}}{\\mathrm{Density\\,of\\,water}} = \\frac{\\mathrm{Mass\\,of\\,substance}}{\\mathrm{Mass\\,of\\,equal\\,volume\\,of\\,water}}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0092-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The relative density has no unit, since it is expressed as the ratio of the same quantity. Relative density is also known as the specific gravity (S.G). It indicates how many times a substance is denser compared to water. A substance is denser than water if its relative density is larger than 1 and the substance is less dense than water if its relative density is less than 1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The relative density has no unit, since it is expressed as the ratio of the same quantity. Relative density is also known as the specific gravity (S.G). It indicates how many times a substance is denser compared to water. A substance is denser than water if its relative density is larger than 1 and the substance is less dense than water if its relative density is less than 1."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0006",
+              "type": "example",
+              "surface_id": "s-p0092-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-001"
+              ],
+              "payload": {
+                "text": "An object has a density of \\(7\\,\\mathrm{g/cm^{3}}\\). Calculate its relative density, (R.D).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "An object has a density of "
+                  },
+                  {
+                    "t": "math",
+                    "v": "7\\,\\mathrm{g/cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Calculate its relative density, (R.D)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0007",
+              "type": "solution",
+              "surface_id": "s-p0092-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-001"
+              ],
+              "payload": {
+                "text": "Density of object = \\(7\\,\\mathrm{g/cm^{3}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Density of object = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "7\\,\\mathrm{g/cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0008",
+              "type": "math",
+              "surface_id": "s-p0092-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-001"
+              ],
+              "payload": {
+                "latex": "\\mathrm{R.D} = \\frac{7\\,\\mathrm{g/cm^{3}}}{1\\,\\mathrm{g/cm^{3}}} = 7"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0009",
+              "type": "paragraph",
+              "surface_id": "s-p0092-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-001"
+              ],
+              "payload": {
+                "text": "Therefore, relative density of the object is 7.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Therefore, relative density of the object is 7."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0010",
+              "type": "example",
+              "surface_id": "s-p0092-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-002"
+              ],
+              "payload": {
+                "text": "A piece of copper metal of volume \\(5.1\\,\\mathrm{cm^{3}}\\) has a mass of 41.6 g. Calculate the relative density of copper.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A piece of copper metal of volume "
+                  },
+                  {
+                    "t": "math",
+                    "v": "5.1\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " has a mass of 41.6 g. Calculate the relative density of copper."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0011",
+              "type": "solution",
+              "surface_id": "s-p0092-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-002"
+              ],
+              "payload": {
+                "text": "Mass of copper = 41.6 g, Volume = \\(5.1\\,\\mathrm{cm^{3}}\\). Density of copper = \\(\\frac{41.6\\,\\mathrm{g}}{5.1\\,\\mathrm{cm^{3}}} = 8.16\\,\\mathrm{g/cm^{3}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mass of copper = 41.6 g, Volume = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "5.1\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Density of copper = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\frac{41.6\\,\\mathrm{g}}{5.1\\,\\mathrm{cm^{3}}} = 8.16\\,\\mathrm{g/cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0012",
+              "type": "math",
+              "surface_id": "s-p0092-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-002"
+              ],
+              "payload": {
+                "latex": "\\mathrm{R.D} = \\frac{8.16\\,\\mathrm{g/cm^{3}}}{1\\,\\mathrm{g/cm^{3}}} = 8.16"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0092-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0092-002"
+              ],
+              "payload": {
+                "text": "Therefore, relative density of copper is 8.16.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Therefore, relative density of copper is 8.16."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0092-0014",
+              "type": "page_number",
+              "surface_id": "s-p0092-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "86",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "86"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0092-001",
+      "kind": "example",
+      "label_printed": "Example 4.6",
+      "title": "Example 4.6",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0092-0006",
+        "e-p0092-0007",
+        "e-p0092-0008",
+        "e-p0092-0009"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    },
+    {
+      "id": "g-p0092-002",
+      "kind": "example",
+      "label_printed": "Example 4.7",
+      "title": "Example 4.7",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0092-0010",
+        "e-p0092-0011",
+        "e-p0092-0012",
+        "e-p0092-0013"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0092-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 92,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 14,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "paragraph": 4,
+      "math": 3,
+      "example": 2,
+      "solution": 2,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

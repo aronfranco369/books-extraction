@@ -1,0 +1,643 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      123
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 123,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0123-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "117",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0123-0001",
+              "type": "running_header",
+              "surface_id": "s-p0123-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Sinking and floating",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Sinking and floating"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0002",
+              "type": "heading",
+              "surface_id": "s-p0123-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0123-001"
+              ],
+              "payload": {
+                "text": "Revision exercise 5",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Revision exercise 5"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0003",
+              "type": "heading",
+              "surface_id": "s-p0123-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0123-001"
+              ],
+              "payload": {
+                "text": "Section A",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Section A"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0004",
+              "type": "question",
+              "surface_id": "s-p0123-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0123-001"
+              ],
+              "payload": {
+                "text": "Choose the most correct answer:",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Choose the most correct answer:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0005",
+              "type": "question",
+              "surface_id": "s-p0123-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0123-001"
+              ],
+              "payload": {
+                "text": "The same body is immersed in liquid A and then in liquid B. The extent to which the body sinks in liquid B is less than in liquid A. What conclusion can be drawn? (a) density of liquid A is more than B (b) density of liquid B is more than A (c) density of solid is less than liquid in both (d) density of liquid A equals B",
+                "label_printed": "(i)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The same body is immersed in liquid A and then in liquid B. The extent to which the body sinks in liquid B is less than in liquid A. What conclusion can be drawn? (a) density of liquid A is more than B (b) density of liquid B is more than A (c) density of solid is less than liquid in both (d) density of liquid A equals B"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0006",
+              "type": "question",
+              "surface_id": "s-p0123-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0123-001"
+              ],
+              "payload": {
+                "text": "A sample of milk diluted with water has density \\(1040\\,\\mathrm{kg\\,m^{-3}}\\). Pure milk is \\(1080\\,\\mathrm{kg\\,m^{-3}}\\). The percentage of water by volume is: (a) 55% (b) 40% (c) 50% (d) 45%",
+                "label_printed": "(ii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A sample of milk diluted with water has density "
+                  },
+                  {
+                    "t": "math",
+                    "v": "1040\\,\\mathrm{kg\\,m^{-3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Pure milk is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "1080\\,\\mathrm{kg\\,m^{-3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". The percentage of water by volume is: (a) 55% (b) 40% (c) 50% (d) 45%"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0007",
+              "type": "question",
+              "surface_id": "s-p0123-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0123-001"
+              ],
+              "payload": {
+                "text": "Maximum apparent loss in weight occurs when an object is: (a) touching surface (b) partially immersed touching sides (c) completely immersed (d) partially immersed",
+                "label_printed": "(iii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Maximum apparent loss in weight occurs when an object is: (a) touching surface (b) partially immersed touching sides (c) completely immersed (d) partially immersed"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0123-0008",
+              "type": "page_number",
+              "surface_id": "s-p0123-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "117",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "117"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0123-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 5",
+      "title": "Revision exercise 5",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0123-0002",
+        "e-p0123-0003",
+        "e-p0123-0004",
+        "e-p0123-0005",
+        "e-p0123-0006",
+        "e-p0123-0007"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0123-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 123,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0123-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 123,
+      "element_ref": null,
+      "detail": "Page ends with open groups: Revision exercise 5. Group memberships kept on this page only.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 8,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "question": 4,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

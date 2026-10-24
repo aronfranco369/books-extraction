@@ -1,0 +1,978 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      41
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 41,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0041-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "35",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0041-0001",
+              "type": "running_header",
+              "surface_id": "s-p0041-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0002",
+              "type": "paragraph",
+              "surface_id": "s-p0041-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Use the screw clamp to secure the object in position, shown in Figure 2.12.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Use the screw clamp to secure the object in position, shown in Figure 2.12."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0003",
+              "type": "figure",
+              "surface_id": "s-p0041-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0041-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0004",
+              "type": "caption",
+              "surface_id": "s-p0041-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.12: Measuring the diametre of a steel ball bearing",
+                "target_refs": [
+                  "e-p0041-0003"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.12: Measuring the diametre of a steel ball bearing"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0005",
+              "type": "list",
+              "surface_id": "s-p0041-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "4.",
+                    "text": "Read and record the reading on the main scale which is to the left of the zero cm mark of the vernier scale. This value is to the nearest tenth of a centimetre.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Read and record the reading on the main scale which is to the left of the zero cm mark of the vernier scale. This value is to the nearest tenth of a centimetre."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "Observe along the vernier scale and record the mark which coincides with a mark on the main scale.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Observe along the vernier scale and record the mark which coincides with a mark on the main scale."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Read and note down the value on the vernier scale. This gives the digit in the hundredth place of the measurement.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Read and note down the value on the vernier scale. This gives the digit in the hundredth place of the measurement."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "7.",
+                    "text": "Add the values in steps 4 and 6 to get your correct reading. Therefore, the length of the object = main scale reading + vernier scale reading.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Add the values in steps 4 and 6 to get your correct reading. Therefore, the length of the object = main scale reading + vernier scale reading."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0006",
+              "type": "heading",
+              "surface_id": "s-p0041-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-001"
+              ],
+              "payload": {
+                "text": "Example 2.1",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 2.1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0041-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-001"
+              ],
+              "payload": {
+                "text": "Using Figure 2.13, determine the diametre of the object that is placed between the jaws of the vernier calliper.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Using Figure 2.13, determine the diametre of the object that is placed between the jaws of the vernier calliper."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0008",
+              "type": "figure",
+              "surface_id": "s-p0041-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-001"
+              ],
+              "payload": {
+                "ref": "f-p0041-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0009",
+              "type": "caption",
+              "surface_id": "s-p0041-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-001"
+              ],
+              "payload": {
+                "text": "Figure 2.13",
+                "target_refs": [
+                  "e-p0041-0008"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.13"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0010",
+              "type": "solution",
+              "surface_id": "s-p0041-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-001"
+              ],
+              "payload": {
+                "text": "From Figure 2.13, Main scale reading = \\(3.1\\,\\mathrm{cm}\\) Vernier scale reading = \\(2\\,\\mathrm{divisions}\\times 0.01\\,\\mathrm{cm}=0.02\\,\\mathrm{cm}\\) Total reading = Main scale reading + Vernier scale reading \\(=3.1\\,\\mathrm{cm}+0.02\\,\\mathrm{cm}=3.12\\,\\mathrm{cm}\\) Therefore, the diametre of the object = \\(3.12\\,\\mathrm{cm}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "From Figure 2.13, Main scale reading = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "3.1\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Vernier scale reading = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "2\\,\\mathrm{divisions}\\times 0.01\\,\\mathrm{cm}=0.02\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Total reading = Main scale reading + Vernier scale reading "
+                  },
+                  {
+                    "t": "math",
+                    "v": "=3.1\\,\\mathrm{cm}+0.02\\,\\mathrm{cm}=3.12\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Therefore, the diametre of the object = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "3.12\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0011",
+              "type": "heading",
+              "surface_id": "s-p0041-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-002"
+              ],
+              "payload": {
+                "text": "Example 2.2",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 2.2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0012",
+              "type": "paragraph",
+              "surface_id": "s-p0041-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-002"
+              ],
+              "payload": {
+                "text": "The jaws of the vernier calliper make contact with the inner wall of the calorimetre without exerting any pressure and the zero scale of the vernier reading on the main scale as 3.4 cm, the \\(6^{\\mathrm{th}}\\) vernier scale division coinciding with a main scale division, and a vernier constant of 0.01 cm.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The jaws of the vernier calliper make contact with the inner wall of the calorimetre without exerting any pressure and the zero scale of the vernier reading on the main scale as 3.4 cm, the "
+                  },
+                  {
+                    "t": "math",
+                    "v": "6^{\\mathrm{th}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " vernier scale division coinciding with a main scale division, and a vernier constant of 0.01 cm."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0013",
+              "type": "question",
+              "surface_id": "s-p0041-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-002"
+              ],
+              "payload": {
+                "text": "How might the presence of a negative zero error in the vernier scale of the calliper impact the determination of the actual internal diametre of the calorimeter?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How might the presence of a negative zero error in the vernier scale of the calliper impact the determination of the actual internal diametre of the calorimeter?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0014",
+              "type": "question",
+              "surface_id": "s-p0041-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-002"
+              ],
+              "payload": {
+                "text": "Calculate the precise internal diametre of the calorimetre when we notice that the vernier scale has a negative zero error of -0.03 cm.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the precise internal diametre of the calorimetre when we notice that the vernier scale has a negative zero error of -0.03 cm."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0015",
+              "type": "solution",
+              "surface_id": "s-p0041-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0041-002"
+              ],
+              "payload": {
+                "text": "(a) To calculate the actual internal diametre of the calorimetre while accounting for the negative zero error in the vernier scale. (b) Main scale reading = \\(3.4\\,\\mathrm{cm}\\) Least count (L.C) = \\(0.01\\,\\mathrm{cm}\\) Vernier coincidence = 6 Reading = Main scale Reading + Vernier coincidence \\(\\times\\) LC \\(=3.4\\,\\mathrm{cm}+6\\times 0.01\\,\\mathrm{cm}=3.46\\,\\mathrm{cm}\\) Corrected reading = reading - zero error \\(=3.46\\,\\mathrm{cm}-(-0.03\\,\\mathrm{cm})=3.46\\,\\mathrm{cm}+0.03\\,\\mathrm{cm}=3.49\\,\\mathrm{cm}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "(a) To calculate the actual internal diametre of the calorimetre while accounting for the negative zero error in the vernier scale. (b) Main scale reading = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "3.4\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Least count (L.C) = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "0.01\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Vernier coincidence = 6 Reading = Main scale Reading + Vernier coincidence "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\times"
+                  },
+                  {
+                    "t": "text",
+                    "v": " LC "
+                  },
+                  {
+                    "t": "math",
+                    "v": "=3.4\\,\\mathrm{cm}+6\\times 0.01\\,\\mathrm{cm}=3.46\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Corrected reading = reading - zero error "
+                  },
+                  {
+                    "t": "math",
+                    "v": "=3.46\\,\\mathrm{cm}-(-0.03\\,\\mathrm{cm})=3.46\\,\\mathrm{cm}+0.03\\,\\mathrm{cm}=3.49\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0041-0016",
+              "type": "page_number",
+              "surface_id": "s-p0041-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "35",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "35"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0041-001",
+      "kind": "example",
+      "label_printed": null,
+      "title": "example",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0041-0006",
+        "e-p0041-0007",
+        "e-p0041-0008",
+        "e-p0041-0009",
+        "e-p0041-0010"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    },
+    {
+      "id": "g-p0041-002",
+      "kind": "example",
+      "label_printed": null,
+      "title": "example",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0041-0011",
+        "e-p0041-0012",
+        "e-p0041-0013",
+        "e-p0041-0014",
+        "e-p0041-0015"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0041-0004",
+      "kind": "caption_of",
+      "from_ref": "e-p0041-0004",
+      "to_ref": "e-p0041-0003",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.12: Measuring the diametre of a steel ball bearing"
+    },
+    {
+      "id": "r-caption-e-p0041-0009",
+      "kind": "caption_of",
+      "from_ref": "e-p0041-0009",
+      "to_ref": "e-p0041-0008",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.13"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0041-001",
+      "kind": "diagram",
+      "page": 41,
+      "surface_id": "s-p0041-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0041-0003"
+      ],
+      "printed_label": "Figure 2.12",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0041-002",
+      "kind": "diagram",
+      "page": 41,
+      "surface_id": "s-p0041-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0041-0008"
+      ],
+      "printed_label": "Figure 2.13",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0041-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 41,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0041-002",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 41,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0041-003",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 41,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 16,
+    "types": {
+      "running_header": 1,
+      "paragraph": 3,
+      "figure": 2,
+      "caption": 2,
+      "list": 1,
+      "heading": 2,
+      "solution": 2,
+      "question": 2,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 3
+  }
+}

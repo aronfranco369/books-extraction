@@ -1,0 +1,803 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      31
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 31,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0031-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "25",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0031-0001",
+              "type": "running_header",
+              "surface_id": "s-p0031-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Introduction to Physics",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction to Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0002",
+              "type": "heading",
+              "surface_id": "s-p0031-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "Section B",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Section B"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0003",
+              "type": "instruction",
+              "surface_id": "s-p0031-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "Basic steps of scientific procedures",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Basic steps of scientific procedures"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0004",
+              "type": "question",
+              "surface_id": "s-p0031-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "In an experiment to investigate the relationship between the angle of a ramp and the distance a toy car travels, students find that the car doesn't move beyond a certain point for steeper angles. What is the problem that needs identification in this investigation?",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In an experiment to investigate the relationship between the angle of a ramp and the distance a toy car travels, students find that the car doesn't move beyond a certain point for steeper angles. What is the problem that needs identification in this investigation?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0005",
+              "type": "question",
+              "surface_id": "s-p0031-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "You notice that a metal spoon left in a hot cup of tea becomes warmer to the touch, while a wooden spoon in a similar cup does not show the same change. Formulate a testable hypothesis to investigate the difference in heat transfer.",
+                "label_printed": "6.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "You notice that a metal spoon left in a hot cup of tea becomes warmer to the touch, while a wooden spoon in a similar cup does not show the same change. Formulate a testable hypothesis to investigate the difference in heat transfer."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0006",
+              "type": "question",
+              "surface_id": "s-p0031-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "A group of students is studying the relationship between the mass of an object and the force required to move it across different surfaces. They change the mass of the object and measure the applied force. Identify the dependent, independent, and controlled variables in this investigation.",
+                "label_printed": "7.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A group of students is studying the relationship between the mass of an object and the force required to move it across different surfaces. They change the mass of the object and measure the applied force. Identify the dependent, independent, and controlled variables in this investigation."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0007",
+              "type": "question",
+              "surface_id": "s-p0031-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "A group of students is conducting an experiment to measure the acceleration of a toy car on different inclined planes. They release the car from rest at the top of each inclined plane and measure the time it takes to reach the bottom. They collected and recorded data shown in Table 1.4.",
+                "label_printed": "8.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A group of students is conducting an experiment to measure the acceleration of a toy car on different inclined planes. They release the car from rest at the top of each inclined plane and measure the time it takes to reach the bottom. They collected and recorded data shown in Table 1.4."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0008",
+              "type": "caption",
+              "surface_id": "s-p0031-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "Table 1.4",
+                "target_refs": [],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Table 1.4"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0009",
+              "type": "table",
+              "surface_id": "s-p0031-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "columns": 2,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Inclination (in degrees)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Inclination (in degrees)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Time to reach the bottom (seconds)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Time to reach the bottom (seconds)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "10",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "10"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "1.2",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "1.2"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "20",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "20"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "0.9",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "0.9"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "30",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "30"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "0.6",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "0.6"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "40",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "40"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "0.4",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "0.4"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "50",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "50"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "0.3",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "0.3"
+                        }
+                      ]
+                    }
+                  ]
+                ],
+                "printed_label": "Table 1.4"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0031-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0031-001"
+              ],
+              "payload": {
+                "text": "What can the students conclude about the relationship between the inclination and the time taken by the toy car to reach the bottom of inclined plane?",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What can the students conclude about the relationship between the inclination and the time taken by the toy car to reach the bottom of inclined plane?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0031-0011",
+              "type": "page_number",
+              "surface_id": "s-p0031-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "25",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "25"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0031-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 1",
+      "title": "Revision exercise 1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0031-0002",
+        "e-p0031-0003",
+        "e-p0031-0004",
+        "e-p0031-0005",
+        "e-p0031-0006",
+        "e-p0031-0007",
+        "e-p0031-0008",
+        "e-p0031-0009",
+        "e-p0031-0010"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0031-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 31,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 11,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "instruction": 1,
+      "question": 4,
+      "caption": 1,
+      "table": 1,
+      "paragraph": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

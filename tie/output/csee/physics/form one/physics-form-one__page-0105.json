@@ -1,0 +1,1030 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      105
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 105,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0105-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "99",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0105-0001",
+              "type": "running_header",
+              "surface_id": "s-p0105-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Sinking and floating",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Sinking and floating"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0002",
+              "type": "heading",
+              "surface_id": "s-p0105-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Archimedes' Principle",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Archimedes' Principle"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0105-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "If an object is immersed in water, it displaces some of the water. The relationship between the upthrust acting on a body and the weight of the displaced fluid, when the body is partially or totally immersed in the fluid was discovered by a Greek scientist known as Archimedes. This relationship is explained by Archimedes' principle, which is referred to as the law of buoyancy.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If an object is immersed in water, it displaces some of the water. The relationship between the upthrust acting on a body and the weight of the displaced fluid, when the body is partially or totally immersed in the fluid was discovered by a Greek scientist known as Archimedes. This relationship is explained by Archimedes' principle, which is referred to as the law of buoyancy."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0004",
+              "type": "note",
+              "surface_id": "s-p0105-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001"
+              ],
+              "payload": {
+                "text": "Archimedes' principle states that, \"Any object partially or totally immersed in a fluid experiences an upthrust equal to the weight of the fluid displaced by the object\".",
+                "note_kind": "definition",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Archimedes' principle states that, \"Any object partially or totally immersed in a fluid experiences an upthrust equal to the weight of the fluid displaced by the object\"."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0105-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001"
+              ],
+              "payload": {
+                "text": "It is important to note that the weight of an object acts downwards while the upthrust exerted by the displaced fluid acts upwards.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "It is important to note that the weight of an object acts downwards while the upthrust exerted by the displaced fluid acts upwards."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0006",
+              "type": "heading",
+              "surface_id": "s-p0105-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001"
+              ],
+              "payload": {
+                "text": "Verification of Archimedes' principle",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Verification of Archimedes' principle"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0105-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001"
+              ],
+              "payload": {
+                "text": "To verify the Archimedes principle, perform the following activity.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "To verify the Archimedes principle, perform the following activity."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0008",
+              "type": "heading",
+              "surface_id": "s-p0105-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Activity 5.3",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 5.3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0009",
+              "type": "objectives",
+              "surface_id": "s-p0105-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Aim: To verify the Archimedes' Principle.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: To verify the Archimedes' Principle."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0105-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Materials: Beaker, eureka can, spring balance, measuring cylinder, stone, water and digital balance.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Materials: Beaker, eureka can, spring balance, measuring cylinder, stone, water and digital balance."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0011",
+              "type": "figure",
+              "surface_id": "s-p0105-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "ref": "f-p0105-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0012",
+              "type": "caption",
+              "surface_id": "s-p0105-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Figure 5.5: Experimental setup to verify Archimedes' principle",
+                "target_refs": [
+                  "e-p0105-0011"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 5.5: Experimental setup to verify Archimedes' principle"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0013",
+              "type": "instruction",
+              "surface_id": "s-p0105-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Procedure",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0014",
+              "type": "list",
+              "surface_id": "s-p0105-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Measure the weight of the stone in the air using a spring balance and record its weight.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Measure the weight of the stone in the air using a spring balance and record its weight."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Using a digital balance, measure the mass of a dry empty measuring cylinder, and record its mass.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Using a digital balance, measure the mass of a dry empty measuring cylinder, and record its mass."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Pour water into a eureka can up to its spout level.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Pour water into a eureka can up to its spout level."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Place the measuring cylinder under the spout of the eureka can.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Place the measuring cylinder under the spout of the eureka can."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "Weigh the stone when it is totally immersed in water and record its weight. Wait until all the displaced water overflows into the measuring cylinder.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Weigh the stone when it is totally immersed in water and record its weight. Wait until all the displaced water overflows into the measuring cylinder."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Weigh the measuring cylinder containing the displaced water. Record its weight.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Weigh the measuring cylinder containing the displaced water. Record its weight."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0015",
+              "type": "heading",
+              "surface_id": "s-p0105-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Questions",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0016",
+              "type": "question",
+              "surface_id": "s-p0105-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Determine the mass of the displaced water.",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Determine the mass of the displaced water."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0017",
+              "type": "question",
+              "surface_id": "s-p0105-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Calculate the weight of the displaced water.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the weight of the displaced water."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0018",
+              "type": "question",
+              "surface_id": "s-p0105-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Calculate the upthrust exerted by water on the stone.",
+                "label_printed": "(c)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the upthrust exerted by water on the stone."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0019",
+              "type": "question",
+              "surface_id": "s-p0105-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "How does the upthrust relate to the weight of the displaced water?",
+                "label_printed": "(d)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How does the upthrust relate to the weight of the displaced water?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0020",
+              "type": "question",
+              "surface_id": "s-p0105-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0105-001",
+                "g-p0105-002"
+              ],
+              "payload": {
+                "text": "Using the results from this activity and your own words, state the Archimedes' principle.",
+                "label_printed": "(e)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Using the results from this activity and your own words, state the Archimedes' principle."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0105-0021",
+              "type": "page_number",
+              "surface_id": "s-p0105-01",
+              "order": 20,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "99",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "99"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0105-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "note",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0105-0004",
+        "e-p0105-0005",
+        "e-p0105-0006",
+        "e-p0105-0007",
+        "e-p0105-0008",
+        "e-p0105-0009",
+        "e-p0105-0010",
+        "e-p0105-0011",
+        "e-p0105-0012",
+        "e-p0105-0013",
+        "e-p0105-0014",
+        "e-p0105-0015",
+        "e-p0105-0016",
+        "e-p0105-0017",
+        "e-p0105-0018",
+        "e-p0105-0019",
+        "e-p0105-0020"
+      ],
+      "notes": [
+        "Transcript group: note"
+      ]
+    },
+    {
+      "id": "g-p0105-002",
+      "kind": "activity",
+      "label_printed": "Activity 5.3",
+      "title": "Activity 5.3",
+      "parent_ref": "g-p0105-001",
+      "element_refs": [
+        "e-p0105-0008",
+        "e-p0105-0009",
+        "e-p0105-0010",
+        "e-p0105-0011",
+        "e-p0105-0012",
+        "e-p0105-0013",
+        "e-p0105-0014",
+        "e-p0105-0015",
+        "e-p0105-0016",
+        "e-p0105-0017",
+        "e-p0105-0018",
+        "e-p0105-0019",
+        "e-p0105-0020"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0105-0012",
+      "kind": "caption_of",
+      "from_ref": "e-p0105-0012",
+      "to_ref": "e-p0105-0011",
+      "resolution": "resolved",
+      "printed_text": "Figure 5.5: Experimental setup to verify Archimedes' principle"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0105-001",
+      "kind": "diagram",
+      "page": 105,
+      "surface_id": "s-p0105-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0105-0011"
+      ],
+      "printed_label": "Figure 5.5",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0105-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 105,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0105-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 105,
+      "element_ref": null,
+      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 21,
+    "types": {
+      "running_header": 1,
+      "heading": 4,
+      "paragraph": 4,
+      "note": 1,
+      "objectives": 1,
+      "figure": 1,
+      "caption": 1,
+      "instruction": 1,
+      "list": 1,
+      "question": 5,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 2
+  }
+}

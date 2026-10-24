@@ -1,0 +1,1063 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      63
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 63,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0063-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "57",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0063-0001",
+              "type": "running_header",
+              "surface_id": "s-p0063-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0002",
+              "type": "heading",
+              "surface_id": "s-p0063-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Section B",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Section B"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0003",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "",
+                "label_printed": "2.",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0004",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "From the listed objects, classify them in terms of regular or irregular shape. Objects: Cube, orange, stone, banana, water pipe, a house, cuboid, chalkboard.",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "From the listed objects, classify them in terms of regular or irregular shape. Objects: Cube, orange, stone, banana, water pipe, a house, cuboid, chalkboard."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 2."
+              ]
+            },
+            {
+              "id": "e-p0063-0005",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "The internal and external radius of a hollow silver sphere are 7 cm and 14 cm, respectively. Find its volume.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The internal and external radius of a hollow silver sphere are 7 cm and 14 cm, respectively. Find its volume."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 2."
+              ]
+            },
+            {
+              "id": "e-p0063-0006",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "A student measures the length of a table to be 1.5 m with a ruler that has a precision of 0.1 cm. What is the uncertainty in the measurement?",
+                "label_printed": "(c)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A student measures the length of a table to be 1.5 m with a ruler that has a precision of 0.1 cm. What is the uncertainty in the measurement?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 2."
+              ]
+            },
+            {
+              "id": "e-p0063-0007",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "In a vernier calliper, there are 10 divisions on the vernier scale and 1 cm on main scale is divided in 10 parts. While measuring a length, the zero of the vernier scale lies just ahead of 1.8 cm mark and 4th division of vernier scale coincides with a main scale division. Find the value of the length.",
+                "label_printed": "3.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In a vernier calliper, there are 10 divisions on the vernier scale and 1 cm on main scale is divided in 10 parts. While measuring a length, the zero of the vernier scale lies just ahead of 1.8 cm mark and 4th division of vernier scale coincides with a main scale division. Find the value of the length."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0008",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "",
+                "label_printed": "4.",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0009",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Differentiate between the mass and the volume of a substance.",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Differentiate between the mass and the volume of a substance."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 4."
+              ]
+            },
+            {
+              "id": "e-p0063-0010",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Figure 2.44 shows a measuring cylinder containing water before and after a stone is immersed. What is the volume of the stone?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.44 shows a measuring cylinder containing water before and after a stone is immersed. What is the volume of the stone?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 4."
+              ]
+            },
+            {
+              "id": "e-p0063-0011",
+              "type": "figure",
+              "surface_id": "s-p0063-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "ref": "f-p0063-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0012",
+              "type": "caption",
+              "surface_id": "s-p0063-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Figure 2.44: Measuring cylinder before and after stone immersion",
+                "target_refs": [
+                  "e-p0063-0011"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.44: Measuring cylinder before and after stone immersion"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0013",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Figure 2.45 shows a metre rule being used to measure the length of a textbook.",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.45 shows a metre rule being used to measure the length of a textbook."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0014",
+              "type": "figure",
+              "surface_id": "s-p0063-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "ref": "f-p0063-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0015",
+              "type": "caption",
+              "surface_id": "s-p0063-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Figure 2.45: Measuring textbook length with a metre rule",
+                "target_refs": [
+                  "e-p0063-0014"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.45: Measuring textbook length with a metre rule"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0016",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "What is the approximate length of the book?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What is the approximate length of the book?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 5."
+              ]
+            },
+            {
+              "id": "e-p0063-0017",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Explain why it is advised to start at the mark beyond 0 cm when taking a measurement using a metre rule.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Explain why it is advised to start at the mark beyond 0 cm when taking a measurement using a metre rule."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 5."
+              ]
+            },
+            {
+              "id": "e-p0063-0018",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "A physics student obtained the following results for the diametre of the same wire from an experiment: 0.35 mm, 0.36 mm and 0.34 mm. Calculate the diametre of the wire.",
+                "label_printed": "6.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A physics student obtained the following results for the diametre of the same wire from an experiment: 0.35 mm, 0.36 mm and 0.34 mm. Calculate the diametre of the wire."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0019",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "A rectangular block measures height 1.00 cm, width 2.50 cm, and length 4.00 cm.",
+                "label_printed": "7.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A rectangular block measures height 1.00 cm, width 2.50 cm, and length 4.00 cm."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0020",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "What instrument was used to measure the sides of the rectangular block?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What instrument was used to measure the sides of the rectangular block?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 7."
+              ]
+            },
+            {
+              "id": "e-p0063-0021",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 20,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "Calculate the volume of the rectangular block.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the volume of the rectangular block."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 7."
+              ]
+            },
+            {
+              "id": "e-p0063-0022",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 21,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "A student repeatedly measures the mass of an object as 49 grams, while the actual mass is 52 grams. What conclusions can be drawn about the accuracy of the student's measurements?",
+                "label_printed": "8.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A student repeatedly measures the mass of an object as 49 grams, while the actual mass is 52 grams. What conclusions can be drawn about the accuracy of the student's measurements?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0023",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 22,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "When a car was first seen, the stopwatch start button was pressed. When the car passed the observer, the stopwatch showed 01: 02. How long did the car take to reach the observer?",
+                "label_printed": "9.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When a car was first seen, the stopwatch start button was pressed. When the car passed the observer, the stopwatch showed 01: 02. How long did the car take to reach the observer?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0024",
+              "type": "question",
+              "surface_id": "s-p0063-01",
+              "order": 23,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0063-001"
+              ],
+              "payload": {
+                "text": "An athlete runs round a track three times. Her friend uses a stopwatch to record the time elapsed. At the start of the ride, the stopwatch recorded 6.00 s, after one round the stopwatch recorded 180.00 s and at the end of third round the reading from the stopwatch was 600.00 s. What is the average time for one round of the track?",
+                "label_printed": "10.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "An athlete runs round a track three times. Her friend uses a stopwatch to record the time elapsed. At the start of the ride, the stopwatch recorded 6.00 s, after one round the stopwatch recorded 180.00 s and at the end of third round the reading from the stopwatch was 600.00 s. What is the average time for one round of the track?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0063-0025",
+              "type": "page_number",
+              "surface_id": "s-p0063-01",
+              "order": 24,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "57",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "57"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0063-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 2",
+      "title": "Revision exercise 2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0063-0002",
+        "e-p0063-0003",
+        "e-p0063-0004",
+        "e-p0063-0005",
+        "e-p0063-0006",
+        "e-p0063-0007",
+        "e-p0063-0008",
+        "e-p0063-0009",
+        "e-p0063-0010",
+        "e-p0063-0011",
+        "e-p0063-0012",
+        "e-p0063-0013",
+        "e-p0063-0014",
+        "e-p0063-0015",
+        "e-p0063-0016",
+        "e-p0063-0017",
+        "e-p0063-0018",
+        "e-p0063-0019",
+        "e-p0063-0020",
+        "e-p0063-0021",
+        "e-p0063-0022",
+        "e-p0063-0023",
+        "e-p0063-0024"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0063-0012",
+      "kind": "caption_of",
+      "from_ref": "e-p0063-0012",
+      "to_ref": "e-p0063-0011",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.44: Measuring cylinder before and after stone immersion"
+    },
+    {
+      "id": "r-caption-e-p0063-0015",
+      "kind": "caption_of",
+      "from_ref": "e-p0063-0015",
+      "to_ref": "e-p0063-0014",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.45: Measuring textbook length with a metre rule"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0063-001",
+      "kind": "diagram",
+      "page": 63,
+      "surface_id": "s-p0063-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0063-0011"
+      ],
+      "printed_label": "Figure 2.44",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0063-002",
+      "kind": "diagram",
+      "page": 63,
+      "surface_id": "s-p0063-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0063-0014"
+      ],
+      "printed_label": "Figure 2.45",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0063-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 63,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 25,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "question": 18,
+      "figure": 2,
+      "caption": 2,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 1
+  }
+}

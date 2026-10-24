@@ -1,0 +1,1017 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      34
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 34,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0034-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "28",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0034-0001",
+              "type": "running_header",
+              "surface_id": "s-p0034-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0002",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "For example, if the length of a playground is \\(100\\,\\mathrm{m}\\), '100' is the number part while 'm' is the unit part. Therefore, a meaningful measurement must have both a number and a unit.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For example, if the length of a playground is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "100\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", '100' is the number part while 'm' is the unit part. Therefore, a meaningful measurement must have both a number and a unit."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A complete measurement that includes both number and unit parts is called a measurement of a physical quantity. For example, the measurement of \\(100\\,\\mathrm{km}\\), \\(2\\,\\mathrm{kg}\\) or \\(10\\,\\mathrm{s}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A complete measurement that includes both number and unit parts is called a measurement of a physical quantity. For example, the measurement of "
+                  },
+                  {
+                    "t": "math",
+                    "v": "100\\,\\mathrm{km}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "2\\,\\mathrm{kg}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " or "
+                  },
+                  {
+                    "t": "math",
+                    "v": "10\\,\\mathrm{s}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0004",
+              "type": "heading",
+              "surface_id": "s-p0034-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physical quantity",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physical quantity"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A physical quantity is any measurable quantity. Physical quantities are divided into two categories, namely fundamental physical quantities and derived physical quantities.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A physical quantity is any measurable quantity. Physical quantities are divided into two categories, namely fundamental physical quantities and derived physical quantities."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0006",
+              "type": "heading",
+              "surface_id": "s-p0034-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Fundamental physical quantities",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Fundamental physical quantities"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Fundamental physical quantities are quantities of measurement which cannot be expressed in terms of other quantities. These include; length, mass, time, temperature, amount of substance, electric current and luminous intensity. Among the measured fundamental physical quantities mass, length and time are the most common. Table 2.1 shows the fundamental physical quantities and their respective SI units.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Fundamental physical quantities are quantities of measurement which cannot be expressed in terms of other quantities. These include; length, mass, time, temperature, amount of substance, electric current and luminous intensity. Among the measured fundamental physical quantities mass, length and time are the most common. Table 2.1 shows the fundamental physical quantities and their respective SI units."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0008",
+              "type": "caption",
+              "surface_id": "s-p0034-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Table 2.1: Fundamental physical quantities and their SI units",
+                "target_refs": [],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Table 2.1: Fundamental physical quantities and their SI units"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0009",
+              "type": "table",
+              "surface_id": "s-p0034-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "columns": 3,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Physical quantity",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Physical quantity"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "SI unit",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "SI unit"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Unit symbol",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Unit symbol"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Length",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Length"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "metre",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "metre"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "m",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "m"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Mass",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Mass"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "kilogramme",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "kilogramme"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "kg",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "kg"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Time",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Time"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "second",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "second"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "s",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "s"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Electric current",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Electric current"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "ampere",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "ampere"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "A",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "A"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Temperature",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Temperature"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "kelvin",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "kelvin"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "K",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "K"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Amount of substance",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Amount of substance"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "mole",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "mole"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "mol",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "mol"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Luminous intensity",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Luminous intensity"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "candela",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "candela"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "cd",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "cd"
+                        }
+                      ]
+                    }
+                  ]
+                ],
+                "printed_label": "Table 2.1"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0010",
+              "type": "heading",
+              "surface_id": "s-p0034-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Vector and scalar quantities",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Vector and scalar quantities"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The physical quantities can further be classified into either vector or scalar quantities.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The physical quantities can further be classified into either vector or scalar quantities."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0012",
+              "type": "heading",
+              "surface_id": "s-p0034-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Vector quantities",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Vector quantities"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Vector quantities are those quantities that have both magnitude and direction. Examples of vector quantities are force, displacement, velocity and momentum.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Vector quantities are those quantities that have both magnitude and direction. Examples of vector quantities are force, displacement, velocity and momentum."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0014",
+              "type": "heading",
+              "surface_id": "s-p0034-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Scalar quantities",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Scalar quantities"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0015",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Scalar quantities are those quantities that have magnitude but have no direction. Examples of scalar quantities are mass, distance, time, density, volume, pressure, speed, electric current, work, energy, and power.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Scalar quantities are those quantities that have magnitude but have no direction. Examples of scalar quantities are mass, distance, time, density, volume, pressure, speed, electric current, work, energy, and power."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0016",
+              "type": "paragraph",
+              "surface_id": "s-p0034-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "For example, consider a car traveling at a speed of 100 kilometres per hour North. This describes the velocity of the car which is 100 kilometres per hour in the North direction. Velocity is a vector quantity. However, if the intention is to describe only the speed of the car and not the direction, the statement could be simply that the car is travelling at 100 kilometre per hour. Speed is a scalar quantity. Table 2.2 gives some of the vector and scalar quantities.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For example, consider a car traveling at a speed of 100 kilometres per hour North. This describes the velocity of the car which is 100 kilometres per hour in the North direction. Velocity is a vector quantity. However, if the intention is to describe only the speed of the car and not the direction, the statement could be simply that the car is travelling at 100 kilometre per hour. Speed is a scalar quantity. Table 2.2 gives some of the vector and scalar quantities."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0034-0017",
+              "type": "page_number",
+              "surface_id": "s-p0034-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "28",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "28"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0034-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 34,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 17,
+    "types": {
+      "running_header": 1,
+      "paragraph": 8,
+      "heading": 5,
+      "caption": 1,
+      "table": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

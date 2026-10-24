@@ -1,0 +1,745 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      36
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 36,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0036-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "30",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0036-0001",
+              "type": "running_header",
+              "surface_id": "s-p0036-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0002",
+              "type": "heading",
+              "surface_id": "s-p0036-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Classification of ruler",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Classification of ruler"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The rulers have been classified into two categories such as rigid rulers and the flexible rulers. Each category of ruler serves its purpose according to the length of measurement required, with varying levels of portability and application suitability.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The rulers have been classified into two categories such as rigid rulers and the flexible rulers. Each category of ruler serves its purpose according to the length of measurement required, with varying levels of portability and application suitability."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0004",
+              "type": "heading",
+              "surface_id": "s-p0036-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Rigid Rules",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Rigid Rules"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Rigid rulers are solid and do not bend, providing consistent accuracy in measuring straight lines. Common types include metre ruler, 50 cm ruler and 30 cm ruler as discussed hereunder.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Rigid rulers are solid and do not bend, providing consistent accuracy in measuring straight lines. Common types include metre ruler, 50 cm ruler and 30 cm ruler as discussed hereunder."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0006",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Metre Rule:** This rule has a length of 1 metre (100 centimetres). It is commonly made of wood, plastic, or metal and is primarily used for measuring longer distances, often in educational and professional settings like classrooms and workshops. Suitable for measuring larger objects and distances, making it ideal for geometry, craft projects, and mechanical work.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Metre Rule:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " This rule has a length of 1 metre (100 centimetres). It is commonly made of wood, plastic, or metal and is primarily used for measuring longer distances, often in educational and professional settings like classrooms and workshops. Suitable for measuring larger objects and distances, making it ideal for geometry, craft projects, and mechanical work."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**A 50 cm Rule:** It is sometimes referred to half metre rule because it has a length of 50 centimetres (0.5 meters). A 50 cm ruler is more compact than a metre ruler, often favoured for portability and ease of use in smaller projects. Commonly used in schools for drawing straight lines, measuring paper, and conducting small experiments. It is also popular among artists and designers.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A 50 cm Rule:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " It is sometimes referred to half metre rule because it has a length of 50 centimetres (0.5 meters). A 50 cm ruler is more compact than a metre ruler, often favoured for portability and ease of use in smaller projects. Commonly used in schools for drawing straight lines, measuring paper, and conducting small experiments. It is also popular among artists and designers."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**A 30 cm Rule:** A 30 cm ruler is typically the smallest of the three categories and is often made from flexible materials or plastic. Ideal for students, it is commonly used for everyday tasks like measuring small items, drawing straight edges, and creating precise lines in artwork or homework assignments.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A 30 cm Rule:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " A 30 cm ruler is typically the smallest of the three categories and is often made from flexible materials or plastic. Ideal for students, it is commonly used for everyday tasks like measuring small items, drawing straight edges, and creating precise lines in artwork or homework assignments."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0009",
+              "type": "figure",
+              "surface_id": "s-p0036-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0036-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0010",
+              "type": "caption",
+              "surface_id": "s-p0036-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.1: Classification of rulers",
+                "target_refs": [
+                  "e-p0036-0009"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.1: Classification of rulers"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0011",
+              "type": "heading",
+              "surface_id": "s-p0036-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Flexible Ruler",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Flexible Ruler"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0012",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Flexible rulers can bend and curve, making them suitable for measuring lengths that are not straight.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Flexible rulers can bend and curve, making them suitable for measuring lengths that are not straight."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0036-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Tape Measure:** This kind of flexible ruler typically extends anywhere from 1 metre to 10 meters or more. It consists of a long, flexible strip marked with measurements, often housed in a retractable case. It can easily bend around curves or objects and latch onto edges for precise measurements. Such a ruler is widely used in construction, tailoring, and DIY projects, as it is also ideal for measuring curved surfaces, large distances, and irregular shapes where rigid rules might be ineffective.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Tape Measure:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " This kind of flexible ruler typically extends anywhere from 1 metre to 10 meters or more. It consists of a long, flexible strip marked with measurements, often housed in a retractable case. It can easily bend around curves or objects and latch onto edges for precise measurements. Such a ruler is widely used in construction, tailoring, and DIY projects, as it is also ideal for measuring curved surfaces, large distances, and irregular shapes where rigid rules might be ineffective."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0036-0014",
+              "type": "page_number",
+              "surface_id": "s-p0036-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "30",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "30"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-caption-e-p0036-0010",
+      "kind": "caption_of",
+      "from_ref": "e-p0036-0010",
+      "to_ref": "e-p0036-0009",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.1: Classification of rulers"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0036-001",
+      "kind": "diagram",
+      "page": 36,
+      "surface_id": "s-p0036-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0036-0009"
+      ],
+      "printed_label": "Figure 2.1",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0036-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 36,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 14,
+    "types": {
+      "running_header": 1,
+      "heading": 3,
+      "paragraph": 7,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 1
+  }
+}

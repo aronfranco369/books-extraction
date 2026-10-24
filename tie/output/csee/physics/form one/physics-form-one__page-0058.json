@@ -1,0 +1,850 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      58
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 58,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0058-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "52",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0058-0001",
+              "type": "running_header",
+              "surface_id": "s-p0058-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0002",
+              "type": "heading",
+              "surface_id": "s-p0058-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement of volumes of gases",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement of volumes of gases"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0058-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A gas always fills any container into which it is placed. Therefore, the volume of a gas can be determined by measuring the volume of the container that hold the gas. The volume of the container can be determined from its dimensions or by filling it with water and then pouring the water into a measuring cylinder.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A gas always fills any container into which it is placed. Therefore, the volume of a gas can be determined by measuring the volume of the container that hold the gas. The volume of the container can be determined from its dimensions or by filling it with water and then pouring the water into a measuring cylinder."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0004",
+              "type": "heading",
+              "surface_id": "s-p0058-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "Exercise 2.4",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Exercise 2.4"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0005",
+              "type": "question",
+              "surface_id": "s-p0058-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "Calculate the volume of a cube of sides 2 cm.",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the volume of a cube of sides 2 cm."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0006",
+              "type": "question",
+              "surface_id": "s-p0058-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "The volume of a brick is given as 60 cm³. Given that its length and width are 6 cm and 4 cm respectively, calculate its height.",
+                "label_printed": "2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The volume of a brick is given as 60 cm³. Given that its length and width are 6 cm and 4 cm respectively, calculate its height."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0007",
+              "type": "question",
+              "surface_id": "s-p0058-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "A cylindrical container has a diametre of 10 cm and a height of 12 cm. Calculate its volume, given that \\(\\pi=3.14\\).",
+                "label_printed": "3.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A cylindrical container has a diametre of 10 cm and a height of 12 cm. Calculate its volume, given that "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\pi=3.14"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0008",
+              "type": "question",
+              "surface_id": "s-p0058-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "A beaker contains 100 cm³ of liquid. A \\(25\\,\\mathrm{cm^{3}}\\) pipette is used twice to transfer the liquid to another beaker. What is the volume of the liquid left in the original beaker?",
+                "label_printed": "4.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A beaker contains 100 cm³ of liquid. A "
+                  },
+                  {
+                    "t": "math",
+                    "v": "25\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " pipette is used twice to transfer the liquid to another beaker. What is the volume of the liquid left in the original beaker?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0009",
+              "type": "question",
+              "surface_id": "s-p0058-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "The initial volume in a burette was read as 80 cm³. Suppose X cm³ of the liquid was run out and the final volume was read as 57 cm³. Calculate the value of X.",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The initial volume in a burette was read as 80 cm³. Suppose X cm³ of the liquid was run out and the final volume was read as 57 cm³. Calculate the value of X."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0010",
+              "type": "question",
+              "surface_id": "s-p0058-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0058-001"
+              ],
+              "payload": {
+                "text": "What is the volume of an irregular solid immersed in 50 cm³ of water contained in a beaker if it raises the water level to 57 cm³.",
+                "label_printed": "6.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What is the volume of an irregular solid immersed in 50 cm³ of water contained in a beaker if it raises the water level to 57 cm³."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0011",
+              "type": "heading",
+              "surface_id": "s-p0058-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Sources of errors",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Sources of errors"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0012",
+              "type": "paragraph",
+              "surface_id": "s-p0058-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "While taking any measurement, there may be some error in the reading. An error is defined as a deviation from the actual reading. However, there is a more precise definition. An error is a measure of estimated difference between the measured value and the actual value of a physical quantity that is being measured or observed. Errors usually arise due to several reasons:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "While taking any measurement, there may be some error in the reading. An error is defined as a deviation from the actual reading. However, there is a more precise definition. An error is a measure of estimated difference between the measured value and the actual value of a physical quantity that is being measured or observed. Errors usually arise due to several reasons:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0013",
+              "type": "list",
+              "surface_id": "s-p0058-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "An instrument fault during manufacture - If a measuring instrument is not manufactured as per specification, then the accuracy is lowered.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "An instrument fault during manufacture - If a measuring instrument is not manufactured as per specification, then the accuracy is lowered."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Damage during use - Bad handling of instruments can lead to incorrect results. Each apparatus should be used properly and for the right purpose.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Damage during use - Bad handling of instruments can lead to incorrect results. Each apparatus should be used properly and for the right purpose."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Poor storage - Apparatus should be well stored away from factors that affect their accuracy like dust and heat.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Poor storage - Apparatus should be well stored away from factors that affect their accuracy like dust and heat."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Human factors - Errors can arise when an experimenter does not take readings from an instrument properly.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Human factors - Errors can arise when an experimenter does not take readings from an instrument properly."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0014",
+              "type": "paragraph",
+              "surface_id": "s-p0058-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "There are three common errors caused by improper reading of an instrument these are:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "There are three common errors caused by improper reading of an instrument these are:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0015",
+              "type": "list",
+              "surface_id": "s-p0058-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "roman",
+                "items": [
+                  {
+                    "label_printed": "(i)",
+                    "text": "Parallax error;",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Parallax error;"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(ii)",
+                    "text": "Zero error; and",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Zero error; and"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iii)",
+                    "text": "Instrumental error",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Instrumental error"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0058-0016",
+              "type": "page_number",
+              "surface_id": "s-p0058-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "52",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "52"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0058-001",
+      "kind": "exercise",
+      "label_printed": "Exercise 2.4",
+      "title": "Exercise 2.4",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0058-0004",
+        "e-p0058-0005",
+        "e-p0058-0006",
+        "e-p0058-0007",
+        "e-p0058-0008",
+        "e-p0058-0009",
+        "e-p0058-0010"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0058-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 58,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 16,
+    "types": {
+      "running_header": 1,
+      "heading": 3,
+      "paragraph": 3,
+      "question": 6,
+      "list": 2,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

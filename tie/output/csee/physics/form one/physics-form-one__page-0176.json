@@ -1,0 +1,696 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      176
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 176,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0176-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "170",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0176-0001",
+              "type": "running_header",
+              "surface_id": "s-p0176-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Magnetism",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Magnetism"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0002",
+              "type": "instruction",
+              "surface_id": "s-p0176-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0176-001"
+              ],
+              "payload": {
+                "text": "Testing the law of magnetism using bar magnets and a thread stand.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Testing the law of magnetism using bar magnets and a thread stand."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0003",
+              "type": "list",
+              "surface_id": "s-p0176-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0176-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Suspend a bar magnet horizontally using a piece of thread tied at its centre of gravity.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Suspend a bar magnet horizontally using a piece of thread tied at its centre of gravity."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Allow the suspended magnet to come to rest in the magnetic North-South direction.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Allow the suspended magnet to come to rest in the magnetic North-South direction."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Bring the North pole of a second bar magnet close to the North pole of the suspended magnet.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Bring the North pole of a second bar magnet close to the North pole of the suspended magnet."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Next, bring the South pole of the second magnet close to the North pole of the suspended magnet.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Next, bring the South pole of the second magnet close to the North pole of the suspended magnet."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0004",
+              "type": "paragraph",
+              "surface_id": "s-p0176-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0176-001"
+              ],
+              "payload": {
+                "text": "Observation: When like poles (N-N) approach, the suspended magnet moves away (repulsion). When unlike poles (N-S) approach, the suspended magnet is drawn closer (attraction). Conclusion: Like poles repel; unlike poles attract. Repulsion is the only sure test for magnetisation.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Observation: When like poles (N-N) approach, the suspended magnet moves away (repulsion). When unlike poles (N-S) approach, the suspended magnet is drawn closer (attraction). Conclusion: Like poles repel; unlike poles attract. Repulsion is the only sure test for magnetisation."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0005",
+              "type": "heading",
+              "surface_id": "s-p0176-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Magnetisation and demagnetisation",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Magnetisation and demagnetisation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0006",
+              "type": "heading",
+              "surface_id": "s-p0176-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Domain theory of magnetism",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Domain theory of magnetism"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0176-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "According to the domain theory, ferromagnetic materials consist of tiny atomic regions called magnetic domains. Each domain acts like a microscopic bar magnet with its own North and South poles.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "According to the domain theory, ferromagnetic materials consist of tiny atomic regions called magnetic domains. Each domain acts like a microscopic bar magnet with its own North and South poles."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0008",
+              "type": "list",
+              "surface_id": "s-p0176-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "bullet",
+                "items": [
+                  {
+                    "label_printed": "*",
+                    "text": "**Unmagnetised material:** The magnetic domains are randomly oriented, so their individual magnetic fields cancel out, leaving no net external magnetism.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Unmagnetised material:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " The magnetic domains are randomly oriented, so their individual magnetic fields cancel out, leaving no net external magnetism."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Magnetised material:** External magnetic forces align the domains so that their magnetic fields point in the same parallel direction, creating macroscopically observable North and South poles at opposite ends.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Magnetised material:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " External magnetic forces align the domains so that their magnetic fields point in the same parallel direction, creating macroscopically observable North and South poles at opposite ends."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0176-0009",
+              "type": "page_number",
+              "surface_id": "s-p0176-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "170",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "170"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0176-001",
+      "kind": "activity",
+      "label_printed": "Activity 10.1",
+      "title": "Activity 10.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0176-0002",
+        "e-p0176-0003",
+        "e-p0176-0004"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0176-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 176,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0176-002",
+      "issue": "transcript_sequence_needs_source_review",
+      "pdf_page": 176,
+      "element_ref": null,
+      "detail": "This part of the upload introduces chapters and end matter inconsistent with its contents. Page 200 claims the end of the textbook, but page 201 resumes Work, energy and power. Preserved for comparison; do not accept as source-verified.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 9,
+    "types": {
+      "running_header": 1,
+      "instruction": 1,
+      "list": 2,
+      "paragraph": 2,
+      "heading": 2,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

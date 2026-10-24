@@ -1,0 +1,672 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      7
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 7,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0007-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "1",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0007-0001",
+              "type": "heading",
+              "surface_id": "s-p0007-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001"
+              ],
+              "payload": {
+                "text": "Chapter One: Introduction to Physics",
+                "level": 1,
+                "role": "chapter",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Chapter One: Introduction to Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0002",
+              "type": "heading",
+              "surface_id": "s-p0007-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001"
+              ],
+              "payload": {
+                "text": "Introduction",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001"
+              ],
+              "payload": {
+                "text": "Physics is the fundamental branch of science that explores the principles governing the behaviour of matter and energy in the universe. Physics deals with very large objects like planets and very small ones like atoms. It also covers various of concepts, theories and principles that provide insights into the natural world and its interactions. In this chapter, you will learn the concepts, theories and principles of Physics. The competencies developed will enable you to apply the concepts, theories and principles of Physics to solve daily life problems. You will also be able to relate physics with other branches of natural sciences.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics is the fundamental branch of science that explores the principles governing the behaviour of matter and energy in the universe. Physics deals with very large objects like planets and very small ones like atoms. It also covers various of concepts, theories and principles that provide insights into the natural world and its interactions. In this chapter, you will learn the concepts, theories and principles of Physics. The competencies developed will enable you to apply the concepts, theories and principles of Physics to solve daily life problems. You will also be able to relate physics with other branches of natural sciences."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0004",
+              "type": "note",
+              "surface_id": "s-p0007-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001",
+                "g-p0007-002"
+              ],
+              "payload": {
+                "text": "Think how our life could be without the interaction between matter and energy",
+                "note_kind": "reflection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Think how our life could be without the interaction between matter and energy"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0005",
+              "type": "heading",
+              "surface_id": "s-p0007-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001",
+                "g-p0007-002"
+              ],
+              "payload": {
+                "text": "Concept of Physics",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Concept of Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0006",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001",
+                "g-p0007-002"
+              ],
+              "payload": {
+                "text": "The universe is a totality of matter, energy, space, and time. The word universe originates from the Latin word 'universus' which means 'all or everything'. It can therefore be referred to as everything surrounding us; within, near, far and beyond our planet, solar system, and galaxy in which our solar system belongs (the Milky Way Galaxy). We are part of the universe. Science is the major tool for studying and exploring the universe. It begins with inquiries such as what is the universe? What is its origin? What makes up the universe? How does it change with time? Why does the sky look blue? And why does iron turn red when heated? To answer such questions, the applications of theories, principles and laws of science are required.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The universe is a totality of matter, energy, space, and time. The word universe originates from the Latin word 'universus' which means 'all or everything'. It can therefore be referred to as everything surrounding us; within, near, far and beyond our planet, solar system, and galaxy in which our solar system belongs (the Milky Way Galaxy). We are part of the universe. Science is the major tool for studying and exploring the universe. It begins with inquiries such as what is the universe? What is its origin? What makes up the universe? How does it change with time? Why does the sky look blue? And why does iron turn red when heated? To answer such questions, the applications of theories, principles and laws of science are required."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001",
+                "g-p0007-002"
+              ],
+              "payload": {
+                "text": "Physics falls under a broad category of natural science, which is divided into three main branches, namely physics, chemistry, and biology. Physics is the branch of science which deals with the study of matter, energy and their interactions.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics falls under a broad category of natural science, which is divided into three main branches, namely physics, chemistry, and biology. Physics is the branch of science which deals with the study of matter, energy and their interactions."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0007-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0007-001",
+                "g-p0007-002"
+              ],
+              "payload": {
+                "text": "The word physics originated from the Greek word 'Physikos' which means 'nature'. Physics involves the study of physical and natural phenomena around us. Examples of these phenomena are the occurrence of eclipses, causes of sunset and sunrise, the formation of the rainbow, and volcanic eruption. Figure 1.1 shows examples of phenomena described by Physics.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The word physics originated from the Greek word 'Physikos' which means 'nature'. Physics involves the study of physical and natural phenomena around us. Examples of these phenomena are the occurrence of eclipses, causes of sunset and sunrise, the formation of the rainbow, and volcanic eruption. Figure 1.1 shows examples of phenomena described by Physics."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0007-0009",
+              "type": "page_number",
+              "surface_id": "s-p0007-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "1",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0007-001",
+      "kind": "chapter",
+      "label_printed": "Chapter One",
+      "title": "Chapter One",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0007-0001",
+        "e-p0007-0002",
+        "e-p0007-0003",
+        "e-p0007-0004",
+        "e-p0007-0005",
+        "e-p0007-0006",
+        "e-p0007-0007",
+        "e-p0007-0008"
+      ],
+      "notes": [
+        "Transcript group: chapter"
+      ]
+    },
+    {
+      "id": "g-p0007-002",
+      "kind": "section",
+      "label_printed": null,
+      "title": "note",
+      "parent_ref": "g-p0007-001",
+      "element_refs": [
+        "e-p0007-0004",
+        "e-p0007-0005",
+        "e-p0007-0006",
+        "e-p0007-0007",
+        "e-p0007-0008"
+      ],
+      "notes": [
+        "Transcript group: note"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0007-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 7,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0007-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 7,
+      "element_ref": null,
+      "detail": "Nested groups auto-closed at END chapter.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 9,
+    "types": {
+      "heading": 3,
+      "paragraph": 4,
+      "note": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

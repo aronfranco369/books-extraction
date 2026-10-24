@@ -1,0 +1,768 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      43
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 43,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0043-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "37",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0043-0001",
+              "type": "running_header",
+              "surface_id": "s-p0043-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0002",
+              "type": "paragraph",
+              "surface_id": "s-p0043-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A test tube is cylindrical in shape. This means that its diametre is the same throughout. The readings obtained using the outside calliper jaws are equal in magnitude since the test tube is almost uniform in shape.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A test tube is cylindrical in shape. This means that its diametre is the same throughout. The readings obtained using the outside calliper jaws are equal in magnitude since the test tube is almost uniform in shape."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0043-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "In an experiment, it is always best to obtain many readings so as to obtain an average result. Two or more readings offer an opportunity for the experimenter to compare and identify any pattern.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In an experiment, it is always best to obtain many readings so as to obtain an average result. Two or more readings offer an opportunity for the experimenter to compare and identify any pattern."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0004",
+              "type": "heading",
+              "surface_id": "s-p0043-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0043-001"
+              ],
+              "payload": {
+                "text": "Task 2.3",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Task 2.3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0005",
+              "type": "instruction",
+              "surface_id": "s-p0043-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0043-001"
+              ],
+              "payload": {
+                "text": "Collect a variety of objects such as books, pencils, beakers, test tubes and other materials available at your physics laboratory. Use a vernier calliper to measure the thicknesses of the collected objects. The depth, internal and external diameters of the hollow objects should also be measured. Record your measurements in the following table:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Collect a variety of objects such as books, pencils, beakers, test tubes and other materials available at your physics laboratory. Use a vernier calliper to measure the thicknesses of the collected objects. The depth, internal and external diameters of the hollow objects should also be measured. Record your measurements in the following table:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0006",
+              "type": "table",
+              "surface_id": "s-p0043-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0043-001"
+              ],
+              "payload": {
+                "columns": 4,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Object",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Object"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Dimension (cm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Dimension (cm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Main scale reading (cm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Main scale reading (cm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Vernier scale reading (cm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Vernier scale reading (cm)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ]
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0007",
+              "type": "heading",
+              "surface_id": "s-p0043-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A micrometre screw gauge",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A micrometre screw gauge"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0043-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A micrometre screw gauge gives readings with better precision than the vernier calliper. Measurement can be obtained to the nearest thousandth of a centimetre. This is an accuracy of 0.001 cm. For this reason, it is usually used to measure the diameters of thin objects like wires and ball bearings. The micrometre screw gauge has different parts, as shown in Figure 2.15.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A micrometre screw gauge gives readings with better precision than the vernier calliper. Measurement can be obtained to the nearest thousandth of a centimetre. This is an accuracy of 0.001 cm. For this reason, it is usually used to measure the diameters of thin objects like wires and ball bearings. The micrometre screw gauge has different parts, as shown in Figure 2.15."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0009",
+              "type": "figure",
+              "surface_id": "s-p0043-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0043-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0010",
+              "type": "caption",
+              "surface_id": "s-p0043-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.15: Parts of the micrometre screw gauge",
+                "target_refs": [
+                  "e-p0043-0009"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.15: Parts of the micrometre screw gauge"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0043-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A micrometre screw gauge consists of main scale (sleeve) and thimble scale. The main scale is marked in millimetres. The thimble scale is divided depending on the distance between two consecutive threads of the screw. This is called the pitch of the screw. If the pitch of the screw of the micrometre is 0.5 mm, then the thimble scale has 50 equal divisions. Otherwise, it has 100 divisions when the pitch is 1.0 mm.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A micrometre screw gauge consists of main scale (sleeve) and thimble scale. The main scale is marked in millimetres. The thimble scale is divided depending on the distance between two consecutive threads of the screw. This is called the pitch of the screw. If the pitch of the screw of the micrometre is 0.5 mm, then the thimble scale has 50 equal divisions. Otherwise, it has 100 divisions when the pitch is 1.0 mm."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0043-0012",
+              "type": "page_number",
+              "surface_id": "s-p0043-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "37",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "37"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0043-001",
+      "kind": "task",
+      "label_printed": "Task 2.3",
+      "title": "Task 2.3",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0043-0004",
+        "e-p0043-0005",
+        "e-p0043-0006"
+      ],
+      "notes": [
+        "Transcript group: task"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0043-0010",
+      "kind": "caption_of",
+      "from_ref": "e-p0043-0010",
+      "to_ref": "e-p0043-0009",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.15: Parts of the micrometre screw gauge"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0043-001",
+      "kind": "diagram",
+      "page": 43,
+      "surface_id": "s-p0043-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0043-0009"
+      ],
+      "printed_label": "Figure 2.15",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0043-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 43,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 12,
+    "types": {
+      "running_header": 1,
+      "paragraph": 4,
+      "heading": 2,
+      "instruction": 1,
+      "table": 1,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 1
+  }
+}

@@ -1,0 +1,775 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      9
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 9,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0009-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "3",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0009-0001",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics is known to be a fundamental subject among all branches of science. The content of physics is very broad and wide in such a way that it cannot be covered within a single domain. Therefore, physics is divided into several branches, each focusing on different aspects of the universe. Some of the major branches of physics are:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics is known to be a fundamental subject among all branches of science. The content of physics is very broad and wide in such a way that it cannot be covered within a single domain. Therefore, physics is divided into several branches, each focusing on different aspects of the universe. Some of the major branches of physics are:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0002",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Mechanics",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mechanics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Mechanics is the branch of physics that deals with objects that are either stationary or in motion, the influence of forces acting on them and their impacts. Under this branch, aspects like linear, circular, and oscillatory motions of objects as well as fluids and their impacts are studied.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mechanics is the branch of physics that deals with objects that are either stationary or in motion, the influence of forces acting on them and their impacts. Under this branch, aspects like linear, circular, and oscillatory motions of objects as well as fluids and their impacts are studied."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0004",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Heat",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Heat"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Heat is one among the forms of energy. Heat can be transferred from one point to another by either conduction, convection or radiation. This branch of physics describes the phenomena of matter when heat energy is supplied to it. These phenomena include the expansion of matter, changes of states of matter, and the anomalous expansion of water.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Heat is one among the forms of energy. Heat can be transferred from one point to another by either conduction, convection or radiation. This branch of physics describes the phenomena of matter when heat energy is supplied to it. These phenomena include the expansion of matter, changes of states of matter, and the anomalous expansion of water."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0006",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Light",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Light"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Light is a form of energy that travels in a straight line. There are two types of light sources: Natural and artificial. The Sun is the primary or main source of natural light. We see different objects with the aid of light. Our eyes enable us to see objects when light falls on them.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Light is a form of energy that travels in a straight line. There are two types of light sources: Natural and artificial. The Sun is the primary or main source of natural light. We see different objects with the aid of light. Our eyes enable us to see objects when light falls on them."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0008",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Electromagnetism",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electromagnetism"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0009",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Electromagnetism is the branch of physics that deals with the interaction between electric and magnetic fields. It has a wide range of applications in our daily life, including generation of electricity and fabrication of motors. Life could be difficult without electricity.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electromagnetism is the branch of physics that deals with the interaction between electric and magnetic fields. It has a wide range of applications in our daily life, including generation of electricity and fabrication of motors. Life could be difficult without electricity."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0010",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Astronomy",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Astronomy"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Astronomy deals with the study of the universe (cosmos) and everything contained in it. The word astronomy originates from two Greek words, 'astron' which means 'star' and 'nomos' which means 'laws'. The Greeks referred to it as the study of laws of stars. Astronomy seeks to answer inquiries such as how celestial objects like moons, planets, stars, and galaxies originate and change with time.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Astronomy deals with the study of the universe (cosmos) and everything contained in it. The word astronomy originates from two Greek words, 'astron' which means 'star' and 'nomos' which means 'laws'. The Greeks referred to it as the study of laws of stars. Astronomy seeks to answer inquiries such as how celestial objects like moons, planets, stars, and galaxies originate and change with time."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0012",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Geophysics",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Geophysics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Geophysics is the branch of physics that deals with physical processes and physical properties of the Earth and its surroundings. It speculates the interior and exterior structure of the earth in terms of physical and chemical properties.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Geophysics is the branch of physics that deals with physical processes and physical properties of the Earth and its surroundings. It speculates the interior and exterior structure of the earth in terms of physical and chemical properties."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0014",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Electronics",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electronics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0015",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Electronics is the basis of modern technology. It involves the study of circuits that are made of semiconductor components like, diode, transistor, and integrated circuits. Most of communication devices are made of semiconductor materials. Examples of devices that use the principles of electronics are television, radio, Light Emitting Diode (LED) lamps, mobile phones, cameras, printers, and computers.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electronics is the basis of modern technology. It involves the study of circuits that are made of semiconductor components like, diode, transistor, and integrated circuits. Most of communication devices are made of semiconductor materials. Examples of devices that use the principles of electronics are television, radio, Light Emitting Diode (LED) lamps, mobile phones, cameras, printers, and computers."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0016",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics of the atom",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics of the atom"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0017",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "This is a branch of physics which deals with the behaviour of particles that make up the atom and accompanying energy.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This is a branch of physics which deals with the behaviour of particles that make up the atom and accompanying energy."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-0018",
+              "type": "page_number",
+              "surface_id": "s-p0009-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "3",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0009-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 9,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 18,
+    "types": {
+      "paragraph": 9,
+      "heading": 8,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

@@ -1,0 +1,1334 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      85
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 85,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0085-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "79",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0085-0001",
+              "type": "running_header",
+              "surface_id": "s-p0085-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Density and relative density",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Density and relative density"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0002",
+              "type": "table",
+              "surface_id": "s-p0085-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "columns": 9,
+                "header_rows": 2,
+                "rows": [
+                  [
+                    {
+                      "text": "Solids",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Solids"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Substance",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Substance"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Aluminium",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Aluminium"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Copper",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Copper"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Gold",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Gold"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Iron",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Iron"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Lead",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Lead"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Glass",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Glass"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Ice (0 °C)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Ice (0 °C)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "Density (kg/m³)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Density (kg/m³)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "2 700",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "2 700"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "8 800",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "8 800"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "19 300",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "19 300"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "7 800",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "7 800"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "11 300",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "11 300"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "2 500",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "2 500"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "920",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "920"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Liquids",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Liquids"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Substance",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Substance"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Seawater",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Seawater"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Water (4 °C)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Water (4 °C)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Water (20 °C)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Water (20 °C)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Gasoline / petrol",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Gasoline / petrol"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "Density (kg/m³)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Density (kg/m³)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "1 030",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "1 030"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "1 000",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "1 000"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "998",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "998"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "700",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Gases",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Gases"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Substance",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Substance"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Air (at standard conditions)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Air (at standard conditions)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Carbon dioxide",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Carbon dioxide"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Hydrogen",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Hydrogen"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Helium",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Helium"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "Density (kg/m³)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Density (kg/m³)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "1.225",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "1.225"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "1.98",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "1.98"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "0.820",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "0.820"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "0.178",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "0.178"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ]
+                ],
+                "printed_label": "Table 4.1"
+              },
+              "legibility": "clear",
+              "notes": [
+                "Unverified source merge directive: MERGE row=1 col=1 rowspan=2 colspan=1",
+                "Unverified source merge directive: MERGE row=1 col=2 rowspan=1 colspan=8"
+              ]
+            },
+            {
+              "id": "e-p0085-0003",
+              "type": "heading",
+              "surface_id": "s-p0085-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "text": "Activity 4.1",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 4.1"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0004",
+              "type": "instruction",
+              "surface_id": "s-p0085-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "text": "Aim: To determine the mass to volume ratio for given objects. Materials: Vernier calliper, beam balance, three identical blocks of different materials as shown in Figure 4.4 (for instance, aluminium, copper, and iron, respectively)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: To determine the mass to volume ratio for given objects. Materials: Vernier calliper, beam balance, three identical blocks of different materials as shown in Figure 4.4 (for instance, aluminium, copper, and iron, respectively)"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0005",
+              "type": "figure",
+              "surface_id": "s-p0085-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "ref": "f-p0085-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0006",
+              "type": "caption",
+              "surface_id": "s-p0085-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "text": "Figure 4.4: Aluminium, copper, and iron blocks Procedure 1. Measure the length, height and width of each object. 2. Measure the mass of each block. 3. Record all observations using Table 4.2.",
+                "target_refs": [
+                  "e-p0085-0005"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 4.4: Aluminium, copper, and iron blocks Procedure 1. Measure the length, height and width of each object. 2. Measure the mass of each block. 3. Record all observations using Table 4.2."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0007",
+              "type": "table",
+              "surface_id": "s-p0085-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "columns": 8,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Substance",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Substance"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Length (cm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Length (cm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Height (cm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Height (cm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Width (cm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Width (cm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Mass (g)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Mass (g)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Volume (cm³)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Volume (cm³)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "m/V",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "m/V"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Aluminium",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Aluminium"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Copper",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Copper"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Iron",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Iron"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "runs": []
+                    }
+                  ]
+                ],
+                "printed_label": "Table 4.2"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0008",
+              "type": "question",
+              "surface_id": "s-p0085-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "text": "Compare the mass to volume ratio of each substance.",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Compare the mass to volume ratio of each substance."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0009",
+              "type": "question",
+              "surface_id": "s-p0085-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "text": "Are they different or the same? Why?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Are they different or the same? Why?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0010",
+              "type": "question",
+              "surface_id": "s-p0085-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0085-001"
+              ],
+              "payload": {
+                "text": "What physical quantity does the ratio represent?",
+                "label_printed": "(c)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What physical quantity does the ratio represent?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0085-0011",
+              "type": "page_number",
+              "surface_id": "s-p0085-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "79",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "79"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0085-001",
+      "kind": "activity",
+      "label_printed": "Activity 4.1",
+      "title": "Activity 4.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0085-0003",
+        "e-p0085-0004",
+        "e-p0085-0005",
+        "e-p0085-0006",
+        "e-p0085-0007",
+        "e-p0085-0008",
+        "e-p0085-0009",
+        "e-p0085-0010"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0085-0006",
+      "kind": "caption_of",
+      "from_ref": "e-p0085-0006",
+      "to_ref": "e-p0085-0005",
+      "resolution": "resolved",
+      "printed_text": "Figure 4.4: Aluminium, copper, and iron blocks Procedure 1. Measure the length, height and width of each object. 2. Measure the mass of each block. 3. Record all observations using Table 4.2."
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0085-001",
+      "kind": "diagram",
+      "page": 85,
+      "surface_id": "s-p0085-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0085-0005"
+      ],
+      "printed_label": "Figure 4.4",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0085-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 85,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0085-002",
+      "issue": "table_structure_needs_review",
+      "pdf_page": 85,
+      "element_ref": null,
+      "detail": "Supplied table dimensions, missing trailing cells or merge directives need checking. All supplied cells are retained in an expanded rectangular grid; no unverified spans were applied.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0085-003",
+      "issue": "table_structure_needs_review",
+      "pdf_page": 85,
+      "element_ref": null,
+      "detail": "Supplied table dimensions, missing trailing cells or merge directives need checking. All supplied cells are retained in an expanded rectangular grid; no unverified spans were applied.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 11,
+    "types": {
+      "running_header": 1,
+      "table": 2,
+      "heading": 1,
+      "instruction": 1,
+      "figure": 1,
+      "caption": 1,
+      "question": 3,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 3
+  }
+}

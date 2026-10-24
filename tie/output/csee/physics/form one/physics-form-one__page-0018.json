@@ -1,0 +1,858 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      18
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 18,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0018-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "12",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0018-0001",
+              "type": "running_header",
+              "surface_id": "s-p0018-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0002",
+              "type": "instruction",
+              "surface_id": "s-p0018-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0018-001"
+              ],
+              "payload": {
+                "text": "Part III:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Part III:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0003",
+              "type": "list",
+              "surface_id": "s-p0018-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0018-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Go out of the classroom and observe the top of the flagpole.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Go out of the classroom and observe the top of the flagpole."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Look at the full length of the string used to hoist the flag and record your observations.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Look at the full length of the string used to hoist the flag and record your observations."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0004",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0018-001"
+              ],
+              "payload": {
+                "text": "Questions",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0005",
+              "type": "question",
+              "surface_id": "s-p0018-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0018-001"
+              ],
+              "payload": {
+                "text": "How did your face look like?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How did your face look like?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0006",
+              "type": "question",
+              "surface_id": "s-p0018-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0018-001"
+              ],
+              "payload": {
+                "text": "From your observation, explain what happened in step 4.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "From your observation, explain what happened in step 4."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0007",
+              "type": "question",
+              "surface_id": "s-p0018-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0018-001"
+              ],
+              "payload": {
+                "text": "What makes the scouts in your school able to raise the flag to the top of the pole?",
+                "label_printed": "(c)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What makes the scouts in your school able to raise the flag to the top of the pole?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Plane mirrors always form images of their observers. Therefore, a person looking at a mirror will see an image of himself or herself. A scale balance leans on the side that has more mass than the other. This is useful when measuring some items such as sugar and flour. A flag is raised to the top of a flagpole using a string that is rotated on a pulley. The string is then fastened at the bottom. All of these are applications of physics in daily life.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Plane mirrors always form images of their observers. Therefore, a person looking at a mirror will see an image of himself or herself. A scale balance leans on the side that has more mass than the other. This is useful when measuring some items such as sugar and flour. A flag is raised to the top of a flagpole using a string that is rotated on a pulley. The string is then fastened at the bottom. All of these are applications of physics in daily life."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0009",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Theories and principles of Physics",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Theories and principles of Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The discipline of physics is built upon a foundation of theories and principles that have been developed and refined over centuries of scientific exploration. These theories and principles serve as the building blocks for understanding the laws and phenomena that govern the natural world. This means scientific exploration is a very important aspect of the development of physics. Therefore, in this section, we shall discuss the aspect of scientific investigation. Further, we will discuss the existing basic theories and principles of physics.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The discipline of physics is built upon a foundation of theories and principles that have been developed and refined over centuries of scientific exploration. These theories and principles serve as the building blocks for understanding the laws and phenomena that govern the natural world. This means scientific exploration is a very important aspect of the development of physics. Therefore, in this section, we shall discuss the aspect of scientific investigation. Further, we will discuss the existing basic theories and principles of physics."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0011",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Basic principles of scientific investigations",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Basic principles of scientific investigations"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0012",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The basic principles of scientific investigations form the foundation of the scientific method and guide researchers in conducting systematic and reliable experiments. These principles are essential for ensuring the accuracy, objectivity, and productibility of scientific findings.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The basic principles of scientific investigations form the foundation of the scientific method and guide researchers in conducting systematic and reliable experiments. These principles are essential for ensuring the accuracy, objectivity, and productibility of scientific findings."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0013",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The concept of scientific investigation",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The concept of scientific investigation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0014",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The scientific method is the basic skill needed in the world of science. Humans are always curious about why and how things happen in the world. The scientific method provides scientists with a well-structured platform to help find the answers to their questions. Therefore, the scientific method is a set of steps used by scientists to investigate a problem or answer questions.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The scientific method is the basic skill needed in the world of science. Humans are always curious about why and how things happen in the world. The scientific method provides scientists with a well-structured platform to help find the answers to their questions. Therefore, the scientific method is a set of steps used by scientists to investigate a problem or answer questions."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0015",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Basic steps of scientific investigation",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Basic steps of scientific investigation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0016",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Scientists including physicists are always looking for scientific evidence. A systematic search for evidence is recommended during and after experiments. The following are steps followed when carrying out a scientific investigation.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Scientists including physicists are always looking for scientific evidence. A systematic search for evidence is recommended during and after experiments. The following are steps followed when carrying out a scientific investigation."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0017",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "1. Problem identification",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1. Problem identification"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0018",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "This is the first step in the scientific method. It is when one makes a puzzling observation. An example of such an observation would be 'What is the relationship between the length of the string to which the pendulum bob is attached and the time taken by the pendulum to complete a given number of oscillations? The following examples will help you to build competence on how to identify a problem.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This is the first step in the scientific method. It is when one makes a puzzling observation. An example of such an observation would be 'What is the relationship between the length of the string to which the pendulum bob is attached and the time taken by the pendulum to complete a given number of oscillations? The following examples will help you to build competence on how to identify a problem."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-0019",
+              "type": "page_number",
+              "surface_id": "s-p0018-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "12",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "12"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0018-001",
+      "kind": "activity",
+      "label_printed": "Activity 1.1",
+      "title": "Activity 1.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0018-0002",
+        "e-p0018-0003",
+        "e-p0018-0004",
+        "e-p0018-0005",
+        "e-p0018-0006",
+        "e-p0018-0007"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-continues-e-p0018-0002",
+      "kind": "continues",
+      "from_ref": "e-p0018-0002",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "physics-form-one-text-import-96de06abf06e",
+        "pdf_page": 17,
+        "printed_page": null,
+        "label_printed": null
+      }
+    }
+  ],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0018-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 18,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 19,
+    "types": {
+      "running_header": 1,
+      "instruction": 1,
+      "list": 1,
+      "heading": 6,
+      "question": 3,
+      "paragraph": 6,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

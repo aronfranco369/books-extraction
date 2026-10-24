@@ -1,0 +1,1011 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      50
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 50,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0050-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "44",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0050-0001",
+              "type": "running_header",
+              "surface_id": "s-p0050-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0002",
+              "type": "heading",
+              "surface_id": "s-p0050-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "How to use a triple beam balance",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How to use a triple beam balance"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0050-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "With the pan empty, move the three weights to the left of the beams, so that the balance reads zero, shown in Figure 2.22. The balance pointer should be straight and aligned with the fixed mark at the right of the balance. If the pointer is not straight, use the counter weight to adjust as needed.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "With the pan empty, move the three weights to the left of the beams, so that the balance reads zero, shown in Figure 2.22. The balance pointer should be straight and aligned with the fixed mark at the right of the balance. If the pointer is not straight, use the counter weight to adjust as needed."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0004",
+              "type": "figure",
+              "surface_id": "s-p0050-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0050-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0005",
+              "type": "caption",
+              "surface_id": "s-p0050-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.22: A set triple balance",
+                "target_refs": [
+                  "e-p0050-0004"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.22: A set triple balance"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0006",
+              "type": "list",
+              "surface_id": "s-p0050-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Once the balance has been adjusted, place the object to be measured on the pan.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Once the balance has been adjusted, place the object to be measured on the pan."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Move the 100 gram weight to the right along its beam until the indicator just drops below the fixed mark. The mark to the immediate left of this point indicates the number of hundreds of grams. Note down this value which is 0 g for the case of Figure 2.23.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Move the 100 gram weight to the right along its beam until the indicator just drops below the fixed mark. The mark to the immediate left of this point indicates the number of hundreds of grams. Note down this value which is 0 g for the case of Figure 2.23."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Move the 10 gram weight to the right along its beam until the indicator drops below the fixed mark. The mark immediately to the left of this point indicates the number of tens of grams. Note down this value, 20 g for the case of Figure 2.23.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Move the 10 gram weight to the right along its beam until the indicator drops below the fixed mark. The mark immediately to the left of this point indicates the number of tens of grams. Note down this value, 20 g for the case of Figure 2.23."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Move the 1 gram weight to the right along its beam until the pointer coincides directly with the fixed mark on the right, as shown in Figure 2.23. Note down this value which is 5 g and given to the nearest tenth of a gram.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Move the 1 gram weight to the right along its beam until the pointer coincides directly with the fixed mark on the right, as shown in Figure 2.23. Note down this value which is 5 g and given to the nearest tenth of a gram."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "To find the mass of the object on the pan, add the numbers from the three beams. That is, \\(0\\,\\mathrm{g}+20\\,\\mathrm{g}+5\\,\\mathrm{g}=25\\,\\mathrm{g}\\).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "To find the mass of the object on the pan, add the numbers from the three beams. That is, "
+                      },
+                      {
+                        "t": "math",
+                        "v": "0\\,\\mathrm{g}+20\\,\\mathrm{g}+5\\,\\mathrm{g}=25\\,\\mathrm{g}"
+                      },
+                      {
+                        "t": "text",
+                        "v": "."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0007",
+              "type": "figure",
+              "surface_id": "s-p0050-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0050-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0008",
+              "type": "caption",
+              "surface_id": "s-p0050-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.23: The three weights showing the mass of the object",
+                "target_refs": [
+                  "e-p0050-0007"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.23: The three weights showing the mass of the object"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0009",
+              "type": "heading",
+              "surface_id": "s-p0050-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-001"
+              ],
+              "payload": {
+                "text": "Example 2.5",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 2.5"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0050-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-001"
+              ],
+              "payload": {
+                "text": "The diagram in Figure 2.24 shows the position of the three weights on the beams of a triple beam balance. Determine the mass of the object.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The diagram in Figure 2.24 shows the position of the three weights on the beams of a triple beam balance. Determine the mass of the object."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0011",
+              "type": "figure",
+              "surface_id": "s-p0050-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-001"
+              ],
+              "payload": {
+                "ref": "f-p0050-003"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0012",
+              "type": "caption",
+              "surface_id": "s-p0050-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-001"
+              ],
+              "payload": {
+                "text": "Figure 2.24",
+                "target_refs": [
+                  "e-p0050-0011"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.24"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0013",
+              "type": "solution",
+              "surface_id": "s-p0050-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-001"
+              ],
+              "payload": {
+                "text": "Start with 100 g, 10 g, then 1 g. That is, \\(300\\,\\mathrm{g}+40\\,\\mathrm{g}+3.5\\,\\mathrm{g}=343.5\\,\\mathrm{g}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Start with 100 g, 10 g, then 1 g. That is, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "300\\,\\mathrm{g}+40\\,\\mathrm{g}+3.5\\,\\mathrm{g}=343.5\\,\\mathrm{g}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0014",
+              "type": "heading",
+              "surface_id": "s-p0050-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A digital balance",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A digital balance"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0015",
+              "type": "paragraph",
+              "surface_id": "s-p0050-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A digital balance is a very sensitive weighing balance. It can measure masses to an accuracy of one thousandth of a gram (0.001 g). The object whose mass is to be measured is placed on the pan on top of the balance and the mass read from the digital display.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A digital balance is a very sensitive weighing balance. It can measure masses to an accuracy of one thousandth of a gram (0.001 g). The object whose mass is to be measured is placed on the pan on top of the balance and the mass read from the digital display."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0016",
+              "type": "heading",
+              "surface_id": "s-p0050-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-002"
+              ],
+              "payload": {
+                "text": "Task 2.6",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Task 2.6"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0017",
+              "type": "instruction",
+              "surface_id": "s-p0050-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-002"
+              ],
+              "payload": {
+                "text": "Perform the following tasks:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Perform the following tasks:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0018",
+              "type": "list",
+              "surface_id": "s-p0050-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0050-002"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Use a triple beam balance to measure the mass of your physics textbook, exercise book and your pen.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Use a triple beam balance to measure the mass of your physics textbook, exercise book and your pen."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Use a digital balance to measure the mass of the same materials.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Use a digital balance to measure the mass of the same materials."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Compare the two measurements and discuss any differences.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Compare the two measurements and discuss any differences."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0050-0019",
+              "type": "page_number",
+              "surface_id": "s-p0050-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "44",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "44"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0050-001",
+      "kind": "example",
+      "label_printed": null,
+      "title": "example",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0050-0009",
+        "e-p0050-0010",
+        "e-p0050-0011",
+        "e-p0050-0012",
+        "e-p0050-0013"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    },
+    {
+      "id": "g-p0050-002",
+      "kind": "task",
+      "label_printed": "Task 2.6",
+      "title": "Task 2.6",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0050-0016",
+        "e-p0050-0017",
+        "e-p0050-0018"
+      ],
+      "notes": [
+        "Transcript group: task"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0050-0005",
+      "kind": "caption_of",
+      "from_ref": "e-p0050-0005",
+      "to_ref": "e-p0050-0004",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.22: A set triple balance"
+    },
+    {
+      "id": "r-caption-e-p0050-0008",
+      "kind": "caption_of",
+      "from_ref": "e-p0050-0008",
+      "to_ref": "e-p0050-0007",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.23: The three weights showing the mass of the object"
+    },
+    {
+      "id": "r-caption-e-p0050-0012",
+      "kind": "caption_of",
+      "from_ref": "e-p0050-0012",
+      "to_ref": "e-p0050-0011",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.24"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0050-001",
+      "kind": "diagram",
+      "page": 50,
+      "surface_id": "s-p0050-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0050-0004"
+      ],
+      "printed_label": "Figure 2.22",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0050-002",
+      "kind": "diagram",
+      "page": 50,
+      "surface_id": "s-p0050-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0050-0007"
+      ],
+      "printed_label": "Figure 2.23",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0050-003",
+      "kind": "diagram",
+      "page": 50,
+      "surface_id": "s-p0050-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0050-0011"
+      ],
+      "printed_label": "Figure 2.24",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0050-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 50,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 19,
+    "types": {
+      "running_header": 1,
+      "heading": 4,
+      "paragraph": 3,
+      "figure": 3,
+      "caption": 3,
+      "list": 2,
+      "solution": 1,
+      "instruction": 1,
+      "page_number": 1
+    },
+    "figures": 3,
+    "open_issues": 1
+  }
+}

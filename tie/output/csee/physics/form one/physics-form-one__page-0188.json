@@ -1,0 +1,840 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      188
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 188,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0188-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "182",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0188-0001",
+              "type": "running_header",
+              "surface_id": "s-p0188-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Revision Questions",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Revision Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0002",
+              "type": "question",
+              "surface_id": "s-p0188-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Which of the following is a non-renewable source of energy?",
+                "label_printed": "6.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Which of the following is a non-renewable source of energy?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0003",
+              "type": "mcq_options",
+              "surface_id": "s-p0188-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(A)",
+                    "text": "Solar energy",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Solar energy"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(B)",
+                    "text": "Geothermal energy",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Geothermal energy"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(C)",
+                    "text": "Coal",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Coal"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(D)",
+                    "text": "Wind energy",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Wind energy"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0004",
+              "type": "question",
+              "surface_id": "s-p0188-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The pole of a freely suspended magnet that points towards the geographical North is called the:",
+                "label_printed": "7.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The pole of a freely suspended magnet that points towards the geographical North is called the:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0005",
+              "type": "mcq_options",
+              "surface_id": "s-p0188-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(A)",
+                    "text": "South pole",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "South pole"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(B)",
+                    "text": "North pole",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "North pole"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(C)",
+                    "text": "Neutral point",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Neutral point"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(D)",
+                    "text": "Magnetic dip",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Magnetic dip"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0006",
+              "type": "question",
+              "surface_id": "s-p0188-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The defect of a simple cell caused by accumulation of hydrogen gas on the copper plate is:",
+                "label_printed": "8.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The defect of a simple cell caused by accumulation of hydrogen gas on the copper plate is:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0007",
+              "type": "mcq_options",
+              "surface_id": "s-p0188-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(A)",
+                    "text": "Local action",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Local action"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(B)",
+                    "text": "Polarisation",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Polarisation"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(C)",
+                    "text": "Ionisation",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Ionisation"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(D)",
+                    "text": "Magnetisation",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Magnetisation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0008",
+              "type": "question",
+              "surface_id": "s-p0188-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Pressure in liquids depends on:",
+                "label_printed": "9.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Pressure in liquids depends on:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0009",
+              "type": "mcq_options",
+              "surface_id": "s-p0188-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(A)",
+                    "text": "Surface area of container",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Surface area of container"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(B)",
+                    "text": "Shape of container",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Shape of container"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(C)",
+                    "text": "Depth and liquid density",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Depth and liquid density"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(D)",
+                    "text": "Mass of container",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass of container"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0010",
+              "type": "question",
+              "surface_id": "s-p0188-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The ability of a stretched spring to return to its original length when the stretching force is removed is called:",
+                "label_printed": "10.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The ability of a stretched spring to return to its original length when the stretching force is removed is called:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0011",
+              "type": "mcq_options",
+              "surface_id": "s-p0188-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(A)",
+                    "text": "Capillarity",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Capillarity"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(B)",
+                    "text": "Viscosity",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Viscosity"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(C)",
+                    "text": "Elasticity",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Elasticity"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(D)",
+                    "text": "Cohesion",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Cohesion"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0188-0012",
+              "type": "page_number",
+              "surface_id": "s-p0188-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "182",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "182"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0188-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 188,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0188-002",
+      "issue": "transcript_sequence_needs_source_review",
+      "pdf_page": 188,
+      "element_ref": null,
+      "detail": "This part of the upload introduces chapters and end matter inconsistent with its contents. Page 200 claims the end of the textbook, but page 201 resumes Work, energy and power. Preserved for comparison; do not accept as source-verified.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 12,
+    "types": {
+      "running_header": 1,
+      "question": 5,
+      "mcq_options": 5,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

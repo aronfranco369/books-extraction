@@ -1,0 +1,1144 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      80
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 80,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0080-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "74",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0080-0001",
+              "type": "running_header",
+              "surface_id": "s-p0080-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Introduction to force",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction to force"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0002",
+              "type": "heading",
+              "surface_id": "s-p0080-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "Revision exercise 3",
+                "level": 2,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Revision exercise 3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0003",
+              "type": "heading",
+              "surface_id": "s-p0080-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "Section A",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Section A"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0004",
+              "type": "question",
+              "surface_id": "s-p0080-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "Choose the most correct answer",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Choose the most correct answer"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0005",
+              "type": "question",
+              "surface_id": "s-p0080-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "A force acting on an object causes some properties of the object to change. Which of the list contains properties that can be changed by the action of force?",
+                "label_printed": "(i)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A force acting on an object causes some properties of the object to change. Which of the list contains properties that can be changed by the action of force?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0080-0006",
+              "type": "mcq_options",
+              "surface_id": "s-p0080-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "Mass, motion, and shape",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass, motion, and shape"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "Mass, motion and size",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass, motion and size"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "Mass, shape, and size",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass, shape, and size"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "Motion, shape and size",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Motion, shape and size"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0007",
+              "type": "question",
+              "surface_id": "s-p0080-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "Figure 3.20 (a) and (b) represents the beam balance and the spring respectively. A beaker in the right side balances the standard masses in the left side as shown in Figure 3.20 (a). The beaker is then removed and hung from a spring as shown in Figure 3.20 (b) the spring extends by 5.0 cm.",
+                "label_printed": "(ii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 3.20 (a) and (b) represents the beam balance and the spring respectively. A beaker in the right side balances the standard masses in the left side as shown in Figure 3.20 (a). The beaker is then removed and hung from a spring as shown in Figure 3.20 (b) the spring extends by 5.0 cm."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0080-0008",
+              "type": "figure",
+              "surface_id": "s-p0080-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "ref": "f-p0080-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0009",
+              "type": "caption",
+              "surface_id": "s-p0080-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "Figure 3.20: Beam balance and spring scale setup",
+                "target_refs": [
+                  "e-p0080-0008"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 3.20: Beam balance and spring scale setup"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0010",
+              "type": "paragraph",
+              "surface_id": "s-p0080-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "The experiment is then repeated using the same apparatus on the moon, where the acceleration of free fall is one-sixth that on Earth. Which statement describes what happens on the Moon?",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The experiment is then repeated using the same apparatus on the moon, where the acceleration of free fall is one-sixth that on Earth. Which statement describes what happens on the Moon?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0011",
+              "type": "mcq_options",
+              "surface_id": "s-p0080-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "The beam balance is balanced and the spring extends by 5.0 cm.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The beam balance is balanced and the spring extends by 5.0 cm."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "The beam balance is balanced and the spring extends by less than 5.0 cm.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The beam balance is balanced and the spring extends by less than 5.0 cm."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "The right-hand balance pan is higher and the spring extends by 5.0 cm.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The right-hand balance pan is higher and the spring extends by 5.0 cm."
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "The right-hand balance pan is higher and the spring extends by less than 5.0 cm.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The right-hand balance pan is higher and the spring extends by less than 5.0 cm."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0012",
+              "type": "question",
+              "surface_id": "s-p0080-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "In Physics test students were asked to mention the examples of friction. The response of one candidate was as listed below. 1. tension in a spring 2. air resistance 3. weight Which among the alternatives shows the correct examples of friction?",
+                "label_printed": "(iii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In Physics test students were asked to mention the examples of friction. The response of one candidate was as listed below. 1. tension in a spring 2. air resistance 3. weight Which among the alternatives shows the correct examples of friction?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0080-0013",
+              "type": "mcq_options",
+              "surface_id": "s-p0080-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "1 only",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "1 only"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "1 and 3",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "1 and 3"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "2 only",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "2 only"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "2 and 3",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "2 and 3"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0014",
+              "type": "question",
+              "surface_id": "s-p0080-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "In an experiment to determine the weight of coloured water, a student was given a beam balance, beaker, and coloured water as shown in Figure 3.21. To do this, he/she has to measure the mass of empty beaker, pour some water in a beaker and measure the mass of beaker and water.",
+                "label_printed": "(iv)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In an experiment to determine the weight of coloured water, a student was given a beam balance, beaker, and coloured water as shown in Figure 3.21. To do this, he/she has to measure the mass of empty beaker, pour some water in a beaker and measure the mass of beaker and water."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0080-0015",
+              "type": "figure",
+              "surface_id": "s-p0080-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "ref": "f-p0080-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0016",
+              "type": "caption",
+              "surface_id": "s-p0080-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "Figure 3.21: Mass measurement of beaker and water",
+                "target_refs": [
+                  "e-p0080-0015"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 3.21: Mass measurement of beaker and water"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0017",
+              "type": "paragraph",
+              "surface_id": "s-p0080-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "What is the weight of the water?",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What is the weight of the water?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0018",
+              "type": "mcq_options",
+              "surface_id": "s-p0080-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "0.044 kg",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "0.044 kg"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "0.168 kg",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "0.168 kg"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "0.0044 N",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "0.0044 N"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "0.44 N",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "0.44 N"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0019",
+              "type": "question",
+              "surface_id": "s-p0080-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "text": "A boy is pulling a box by a force of 100 N, if the frictional force experienced by the box is 20 N. what is the amount of force causing the motion of the box?",
+                "label_printed": "(v)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A boy is pulling a box by a force of 100 N, if the frictional force experienced by the box is 20 N. what is the amount of force causing the motion of the box?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0080-0020",
+              "type": "mcq_options",
+              "surface_id": "s-p0080-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0080-001"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "100 N",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "100 N"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "120 N",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "120 N"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "80 N",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "80 N"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "5 N",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "5 N"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0080-0021",
+              "type": "page_number",
+              "surface_id": "s-p0080-01",
+              "order": 20,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "74",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "74"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0080-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 3",
+      "title": "Revision exercise 3",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0080-0002",
+        "e-p0080-0003",
+        "e-p0080-0004",
+        "e-p0080-0005",
+        "e-p0080-0006",
+        "e-p0080-0007",
+        "e-p0080-0008",
+        "e-p0080-0009",
+        "e-p0080-0010",
+        "e-p0080-0011",
+        "e-p0080-0012",
+        "e-p0080-0013",
+        "e-p0080-0014",
+        "e-p0080-0015",
+        "e-p0080-0016",
+        "e-p0080-0017",
+        "e-p0080-0018",
+        "e-p0080-0019",
+        "e-p0080-0020"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0080-0009",
+      "kind": "caption_of",
+      "from_ref": "e-p0080-0009",
+      "to_ref": "e-p0080-0008",
+      "resolution": "resolved",
+      "printed_text": "Figure 3.20: Beam balance and spring scale setup"
+    },
+    {
+      "id": "r-caption-e-p0080-0016",
+      "kind": "caption_of",
+      "from_ref": "e-p0080-0016",
+      "to_ref": "e-p0080-0015",
+      "resolution": "resolved",
+      "printed_text": "Figure 3.21: Mass measurement of beaker and water"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0080-001",
+      "kind": "diagram",
+      "page": 80,
+      "surface_id": "s-p0080-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0080-0008"
+      ],
+      "printed_label": "Figure 3.20",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0080-002",
+      "kind": "diagram",
+      "page": 80,
+      "surface_id": "s-p0080-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0080-0015"
+      ],
+      "printed_label": "Figure 3.21",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0080-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 80,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 21,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "question": 6,
+      "mcq_options": 5,
+      "figure": 2,
+      "caption": 2,
+      "paragraph": 2,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 1
+  }
+}

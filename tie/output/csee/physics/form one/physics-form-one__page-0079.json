@@ -1,0 +1,722 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      79
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 79,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0079-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "73",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0079-0001",
+              "type": "running_header",
+              "surface_id": "s-p0079-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Introduction to force",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction to force"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0079-0002",
+              "type": "task",
+              "surface_id": "s-p0079-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "1. Discuss the four types of contact forces and the properties of each type. State their uses in everyday life. 2. Hang two balloons on a wall side by side and allow them to touch each other. Rub each one of them with a dry cloth. What happens? Explain. 3. Place a bar magnet on a smooth table and then bring another bar magnet near it. What happens? Explain. 4. Starting with two bar magnets parallel to each other, rotate one bar magnet by 90° and bring it near the first magnet. What happens? Explain.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1. Discuss the four types of contact forces and the properties of each type. State their uses in everyday life. 2. Hang two balloons on a wall side by side and allow them to touch each other. Rub each one of them with a dry cloth. What happens? Explain. 3. Place a bar magnet on a smooth table and then bring another bar magnet near it. What happens? Explain. 4. Starting with two bar magnets parallel to each other, rotate one bar magnet by 90° and bring it near the first magnet. What happens? Explain."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0079-0003",
+              "type": "heading",
+              "surface_id": "s-p0079-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0079-001"
+              ],
+              "payload": {
+                "text": "Chapter summary",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Chapter summary"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0079-0004",
+              "type": "list",
+              "surface_id": "s-p0079-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0079-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "A force is a push or pull experienced by an object. It results from the interaction between two objects.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "A force is a push or pull experienced by an object. It results from the interaction between two objects."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Forces can cause a change in the:",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Forces can cause a change in the:"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(a)",
+                    "text": "speed or direction of an object's motion;",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "speed or direction of an object's motion;"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(b)",
+                    "text": "shape and size of an object; and",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "shape and size of an object; and"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(c)",
+                    "text": "way an object moves.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "way an object moves."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Some forces act through physical contact between two objects while others act at a distance.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Some forces act through physical contact between two objects while others act at a distance."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Force is measured in newtons (N).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Force is measured in newtons (N)."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "A spring balance can be used to measure various forces, including weight.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "A spring balance can be used to measure various forces, including weight."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Weight is a measure of the gravitational force exerted on an object.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Weight is a measure of the gravitational force exerted on an object."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "7.",
+                    "text": "There are four fundamental forces, namely:",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "There are four fundamental forces, namely:"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(a)",
+                    "text": "gravitational force;",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "gravitational force;"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(b)",
+                    "text": "electromagnetic force;",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "electromagnetic force;"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(c)",
+                    "text": "the strong force; and",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "the strong force; and"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(d)",
+                    "text": "the weak force.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "the weak force."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "8.",
+                    "text": "Forces produce several effects when in action. These include stretching, compressing, bending and rotating or turning.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Forces produce several effects when in action. These include stretching, compressing, bending and rotating or turning."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "9.",
+                    "text": "Friction is a resistance force that an object encounters when resting or moving over another object.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Friction is a resistance force that an object encounters when resting or moving over another object."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "10.",
+                    "text": "A compressional force is the force which when applied to an object result in a decrease of its size.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "A compressional force is the force which when applied to an object result in a decrease of its size."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0079-0005",
+              "type": "page_number",
+              "surface_id": "s-p0079-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "73",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "73"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0079-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "summary",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0079-0003",
+        "e-p0079-0004"
+      ],
+      "notes": [
+        "Transcript group: summary"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0079-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 79,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0079-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 79,
+      "element_ref": null,
+      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 5,
+    "types": {
+      "running_header": 1,
+      "task": 1,
+      "heading": 1,
+      "list": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

@@ -1,0 +1,1052 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      27
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 27,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0027-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "21",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0027-0001",
+              "type": "running_header",
+              "surface_id": "s-p0027-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Introduction to Physics",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction to Physics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0002",
+              "type": "objectives",
+              "surface_id": "s-p0027-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "Aim: To apply the scientific investigation method to test the accuracy of stopwatches.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: To apply the scientific investigation method to test the accuracy of stopwatches."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0003",
+              "type": "instruction",
+              "surface_id": "s-p0027-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "Materials: Sellotape, table, pendulum bob, string, retort stand, analogue stopwatch, digital stopwatch",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Materials: Sellotape, table, pendulum bob, string, retort stand, analogue stopwatch, digital stopwatch"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Transcript MATERIALS block; rendered as an instruction."
+              ]
+            },
+            {
+              "id": "e-p0027-0004",
+              "type": "instruction",
+              "surface_id": "s-p0027-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "Procedure:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0005",
+              "type": "list",
+              "surface_id": "s-p0027-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Arrange a simple pendulum system as shown in Figure 1.23.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Arrange a simple pendulum system as shown in Figure 1.23."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0006",
+              "type": "figure",
+              "surface_id": "s-p0027-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "ref": "f-p0027-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0007",
+              "type": "caption",
+              "surface_id": "s-p0027-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "Figure 1.23 2. Pull the bob slightly to one side then release it so that it swings back and forth. 3. Using analogue stopwatch, measure the time the pendulum takes to swing back and forth. 4. Record your observation for one complete oscillation. 5. Repeat steps 3 and 4 using the digital stopwatch instead of the analogue one.",
+                "target_refs": [
+                  "e-p0027-0006"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.23 2. Pull the bob slightly to one side then release it so that it swings back and forth. 3. Using analogue stopwatch, measure the time the pendulum takes to swing back and forth. 4. Record your observation for one complete oscillation. 5. Repeat steps 3 and 4 using the digital stopwatch instead of the analogue one."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0008",
+              "type": "heading",
+              "surface_id": "s-p0027-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "Questions",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0009",
+              "type": "instruction",
+              "surface_id": "s-p0027-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "With reference to the pendulum bob, use the scientific method outlined previously to investigate whether the digital stopwatch is more accurate than the analogue stopwatch in measuring the time taken to complete one oscillation. Briefly address the following:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "With reference to the pendulum bob, use the scientific method outlined previously to investigate whether the digital stopwatch is more accurate than the analogue stopwatch in measuring the time taken to complete one oscillation. Briefly address the following:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0010",
+              "type": "question",
+              "surface_id": "s-p0027-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "What was the hypothesis?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What was the hypothesis?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0011",
+              "type": "question",
+              "surface_id": "s-p0027-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "What kind of an experiment can be used to test the hypothesis?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What kind of an experiment can be used to test the hypothesis?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0012",
+              "type": "question",
+              "surface_id": "s-p0027-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "What conclusion can be drawn from this experiment?",
+                "label_printed": "(c)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What conclusion can be drawn from this experiment?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0013",
+              "type": "question",
+              "surface_id": "s-p0027-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "After comparing the measurements, which stopwatch do you think is more accurate than the other? and",
+                "label_printed": "(d)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "After comparing the measurements, which stopwatch do you think is more accurate than the other? and"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0014",
+              "type": "question",
+              "surface_id": "s-p0027-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-001"
+              ],
+              "payload": {
+                "text": "Write a report explaining your experiment and conclusions.",
+                "label_printed": "(e)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Write a report explaining your experiment and conclusions."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0015",
+              "type": "paragraph",
+              "surface_id": "s-p0027-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The measurement from a digital stopwatch is more accurate than the one from an analogue stopwatch. The digital stopwatch therefore, gives a more precise measurement of time than the analogue one.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The measurement from a digital stopwatch is more accurate than the one from an analogue stopwatch. The digital stopwatch therefore, gives a more precise measurement of time than the analogue one."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0016",
+              "type": "instruction",
+              "surface_id": "s-p0027-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-002"
+              ],
+              "payload": {
+                "text": "",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0017",
+              "type": "list",
+              "surface_id": "s-p0027-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0027-002"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Discuss the steps for carrying out experiments using scientific method.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Discuss the steps for carrying out experiments using scientific method."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Discuss the application of scientific investigation method for a simple pendulum.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Discuss the application of scientific investigation method for a simple pendulum."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Briefly explain the importance of forming hypothesis before doing an experiment.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Briefly explain the importance of forming hypothesis before doing an experiment."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0018",
+              "type": "heading",
+              "surface_id": "s-p0027-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Scientific theory",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Scientific theory"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0019",
+              "type": "paragraph",
+              "surface_id": "s-p0027-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A theory in physics is a big idea or explanation that scientists come up with to describe how something in nature behaves. Think of it like a story that tries to explain why things happen the way they are observed. For example, the theory of gravity explains why things fall down when we drop them. It says that all objects with mass are attracted to each other, and that's why we stay on the ground and do not float on air. Many theories explain various physical phenomena. In this section, we shall concentrate on the theory of gravity and its impact human beings.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A theory in physics is a big idea or explanation that scientists come up with to describe how something in nature behaves. Think of it like a story that tries to explain why things happen the way they are observed. For example, the theory of gravity explains why things fall down when we drop them. It says that all objects with mass are attracted to each other, and that's why we stay on the ground and do not float on air. Many theories explain various physical phenomena. In this section, we shall concentrate on the theory of gravity and its impact human beings."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0020",
+              "type": "heading",
+              "surface_id": "s-p0027-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Theory of gravity",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Theory of gravity"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0021",
+              "type": "paragraph",
+              "surface_id": "s-p0027-01",
+              "order": 20,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The theory of gravity is the fundamental theory that explains the force of attraction between two objects that have mass. It says that objects with mass are attracted to each other. The force of attraction between such objects is referred to as the force of gravity. This force is very important for our daily activities. Activity 1.4, will help you to understand the impact of the force of gravity in our daily lives. All objects on the earth are attracted toward the earth because the earth is more massive than other objects.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The theory of gravity is the fundamental theory that explains the force of attraction between two objects that have mass. It says that objects with mass are attracted to each other. The force of attraction between such objects is referred to as the force of gravity. This force is very important for our daily activities. Activity 1.4, will help you to understand the impact of the force of gravity in our daily lives. All objects on the earth are attracted toward the earth because the earth is more massive than other objects."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0022",
+              "type": "heading",
+              "surface_id": "s-p0027-01",
+              "order": 21,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Significance of the theory of gravity",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Significance of the theory of gravity"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0023",
+              "type": "list",
+              "surface_id": "s-p0027-01",
+              "order": 22,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "roman",
+                "items": [
+                  {
+                    "label_printed": "(i)",
+                    "text": "It explains the arrangement and motion of planets, moon, and other celestial bodies in the solar system and beyond.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "It explains the arrangement and motion of planets, moon, and other celestial bodies in the solar system and beyond."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(ii)",
+                    "text": "Helps to understand the tides and Earth's motion around the sun.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Helps to understand the tides and Earth's motion around the sun."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iii)",
+                    "text": "Provide the basis for space exploration and satellite technology.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Provide the basis for space exploration and satellite technology."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iv)",
+                    "text": "It influences our daily lives, from walking on the earth's surface to the launching of spacecraft into space.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "It influences our daily lives, from walking on the earth's surface to the launching of spacecraft into space."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0027-0024",
+              "type": "page_number",
+              "surface_id": "s-p0027-01",
+              "order": 23,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "21",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "21"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0027-001",
+      "kind": "activity",
+      "label_printed": "Activity 1.4",
+      "title": "Activity 1.4",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0027-0002",
+        "e-p0027-0003",
+        "e-p0027-0004",
+        "e-p0027-0005",
+        "e-p0027-0006",
+        "e-p0027-0007",
+        "e-p0027-0008",
+        "e-p0027-0009",
+        "e-p0027-0010",
+        "e-p0027-0011",
+        "e-p0027-0012",
+        "e-p0027-0013",
+        "e-p0027-0014"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    },
+    {
+      "id": "g-p0027-002",
+      "kind": "task",
+      "label_printed": "Task 1.6",
+      "title": "Task 1.6",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0027-0016",
+        "e-p0027-0017"
+      ],
+      "notes": [
+        "Transcript group: task"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0027-0007",
+      "kind": "caption_of",
+      "from_ref": "e-p0027-0007",
+      "to_ref": "e-p0027-0006",
+      "resolution": "resolved",
+      "printed_text": "Figure 1.23 2. Pull the bob slightly to one side then release it so that it swings back and forth. 3. Using analogue stopwatch, measure the time the pendulum takes to swing back and forth. 4. Record your observation for one complete oscillation. 5. Repeat steps 3 and 4 using the digital stopwatch instead of the analogue one."
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0027-001",
+      "kind": "diagram",
+      "page": 27,
+      "surface_id": "s-p0027-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0027-0006"
+      ],
+      "printed_label": "Figure 1.23",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0027-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 27,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 24,
+    "types": {
+      "running_header": 1,
+      "objectives": 1,
+      "instruction": 4,
+      "list": 3,
+      "figure": 1,
+      "caption": 1,
+      "heading": 4,
+      "question": 5,
+      "paragraph": 3,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 1
+  }
+}

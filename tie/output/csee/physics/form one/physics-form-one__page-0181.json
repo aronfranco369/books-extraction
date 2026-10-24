@@ -1,0 +1,704 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      181
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 181,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0181-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "175",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0181-0001",
+              "type": "heading",
+              "surface_id": "s-p0181-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Chapter Eleven: Introduction to Electricity",
+                "level": 1,
+                "role": "chapter",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Chapter Eleven: Introduction to Electricity"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0002",
+              "type": "heading",
+              "surface_id": "s-p0181-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Electrostatics",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electrostatics"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0181-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Electrostatics is the branch of physics that deals with static electric charges at rest, their forces, and their interactions.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Electrostatics is the branch of physics that deals with static electric charges at rest, their forces, and their interactions."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0004",
+              "type": "heading",
+              "surface_id": "s-p0181-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Types of electric charge",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Types of electric charge"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0181-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "There are two fundamental types of electric charge in nature: - **Positive charge (+):** Acquired by glass rubbed with silk (due to loss of electrons). - **Negative charge (-):** Acquired by ebonite or polythene rubbed with fur or wool (due to gain of electrons).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "There are two fundamental types of electric charge in nature: - "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Positive charge (+):",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " Acquired by glass rubbed with silk (due to loss of electrons). - "
+                  },
+                  {
+                    "t": "text",
+                    "v": "Negative charge (-):",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " Acquired by ebonite or polythene rubbed with fur or wool (due to gain of electrons)."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0006",
+              "type": "note",
+              "surface_id": "s-p0181-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0181-001"
+              ],
+              "payload": {
+                "text": "**Fundamental Law of Electrostatics:** Like electric charges repel each other, while unlike electric charges attract each other.",
+                "note_kind": "definition",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Fundamental Law of Electrostatics:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " Like electric charges repel each other, while unlike electric charges attract each other."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0007",
+              "type": "heading",
+              "surface_id": "s-p0181-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Methods of charging bodies",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Methods of charging bodies"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0008",
+              "type": "list",
+              "surface_id": "s-p0181-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "bullet",
+                "items": [
+                  {
+                    "label_printed": "*",
+                    "text": "**Charging by friction (rubbing):** Transfer of electrons between two insulating bodies when rubbed together.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Charging by friction (rubbing):",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Transfer of electrons between two insulating bodies when rubbed together."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Charging by contact (conduction):** Transfer of electric charge from a charged body to a neutral conductor by direct physical contact.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Charging by contact (conduction):",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Transfer of electric charge from a charged body to a neutral conductor by direct physical contact."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Charging by induction:** Redistribution of charges on a neutral conductor brought close to a charged body without physical contact, followed by earthing.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Charging by induction:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Redistribution of charges on a neutral conductor brought close to a charged body without physical contact, followed by earthing."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0181-0009",
+              "type": "page_number",
+              "surface_id": "s-p0181-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "175",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "175"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0181-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "note",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0181-0006"
+      ],
+      "notes": [
+        "Transcript group: note"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0181-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 181,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0181-002",
+      "issue": "transcript_contents_heading_mismatch",
+      "pdf_page": 181,
+      "element_ref": null,
+      "detail": "The upload’s contents list nine chapters, with Chapter Eight: Linear motion and Chapter Nine: Work, energy, and power. Later supplied chapter headings differ, including Light, Magnetism, Electricity and Chapter Twelve. Original wording and page labels retained; compare with the actual PDF.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0181-003",
+      "issue": "transcript_sequence_needs_source_review",
+      "pdf_page": 181,
+      "element_ref": null,
+      "detail": "This part of the upload introduces chapters and end matter inconsistent with its contents. Page 200 claims the end of the textbook, but page 201 resumes Work, energy and power. Preserved for comparison; do not accept as source-verified.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 9,
+    "types": {
+      "heading": 4,
+      "paragraph": 2,
+      "note": 1,
+      "list": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 3
+  }
+}

@@ -1,0 +1,862 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      88
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 88,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0088-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "82",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0088-0001",
+              "type": "running_header",
+              "surface_id": "s-p0088-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Density and relative density",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Density and relative density"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0002",
+              "type": "heading",
+              "surface_id": "s-p0088-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-001"
+              ],
+              "payload": {
+                "text": "Activity 4.3",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 4.3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0003",
+              "type": "instruction",
+              "surface_id": "s-p0088-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-001"
+              ],
+              "payload": {
+                "text": "Aim: To determine the density of an irregular shaped object. Materials: Eureka can, beaker, measuring cylinder, string, triple beam balance, or digital beam balance and stones of different shapes Procedure 1. Measure the mass of irregular stones using a beam balance and record your results in Table 4.3. 2. Measure the volume of each stone and record in Table 4.3.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: To determine the density of an irregular shaped object. Materials: Eureka can, beaker, measuring cylinder, string, triple beam balance, or digital beam balance and stones of different shapes Procedure 1. Measure the mass of irregular stones using a beam balance and record your results in Table 4.3. 2. Measure the volume of each stone and record in Table 4.3."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0004",
+              "type": "table",
+              "surface_id": "s-p0088-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-001"
+              ],
+              "payload": {
+                "columns": 4,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Stone identity",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Stone identity"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Mass, m",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Mass, m"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Volume, V",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Volume, V"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Density, \\(\\rho\\)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Density, "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rho"
+                        }
+                      ]
+                    }
+                  ]
+                ],
+                "printed_label": "Table 4.3"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0005",
+              "type": "instruction",
+              "surface_id": "s-p0088-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-001"
+              ],
+              "payload": {
+                "text": "3. Determine the density of each stone.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "3. Determine the density of each stone."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0006",
+              "type": "instruction",
+              "surface_id": "s-p0088-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-001"
+              ],
+              "payload": {
+                "text": "4. Compare the densities of different stones.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "4. Compare the densities of different stones."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0007",
+              "type": "question",
+              "surface_id": "s-p0088-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-001"
+              ],
+              "payload": {
+                "text": "What can you conclude from your observation?",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What can you conclude from your observation?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0008",
+              "type": "example",
+              "surface_id": "s-p0088-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-002"
+              ],
+              "payload": {
+                "text": "An irregular solid X has a mass of 50 g. When it is totally immersed in the water of volume \\(60\\,\\mathrm{cm^{3}}\\), the final water volume is \\(70\\,\\mathrm{cm^{3}}\\). Calculate the density of the irregular solid X.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "An irregular solid X has a mass of 50 g. When it is totally immersed in the water of volume "
+                  },
+                  {
+                    "t": "math",
+                    "v": "60\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", the final water volume is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "70\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Calculate the density of the irregular solid X."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0009",
+              "type": "solution",
+              "surface_id": "s-p0088-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-002"
+              ],
+              "payload": {
+                "text": "Mass of irregular solid, \\(m = 50\\,\\mathrm{g}\\). Initial volume of water, \\(V_{1} = 60\\,\\mathrm{cm^{3}}\\). Final volume of water, \\(V_{2} = 70\\,\\mathrm{cm^{3}}\\). Volume of water displaced, \\(V = V_{2} - V_{1} = 70\\,\\mathrm{cm^{3}} - 60\\,\\mathrm{cm^{3}} = 10\\,\\mathrm{cm^{3}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mass of irregular solid, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "m = 50\\,\\mathrm{g}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Initial volume of water, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "V_{1} = 60\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Final volume of water, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "V_{2} = 70\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Volume of water displaced, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "V = V_{2} - V_{1} = 70\\,\\mathrm{cm^{3}} - 60\\,\\mathrm{cm^{3}} = 10\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0010",
+              "type": "math",
+              "surface_id": "s-p0088-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-002"
+              ],
+              "payload": {
+                "latex": "\\rho_{s} = \\frac{m}{V} = \\frac{50\\,\\mathrm{g}}{10\\,\\mathrm{cm^{3}}} = 5\\,\\mathrm{g/cm^{3}}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0088-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0088-002"
+              ],
+              "payload": {
+                "text": "Therefore, the density of the irregular solid X is \\(5\\,\\mathrm{g/cm^{3}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Therefore, the density of the irregular solid X is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "5\\,\\mathrm{g/cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0012",
+              "type": "task",
+              "surface_id": "s-p0088-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "If you want to determine the density of stone: (a) Suggest the suitable instruments/apparatus you may need to carry out this task. (b) If some of the apparatus are not there in your home environment, what alternative you may use to carry out the activity?",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If you want to determine the density of stone: (a) Suggest the suitable instruments/apparatus you may need to carry out this task. (b) If some of the apparatus are not there in your home environment, what alternative you may use to carry out the activity?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0013",
+              "type": "heading",
+              "surface_id": "s-p0088-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Density of insoluble granules",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Density of insoluble granules"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0014",
+              "type": "paragraph",
+              "surface_id": "s-p0088-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Determination of the density of small insoluble particles such as sand grains is also possible. Unlike other solids, granules must be held in some type of container while being measured. This could be realised by using a density bottle.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Determination of the density of small insoluble particles such as sand grains is also possible. Unlike other solids, granules must be held in some type of container while being measured. This could be realised by using a density bottle."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0088-0015",
+              "type": "page_number",
+              "surface_id": "s-p0088-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "82",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "82"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0088-001",
+      "kind": "activity",
+      "label_printed": "Activity 4.3",
+      "title": "Activity 4.3",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0088-0002",
+        "e-p0088-0003",
+        "e-p0088-0004",
+        "e-p0088-0005",
+        "e-p0088-0006",
+        "e-p0088-0007"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    },
+    {
+      "id": "g-p0088-002",
+      "kind": "example",
+      "label_printed": "Example 4.4",
+      "title": "Example 4.4",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0088-0008",
+        "e-p0088-0009",
+        "e-p0088-0010",
+        "e-p0088-0011"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0088-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 88,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 15,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "instruction": 3,
+      "table": 1,
+      "question": 1,
+      "example": 1,
+      "solution": 1,
+      "math": 1,
+      "paragraph": 2,
+      "task": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

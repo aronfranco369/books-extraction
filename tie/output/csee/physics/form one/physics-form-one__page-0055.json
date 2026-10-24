@@ -1,0 +1,1116 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      55
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 55,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0055-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "49",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0055-0001",
+              "type": "running_header",
+              "surface_id": "s-p0055-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0002",
+              "type": "heading",
+              "surface_id": "s-p0055-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurements of volume of a solid",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurements of volume of a solid"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0003",
+              "type": "heading",
+              "surface_id": "s-p0055-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "(a) Determining the volume of regular solid objects",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "(a) Determining the volume of regular solid objects"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0004",
+              "type": "paragraph",
+              "surface_id": "s-p0055-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Dimensions of a solid with regular shape such as a cube, a cylinder or a sphere, can be measured and the appropriate formula is used to calculate its volume.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Dimensions of a solid with regular shape such as a cube, a cylinder or a sphere, can be measured and the appropriate formula is used to calculate its volume."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0055-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "For example: Volume (\\(V\\)) of a rectangular block = \\(\\mathrm{length}\\,(l)\\times\\mathrm{height}\\,(h)\\times\\mathrm{width}\\,(w)\\). For a cube, \\(l=h=w\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For example: Volume ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "V"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") of a rectangular block = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\mathrm{length}\\,(l)\\times\\mathrm{height}\\,(h)\\times\\mathrm{width}\\,(w)"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". For a cube, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "l=h=w"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0006",
+              "type": "math",
+              "surface_id": "s-p0055-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\mathrm{Volume\\,of\\,sphere}=\\frac{4}{3}\\pi r^{3}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0007",
+              "type": "heading",
+              "surface_id": "s-p0055-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-001"
+              ],
+              "payload": {
+                "text": "Example 2.6",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 2.6"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0055-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-001"
+              ],
+              "payload": {
+                "text": "Calculate the volume of a rectangular block, of sides 15 cm, 8 cm and 7 cm, shown in Figure 2.33.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the volume of a rectangular block, of sides 15 cm, 8 cm and 7 cm, shown in Figure 2.33."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0009",
+              "type": "figure",
+              "surface_id": "s-p0055-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-001"
+              ],
+              "payload": {
+                "ref": "f-p0055-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0010",
+              "type": "caption",
+              "surface_id": "s-p0055-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-001"
+              ],
+              "payload": {
+                "text": "Figure 2.33",
+                "target_refs": [
+                  "e-p0055-0009"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.33"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0011",
+              "type": "solution",
+              "surface_id": "s-p0055-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-001"
+              ],
+              "payload": {
+                "text": "Volume of the block = \\(l\\times w\\times h=15\\,\\mathrm{cm}\\times 8\\,\\mathrm{cm}\\times 7\\,\\mathrm{cm}=840\\,\\mathrm{cm^{3}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Volume of the block = "
+                  },
+                  {
+                    "t": "math",
+                    "v": "l\\times w\\times h=15\\,\\mathrm{cm}\\times 8\\,\\mathrm{cm}\\times 7\\,\\mathrm{cm}=840\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0012",
+              "type": "heading",
+              "surface_id": "s-p0055-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-002"
+              ],
+              "payload": {
+                "text": "Example 2.7",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Example 2.7"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0055-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-002"
+              ],
+              "payload": {
+                "text": "Calculate the volume of the cylinder shown in Figure 2.34, given that \\(\\pi=3.14\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the volume of the cylinder shown in Figure 2.34, given that "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\pi=3.14"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0014",
+              "type": "figure",
+              "surface_id": "s-p0055-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-002"
+              ],
+              "payload": {
+                "ref": "f-p0055-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0015",
+              "type": "caption",
+              "surface_id": "s-p0055-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-002"
+              ],
+              "payload": {
+                "text": "Figure 2.34",
+                "target_refs": [
+                  "e-p0055-0014"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.34"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0016",
+              "type": "solution",
+              "surface_id": "s-p0055-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0055-002"
+              ],
+              "payload": {
+                "text": "Given, \\(\\pi=3.14\\), \\(r=5\\,\\mathrm{cm}\\) and \\(h=14\\,\\mathrm{cm}\\) Formula for calculating volume of a cylinder \\(V=\\pi r^{2}h\\) Substituting in the formula gives, \\(V=3.14\\times 5\\,\\mathrm{cm}\\times 5\\,\\mathrm{cm}\\times 14\\,\\mathrm{cm}=1099\\,\\mathrm{cm^{3}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Given, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\pi=3.14"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "r=5\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " and "
+                  },
+                  {
+                    "t": "math",
+                    "v": "h=14\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Formula for calculating volume of a cylinder "
+                  },
+                  {
+                    "t": "math",
+                    "v": "V=\\pi r^{2}h"
+                  },
+                  {
+                    "t": "text",
+                    "v": " Substituting in the formula gives, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "V=3.14\\times 5\\,\\mathrm{cm}\\times 5\\,\\mathrm{cm}\\times 14\\,\\mathrm{cm}=1099\\,\\mathrm{cm^{3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0017",
+              "type": "heading",
+              "surface_id": "s-p0055-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "(b) Determining the volume of irregular solid objects",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "(b) Determining the volume of irregular solid objects"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0018",
+              "type": "paragraph",
+              "surface_id": "s-p0055-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measuring the volume of an irregular shaped solid object is based on the Archimedes principle which states that 'when an object is completely submerged in water, it displaces a volume of water equal to its own volume'. Thus the volume of an irregular object can be measured using:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measuring the volume of an irregular shaped solid object is based on the Archimedes principle which states that 'when an object is completely submerged in water, it displaces a volume of water equal to its own volume'. Thus the volume of an irregular object can be measured using:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0019",
+              "type": "list",
+              "surface_id": "s-p0055-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "lettered",
+                "items": [
+                  {
+                    "label_printed": "(i)",
+                    "text": "a measuring cylinder; and",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "a measuring cylinder; and"
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(ii)",
+                    "text": "a eureka can or an overflow can.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "a eureka can or an overflow can."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0020",
+              "type": "heading",
+              "surface_id": "s-p0055-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measuring the volume of irregular object using a measuring cylinder",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measuring the volume of irregular object using a measuring cylinder"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0021",
+              "type": "paragraph",
+              "surface_id": "s-p0055-01",
+              "order": 20,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Suppose you want to measure the volume of a small stone. The following steps are necessary.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Suppose you want to measure the volume of a small stone. The following steps are necessary."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0022",
+              "type": "list",
+              "surface_id": "s-p0055-01",
+              "order": 21,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Fill a measuring cylinder with about 300 mL of water as illustrated in Figure 2.35 (a).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Fill a measuring cylinder with about 300 mL of water as illustrated in Figure 2.35 (a)."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Carefully measure the initial volume of water \\(V_{1}\\).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Carefully measure the initial volume of water "
+                      },
+                      {
+                        "t": "math",
+                        "v": "V_{1}"
+                      },
+                      {
+                        "t": "text",
+                        "v": "."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0055-0023",
+              "type": "page_number",
+              "surface_id": "s-p0055-01",
+              "order": 22,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "49",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "49"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0055-001",
+      "kind": "example",
+      "label_printed": null,
+      "title": "example",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0055-0007",
+        "e-p0055-0008",
+        "e-p0055-0009",
+        "e-p0055-0010",
+        "e-p0055-0011"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    },
+    {
+      "id": "g-p0055-002",
+      "kind": "example",
+      "label_printed": null,
+      "title": "example",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0055-0012",
+        "e-p0055-0013",
+        "e-p0055-0014",
+        "e-p0055-0015",
+        "e-p0055-0016"
+      ],
+      "notes": [
+        "Transcript group: example"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0055-0010",
+      "kind": "caption_of",
+      "from_ref": "e-p0055-0010",
+      "to_ref": "e-p0055-0009",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.33"
+    },
+    {
+      "id": "r-caption-e-p0055-0015",
+      "kind": "caption_of",
+      "from_ref": "e-p0055-0015",
+      "to_ref": "e-p0055-0014",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.34"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0055-001",
+      "kind": "diagram",
+      "page": 55,
+      "surface_id": "s-p0055-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0055-0009"
+      ],
+      "printed_label": "Figure 2.33",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0055-002",
+      "kind": "diagram",
+      "page": 55,
+      "surface_id": "s-p0055-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0055-0014"
+      ],
+      "printed_label": "Figure 2.34",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0055-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 55,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0055-002",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 55,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0055-003",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 55,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0055-004",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 55,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 23,
+    "types": {
+      "running_header": 1,
+      "heading": 6,
+      "paragraph": 6,
+      "math": 1,
+      "figure": 2,
+      "caption": 2,
+      "solution": 2,
+      "list": 2,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 4
+  }
+}

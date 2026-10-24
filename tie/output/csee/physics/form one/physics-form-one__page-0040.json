@@ -1,0 +1,857 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      40
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 40,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0040-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "34",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0040-0001",
+              "type": "running_header",
+              "surface_id": "s-p0040-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0002",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The vernier scale is shorter scale than the main scale. 10 vernier divisions cover 9 main scale divisions. This is a length of 0.9 cm. When this is divided into 10 equal intervals, the result is the difference between the main scale division and the vernier scale division. This is known as Least Count.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The vernier scale is shorter scale than the main scale. 10 vernier divisions cover 9 main scale divisions. This is a length of 0.9 cm. When this is divided into 10 equal intervals, the result is the difference between the main scale division and the vernier scale division. This is known as Least Count."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0003",
+              "type": "math",
+              "surface_id": "s-p0040-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\mathrm{Main\\,scale\\,division}=\\frac{1\\,\\mathrm{cm}}{10}=0.1\\,\\mathrm{cm}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0004",
+              "type": "math",
+              "surface_id": "s-p0040-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\mathrm{Vernier\\,scale\\,division}=\\frac{0.9\\,\\mathrm{cm}}{10}=0.09\\,\\mathrm{cm}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Therefore,",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Therefore,"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0006",
+              "type": "math",
+              "surface_id": "s-p0040-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\mathrm{least\\,count\\,of\\,a\\,vernier\\,calliper}=(0.1-0.09)\\,\\mathrm{cm}=0.01\\,\\mathrm{cm}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The vernier calliper has a set of jaws that can be used to measure the length thickness, and depth of objects as shown in Figure 2.9.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The vernier calliper has a set of jaws that can be used to measure the length thickness, and depth of objects as shown in Figure 2.9."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0008",
+              "type": "figure",
+              "surface_id": "s-p0040-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0040-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0009",
+              "type": "caption",
+              "surface_id": "s-p0040-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.9: Measuring an external diametre using the outside (lower) jaws",
+                "target_refs": [
+                  "e-p0040-0008"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.9: Measuring an external diametre using the outside (lower) jaws"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0010",
+              "type": "figure",
+              "surface_id": "s-p0040-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0040-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0011",
+              "type": "caption",
+              "surface_id": "s-p0040-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.10: Measuring the inner diameter using inside jaws",
+                "target_refs": [
+                  "e-p0040-0010"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.10: Measuring the inner diameter using inside jaws"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0012",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "At the top of a vernier calliper are two inner (upper) jaws that can be used to measure the internal diametre of a hollow object, shown in Figure 2.10. A stem that sticks out from the right side of the calliper is called a depth gauge or the depth probe. It can be adjusted to measure a depth of an object, as shown in Figure 2.11. The screw clamp visible on top of the calliper is tightened to secure the objects being measured so that the reading does not change while measuring.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "At the top of a vernier calliper are two inner (upper) jaws that can be used to measure the internal diametre of a hollow object, shown in Figure 2.10. A stem that sticks out from the right side of the calliper is called a depth gauge or the depth probe. It can be adjusted to measure a depth of an object, as shown in Figure 2.11. The screw clamp visible on top of the calliper is tightened to secure the objects being measured so that the reading does not change while measuring."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0013",
+              "type": "figure",
+              "surface_id": "s-p0040-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0040-003"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0014",
+              "type": "caption",
+              "surface_id": "s-p0040-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.11: Measuring depth using the vernier calliper",
+                "target_refs": [
+                  "e-p0040-0013"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.11: Measuring depth using the vernier calliper"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0015",
+              "type": "heading",
+              "surface_id": "s-p0040-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "How to read a vernier calliper",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How to read a vernier calliper"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0016",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The following steps are taken when measuring length using a vernier calliper.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The following steps are taken when measuring length using a vernier calliper."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0017",
+              "type": "list",
+              "surface_id": "s-p0040-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Close the jaws of the vernier calliper and look out for the zero mark (0 cm) differences.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Close the jaws of the vernier calliper and look out for the zero mark (0 cm) differences."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Place the object to be measured between the jaws.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Place the object to be measured between the jaws."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Slide the vernier along the main scale until it just touches the end of the object.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Slide the vernier along the main scale until it just touches the end of the object."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-0018",
+              "type": "page_number",
+              "surface_id": "s-p0040-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "34",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "34"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-caption-e-p0040-0009",
+      "kind": "caption_of",
+      "from_ref": "e-p0040-0009",
+      "to_ref": "e-p0040-0008",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.9: Measuring an external diametre using the outside (lower) jaws"
+    },
+    {
+      "id": "r-caption-e-p0040-0011",
+      "kind": "caption_of",
+      "from_ref": "e-p0040-0011",
+      "to_ref": "e-p0040-0010",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.10: Measuring the inner diameter using inside jaws"
+    },
+    {
+      "id": "r-caption-e-p0040-0014",
+      "kind": "caption_of",
+      "from_ref": "e-p0040-0014",
+      "to_ref": "e-p0040-0013",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.11: Measuring depth using the vernier calliper"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0040-001",
+      "kind": "diagram",
+      "page": 40,
+      "surface_id": "s-p0040-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0040-0008"
+      ],
+      "printed_label": "Figure 2.9",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0040-002",
+      "kind": "diagram",
+      "page": 40,
+      "surface_id": "s-p0040-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0040-0010"
+      ],
+      "printed_label": "Figure 2.10",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0040-003",
+      "kind": "diagram",
+      "page": 40,
+      "surface_id": "s-p0040-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0040-0013"
+      ],
+      "printed_label": "Figure 2.11",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0040-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 40,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 18,
+    "types": {
+      "running_header": 1,
+      "paragraph": 5,
+      "math": 3,
+      "figure": 3,
+      "caption": 3,
+      "heading": 1,
+      "list": 1,
+      "page_number": 1
+    },
+    "figures": 3,
+    "open_issues": 1
+  }
+}

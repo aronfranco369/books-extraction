@@ -1,0 +1,815 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      59
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 59,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0059-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "53",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0059-0001",
+              "type": "running_header",
+              "surface_id": "s-p0059-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0002",
+              "type": "heading",
+              "surface_id": "s-p0059-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Parallax error",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Parallax error"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0059-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Parallax error occurs when an observer takes measurement from wrong positions. Consider Figure 2.40.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Parallax error occurs when an observer takes measurement from wrong positions. Consider Figure 2.40."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0004",
+              "type": "figure",
+              "surface_id": "s-p0059-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0059-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0005",
+              "type": "caption",
+              "surface_id": "s-p0059-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.40: Parallax error",
+                "target_refs": [
+                  "e-p0059-0004"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.40: Parallax error"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0006",
+              "type": "paragraph",
+              "surface_id": "s-p0059-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Positions 1 and 3 will give higher and lower readings than position 2. A reading taken at position 2 will be correct because the observer has positioned his/her eyes directly above the mark to be read. Thus, to minimize parallax error, the observers must position their eyes directly above the mark to be read.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Positions 1 and 3 will give higher and lower readings than position 2. A reading taken at position 2 will be correct because the observer has positioned his/her eyes directly above the mark to be read. Thus, to minimize parallax error, the observers must position their eyes directly above the mark to be read."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0007",
+              "type": "heading",
+              "surface_id": "s-p0059-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Zero error",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Zero error"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0059-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "For a measurement to be considered accurate, the initial reading of a pointer should be at a zero mark. When a measurement is taken using an instrument with the pointer below or above the zero mark shown in Figure 2.41 (a) and (b), zero errors occur. To minimise zero error, the instrument should be adjusted to read zero, shown in Figure 2.42. A pointer can be adjusted to read zero.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For a measurement to be considered accurate, the initial reading of a pointer should be at a zero mark. When a measurement is taken using an instrument with the pointer below or above the zero mark shown in Figure 2.41 (a) and (b), zero errors occur. To minimise zero error, the instrument should be adjusted to read zero, shown in Figure 2.42. A pointer can be adjusted to read zero."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0009",
+              "type": "figure",
+              "surface_id": "s-p0059-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0059-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0010",
+              "type": "caption",
+              "surface_id": "s-p0059-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.41: Zero errors of a voltmeter",
+                "target_refs": [
+                  "e-p0059-0009"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.41: Zero errors of a voltmeter"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0011",
+              "type": "figure",
+              "surface_id": "s-p0059-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0059-003"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0012",
+              "type": "caption",
+              "surface_id": "s-p0059-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 2.42: Pointer at the zero mark",
+                "target_refs": [
+                  "e-p0059-0011"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 2.42: Pointer at the zero mark"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0059-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "For example, in a vernier calliper, zero error arises when the zero mark on the main and vernier scales do not coincide with each other when the jaws are closed. A micrometre screw gauge may also have zero error if the zero mark on the spindle and sleeve do not coincide after closing the gap between the spindle and the anvil.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "For example, in a vernier calliper, zero error arises when the zero mark on the main and vernier scales do not coincide with each other when the jaws are closed. A micrometre screw gauge may also have zero error if the zero mark on the spindle and sleeve do not coincide after closing the gap between the spindle and the anvil."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0014",
+              "type": "heading",
+              "surface_id": "s-p0059-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Instrumental error",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Instrumental error"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0015",
+              "type": "paragraph",
+              "surface_id": "s-p0059-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "An instrumental error is caused by the instrument itself. The error occurs because of defects in the instrument used in taking a measurement. These defects can be from the manufacturer or poor handling of the instrument. Sometimes errors of this type may occur when the instrument used for measuring is overheated. Also, insensitivity of the instrument can result in this error. To minimise these errors, avoid overheating instruments, maintain them regularly and store all instruments in a safe place that is free from dust. Proper handling of instruments is also recommended.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "An instrumental error is caused by the instrument itself. The error occurs because of defects in the instrument used in taking a measurement. These defects can be from the manufacturer or poor handling of the instrument. Sometimes errors of this type may occur when the instrument used for measuring is overheated. Also, insensitivity of the instrument can result in this error. To minimise these errors, avoid overheating instruments, maintain them regularly and store all instruments in a safe place that is free from dust. Proper handling of instruments is also recommended."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0059-0016",
+              "type": "page_number",
+              "surface_id": "s-p0059-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "53",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "53"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-caption-e-p0059-0005",
+      "kind": "caption_of",
+      "from_ref": "e-p0059-0005",
+      "to_ref": "e-p0059-0004",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.40: Parallax error"
+    },
+    {
+      "id": "r-caption-e-p0059-0010",
+      "kind": "caption_of",
+      "from_ref": "e-p0059-0010",
+      "to_ref": "e-p0059-0009",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.41: Zero errors of a voltmeter"
+    },
+    {
+      "id": "r-caption-e-p0059-0012",
+      "kind": "caption_of",
+      "from_ref": "e-p0059-0012",
+      "to_ref": "e-p0059-0011",
+      "resolution": "resolved",
+      "printed_text": "Figure 2.42: Pointer at the zero mark"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0059-001",
+      "kind": "diagram",
+      "page": 59,
+      "surface_id": "s-p0059-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0059-0004"
+      ],
+      "printed_label": "Figure 2.40",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0059-002",
+      "kind": "diagram",
+      "page": 59,
+      "surface_id": "s-p0059-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0059-0009"
+      ],
+      "printed_label": "Figure 2.41",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0059-003",
+      "kind": "diagram",
+      "page": 59,
+      "surface_id": "s-p0059-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0059-0011"
+      ],
+      "printed_label": "Figure 2.42",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0059-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 59,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 16,
+    "types": {
+      "running_header": 1,
+      "heading": 3,
+      "paragraph": 5,
+      "figure": 3,
+      "caption": 3,
+      "page_number": 1
+    },
+    "figures": 3,
+    "open_issues": 1
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      177
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 177,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0177-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "171",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0177-0001",
+              "type": "running_header",
+              "surface_id": "s-p0177-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Magnetism",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Magnetism"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0002",
+              "type": "heading",
+              "surface_id": "s-p0177-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Methods of magnetisation",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Methods of magnetisation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0177-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Unmagnetised ferromagnetic materials (like steel bars) can be converted into magnets using several methods:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Unmagnetised ferromagnetic materials (like steel bars) can be converted into magnets using several methods:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0004",
+              "type": "list",
+              "surface_id": "s-p0177-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "bullet",
+                "items": [
+                  {
+                    "label_printed": "*",
+                    "text": "**Single touch method:** Stroking a steel bar repeatedly from one end to the other in one direction with the same pole of a permanent bar magnet.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Single touch method:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Stroking a steel bar repeatedly from one end to the other in one direction with the same pole of a permanent bar magnet."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Double (Divided) touch method:** Stroking a steel bar from the centre outwards to opposite ends simultaneously using opposite poles of two bar magnets.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Double (Divided) touch method:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Stroking a steel bar from the centre outwards to opposite ends simultaneously using opposite poles of two bar magnets."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Electrical method (Solenoid):** Placing a steel bar inside a cylindrical coil of insulated copper wire (solenoid) connected to a direct current (DC) source. The magnetic pole produced at an end depends on the direction of current flow (Clockwise = South pole, Anticlockwise = North pole).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Electrical method (Solenoid):",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Placing a steel bar inside a cylindrical coil of insulated copper wire (solenoid) connected to a direct current (DC) source. The magnetic pole produced at an end depends on the direction of current flow (Clockwise = South pole, Anticlockwise = North pole)."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Induction method:** Placing a magnetic material near or in contact with a strong magnet without stroking.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Induction method:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Placing a magnetic material near or in contact with a strong magnet without stroking."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0005",
+              "type": "heading",
+              "surface_id": "s-p0177-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Methods of demagnetisation",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Methods of demagnetisation"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0006",
+              "type": "paragraph",
+              "surface_id": "s-p0177-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Demagnetisation is the process of scrambling aligned magnetic domains back into random orientations, destroying external magnetism:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Demagnetisation is the process of scrambling aligned magnetic domains back into random orientations, destroying external magnetism:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0007",
+              "type": "list",
+              "surface_id": "s-p0177-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "bullet",
+                "items": [
+                  {
+                    "label_printed": "*",
+                    "text": "**Heating:** Heating a magnet to redness disrupts domain alignment through thermal agitation.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Heating:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Heating a magnet to redness disrupts domain alignment through thermal agitation."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Hammering or rough handling:** Striking a magnet repeatedly with a hammer oriented East-West weakens domain alignment.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Hammering or rough handling:",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Striking a magnet repeatedly with a hammer oriented East-West weakens domain alignment."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "*",
+                    "text": "**Electrical method (AC Solenoid):** Placing the magnet inside a solenoid connected to an alternating current (AC) supply oriented East-West and slowly withdrawing it to a distance.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Electrical method (AC Solenoid):",
+                        "b": true
+                      },
+                      {
+                        "t": "text",
+                        "v": " Placing the magnet inside a solenoid connected to an alternating current (AC) supply oriented East-West and slowly withdrawing it to a distance."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0177-0008",
+              "type": "page_number",
+              "surface_id": "s-p0177-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "171",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "171"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0177-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 177,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0177-002",
+      "issue": "transcript_sequence_needs_source_review",
+      "pdf_page": 177,
+      "element_ref": null,
+      "detail": "This part of the upload introduces chapters and end matter inconsistent with its contents. Page 200 claims the end of the textbook, but page 201 resumes Work, energy and power. Preserved for comparison; do not accept as source-verified.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 8,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "paragraph": 2,
+      "list": 2,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 2
+  }
+}

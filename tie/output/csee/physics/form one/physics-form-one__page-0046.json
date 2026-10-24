@@ -1,0 +1,1071 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      46
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 46,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0046-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "40",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0046-0001",
+              "type": "running_header",
+              "surface_id": "s-p0046-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Physics for Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Physics for Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0002",
+              "type": "question",
+              "surface_id": "s-p0046-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-001"
+              ],
+              "payload": {
+                "text": "When a screw gauge with a least count of 0.01 mm is used to measure the diametre of a wire, the reading on the sleeve is found to be 0.5 mm and the reading on the thimble is found to be 27 divisions. What is the correct diametre of the wire, if the zero error for the gauge is -0.005 cm?",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "When a screw gauge with a least count of 0.01 mm is used to measure the diametre of a wire, the reading on the sleeve is found to be 0.5 mm and the reading on the thimble is found to be 27 divisions. What is the correct diametre of the wire, if the zero error for the gauge is -0.005 cm?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0003",
+              "type": "heading",
+              "surface_id": "s-p0046-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Activity 2.3",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 2.3"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0004",
+              "type": "objectives",
+              "surface_id": "s-p0046-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Aim: To measure the diametre of a steel ball using a micrometre screw gauge.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Aim: To measure the diametre of a steel ball using a micrometre screw gauge."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0005",
+              "type": "instruction",
+              "surface_id": "s-p0046-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Materials: Micrometre screw gauge and steel ball",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Materials: Micrometre screw gauge and steel ball"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0006",
+              "type": "instruction",
+              "surface_id": "s-p0046-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Procedure:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0007",
+              "type": "list",
+              "surface_id": "s-p0046-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Unscrew the thimble to create a gap between the anvil and the spindle.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Unscrew the thimble to create a gap between the anvil and the spindle."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "Hold the steel ball in the gap while rotating the thimble clockwise until it gently grips the ball.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Hold the steel ball in the gap while rotating the thimble clockwise until it gently grips the ball."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "Keep rotating the ratchet knob until it clicks.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Keep rotating the ratchet knob until it clicks."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Record your observations.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Record your observations."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "Unscrew the thimble slightly. Free the ball and turn it through a certain angle. Then repeat step 3 and 4.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Unscrew the thimble slightly. Free the ball and turn it through a certain angle. Then repeat step 3 and 4."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Repeat step 5 for different rotation angle.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Repeat step 5 for different rotation angle."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "7.",
+                    "text": "Re-measure the diametre of the steel ball using the vernier calliper and record your readings.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Re-measure the diametre of the steel ball using the vernier calliper and record your readings."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0008",
+              "type": "heading",
+              "surface_id": "s-p0046-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Questions",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Questions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0009",
+              "type": "question",
+              "surface_id": "s-p0046-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Calculate the average of the obtained readings.",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Calculate the average of the obtained readings."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0010",
+              "type": "question",
+              "surface_id": "s-p0046-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-002"
+              ],
+              "payload": {
+                "text": "Why would you prefer a micrometre screw gauge over a vernier calliper when measuring the diametre of a steel ball?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Why would you prefer a micrometre screw gauge over a vernier calliper when measuring the diametre of a steel ball?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0046-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A micrometre screw gauge is more accurate than a vernier calliper. It measures up to three decimal places in the unit of mm. This means that its degree of accuracy is to the nearest thousandth of a centimetre. Unlike a micrometre screw gauge, a vernier calliper can only measure to a hundredth of a centimetre.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A micrometre screw gauge is more accurate than a vernier calliper. It measures up to three decimal places in the unit of mm. This means that its degree of accuracy is to the nearest thousandth of a centimetre. Unlike a micrometre screw gauge, a vernier calliper can only measure to a hundredth of a centimetre."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0012",
+              "type": "heading",
+              "surface_id": "s-p0046-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-003"
+              ],
+              "payload": {
+                "text": "Task 2.5",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Task 2.5"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0013",
+              "type": "instruction",
+              "surface_id": "s-p0046-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-003"
+              ],
+              "payload": {
+                "text": "Collect a variety of wires of different diameters, lead pencils and steel balls.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Collect a variety of wires of different diameters, lead pencils and steel balls."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0014",
+              "type": "question",
+              "surface_id": "s-p0046-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-003"
+              ],
+              "payload": {
+                "text": "Find out the smallest division on the main scale of your micrometre screw gauge and the number of divisions on the thimble.",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Find out the smallest division on the main scale of your micrometre screw gauge and the number of divisions on the thimble."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0015",
+              "type": "question",
+              "surface_id": "s-p0046-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-003"
+              ],
+              "payload": {
+                "text": "Measure the diameters of the different objects. Record your findings in the following table.",
+                "label_printed": "2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measure the diameters of the different objects. Record your findings in the following table."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0016",
+              "type": "table",
+              "surface_id": "s-p0046-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0046-003"
+              ],
+              "payload": {
+                "columns": 5,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Object",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Object"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Sleeve reading (mm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Sleeve reading (mm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Thimble reading (mm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Thimble reading (mm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Vernier reading (mm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Vernier reading (mm)"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Actual diametre (mm)",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Actual diametre (mm)"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Wire 1",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Wire 1"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Wire 2",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Wire 2"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Steel ball",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Steel ball"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Lead pencil",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Lead pencil"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    },
+                    {
+                      "text": "",
+                      "blank": true,
+                      "runs": []
+                    }
+                  ]
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0046-0017",
+              "type": "page_number",
+              "surface_id": "s-p0046-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "40",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "40"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0046-001",
+      "kind": "exercise",
+      "label_printed": "Exercise 2.2",
+      "title": "Exercise 2.2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0046-0002"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    },
+    {
+      "id": "g-p0046-002",
+      "kind": "activity",
+      "label_printed": "Activity 2.3",
+      "title": "Activity 2.3",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0046-0003",
+        "e-p0046-0004",
+        "e-p0046-0005",
+        "e-p0046-0006",
+        "e-p0046-0007",
+        "e-p0046-0008",
+        "e-p0046-0009",
+        "e-p0046-0010"
+      ],
+      "notes": [
+        "Transcript group: activity"
+      ]
+    },
+    {
+      "id": "g-p0046-003",
+      "kind": "task",
+      "label_printed": "Task 2.5",
+      "title": "Task 2.5",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0046-0012",
+        "e-p0046-0013",
+        "e-p0046-0014",
+        "e-p0046-0015",
+        "e-p0046-0016"
+      ],
+      "notes": [
+        "Transcript group: task"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0046-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 46,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 17,
+    "types": {
+      "running_header": 1,
+      "question": 5,
+      "heading": 3,
+      "objectives": 1,
+      "instruction": 3,
+      "list": 1,
+      "paragraph": 1,
+      "table": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

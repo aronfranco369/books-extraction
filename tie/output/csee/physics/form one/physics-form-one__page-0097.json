@@ -1,0 +1,1019 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      97
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 97,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0097-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "91",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0097-0001",
+              "type": "running_header",
+              "surface_id": "s-p0097-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Density and relative density",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Density and relative density"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0002",
+              "type": "heading",
+              "surface_id": "s-p0097-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001"
+              ],
+              "payload": {
+                "text": "Chapter summary",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Chapter summary"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0003",
+              "type": "list",
+              "surface_id": "s-p0097-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001"
+              ],
+              "payload": {
+                "style": "numbered",
+                "items": [
+                  {
+                    "label_printed": "1.",
+                    "text": "Density of a substance is expressed as the mass of the substance per unit volume. Its SI unit is the kilogram per cubic metre, \\(\\mathrm{kg/m^{3}}\\).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Density of a substance is expressed as the mass of the substance per unit volume. Its SI unit is the kilogram per cubic metre, "
+                      },
+                      {
+                        "t": "math",
+                        "v": "\\mathrm{kg/m^{3}}"
+                      },
+                      {
+                        "t": "text",
+                        "v": "."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "2.",
+                    "text": "The determination of the density of a solid depends on the shape of a particular solid (regular or irregular).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The determination of the density of a solid depends on the shape of a particular solid (regular or irregular)."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "3.",
+                    "text": "The density of solids is generally higher than the density of liquids.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The density of solids is generally higher than the density of liquids."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "4.",
+                    "text": "Relative density of a substance is the ratio of the substance's density to the density of water.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Relative density of a substance is the ratio of the substance's density to the density of water."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "5.",
+                    "text": "A relative density bottle is used to determine relative density of liquids.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "A relative density bottle is used to determine relative density of liquids."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "6.",
+                    "text": "Density is used in designing various structures for ships and aircraft.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Density is used in designing various structures for ships and aircraft."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "7.",
+                    "text": "Density is considered during the selection of building materials and design of swimming equipment.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Density is considered during the selection of building materials and design of swimming equipment."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0004",
+              "type": "heading",
+              "surface_id": "s-p0097-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "Revision exercise 4",
+                "level": 2,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Revision exercise 4"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0005",
+              "type": "heading",
+              "surface_id": "s-p0097-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "Section A",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Section A"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0006",
+              "type": "question",
+              "surface_id": "s-p0097-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "Choose the most correct answer.",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Choose the most correct answer."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0007",
+              "type": "question",
+              "surface_id": "s-p0097-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "A group of Form One students conducted an experiment to determine the density of wood. They measure the masses and volumes of different sized samples of a type of wood. Furthermore, they plotted the graph based on the data collected shown in Figure 4.11. Which graph depict their results?",
+                "label_printed": "(i)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A group of Form One students conducted an experiment to determine the density of wood. They measure the masses and volumes of different sized samples of a type of wood. Furthermore, they plotted the graph based on the data collected shown in Figure 4.11. Which graph depict their results?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0097-0008",
+              "type": "figure",
+              "surface_id": "s-p0097-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "ref": "f-p0097-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0009",
+              "type": "caption",
+              "surface_id": "s-p0097-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "Figure 4.11: Mass versus volume graphs",
+                "target_refs": [
+                  "e-p0097-0008"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 4.11: Mass versus volume graphs"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0010",
+              "type": "mcq_options",
+              "surface_id": "s-p0097-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "Mass vs Volume linear through origin",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass vs Volume linear through origin"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "Mass vs Volume constant mass",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass vs Volume constant mass"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "Mass vs Volume decreasing",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass vs Volume decreasing"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "Mass vs Volume non-linear",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mass vs Volume non-linear"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0011",
+              "type": "question",
+              "surface_id": "s-p0097-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "What is the density of the liquid in Figure 4.12?",
+                "label_printed": "(ii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "What is the density of the liquid in Figure 4.12?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 1."
+              ]
+            },
+            {
+              "id": "e-p0097-0012",
+              "type": "figure",
+              "surface_id": "s-p0097-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "ref": "f-p0097-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0013",
+              "type": "caption",
+              "surface_id": "s-p0097-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "text": "Figure 4.12: Measuring cylinder and balance readings for liquid",
+                "target_refs": [
+                  "e-p0097-0012"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 4.12: Measuring cylinder and balance readings for liquid"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0014",
+              "type": "mcq_options",
+              "surface_id": "s-p0097-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0097-001",
+                "g-p0097-002"
+              ],
+              "payload": {
+                "options": [
+                  {
+                    "key": "(a)",
+                    "text": "\\(0.5\\,\\mathrm{g/cm^{3}}\\)",
+                    "runs": [
+                      {
+                        "t": "math",
+                        "v": "0.5\\,\\mathrm{g/cm^{3}}"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(b)",
+                    "text": "\\(2.0\\,\\mathrm{g/cm^{3}}\\)",
+                    "runs": [
+                      {
+                        "t": "math",
+                        "v": "2.0\\,\\mathrm{g/cm^{3}}"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(c)",
+                    "text": "\\(8.0\\,\\mathrm{g/cm^{3}}\\)",
+                    "runs": [
+                      {
+                        "t": "math",
+                        "v": "8.0\\,\\mathrm{g/cm^{3}}"
+                      }
+                    ]
+                  },
+                  {
+                    "key": "(d)",
+                    "text": "\\(10.0\\,\\mathrm{g/cm^{3}}\\)",
+                    "runs": [
+                      {
+                        "t": "math",
+                        "v": "10.0\\,\\mathrm{g/cm^{3}}"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0015",
+              "type": "page_number",
+              "surface_id": "s-p0097-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "91",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "91"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0097-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "summary",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0097-0002",
+        "e-p0097-0003",
+        "e-p0097-0004",
+        "e-p0097-0005",
+        "e-p0097-0006",
+        "e-p0097-0007",
+        "e-p0097-0008",
+        "e-p0097-0009",
+        "e-p0097-0010",
+        "e-p0097-0011",
+        "e-p0097-0012",
+        "e-p0097-0013",
+        "e-p0097-0014"
+      ],
+      "notes": [
+        "Transcript group: summary"
+      ]
+    },
+    {
+      "id": "g-p0097-002",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 4",
+      "title": "Revision exercise 4",
+      "parent_ref": "g-p0097-001",
+      "element_refs": [
+        "e-p0097-0004",
+        "e-p0097-0005",
+        "e-p0097-0006",
+        "e-p0097-0007",
+        "e-p0097-0008",
+        "e-p0097-0009",
+        "e-p0097-0010",
+        "e-p0097-0011",
+        "e-p0097-0012",
+        "e-p0097-0013",
+        "e-p0097-0014"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0097-0009",
+      "kind": "caption_of",
+      "from_ref": "e-p0097-0009",
+      "to_ref": "e-p0097-0008",
+      "resolution": "resolved",
+      "printed_text": "Figure 4.11: Mass versus volume graphs"
+    },
+    {
+      "id": "r-caption-e-p0097-0013",
+      "kind": "caption_of",
+      "from_ref": "e-p0097-0013",
+      "to_ref": "e-p0097-0012",
+      "resolution": "resolved",
+      "printed_text": "Figure 4.12: Measuring cylinder and balance readings for liquid"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0097-001",
+      "kind": "diagram",
+      "page": 97,
+      "surface_id": "s-p0097-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0097-0008"
+      ],
+      "printed_label": "Figure 4.11",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0097-002",
+      "kind": "diagram",
+      "page": 97,
+      "surface_id": "s-p0097-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0097-0012"
+      ],
+      "printed_label": "Figure 4.12",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0097-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 97,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0097-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 97,
+      "element_ref": null,
+      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 15,
+    "types": {
+      "running_header": 1,
+      "heading": 3,
+      "list": 1,
+      "question": 3,
+      "figure": 2,
+      "caption": 2,
+      "mcq_options": 2,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 2
+  }
+}

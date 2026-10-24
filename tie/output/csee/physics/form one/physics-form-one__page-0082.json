@@ -1,0 +1,919 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      82
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 82,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0082-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "76",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0082-0001",
+              "type": "running_header",
+              "surface_id": "s-p0082-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Introduction to force",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Introduction to force"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0002",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Two students are pushing the wooden block laid on the table with forces as shown in Figure 3.23 (\\(F_{1} = 35\\,\\mathrm{N}\\), \\(F_{2} = 30\\,\\mathrm{N}\\)).",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Two students are pushing the wooden block laid on the table with forces as shown in Figure 3.23 ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "F_{1} = 35\\,\\mathrm{N}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "F_{2} = 30\\,\\mathrm{N}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ")."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0003",
+              "type": "figure",
+              "surface_id": "s-p0082-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "ref": "f-p0082-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0004",
+              "type": "caption",
+              "surface_id": "s-p0082-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Figure 3.23: Forces applied on a wooden block",
+                "target_refs": [
+                  "e-p0082-0003"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 3.23: Forces applied on a wooden block"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0005",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Will the wooden block move? Which direction will the block move?",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Will the wooden block move? Which direction will the block move?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 5."
+              ]
+            },
+            {
+              "id": "e-p0082-0006",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "How much extra force is acting on the object if the object is not moving due to the application of these two forces?",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How much extra force is acting on the object if the object is not moving due to the application of these two forces?"
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 5."
+              ]
+            },
+            {
+              "id": "e-p0082-0007",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "",
+                "label_printed": "6.",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0008",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Distinguish between the forces of attraction and forces of repulsion.",
+                "label_printed": "(a)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Distinguish between the forces of attraction and forces of repulsion."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 6."
+              ]
+            },
+            {
+              "id": "e-p0082-0009",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Figure 3.24 shows part of a toy which contains two ring-shaped, permanent magnets. A plastic rod passes through the centre of both magnets.",
+                "label_printed": "(b)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 3.24 shows part of a toy which contains two ring-shaped, permanent magnets. A plastic rod passes through the centre of both magnets."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 6."
+              ]
+            },
+            {
+              "id": "e-p0082-0010",
+              "type": "figure",
+              "surface_id": "s-p0082-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "ref": "f-p0082-002"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0011",
+              "type": "caption",
+              "surface_id": "s-p0082-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Figure 3.24: Ring-shaped permanent magnets on a rod",
+                "target_refs": [
+                  "e-p0082-0010"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 3.24: Ring-shaped permanent magnets on a rod"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0012",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "The top magnet floats in the air above the bottom magnet. On Figure 3.24 (a), mark the poles on the top magnet and explain why it floats in the air above the bottom magnet.",
+                "label_printed": "(i)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The top magnet floats in the air above the bottom magnet. On Figure 3.24 (a), mark the poles on the top magnet and explain why it floats in the air above the bottom magnet."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 6.(b)"
+              ]
+            },
+            {
+              "id": "e-p0082-0013",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "The top magnet is replaced with a ring made of iron as shown in Figure 3.24 (b). Explain why the iron ring sticks to the bottom magnet.",
+                "label_printed": "(ii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The top magnet is replaced with a ring made of iron as shown in Figure 3.24 (b). Explain why the iron ring sticks to the bottom magnet."
+                  }
+                ]
+              },
+              "legibility": "clear",
+              "notes": [
+                "Printed parent label: 6.(b)"
+              ]
+            },
+            {
+              "id": "e-p0082-0014",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "In each statement, suggest the type of force that comes into play. (a) You placed two bar magnets close to each other, and they pushed each other away. (b) You exerted a force on a book to move it across a table, but it eventually comes to a stop. (c) If you drop a ball from a height, what force pulls it down towards the ground?",
+                "label_printed": "7.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In each statement, suggest the type of force that comes into play. (a) You placed two bar magnets close to each other, and they pushed each other away. (b) You exerted a force on a book to move it across a table, but it eventually comes to a stop. (c) If you drop a ball from a height, what force pulls it down towards the ground?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0015",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "You want to lift a heavy box. The force of gravity pulls it downwards with 500 N. (a) How much force will you have to apply to lift the box? (b) If your friend supports the box from below with a force of 270 N, how much force will you have to apply to lift the box?",
+                "label_printed": "8.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "You want to lift a heavy box. The force of gravity pulls it downwards with 500 N. (a) How much force will you have to apply to lift the box? (b) If your friend supports the box from below with a force of 270 N, how much force will you have to apply to lift the box?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0016",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "Why car dashboards are fixed with air bags?",
+                "label_printed": "9.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Why car dashboards are fixed with air bags?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0017",
+              "type": "question",
+              "surface_id": "s-p0082-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0082-001"
+              ],
+              "payload": {
+                "text": "A person pulls a cart with a force 1500 N. (a) Will the cart move if the force of friction between the cart and the ground is 2000 N? why? (b) Will the cart move if the force of friction between the cart and the ground is 1000 N? why?",
+                "label_printed": "10.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A person pulls a cart with a force 1500 N. (a) Will the cart move if the force of friction between the cart and the ground is 2000 N? why? (b) Will the cart move if the force of friction between the cart and the ground is 1000 N? why?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0082-0018",
+              "type": "page_number",
+              "surface_id": "s-p0082-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "76",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "76"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0082-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 3",
+      "title": "Revision exercise 3",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0082-0002",
+        "e-p0082-0003",
+        "e-p0082-0004",
+        "e-p0082-0005",
+        "e-p0082-0006",
+        "e-p0082-0007",
+        "e-p0082-0008",
+        "e-p0082-0009",
+        "e-p0082-0010",
+        "e-p0082-0011",
+        "e-p0082-0012",
+        "e-p0082-0013",
+        "e-p0082-0014",
+        "e-p0082-0015",
+        "e-p0082-0016",
+        "e-p0082-0017"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-caption-e-p0082-0004",
+      "kind": "caption_of",
+      "from_ref": "e-p0082-0004",
+      "to_ref": "e-p0082-0003",
+      "resolution": "resolved",
+      "printed_text": "Figure 3.23: Forces applied on a wooden block"
+    },
+    {
+      "id": "r-caption-e-p0082-0011",
+      "kind": "caption_of",
+      "from_ref": "e-p0082-0011",
+      "to_ref": "e-p0082-0010",
+      "resolution": "resolved",
+      "printed_text": "Figure 3.24: Ring-shaped permanent magnets on a rod"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0082-001",
+      "kind": "diagram",
+      "page": 82,
+      "surface_id": "s-p0082-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0082-0003"
+      ],
+      "printed_label": "Figure 3.23",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    },
+    {
+      "id": "f-p0082-002",
+      "kind": "diagram",
+      "page": 82,
+      "surface_id": "s-p0082-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0082-0010"
+      ],
+      "printed_label": "Figure 3.24",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0082-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 82,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 18,
+    "types": {
+      "running_header": 1,
+      "question": 12,
+      "figure": 2,
+      "caption": 2,
+      "page_number": 1
+    },
+    "figures": 2,
+    "open_issues": 1
+  }
+}

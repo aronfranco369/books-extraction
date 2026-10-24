@@ -1,0 +1,938 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      212
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 212,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0212-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "206",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0212-0001",
+              "type": "running_header",
+              "surface_id": "s-p0212-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Work, energy and power",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Work, energy and power"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0002",
+              "type": "figure",
+              "surface_id": "s-p0212-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0212-001"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0003",
+              "type": "caption",
+              "surface_id": "s-p0212-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 9.21: Conservation of mechanical energy",
+                "target_refs": [
+                  "e-p0212-0002"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 9.21: Conservation of mechanical energy"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0004",
+              "type": "paragraph",
+              "surface_id": "s-p0212-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "At points A and D, where the pendulum reaches the highest points above the equilibrium point, the total energy is equal to PE. At Point C, the pendulum is at its lowest point. The total energy is equal to the KE. At points like B, between the highest and the lowest points, total energy is the sum of KE and PE.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "At points A and D, where the pendulum reaches the highest points above the equilibrium point, the total energy is equal to PE. At Point C, the pendulum is at its lowest point. The total energy is equal to the KE. At points like B, between the highest and the lowest points, total energy is the sum of KE and PE."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0005",
+              "type": "heading",
+              "surface_id": "s-p0212-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transducer",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transducer"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0006",
+              "type": "paragraph",
+              "surface_id": "s-p0212-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A device used to convert one form of energy to another is called a transducer. Table 9.2 shows some transducers and the corresponding energy transformation.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A device used to convert one form of energy to another is called a transducer. Table 9.2 shows some transducers and the corresponding energy transformation."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0007",
+              "type": "table",
+              "surface_id": "s-p0212-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "columns": 2,
+                "header_rows": 1,
+                "rows": [
+                  [
+                    {
+                      "text": "Transducer",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Transducer"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Energy conversion process",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Energy conversion process"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Bulb",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Bulb"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Light energy / Electric energy / Heat energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Light energy / Electric energy / Heat energy"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Generator",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Generator"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Mechanical energy \\(\\rightarrow\\) Electrical energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Mechanical energy "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rightarrow"
+                        },
+                        {
+                          "t": "text",
+                          "v": " Electrical energy"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Motor",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Motor"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Electrical energy \\(\\rightarrow\\) Mechanical energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Electrical energy "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rightarrow"
+                        },
+                        {
+                          "t": "text",
+                          "v": " Mechanical energy"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Solar panel",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Solar panel"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Solar energy \\(\\rightarrow\\) Electrical energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Solar energy "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rightarrow"
+                        },
+                        {
+                          "t": "text",
+                          "v": " Electrical energy"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Battery",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Battery"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Chemical energy \\(\\rightarrow\\) Electrical energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Chemical energy "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rightarrow"
+                        },
+                        {
+                          "t": "text",
+                          "v": " Electrical energy"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Heater",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Heater"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Electrical energy \\(\\rightarrow\\) Heat energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Electrical energy "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rightarrow"
+                        },
+                        {
+                          "t": "text",
+                          "v": " Heat energy"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Microphone",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Microphone"
+                        }
+                      ]
+                    },
+                    {
+                      "text": "Sound energy \\(\\rightarrow\\) Electrical energy",
+                      "runs": [
+                        {
+                          "t": "text",
+                          "v": "Sound energy "
+                        },
+                        {
+                          "t": "math",
+                          "v": "\\rightarrow"
+                        },
+                        {
+                          "t": "text",
+                          "v": " Electrical energy"
+                        }
+                      ]
+                    }
+                  ]
+                ],
+                "printed_label": "Table 9.2"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0008",
+              "type": "example",
+              "surface_id": "s-p0212-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "At its highest point A in Figure 9.22, a pendulum of mass 0.8 kg is 1.2 m above the equilibrium point. What will be its velocity as it swings through its lowest point?",
+                "label_printed": "Example 9.9",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "At its highest point A in Figure 9.22, a pendulum of mass 0.8 kg is 1.2 m above the equilibrium point. What will be its velocity as it swings through its lowest point?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0009",
+              "type": "solution",
+              "surface_id": "s-p0212-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Height \\(h = 1.2\\,\\mathrm{m}\\), Mass \\(m = 0.8\\,\\mathrm{kg}\\), \\(g = 10\\,\\mathrm{N\\,kg^{-1}}\\). Due to conservation of energy, maximum KE at lowest position = maximum PE at highest position.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Height "
+                  },
+                  {
+                    "t": "math",
+                    "v": "h = 1.2\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", Mass "
+                  },
+                  {
+                    "t": "math",
+                    "v": "m = 0.8\\,\\mathrm{kg}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "g = 10\\,\\mathrm{N\\,kg^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Due to conservation of energy, maximum KE at lowest position = maximum PE at highest position."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0010",
+              "type": "math",
+              "surface_id": "s-p0212-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\frac{1}{2}mv^{2} = mgh \\implies v = \\sqrt{2gh} = \\sqrt{2 \\times 10\\,\\mathrm{m\\,s^{-2}} \\times 1.2\\,\\mathrm{m}} = 4.9\\,\\mathrm{m\\,s^{-1}}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0212-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Therefore, the velocity of the pendulum is \\(4.9\\,\\mathrm{m\\,s^{-1}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Therefore, the velocity of the pendulum is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "4.9\\,\\mathrm{m\\,s^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0212-0012",
+              "type": "page_number",
+              "surface_id": "s-p0212-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "206",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "206"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-caption-e-p0212-0003",
+      "kind": "caption_of",
+      "from_ref": "e-p0212-0003",
+      "to_ref": "e-p0212-0002",
+      "resolution": "resolved",
+      "printed_text": "Figure 9.21: Conservation of mechanical energy"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0212-001",
+      "kind": "diagram",
+      "page": 212,
+      "surface_id": "s-p0212-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0212-0002"
+      ],
+      "printed_label": "Figure 9.21",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0212-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 212,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0212-002",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 212,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0212-003",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 212,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 12,
+    "types": {
+      "running_header": 1,
+      "figure": 1,
+      "caption": 1,
+      "paragraph": 3,
+      "heading": 1,
+      "table": 1,
+      "example": 1,
+      "solution": 1,
+      "math": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 3
+  }
+}

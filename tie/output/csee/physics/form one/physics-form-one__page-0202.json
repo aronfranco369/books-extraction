@@ -1,0 +1,925 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      202
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 202,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0202-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "196",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0202-0001",
+              "type": "running_header",
+              "surface_id": "s-p0202-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Work, energy and power",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Work, energy and power"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0002",
+              "type": "example",
+              "surface_id": "s-p0202-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "How much work is done in lifting a 7 kg object through a height of 2 m and then holding it at that height for 10 s? (Assume, \\(g = 10\\,\\mathrm{N\\,kg^{-1}}\\))",
+                "label_printed": "Example 9.2",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "How much work is done in lifting a 7 kg object through a height of 2 m and then holding it at that height for 10 s? (Assume, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "g = 10\\,\\mathrm{N\\,kg^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ")"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0003",
+              "type": "solution",
+              "surface_id": "s-p0202-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Mass \\(m = 7\\,\\mathrm{kg}\\), distance \\(d = 2\\,\\mathrm{m}\\), \\(g = 10\\,\\mathrm{N\\,kg^{-1}}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mass "
+                  },
+                  {
+                    "t": "math",
+                    "v": "m = 7\\,\\mathrm{kg}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", distance "
+                  },
+                  {
+                    "t": "math",
+                    "v": "d = 2\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "g = 10\\,\\mathrm{N\\,kg^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0004",
+              "type": "paragraph",
+              "surface_id": "s-p0202-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "To lift an object or hold it in the air, an upward force equal to its weight must be exerted.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "To lift an object or hold it in the air, an upward force equal to its weight must be exerted."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0202-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Weight (N) of an object = mass (kg) of an object \\(\\times\\) acceleration due to gravity (\\(\\mathrm{N\\,kg^{-1}}\\))",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Weight (N) of an object = mass (kg) of an object "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\times"
+                  },
+                  {
+                    "t": "text",
+                    "v": " acceleration due to gravity ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\mathrm{N\\,kg^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ")"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0006",
+              "type": "math",
+              "surface_id": "s-p0202-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "w = mg"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0007",
+              "type": "paragraph",
+              "surface_id": "s-p0202-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "But, \\(\\mathrm{weight} = \\mathrm{Force}\\). Then,",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "But, "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\mathrm{weight} = \\mathrm{Force}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Then,"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0008",
+              "type": "math",
+              "surface_id": "s-p0202-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "\\mathrm{Force} = mg = 7\\,\\mathrm{kg} \\times 10\\,\\mathrm{N\\,kg^{-1}} = 70\\,\\mathrm{N}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0009",
+              "type": "paragraph",
+              "surface_id": "s-p0202-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "So, you must exert on the object an upward force of 70 N. To lift the object a distance of 2 m, the work done is calculated as follows:",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "So, you must exert on the object an upward force of 70 N. To lift the object a distance of 2 m, the work done is calculated as follows:"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0010",
+              "type": "math",
+              "surface_id": "s-p0202-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "W = F \\times d = 70\\,\\mathrm{N} \\times 2\\,\\mathrm{m} = 140\\,\\mathrm{J}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0011",
+              "type": "paragraph",
+              "surface_id": "s-p0202-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "To hold the object for 10 s: \\(F = 70\\,\\mathrm{N}\\), \\(d = 0\\,\\mathrm{m}\\).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "To hold the object for 10 s: "
+                  },
+                  {
+                    "t": "math",
+                    "v": "F = 70\\,\\mathrm{N}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "d = 0\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0012",
+              "type": "math",
+              "surface_id": "s-p0202-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "W = F \\times d = 70\\,\\mathrm{N} \\times 0\\,\\mathrm{m} = 0\\,\\mathrm{J}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0013",
+              "type": "paragraph",
+              "surface_id": "s-p0202-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "So, 140 J of work was required to lift the object at a height of 2 m, but no additional work was done in holding the object at that height for 10 s.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "So, 140 J of work was required to lift the object at a height of 2 m, but no additional work was done in holding the object at that height for 10 s."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0014",
+              "type": "instruction",
+              "surface_id": "s-p0202-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0202-001"
+              ],
+              "payload": {
+                "text": "Answer all questions (where necessary use \\(g = 10\\,\\mathrm{N\\,kg^{-1}}\\)).",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Answer all questions (where necessary use "
+                  },
+                  {
+                    "t": "math",
+                    "v": "g = 10\\,\\mathrm{N\\,kg^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ")."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0015",
+              "type": "question",
+              "surface_id": "s-p0202-01",
+              "order": 14,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0202-001"
+              ],
+              "payload": {
+                "text": "If a man pushes a van with a force of 300 N for a distance of 10 m, how much work does he do?",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If a man pushes a van with a force of 300 N for a distance of 10 m, how much work does he do?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0016",
+              "type": "question",
+              "surface_id": "s-p0202-01",
+              "order": 15,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0202-001"
+              ],
+              "payload": {
+                "text": "A man lifts a load of 20 kg through a height of 3 m. Calculate the work done.",
+                "label_printed": "2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A man lifts a load of 20 kg through a height of 3 m. Calculate the work done."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0017",
+              "type": "question",
+              "surface_id": "s-p0202-01",
+              "order": 16,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0202-001"
+              ],
+              "payload": {
+                "text": "Zenge lifts a brick of mass 10 kg from the floor to a shelf that is 3 m high. How much work does she do?",
+                "label_printed": "3.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Zenge lifts a brick of mass 10 kg from the floor to a shelf that is 3 m high. How much work does she do?"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0018",
+              "type": "question",
+              "surface_id": "s-p0202-01",
+              "order": 17,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0202-001"
+              ],
+              "payload": {
+                "text": "In each of the following cases, state whether work is done or not. (a) A cow pulling a 50 kg cart of maize along a rough road. (b) A teacher holding a book in his hand while talking to his friend. (c) An aeroplane flying upward at take-off. (d) An aeroplane moving horizontally 3 000 m above sea level.",
+                "label_printed": "4.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In each of the following cases, state whether work is done or not. (a) A cow pulling a 50 kg cart of maize along a rough road. (b) A teacher holding a book in his hand while talking to his friend. (c) An aeroplane flying upward at take-off. (d) An aeroplane moving horizontally 3 000 m above sea level."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0019",
+              "type": "question",
+              "surface_id": "s-p0202-01",
+              "order": 18,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0202-001"
+              ],
+              "payload": {
+                "text": "A sack of rice which weighs 900 N is lifted to a height of 2 m. Calculate the work done against gravity.",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A sack of rice which weighs 900 N is lifted to a height of 2 m. Calculate the work done against gravity."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0202-0020",
+              "type": "page_number",
+              "surface_id": "s-p0202-01",
+              "order": 19,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "196",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "196"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0202-001",
+      "kind": "exercise",
+      "label_printed": "Exercise 9.1",
+      "title": "Exercise 9.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0202-0014",
+        "e-p0202-0015",
+        "e-p0202-0016",
+        "e-p0202-0017",
+        "e-p0202-0018",
+        "e-p0202-0019"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0202-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 202,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0202-002",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 202,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0202-003",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 202,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0202-004",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 202,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0202-005",
+      "issue": "transcript_math_encoding_repaired",
+      "pdf_page": 202,
+      "element_ref": null,
+      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 20,
+    "types": {
+      "running_header": 1,
+      "example": 1,
+      "solution": 1,
+      "paragraph": 6,
+      "math": 4,
+      "instruction": 1,
+      "question": 5,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 5
+  }
+}

@@ -1,0 +1,733 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "csee",
+    "subject": "physics",
+    "form": 1,
+    "title_printed": "Physics for Secondary Schools Student's Book Form One",
+    "language": "en",
+    "edition_year_printed": "Revised 2023"
+  },
+  "source": {
+    "pdf": "Physics_Form-one_new-syllabus.pdf",
+    "sha256": null,
+    "pdf_page_count": 232,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "physics-form-one-text-import-1",
+    "requested_pdf_pages": [
+      153
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
+        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+      }
+    ],
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "text_import_status": "imported_for_manual_review",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 153,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0153-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "147",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0153-0001",
+              "type": "running_header",
+              "surface_id": "s-p0153-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Pressure",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Pressure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0002",
+              "type": "heading",
+              "surface_id": "s-p0153-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Measurement of atmospheric pressure",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Measurement of atmospheric pressure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0003",
+              "type": "paragraph",
+              "surface_id": "s-p0153-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Atmospheric pressure is measured using instruments called barometers.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Atmospheric pressure is measured using instruments called barometers."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0004",
+              "type": "heading",
+              "surface_id": "s-p0153-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "1. Simple mercury barometer",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "1. Simple mercury barometer"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0005",
+              "type": "paragraph",
+              "surface_id": "s-p0153-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "A simple mercury barometer consists of a glass tube about \\(1\\,\\mathrm{m}\\) long, closed at one end, filled completely with mercury, and inverted into a trough of mercury. The mercury column falls until its height is supported by the atmospheric pressure acting on the open surface of mercury in the trough.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "A simple mercury barometer consists of a glass tube about "
+                  },
+                  {
+                    "t": "math",
+                    "v": "1\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " long, closed at one end, filled completely with mercury, and inverted into a trough of mercury. The mercury column falls until its height is supported by the atmospheric pressure acting on the open surface of mercury in the trough."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0006",
+              "type": "paragraph",
+              "surface_id": "s-p0153-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "At standard atmospheric pressure at sea level, the vertical height \\(h\\) of the mercury column is \\(760\\,\\mathrm{mm}\\) (or \\(0.76\\,\\mathrm{m}\\)). The space above the mercury column inside the tube is a vacuum, known as a Torricellian vacuum.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "At standard atmospheric pressure at sea level, the vertical height "
+                  },
+                  {
+                    "t": "math",
+                    "v": "h"
+                  },
+                  {
+                    "t": "text",
+                    "v": " of the mercury column is "
+                  },
+                  {
+                    "t": "math",
+                    "v": "760\\,\\mathrm{mm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " (or "
+                  },
+                  {
+                    "t": "math",
+                    "v": "0.76\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "). The space above the mercury column inside the tube is a vacuum, known as a Torricellian vacuum."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0007",
+              "type": "math",
+              "surface_id": "s-p0153-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "P_{\\mathrm{atm}} = h \\rho g"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0008",
+              "type": "paragraph",
+              "surface_id": "s-p0153-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Where \\(h = 0.76\\,\\mathrm{m}\\), \\(\\rho = 13,600\\,\\mathrm{kg\\,m^{-3}}\\), and \\(g = 9.8\\,\\mathrm{N\\,kg^{-1}}\\):",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Where "
+                  },
+                  {
+                    "t": "math",
+                    "v": "h = 0.76\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\rho = 13,600\\,\\mathrm{kg\\,m^{-3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ", and "
+                  },
+                  {
+                    "t": "math",
+                    "v": "g = 9.8\\,\\mathrm{N\\,kg^{-1}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ":"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0009",
+              "type": "math",
+              "surface_id": "s-p0153-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "latex": "P_{\\mathrm{atm}} = 0.76\\,\\mathrm{m} \\times 13,600\\,\\mathrm{kg\\,m^{-3}} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\approx 1.013 \\times 10^5\\,\\mathrm{Pa}"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0010",
+              "type": "note",
+              "surface_id": "s-p0153-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0153-001"
+              ],
+              "payload": {
+                "text": "Mercury is preferred over water in barometers because of its high density (\\(13,600\\,\\mathrm{kg\\,m^{-3}}\\)), requiring a tube length of less than \\(1\\,\\mathrm{m}\\). If water were used, a tube height of over \\(10.3\\,\\mathrm{m}\\) would be required because \\(h_{\\mathrm{water}} = \\frac{1.013 \\times 10^5}{1000 \\times 9.8} \\approx 10.34\\,\\mathrm{m}\\).",
+                "note_kind": "definition",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Mercury is preferred over water in barometers because of its high density ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "13,600\\,\\mathrm{kg\\,m^{-3}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "), requiring a tube length of less than "
+                  },
+                  {
+                    "t": "math",
+                    "v": "1\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". If water were used, a tube height of over "
+                  },
+                  {
+                    "t": "math",
+                    "v": "10.3\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " would be required because "
+                  },
+                  {
+                    "t": "math",
+                    "v": "h_{\\mathrm{water}} = \\frac{1.013 \\times 10^5}{1000 \\times 9.8} \\approx 10.34\\,\\mathrm{m}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0153-0011",
+              "type": "page_number",
+              "surface_id": "s-p0153-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "147",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "147"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0153-001",
+      "kind": "section",
+      "label_printed": null,
+      "title": "note",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0153-0010"
+      ],
+      "notes": [
+        "Transcript group: note"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0153-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 153,
+      "element_ref": null,
+      "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 11,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "paragraph": 4,
+      "math": 2,
+      "note": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}
