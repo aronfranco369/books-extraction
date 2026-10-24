@@ -1,0 +1,672 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      40
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 40,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0040-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "33",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0040-001",
+              "type": "running_header",
+              "surface_id": "s-p0040-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transportation in living organisms",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transportation in living organisms"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-002",
+              "type": "heading",
+              "surface_id": "s-p0040-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Plasma proteins",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Plasma proteins"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-003",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "There are three major categories of plasma proteins, each having its own properties and functions. They include albumins, globulins, and fibrinogens.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "There are three major categories of plasma proteins, each having its own properties and functions. They include albumins, globulins, and fibrinogens."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-004",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Albumins:** These are the smallest and most abundant form of plasma proteins. About 60% of plasma proteins are albumin. These proteins act as a carrier to transport some molecules such as drugs, hormones, and fatty acids through the blood circulation. With the help of sodium ions, these are the major blood proteins which are involved in maintaining osmotic pressure of the blood. Osmotic pressure helps in maintaining water in the blood stream. It has been observed that reductions in the amount of albumin content in the plasma result in a loss of fluid from the blood and the increase of fluid in the interstitial space and tissues. This allows easier movement of ions and nutrients across cell barriers.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Albumins:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " These are the smallest and most abundant form of plasma proteins. About 60% of plasma proteins are albumin. These proteins act as a carrier to transport some molecules such as drugs, hormones, and fatty acids through the blood circulation. With the help of sodium ions, these are the major blood proteins which are involved in maintaining osmotic pressure of the blood. Osmotic pressure helps in maintaining water in the blood stream. It has been observed that reductions in the amount of albumin content in the plasma result in a loss of fluid from the blood and the increase of fluid in the interstitial space and tissues. This allows easier movement of ions and nutrients across cell barriers."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-005",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Globulins:** These are the second category of plasma protein, which are important in immune globulin. Their abundance ranges from 36% to 38% of the total plasma proteins in the blood. These proteins can be subdivided into three classes based on their molecular weight. These are alpha, beta and gamma globulins. They include high-density lipoproteins, an alpha-1 globulin, and a low-density lipoproteins called beta-1 globulin. Lipoproteins with high density are involved in lipid and fat transport to the cells for use in metabolism, membrane synthesis, and function of hormones. They also tend to prevent cholesterol from invading and staying in the walls of blood vessels. On the other hand, the lipoprotein of low density transports cholesterol and fats to tissues to be involved in manufacturing steroid hormones and cell membranes. Therefore, globulins play a vital role in the regulation of cholesterol, and hence, they help in preventing cardiovascular diseases.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Globulins:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " These are the second category of plasma protein, which are important in immune globulin. Their abundance ranges from 36% to 38% of the total plasma proteins in the blood. These proteins can be subdivided into three classes based on their molecular weight. These are alpha, beta and gamma globulins. They include high-density lipoproteins, an alpha-1 globulin, and a low-density lipoproteins called beta-1 globulin. Lipoproteins with high density are involved in lipid and fat transport to the cells for use in metabolism, membrane synthesis, and function of hormones. They also tend to prevent cholesterol from invading and staying in the walls of blood vessels. On the other hand, the lipoprotein of low density transports cholesterol and fats to tissues to be involved in manufacturing steroid hormones and cell membranes. Therefore, globulins play a vital role in the regulation of cholesterol, and hence, they help in preventing cardiovascular diseases."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-006",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Fibrinogens:** These proteins constitute 4% of the total plasma proteins. The liver produces them and they are responsible for the formation of fibrin threads of a blood clot. They are soluble precursors of a protein called fibrin and forms the framework of the blood clot.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Fibrinogens:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " These proteins constitute 4% of the total plasma proteins. The liver produces them and they are responsible for the formation of fibrin threads of a blood clot. They are soluble precursors of a protein called fibrin and forms the framework of the blood clot."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-007",
+              "type": "heading",
+              "surface_id": "s-p0040-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Other components of blood plasma",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Other components of blood plasma"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-008",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Nitrogenous wastes:** These form another group of solutes found in the blood plasma. They are the by-products of metabolism which include urea, uric acid, creatinine, and ammonium salts. They are toxic in nature, hence, they are cleared from the blood stream and excreted by the kidneys.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Nitrogenous wastes:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " These form another group of solutes found in the blood plasma. They are the by-products of metabolism which include urea, uric acid, creatinine, and ammonium salts. They are toxic in nature, hence, they are cleared from the blood stream and excreted by the kidneys."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-009",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Nutrients:** These include some materials absorbed from digestion including glucose, amino acids, fatty acids, glycerol and triglycerides, cholesterol, and vitamins. They are absorbed by the digestive tract and are transported in the blood plasma.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Nutrients:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " These include some materials absorbed from digestion including glucose, amino acids, fatty acids, glycerol and triglycerides, cholesterol, and vitamins. They are absorbed by the digestive tract and are transported in the blood plasma."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-010",
+              "type": "paragraph",
+              "surface_id": "s-p0040-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Respiratory gases:** The blood plasma transports some amounts of oxygen and carbon dioxide. In this case, oxygen is transported as it binds to the haemoglobin inside the red blood cells, while carbon dioxide is transported after it dissolves in plasma to form bicarbonate ions.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Respiratory gases:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " The blood plasma transports some amounts of oxygen and carbon dioxide. In this case, oxygen is transported as it binds to the haemoglobin inside the red blood cells, while carbon dioxide is transported after it dissolves in plasma to form bicarbonate ions."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0040-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0040-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "33",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "33"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0040-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 40,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 11,
+    "types": {
+      "running_header": 1,
+      "heading": 2,
+      "paragraph": 7,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

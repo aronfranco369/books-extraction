@@ -1,0 +1,700 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      14
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 14,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0014-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "7",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0014-001",
+              "type": "running_header",
+              "surface_id": "s-p0014-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transportation in living organisms",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transportation in living organisms"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-002",
+              "type": "list",
+              "surface_id": "s-p0014-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "roman",
+                "items": [
+                  {
+                    "label_printed": "(ii)",
+                    "text": "The concentration of sugars in the phloem depends on environmental conditions. During the day when photosynthesis is taking place, the concentration of sugars in the phloem is higher compared to the concentration in the dark when there is no photosynthesis.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The concentration of sugars in the phloem depends on environmental conditions. During the day when photosynthesis is taking place, the concentration of sugars in the phloem is higher compared to the concentration in the dark when there is no photosynthesis."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iii)",
+                    "text": "When a ring of the phloem is removed from around the stem, movement of food materials downwards becomes interfered; and because of this, food accumulates above the ring.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "When a ring of the phloem is removed from around the stem, movement of food materials downwards becomes interfered; and because of this, food accumulates above the ring."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iv)",
+                    "text": "If a photosynthesizing plant is subjected to \\(\\ce{CO2}\\) from a radioactive isotope of \\(\\ce{^{14}C}\\) as a photosynthetic substrate, the end products of photosynthesis if traced later in the phloem will be found to contain \\(\\ce{^{14}C}\\).",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "If a photosynthesizing plant is subjected to "
+                      },
+                      {
+                        "t": "math",
+                        "v": "\\ce{CO2}"
+                      },
+                      {
+                        "t": "text",
+                        "v": " from a radioactive isotope of "
+                      },
+                      {
+                        "t": "math",
+                        "v": "\\ce{^{14}C}"
+                      },
+                      {
+                        "t": "text",
+                        "v": " as a photosynthetic substrate, the end products of photosynthesis if traced later in the phloem will be found to contain "
+                      },
+                      {
+                        "t": "math",
+                        "v": "\\ce{^{14}C}"
+                      },
+                      {
+                        "t": "text",
+                        "v": "."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(v)",
+                    "text": "Aphids are insects that feed on the contents of the sieve tubes of a living plant. Analysis of the juice extracted from the aphids reveals the presence of sugars and amino acids that are products of photosynthesis. The juice is obtained after anesthetising the feeding aphid, then cutting off its body to let its stylet exude juice sucked from the sieve tubes.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Aphids are insects that feed on the contents of the sieve tubes of a living plant. Analysis of the juice extracted from the aphids reveals the presence of sugars and amino acids that are products of photosynthesis. The juice is obtained after anesthetising the feeding aphid, then cutting off its body to let its stylet exude juice sucked from the sieve tubes."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-003",
+              "type": "heading",
+              "surface_id": "s-p0014-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Adaptations of phloem tissues to their functions",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Adaptations of phloem tissues to their functions"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-004",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The structure of the phloem tissue suit its function of translocation of food in that, its sieve tubes form a tubing column through which the food solution flows. There are lateral pits in the walls of the sieve tube members which allow lateral movement of food materials. The food materials flow through the phloem tissue by an active mechanism. The energy to facilitate this flow is supplied by the mitochondria present in the companion cells. Additionally, the sieve tube elements have a tendency of losing organelles in order to increase the size of the lumen for easy passage of food.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The structure of the phloem tissue suit its function of translocation of food in that, its sieve tubes form a tubing column through which the food solution flows. There are lateral pits in the walls of the sieve tube members which allow lateral movement of food materials. The food materials flow through the phloem tissue by an active mechanism. The energy to facilitate this flow is supplied by the mitochondria present in the companion cells. Additionally, the sieve tube elements have a tendency of losing organelles in order to increase the size of the lumen for easy passage of food."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-005",
+              "type": "heading",
+              "surface_id": "s-p0014-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Passive and active transport in plants",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Passive and active transport in plants"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-006",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The plant can absorb water and dissolved mineral salts using two transportation mechanisms, namely: active and passive transports.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The plant can absorb water and dissolved mineral salts using two transportation mechanisms, namely: active and passive transports."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-007",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Active transport: In active transport, materials or molecules are transported against the concentration gradient. For example, sometimes the soil may have a low concentration of mineral salts than the cell sap, but mineral salts can still move from the soil to the cell sap by active transport, which requires energy to pump materials against the concentration gradient.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Active transport: In active transport, materials or molecules are transported against the concentration gradient. For example, sometimes the soil may have a low concentration of mineral salts than the cell sap, but mineral salts can still move from the soil to the cell sap by active transport, which requires energy to pump materials against the concentration gradient."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-008",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Passive transport: In passive transport, materials move along their concentration gradient. In this case, energy is not required. For example, ions from the soil, which are in high concentration can diffuse to the cell sap with low concentration. However, passive transport may involve the movement of water molecules from a region of low solute concentration to a region of high solute concentration. Thus, the mechanisms for passive transport are osmosis and diffusion.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Passive transport: In passive transport, materials move along their concentration gradient. In this case, energy is not required. For example, ions from the soil, which are in high concentration can diffuse to the cell sap with low concentration. However, passive transport may involve the movement of water molecules from a region of low solute concentration to a region of high solute concentration. Thus, the mechanisms for passive transport are osmosis and diffusion."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-009",
+              "type": "paragraph",
+              "surface_id": "s-p0014-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Osmosis: This is a special kind of diffusion that moves water molecules from a place of its higher concentration to a place of lower concentration to create a stable and equal cellular environment. It may also involve the movement of liquids or molecules from a region of low solute concentration (high water potential) to the region of high solute concentration (low water potential) through a differentially permeable membrane. Osmosis is an important process in the transport of materials for the proper",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Osmosis: This is a special kind of diffusion that moves water molecules from a place of its higher concentration to a place of lower concentration to create a stable and equal cellular environment. It may also involve the movement of liquids or molecules from a region of low solute concentration (high water potential) to the region of high solute concentration (low water potential) through a differentially permeable membrane. Osmosis is an important process in the transport of materials for the proper"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0014-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0014-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "7",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "7"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-continues-e-p0014-002",
+      "kind": "continues",
+      "from_ref": "e-p0014-002",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+        "pdf_page": 13,
+        "printed_page": "6",
+        "label_printed": null
+      }
+    }
+  ],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0014-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 14,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 10,
+    "types": {
+      "running_header": 1,
+      "list": 1,
+      "heading": 2,
+      "paragraph": 5,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

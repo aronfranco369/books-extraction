@@ -1,0 +1,677 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      38
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 38,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0038-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "31",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0038-001",
+              "type": "running_header",
+              "surface_id": "s-p0038-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transportation in living organisms",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transportation in living organisms"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-002",
+              "type": "heading",
+              "surface_id": "s-p0038-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Functions of the blood",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Functions of the blood"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-003",
+              "type": "paragraph",
+              "surface_id": "s-p0038-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Blood has three major functions in the body, namely: transport, protection, and regulation.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Blood has three major functions in the body, namely: transport, protection, and regulation."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-004",
+              "type": "paragraph",
+              "surface_id": "s-p0038-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Transport:** This is the main function of the blood. It is the primary means of transport in the body of vertebrates. Substances transported by the blood include gases, nitrogenous wastes, hormones, and nutrients. One of the transport roles of the blood is to pick up oxygen (\\(\\ce{O2}\\)) processed in the lungs to all body cells. Cells need oxygen for undertaking cellular respiration to generate energy, which will enable them to carry out some metabolic activities. Blood also transports carbon dioxide (\\(\\ce{CO2}\\)) from the metabolic cells to the lungs in order to be removed outside the body. The underlying transport mechanism is summarised in Figure 1.18.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transport:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " This is the main function of the blood. It is the primary means of transport in the body of vertebrates. Substances transported by the blood include gases, nitrogenous wastes, hormones, and nutrients. One of the transport roles of the blood is to pick up oxygen ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{O2}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") processed in the lungs to all body cells. Cells need oxygen for undertaking cellular respiration to generate energy, which will enable them to carry out some metabolic activities. Blood also transports carbon dioxide ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{CO2}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") from the metabolic cells to the lungs in order to be removed outside the body. The underlying transport mechanism is summarised in Figure 1.18."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-005",
+              "type": "paragraph",
+              "surface_id": "s-p0038-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Apart from the transportation of the gases, blood also transports nutrients from the digestive tract and storage sites to the rest of the body. Waste products to be detoxified or removed by the liver and kidneys respectively are also transported by the blood. Moreover, the blood transports hormones from the glands in which they are produced to their target cells. Finally, the blood also transports heat generated during metabolism to the skin that helps to regulate body temperature.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Apart from the transportation of the gases, blood also transports nutrients from the digestive tract and storage sites to the rest of the body. Waste products to be detoxified or removed by the liver and kidneys respectively are also transported by the blood. Moreover, the blood transports hormones from the glands in which they are produced to their target cells. Finally, the blood also transports heat generated during metabolism to the skin that helps to regulate body temperature."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-006",
+              "type": "paragraph",
+              "surface_id": "s-p0038-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Protection:** The blood is also involved in body protection and inflammation. For example, leukocytes, or white blood cells tend to destroy the invading microorganisms and cancer cells. Antibodies and other proteins present in blood plasma destroy pathogenic substances.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Protection:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " The blood is also involved in body protection and inflammation. For example, leukocytes, or white blood cells tend to destroy the invading microorganisms and cancer cells. Antibodies and other proteins present in blood plasma destroy pathogenic substances."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-007-image",
+              "type": "figure",
+              "surface_id": "s-p0038-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0038-figure-1-18"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-007",
+              "type": "caption",
+              "surface_id": "s-p0038-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 1.18 Mechanism of transportation of carbon dioxide (\\(\\ce{CO2}\\)) and oxygen (\\(\\ce{O2}\\)) in the body",
+                "target_refs": [
+                  "e-p0038-007-image"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.18 Mechanism of transportation of carbon dioxide ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{CO2}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") and oxygen ("
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{O2}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ") in the body"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0038-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0038-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "31",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "31"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-e-p0038-007",
+      "kind": "caption_of",
+      "from_ref": "e-p0038-007",
+      "to_ref": "e-p0038-007-image",
+      "resolution": "resolved",
+      "printed_text": "Figure 1.18 Mechanism of transportation of carbon dioxide (\\(\\ce{CO2}\\)) and oxygen (\\(\\ce{O2}\\)) in the body"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0038-figure-1-18",
+      "kind": "diagram",
+      "page": 38,
+      "surface_id": "s-p0038-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0038-007-image"
+      ],
+      "printed_label": "Figure 1.18",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0038-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 38,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 9,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "paragraph": 4,
+      "figure": 1,
+      "caption": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 1
+  }
+}

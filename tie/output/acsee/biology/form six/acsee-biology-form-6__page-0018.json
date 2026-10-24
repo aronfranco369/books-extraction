@@ -1,0 +1,606 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      18
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 18,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0018-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "11",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0018-001",
+              "type": "running_header",
+              "surface_id": "s-p0018-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transportation in living organisms",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transportation in living organisms"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-002",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The movement of water through the cell walls in the apoplast is prevented by wax-like material known as suberin, which is deposited in the cell wall to form Casparian strips in the endodermis. In this movement, water is thereby forced to enter the living protoplast of the endodermal cell, as the only available route to the xylem. The movement of water is important because salts from the endodermal cells may then be actively deposited into the vascular tissues. This process lowers the water potential in the xylem, which becomes more negative causing water to be drawn in from the endodermis.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The movement of water through the cell walls in the apoplast is prevented by wax-like material known as suberin, which is deposited in the cell wall to form Casparian strips in the endodermis. In this movement, water is thereby forced to enter the living protoplast of the endodermal cell, as the only available route to the xylem. The movement of water is important because salts from the endodermal cells may then be actively deposited into the vascular tissues. This process lowers the water potential in the xylem, which becomes more negative causing water to be drawn in from the endodermis."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-003",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Roles of Casparian strips",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Roles of Casparian strips"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-004",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The Casparian strip is a band of water proof which provides living support to the endodermis of roots. For example, if a root endodermal cell undergoes plasmolysis, the loss of water results into the falling off of the cell surface membrane onto the cytoplasmic region. However, due to the presence of Casparian strips, the membrane remains held in place. Therefore, when the cell gains water, the whole membrane goes back to the cell wall and the entire cell resumes a normal life. Additionally, the Casparian strips cause an active secretion of salts from endodermal cells into the xylem. This leads to more negative water potential in the xylem and as a result, it enhances the movement of water from the endodermal cells to the xylem. Moreover, by restricting the movement of water passing through the protoplasm, the Casparian strips limit large volumes of water which could be contaminated with toxins to pass through the cells. In this way, the strip offers a protective function against the entry of toxic substances.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The Casparian strip is a band of water proof which provides living support to the endodermis of roots. For example, if a root endodermal cell undergoes plasmolysis, the loss of water results into the falling off of the cell surface membrane onto the cytoplasmic region. However, due to the presence of Casparian strips, the membrane remains held in place. Therefore, when the cell gains water, the whole membrane goes back to the cell wall and the entire cell resumes a normal life. Additionally, the Casparian strips cause an active secretion of salts from endodermal cells into the xylem. This leads to more negative water potential in the xylem and as a result, it enhances the movement of water from the endodermal cells to the xylem. Moreover, by restricting the movement of water passing through the protoplasm, the Casparian strips limit large volumes of water which could be contaminated with toxins to pass through the cells. In this way, the strip offers a protective function against the entry of toxic substances."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-005",
+              "type": "heading",
+              "surface_id": "s-p0018-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The symplast pathway",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The symplast pathway"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-006",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Symplast pathway involves the movement of water and other low molecular weight solutes such as sugars, amino acid and ions between adjacent cells through the cytoplasm. In this pathway, there is the movement of water and mineral salt molecules from cell to cell by means of plasmodesmata, which are the cytoplasmic strands extending through pores in adjacent cell walls. The plasmodesmata forms a network of the cytoplasm of all cells. Water and solutes contained in the cytoplasm of one cell can move through the symplast pathway without crossing further membranes. The movements in the symplast pathway are aided by cytoplasmic streaming.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Symplast pathway involves the movement of water and other low molecular weight solutes such as sugars, amino acid and ions between adjacent cells through the cytoplasm. In this pathway, there is the movement of water and mineral salt molecules from cell to cell by means of plasmodesmata, which are the cytoplasmic strands extending through pores in adjacent cell walls. The plasmodesmata forms a network of the cytoplasm of all cells. Water and solutes contained in the cytoplasm of one cell can move through the symplast pathway without crossing further membranes. The movements in the symplast pathway are aided by cytoplasmic streaming."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-007",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Apoplast and symplast pathways are both involved in the movement of water across the root. Water flows through apoplast in the cortex, enters the symplast pathway in the endodermis where the walls are impermeable to the flow of water due to the presence of Casparian strips.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Apoplast and symplast pathways are both involved in the movement of water across the root. Water flows through apoplast in the cortex, enters the symplast pathway in the endodermis where the walls are impermeable to the flow of water due to the presence of Casparian strips."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-008",
+              "type": "paragraph",
+              "surface_id": "s-p0018-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "In the endodermis, plasmodesmata help to allow the passage of water into pericycle from where it enters the xylem. Mineral nutrients also use the same pathway as that of water. However, their absorption and passage into the symplast pathway mostly occur through active absorption. The movement of water inside the xylem is purely along the pressure gradient.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In the endodermis, plasmodesmata help to allow the passage of water into pericycle from where it enters the xylem. Mineral nutrients also use the same pathway as that of water. However, their absorption and passage into the symplast pathway mostly occur through active absorption. The movement of water inside the xylem is purely along the pressure gradient."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0018-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0018-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "11",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "11"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0018-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 18,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 9,
+    "types": {
+      "running_header": 1,
+      "paragraph": 5,
+      "heading": 2,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

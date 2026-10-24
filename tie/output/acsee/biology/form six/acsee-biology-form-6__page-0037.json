@@ -1,0 +1,746 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      37
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 37,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0037-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "30",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0037-001",
+              "type": "running_header",
+              "surface_id": "s-p0037-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Biology for Advanced Level Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Biology for Advanced Level Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-002",
+              "type": "list",
+              "surface_id": "s-p0037-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "style": "roman",
+                "items": [
+                  {
+                    "label_printed": "(iii)",
+                    "text": "Bidirectional movement of solutes in the translocation process, as well as the fact that translocation is heavily affected by changes in the environmental conditions such as temperature and metabolic inhibitors, are not fully explained by this hypothesis.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Bidirectional movement of solutes in the translocation process, as well as the fact that translocation is heavily affected by changes in the environmental conditions such as temperature and metabolic inhibitors, are not fully explained by this hypothesis."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iv)",
+                    "text": "Furthermore, the hypothesis does not show the role of metabolism in phloem translocation. For example, the active mechanisms of loading sucrose to the sieve elements at the sources and the unloading of sucrose from the sieve elements at the sinks are not explained.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Furthermore, the hypothesis does not show the role of metabolism in phloem translocation. For example, the active mechanisms of loading sucrose to the sieve elements at the sources and the unloading of sucrose from the sieve elements at the sinks are not explained."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-003",
+              "type": "heading",
+              "surface_id": "s-p0037-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0037-001"
+              ],
+              "payload": {
+                "text": "Exercise 1.4",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Exercise 1.4"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-004",
+              "type": "question",
+              "surface_id": "s-p0037-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0037-001"
+              ],
+              "payload": {
+                "text": "Explain the features which facilitate passage of manufactured food through the phloem tissue.",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Explain the features which facilitate passage of manufactured food through the phloem tissue."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-005",
+              "type": "question",
+              "surface_id": "s-p0037-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0037-001"
+              ],
+              "payload": {
+                "text": "Discuss how the Münch’s model demonstrates translocation of food through the phloem from the source to the sinks.",
+                "label_printed": "2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Discuss how the Münch’s model demonstrates translocation of food through the phloem from the source to the sinks."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-006",
+              "type": "question",
+              "surface_id": "s-p0037-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0037-001"
+              ],
+              "payload": {
+                "text": "Give evidence to show that food passes through the phloem by mass flow.",
+                "label_printed": "3.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Give evidence to show that food passes through the phloem by mass flow."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-007",
+              "type": "question",
+              "surface_id": "s-p0037-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0037-001"
+              ],
+              "payload": {
+                "text": "Briefly explain the challenges of the mass flow hypothesis of phloem translocation.",
+                "label_printed": "4.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Briefly explain the challenges of the mass flow hypothesis of phloem translocation."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-008",
+              "type": "question",
+              "surface_id": "s-p0037-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0037-001"
+              ],
+              "payload": {
+                "text": "Explain why the end products of photosynthesis are safely transported from the source to the sink without being oxidized on their way.",
+                "label_printed": "5.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Explain why the end products of photosynthesis are safely transported from the source to the sink without being oxidized on their way."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-009",
+              "type": "heading",
+              "surface_id": "s-p0037-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transport in animals",
+                "level": 2,
+                "role": "section",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transport in animals"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-010",
+              "type": "paragraph",
+              "surface_id": "s-p0037-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Transportation of materials in animals such as vertebrates occurs mainly through the blood vascular system. The heart whose walls are made up of the cardiac muscles pumps the circulating blood. Circulation is the movement of materials within a cell or between parts of an organism. In contrast, transportation is defined as the circulation and all other processes by which substances pass into or out of cells and move within the organism. The vertebrate circulatory system has three major components. First, the blood which is a fluid in which transported materials are dissolved. Second, the blood vessels which form a network of tubes or body spaces through which the fluid flows. A transport network of the vertebrate circulatory system is made up of arteries, veins, and blood cells. The last component of vertebrate circulatory system is the heart which is a means of driving the fluid through the tubes or spaces. Animals have two different types of circulatory systems, which are open circulatory system in arthropods and some molluscs and closed circulatory system in echinoderms, some molluscs and vertebrates. This closed system is either single or double circulatory systems. In mammals, the circulation of blood in foetus differs from that of an adult.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Transportation of materials in animals such as vertebrates occurs mainly through the blood vascular system. The heart whose walls are made up of the cardiac muscles pumps the circulating blood. Circulation is the movement of materials within a cell or between parts of an organism. In contrast, transportation is defined as the circulation and all other processes by which substances pass into or out of cells and move within the organism. The vertebrate circulatory system has three major components. First, the blood which is a fluid in which transported materials are dissolved. Second, the blood vessels which form a network of tubes or body spaces through which the fluid flows. A transport network of the vertebrate circulatory system is made up of arteries, veins, and blood cells. The last component of vertebrate circulatory system is the heart which is a means of driving the fluid through the tubes or spaces. Animals have two different types of circulatory systems, which are open circulatory system in arthropods and some molluscs and closed circulatory system in echinoderms, some molluscs and vertebrates. This closed system is either single or double circulatory systems. In mammals, the circulation of blood in foetus differs from that of an adult."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-011",
+              "type": "heading",
+              "surface_id": "s-p0037-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The blood",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The blood"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-012",
+              "type": "paragraph",
+              "surface_id": "s-p0037-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Blood is the first component of the vertebrate circulatory system. It is a constantly circulating fluid in the body of humans and other animals. It has a function of transporting necessary substances such as nutrients and oxygen to the cells and removing metabolic wastes away from the cells. Blood is the main component of the transport system in vertebrates. While 55% of blood is composed of the plasma, the remaining 45% constitute of blood cells. Approximately 8% of an adult’s human body weight is made up of blood. The composition of blood by sex indicates that females have an average of 4 -5 litres while males have 5 - 6 litres. This is due to differences in their body size. Males are relatively bigger in size than their females. The blood has a pH ranging from 7.35 to 7.45. Hence, it is slightly alkaline. Its viscosity is about 4.5 - 5.5 times the viscosity of water making it easier to flow in the vessels than water.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Blood is the first component of the vertebrate circulatory system. It is a constantly circulating fluid in the body of humans and other animals. It has a function of transporting necessary substances such as nutrients and oxygen to the cells and removing metabolic wastes away from the cells. Blood is the main component of the transport system in vertebrates. While 55% of blood is composed of the plasma, the remaining 45% constitute of blood cells. Approximately 8% of an adult’s human body weight is made up of blood. The composition of blood by sex indicates that females have an average of 4 -5 litres while males have 5 - 6 litres. This is due to differences in their body size. Males are relatively bigger in size than their females. The blood has a pH ranging from 7.35 to 7.45. Hence, it is slightly alkaline. Its viscosity is about 4.5 - 5.5 times the viscosity of water making it easier to flow in the vessels than water."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0037-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0037-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "30",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "30"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0037-001",
+      "kind": "exercise",
+      "label_printed": "Exercise 1.4",
+      "title": "Exercise 1.4",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0037-003",
+        "e-p0037-004",
+        "e-p0037-005",
+        "e-p0037-006",
+        "e-p0037-007",
+        "e-p0037-008"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-continues-e-p0037-002",
+      "kind": "continues",
+      "from_ref": "e-p0037-002",
+      "to_ref": null,
+      "resolution": "external",
+      "printed_text": null,
+      "external_target": {
+        "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+        "pdf_page": 36,
+        "printed_page": "29",
+        "label_printed": null
+      }
+    }
+  ],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0037-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 37,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 13,
+    "types": {
+      "running_header": 1,
+      "list": 1,
+      "heading": 3,
+      "question": 5,
+      "paragraph": 2,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

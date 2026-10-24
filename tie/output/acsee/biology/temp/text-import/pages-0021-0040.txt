@@ -1,0 +1,551 @@
+[BOOK]
+Source PDF: acsee_biology_form_6.pdf
+Catalogue level: acsee
+Catalogue subject: Biology
+Catalogue form: 6
+Requested PDF pages: 21-40
+Printed title observed: Biology for Advanced Level Secondary Schools Student's Book Form Six
+Language observed: English
+Edition or year observed: 2019
+
+[PDF_PAGE 21]
+[PRINTED_PAGE 14]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[HEADING level=3 role=subsection]
+Transpiration pull
+
+[PARAGRAPH]
+When water is lost from the leaves during transpiration, the water potential of the leaves decreases. This creates a water potential gradient with neighbouring cells, which forces water to be replaced in the leaves due to water potential gradient and transpiration pull.
+
+[PARAGRAPH]
+So long as the water column remains unbroken, and sunlight energy causes transpiration, water will keep rising and moisture will continue to move in the plant’s vascular tissues (xylem vessels). The water potential of root cells is lower than that of the soil causing water to move from the soil to the roots and then moves upwards to the leaves by transpiration pull. It is important to note that, transpiration pull is sufficiently enough to move water upwards to the leaves of the plant of any height. This may work with the assistance of capillarity and root pressure in some plant species.
+
+[BEGIN ACTIVITY label="Activity 1.3"]
+[HEADING level=3 role=other]
+Activity 1.3 Demonstration of movement of sap from roots to the shoots
+
+[PARAGRAPH]
+**Materials:** A fresh young plant with roots, razor blade or knife.
+
+[HEADING level=4 role=other]
+Procedure
+
+[LIST style=roman]
+(i) Cut a fresh shoot stump while the plant is still rooted in the soil.
+(ii) Observe what happens.
+(iii) Record what you have observed.
+
+[PARAGRAPH]
+**Result:** The cut shoot stump will continue to exude sap from its xylem vessels, which indicates that there is a movement of sap from the roots to the shoots.
+[END ACTIVITY]
+
+[HEADING level=3 role=subsection]
+Solute transport across membranes in plant
+
+[PARAGRAPH]
+The mineral salts required by plants are absorbed by roots and transported within plants in the form of ions. The cell membrane functions as a semi-permeable barrier to allow only some molecules to enter into the cell. Some solutes such as sugars are transported across the plant cell membrane in an uncharged state. These uncharged solutes are non-electrolytes and their movement across the membrane depends on concentration gradient. If the concentration outside the membrane is higher than inside, the gradient will allow solutes to move across the membrane into the cell. In contrast, the movement of solutes in the form of ions (the electrolytes) across the membrane depends on their chemical and electrical potential (electrochemical potential gradient) developed outside the membrane. This is because these solutes carry an electric charge. Therefore, the electrical properties of the cell, is an important control mechanism of ions transport through membranes. The transport of solutes across the membrane is called passive transport if it is along the chemical potential gradient or electrochemical potential gradient. There are three main kinds of passive transport, which are simple diffusion, facilitated diffusion, and osmosis. It is important to note that passive transport of ions down the electrochemical gradient across the membrane whether by simple diffusion, facilitated diffusion or osmosis is made possible by the presence of ion channels in the membrane.
+
+[END_PAGE]
+
+[PDF_PAGE 22]
+[PRINTED_PAGE 15]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[PARAGRAPH]
+Simple diffusion is the movement of molecules from a region of higher concentration to a region of lower concentration. The cell membrane allows non-polar molecules that do not bond with water to flow from an area where they are highly concentrated to an area where they are less concentrated. Embedded in the membrane are trans-membrane protein molecules called channel proteins that traverse from the outer layer to the inner layer and create diffusion-friendly openings for molecules to move through. This means that electrolytes may diffuse directly inside the cell, given that their concentration outside the membrane is higher than inside the cell as shown in Figure 1.6.
+
+[CAPTION label="Figure 1.6"]
+Figure 1.6 Diffusion of solute molecules across the cell membrane
+
+[PARAGRAPH]
+Facilitated diffusion is defined as a form of passive transport involving the movement of molecules along their concentration gradient by the guide of another molecule usually membrane protein forming a pore or channel. When the concentration of a given solute inside the cell is lower than its concentration outside (in the membrane), the solute can also get inside the cell by facilitated diffusion. Facilitated diffusion is a process by which solute enters the cell through carrier proteins. This is used especially in the case of large polar molecules and charged ions; once such ions are dissolved in water they cannot diffuse freely across cell membranes due to the hydrophobic nature of the fatty acid tails of the phospholipids that make up the bilayers. Facilitated transport proteins shield these molecules from the hydrophobic core of the membrane, providing a route by which they can cross as shown in Figure 1.7.
+
+[END_PAGE]
+
+[PDF_PAGE 23]
+[PRINTED_PAGE 16]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[CAPTION label="Figure 1.7"]
+Figure 1.7 Facilitated diffusion
+
+[CAPTION label="Figure 1.8"]
+Figure 1.8 Osmosis model
+
+[PARAGRAPH]
+Osmosis is the movement of water molecules across a semi-permeable membrane from low concentration to a higher concentration of solutes. The solute cannot effectively move to balance the concentration on both sides of the membrane, so water moves to achieve this balance. It is affected by the concentration of solute in the water.
+
+[PARAGRAPH]
+One molecule or one ion of solute displaces one molecule of water. Osmolarity is the term used to describe the concentration of solute particles per litre. Osmosis occurs when there is a difference in molecular concentration of water on the two sides of the membrane as indicated in Figure 1.8.
+
+[END_PAGE]
+
+[PDF_PAGE 24]
+[PRINTED_PAGE 17]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[PARAGRAPH]
+Movement of ions across the membrane become active transport when it occurs against the electrochemical potential gradient. An additional input of energy in the form of ATP is needed in this case. There are varieties of cell membrane pump helping in the membrane solute transport. However, the Sodium-Potassium pump is the most known pump that uses energy to transport Sodium and Potassium ions in and out of the cell. The pump utilizes a molecule of ATP that allows the shape of the pump to change while emptying its contents either into or out of the membrane as shown in Figure 1.9.
+
+[CAPTION label="Figure 1.9"]
+Figure 1.9 Sodium-Potassium pump
+
+[PARAGRAPH]
+The mechanism of this pump is such that three sodium ions from inside the cell bind to the protein pump. Then the phosphate group from a molecule of ATP binds to the protein pump, which then changes its shape to release the sodium ions outside the cell. This is followed by two potassium ions binding to the pump before the phosphate group once again releases ATP. The pump changes its shape again by the action of ATP to release the ions inside the cell. Figure 1.10 summarizes the passive and active transport of solutes across the cell membrane.
+
+[PARAGRAPH]
+Active and passive transport processes through the membrane result in equal and opposite ion fluxes when a cell is in a steady state. The movement of solutes or ions into the cytosol through the membrane such as plasma membrane or tonoplast is called influx. In contrast, the exit of solutes outside the cytosol or tonoplast through respective membranes is termed as efflux. Recent experiments on membrane transportation have revealed that proteins enhance movement of solutes across the membrane. These proteins are highly specific with complex structure and different ion transporting mechanism. Proteins transporting solutes across the membrane can be grouped into three categories, namely: ion-channel proteins, carrier proteins, and protein pumps.
+
+[END_PAGE]
+
+[PDF_PAGE 25]
+[PRINTED_PAGE 18]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[CAPTION label="Figure 1.10"]
+Figure 1.10 Passive and Active transport of solutes across the cell membrane
+
+[PARAGRAPH]
+**Ion-channel proteins:** These are proteins in the cell membrane which form pores that allow ions to pass through and move to the cytosol or tonoplast. Their functions include establishing a resting membrane potential, shaping action potentials and other electrical signals by gating the flow of ions across the membrane. They are selective pores through which ions can diffuse easily across the cell membrane. Movement of ions inside the cell through ion-channels of membranes is passive. Ion-channel proteins are highly specific for one or certain types of ion species. This specificity partly depends on the size of the pore itself and the density of electric charges of the ions. However, these protein channels in the membrane are not open all the time but they are gated. The opening and closing of the gates is always in response to external stimuli. These include: voltage changes, light, hormone binding and ions themselves. When ion gates are open, the ions surrounding the membrane can diffuse passively through the channels and when they are closed ions are stopped to get inside the cell. It is important to note that, channel proteins have a sensing region which responds to the stimulus by changing the conformational shape of the protein thereby opening or closing the gate as summarized in Figure 1.11.
+
+[PARAGRAPH]
+Special techniques have been developed to detect electric current in the ion channels proteins. This is possible because these solutes in the form of ions carry a charge and their diffusion across the membrane channel establishes an electric current. A variety of channels exists in the membrane which may open in different voltage ranges or in response to different stimuli such as \(\ce{K+}\) and \(\ce{Ca^{2+}}\) concentrations. Protein channels which allow the influx of ions are called inward rectifying or inward channels and those which allow efflux are termed as outward rectifying or outward channels. For example, specific \(\ce{Ca^{2+}}\) channels are inward rectifying while most anion channels are always outward. Most of the channel membrane proteins are described as inducible proteins because they are synthesized only when a particular solute is available for influx or efflux.
+
+[END_PAGE]
+
+[PDF_PAGE 26]
+[PRINTED_PAGE 19]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[CAPTION label="Figure 1.11"]
+Figure 1.11 A model showing gated ion-channel
+
+[PARAGRAPH]
+**Carriers proteins:** These are membrane proteins, which carry solutes and ions from one side of a membrane to the other. They are mostly found in a cell membrane of the cell and those of organelles. They do not form pores in the membrane instead, they selectively bind the solute to their specific sites and transport them inside. Binding of the solute is possible because proteins tend to change their conformational shape to suit the shape of the solute. After the release of solute from the binding site, the carrier protein takes back to its original shape to pick up another solute. The binding and release of solute through carrier protein resembles an enzyme catalysed reaction model. Movement of solute across the membrane through carrier proteins is a slower process compared to ion-channels transport, but it transports much wider range of solutes. Carrier proteins transport may be passive or active. The passive transport of proteins through carriers is also known as facilitated diffusion as shown in Figure 1.12.
+
+[END_PAGE]
+
+[PDF_PAGE 27]
+[PRINTED_PAGE 20]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[CAPTION label="Figure 1.12"]
+Figure 1.12 Facilitated diffusion through carrier proteins
+
+[PARAGRAPH]
+**Protein pumps:** These are membrane proteins that pump ions across a membrane against their concentration gradient through active transport. This is another way by which the cell transports ions such as \(\ce{H+}\) and \(\ce{Ca^{2+}}\) across the membrane. Some protein pumps may also transport large organic solutes across the membranes. Protein ion pumps are of two types. These are electroneutral and electrogenic pumps. The electroneutral pumps are those proteins that transport ions inside the cell with no resultant net charge across the membrane as shown in Figure 1.13. For example, \(\ce{H+/K+-ATPase}\) enzyme pumps out one \(\ce{H+}\) for each \(\ce{K+}\) taken in. This results to an overall no net movement of charge in the membrane and therefore termed as an electroneutral pump. In contrast, electrogenic pumps results in net charge at the membrane after it had pumped the ions inside the cell. The \(\ce{H+-ATPase}\) is a good example of an electrogenic pump because it drives out \(\ce{H+}\) resulting in a net positive charge. Another example of electrogenic pump is \(\ce{Na+/K+-ATPase}\) enzyme which pumps three \(\ce{Na+}\) ions for every two \(\ce{K+}\) ions taken in, resulting in a net positive charge in the membrane surface.
+
+[PARAGRAPH]
+On the contrast, active transport of solutes takes place against the electrochemical potential gradient and in this case, the carrier proteins are termed as pumps. In active transport energy utilized comes from the hydrolysis of ATP.
+
+[END_PAGE]
+
+[PDF_PAGE 28]
+[PRINTED_PAGE 21]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[CAPTION label="Figure 1.13"]
+Figure 1.13 The role of protein pumps and ATP in active transport across the cell membrane
+
+[HEADING level=2 role=section]
+Transpiration
+
+[PARAGRAPH]
+Most of the water taken by roots from the soil is lost to the atmosphere through stomata in the form of water vapour by a process called transpiration. Transpiration is the process by which a plant loses water in the form of vapour. It is essentially evaporation of water from aerial plant leaves. The water lost by transpiration largely evaporates through the stomatal pores. About 90% of water lost from plants occurs in this way. Some amount of water evaporates from outer walls of epidermal cells through cuticles. This kind of water movement is called a cuticular transpiration and it contributes only 10% of the total amount of water lost through transpiration. Since the stomata pores close during the night, then the only way the plants can lose water by transpiration is through the cuticle. Nevertheless, cuticle is the major barrier against uncontrolled loss of water through the leaves. There are small slits in the stem and bark of the tree for gaseous exchange. These are called lenticels and through them, sometimes water evaporates. However, the amount of water that is lost through these slits is almost negligible.
+
+[HEADING level=3 role=subsection]
+The mechanism of opening and closing of stomata
+
+[PARAGRAPH]
+Stomata are pores that are largely located in the leaf epidermis. They are more distributed in the lower surface of the leaf compared to the upper surface. It is through these pores that gases diffuse in and out of the leaves. Each stoma is surrounded by two guard cells. Unlike the other epidermal cells, the guard cells possess chloroplasts and have cytoplasm with a nucleus as shown in Figure 1.14.
+
+[PARAGRAPH]
+Changes in turgidity of the guard cells control the size as well as the closure and the opening of the stomatal pore. There are different hypotheses which explain causes of the changes in the turgidity of the guard cells and hence, the opening and the closing of the stomatal pore.
+
+[END_PAGE]
+
+[PDF_PAGE 29]
+[PRINTED_PAGE 22]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[CAPTION label="Figure 1.14"]
+Figure 1.14 (a) The cross-section of a stoma and (b) The transverse section of a stoma
+
+[HEADING level=3 role=subsection]
+Starch-sugar hypothesis
+
+[PARAGRAPH]
+The starch-sugar hypothesis suggests that starch-sugar interconversion is responsible for the opening and closing of stomata. The amount of starch in the guard cells increases during the day and decreases during the night. This is because photosynthesis takes place during the day. The process of photosynthesis result in the accumulation of sugars in the guard cells which increases the concentration of solute in the cells. The increase in solutes potential leads to osmotic movement of water from the neighbouring cells into the guard cells. Turgidity of the guard cells increases as the water moves in. Structurally, the inner walls of the guard cells are thicker and less elastic than the outer ones. Therefore, when water enters the guard cells, the outer walls expand more than the inner walls. The guard cells then assume a kidney shape when the outer walls become fully stretched. This leads to the opening of the stomatal aperture. During the ascent of sap, the water moves from the soil to the stem and then to the leaves where it evaporates through the stomata into the atmosphere.
+
+[PARAGRAPH]
+The evaporation is facilitated by the differences in the water potential between the air spaces in the leaf and the atmosphere. The water vapour moves from a high water potential inside the leaf to a low water potential in the atmosphere. When the guard cells lose water and become less turgid, the stomata pore closes.
+
+[PARAGRAPH]
+The starch-sugar hypothesis on the mechanism of the closing and the opening of the stomata faces a number of challenges. For example, studies on plant physiology have proven that sugars which accumulate in the guard cells during photosynthesis are not enough to cause the required solute potential for an osmotic movement of water from epidermal cells into the guard cells. The hypothesis also fails to explain the role of the rise in pH on the basis of carbon dioxide concentration. Moreover, sugar has never been noticed in the cell sap of the guard cells during the opening of the stomata. The starch-sugar inter-conversion is very slow to the extent that it cannot effect quick movements of water through stomata.
+
+[END_PAGE]
+
+[PDF_PAGE 30]
+[PRINTED_PAGE 23]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[HEADING level=3 role=subsection]
+Potassium ions hypothesis
+
+[PARAGRAPH]
+The evidence from plant physiology experiments have proved that stomata can also open in the absence of carbon dioxide and light. Therefore, the starch–sugar hypothesis has been challenged in that the accumulation of sugars in the guard cells is not the main reason for turgidity changes in the guard cells. It has been proven that potassium and chlorine ions are responsible for the changes in the turgidity of the guard cell.
+
+[PARAGRAPH]
+In the presence of sunlight, potassium ions (\(\ce{K+}\)) and chloride ions (\(\ce{Cl-}\)) enter the guard cells by active mechanism stimulated by ATPase enzyme which is located in the cell surface membrane. This is the enzyme that catalyses the decomposition of ATP into ADP, free phosphate ions, and energy that pumps out hydrogen ions (protons) from the guard cells. Potassium ions then enter the guard cells to balance the charge. These protons return to a carrier which also brings chloride ions (\(\ce{Cl-}\)) and causes potassium ions (\(\ce{K+}\)) to enter the guard cells. The movement of ions into the guard cells lowers the water potential in these cells, making it more negative. This causes the entry of water by osmosis and makes the guard cells turgid as shown in Figure 1.15 (a). The turgidity of the guard cells result in an increase in the pressure potential, which causes the stomata to open. In the absence of sunlight, for example in the night, the stomatal pore closes as a result of the reversed process of opening as shown in Figure 1.15 (b).
+
+[CAPTION label="Figure 1.15"]
+Figure 1.15 The mechanism of (a) stomatal opening and (b) stomatal closing
+
+[END_PAGE]
+
+[PDF_PAGE 31]
+[PRINTED_PAGE 24]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[HEADING level=3 role=subsection]
+Effects of transpiration in plants
+
+[PARAGRAPH]
+Transpiration should not always be considered as a hazardous process in the plant life for drawing water from the soil and causing drying of the soil. However, it has been described as “a necessary evil” because it is unavoidable but with a number of negative effects. The necessity of transpiration to the plants becomes evident through the beneficial effects gained by the plants. Transpiration pull result into availability of water and mineral salts in various parts of plants. In addition, transpiration is the source of water required for the photosynthesis process. In order for evaporation to occur, energy is needed which is obtained from the leaf. The process results in cooling the leaf surface at the site of evaporation. The cooling of the leaf avoids excessive temperatures, which could affect the rate of photosynthesis. Moreover, transpiration helps in the removal of excess water from the plant because the plant requires a very little amount of water to perform its function. It is known that out of 100% of water absorbed by the roots only 10% is needed and used by the plant, the rest 90% is lost to the atmosphere through the process of transpiration. In this way, it adds water in the atmosphere in the form of vapour. This in turn condenses and then falls as rain to make water available in the soil.
+
+[PARAGRAPH]
+Despite its importance, transpiration can cause reduction of the water content of a plant. This can result in wilting and if this process lasts for a long time, can lead to the death of the plant. Transpiration also interferes with the process of gaseous exchange through the stomata. This is because the stomata have to open to take in carbon dioxide as a raw material for photosynthesis. However, the opening of stomata allows water to be lost to the atmosphere. Transpiration also reduces the water content of the soil.
+
+[HEADING level=3 role=subsection]
+Factors affecting the rate of transpiration
+
+[PARAGRAPH]
+The factors which influence the rate of transpiration are of two types, namely: external or environmental and internal factors. The external or environmental factors that influence the rate of transpiration include the following.
+
+[PARAGRAPH]
+**Relative humidity and vapour pressure:** The drier the air around the plant, the greater the transpiration rate. This means that when humidity is high, the rate at which the plant loses water through transpiration is low.
+
+[PARAGRAPH]
+**Air movement (wind):** As the wind blows, water vapour around the external surface of the leaf is cleared away. This means that, any air movement will tend to sweep away a layer of water around the leaf surface. This creates a water potential gradient between the leaf surface and the epidermal cells of the leaf which causes water to flow out of the leaf. Therefore, windy conditions result in increased transpiration rates.
+
+[PARAGRAPH]
+**Temperature:** A rise in temperature increases the kinetic energy of water molecules, which in turn, increases the rate of evaporation of water. At the same time, these changes lower the relative humidity of the air, as well as increasing the rate of transpiration.
+
+[PARAGRAPH]
+**Light:** Light affects transpiration because stomata usually open in the light and close in darkness. It follows that an increase in the intensity of light increases the rate of transpiration and vice versa.
+
+[END_PAGE]
+
+[PDF_PAGE 32]
+[PRINTED_PAGE 25]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[PARAGRAPH]
+**Water availability:** The rate of transpiration depends on the amount of water, which is available in the soil. This means that, the greater the amount of soil water, the higher the rate of transpiration and vice versa.
+
+[PARAGRAPH]
+The internal factors that affect the rate of transpiration include anatomical and morphological features of the plants. These factors are elaborated in the following sections.
+
+[PARAGRAPH]
+**Surface area of the leaf:** The greater the total surface area of a leaf, the greater the rate of transpiration and vice versa. The reduction of the leaf surface is achieved when leaves are modified to needles as in pine plant or to spines as in cacti.
+
+[PARAGRAPH]
+**Cuticle:** The thinner the cuticle the higher the rate of cuticular transpiration and vice versa.
+
+[PARAGRAPH]
+**Stomata:** Generally, the greater the number of stomatal pores the higher the rate of stomatal transpiration. The rate of transpiration also depends on the stomatal distribution. Thus, in most of the dicot plant leaves, many stomatal pores are located on the lower surfaces and therefore the rate of transpiration is higher on these sides than on the upper ones.
+
+[HEADING level=3 role=subsection]
+Guttation
+
+[PARAGRAPH]
+This is the loss of water in the form of drops of liquid from the surface of the plant leaves through special structures called hydathodes, which are found on the leaf margin or surface. Guttation is caused by root pressure and capillary action. Guttation and transpiration involve loss of water from the plant. However, several differences exist between the two pocesses as shown in Table 1.2.
+
+[CAPTION label="Table 1.2"]
+Table 1.2 Differences between transpiration and guttation
+
+[TABLE columns=2 header_rows=1 label="Table 1.2"]
+Transpiration	Guttation
+It involves loss of water from plants in the form of vapour.	It involves loss of water in the form of drops of liquid water.
+It takes place during the day.	It takes place during the night.
+The driving force is the transpiration pull.	The driving force is root pressure.
+It takes place in all terrestrial higher plants.	It takes place mostly in herbaceous plants.
+It maintains the temperature of the plant.	It has no relationship with the maintenance of temperature.
+Water which is given out is pure and contains no salts.	The water which is given out contains salts.
+It occurs through stomata that are located on the lower side of the leaves.	It occurs through a special group of cells known as hydathodes which are located at the margins of the leaves.
+It is favoured by high light intensity.	It is favoured by low light intensity and humidity.
+
+[END_PAGE]
+
+[PDF_PAGE 33]
+[PRINTED_PAGE 26]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[BEGIN EXERCISE label="Exercise 1.3"]
+[HEADING level=3 role=other]
+Exercise 1.3
+
+[QUESTION label="1."]
+Explain the path of upward transportation of water and mineral salts in plants.
+
+[QUESTION label="2."]
+Describe the forces governing the upward movement of water and mineral salts in plants.
+
+[QUESTION label="3."]
+Discuss the mechanism of stomata opening and closing.
+
+[QUESTION label="4."]
+Briefly elaborate the hypotheses about stomatal opening and closing in plants.
+
+[QUESTION label="5."]
+Explain the internal and external factors that affect the rate of transpiration.
+
+[QUESTION label="6."]
+Distinguish between transpiration and guttation.
+[END_EXERCISE]
+
+[HEADING level=2 role=section]
+Translocation of manufactured food
+
+[PARAGRAPH]
+Most of the carbohydrates which are manufactured in the leaves and other green parts of the plants are transported through the phloem to other parts of the plant for use and storage. This process is known as translocation. The area where carbohydrate is made is called source and the area where carbohydrate is taken for use and storage is called sink. Therefore, transportation in plants occurs in the direction of the source to the sink by translocation. Examples of the sink are roots and stems. Translocation of manufactured food from the photosynthetic cells to different parts of the plant body for use and storage requires specialized cells and it occurs through a specific path. Unlike the movement of water and mineral nutrients from the roots to the shoots through xylem which occurs in one direction only, translocation of food materials through phloem is bi-directional in the sense that the movement of materials through phloem can either be from the source to the sink or from the sink to the source. For example, during dry season, deciduous trees shed their leaves and consequently photosynthesis stops. However, during wet season, the food which was stored in the sink will be transported through the phloem to the source to facilitate the growth of new buds and leaves. This means that the movement is now from the sink to the source to facilitate the formation of new leaves for photosynthesis. Note that the transport of water in the xylem occurs only from the roots to the leaves and therefore it is uni-directional.
+
+[HEADING level=3 role=subsection]
+The path of manufactured food
+
+[PARAGRAPH]
+Leaves are the main photosynthetic organs of the plant. However, in some plants, stem plays the role of photosynthesis. Other parts of the plant which are non-photosynthetic, and which are located far away from photosynthetic organs need to get the products of photosynthesis for their growth. These parts include growing parts of the plants such as roots, developing buds, fruits, stems and storage organs such as roots and stems. Therefore, plants have developed means of transporting the produced food from the leaves to other parts, which are non-photosynthetic. As discussed earlier, phloem is the tissue in vascular plants which carries products of photosynthesis away from the leaves to other parts of the plant. The large percentage of food substances carried in the phloem tissue is the carbohydrate called sucrose, a disaccharide sugar, which is inactive and highly soluble. Since it is inactive, it plays a minor role in metabolism. This condition makes it ideal for being transported because there is no possibility of being used during transport. On reaching the required destination, it is converted back to the active form of monosaccharides such as glucose and fructose ready for use. Other substances carried by phloem include amino acids, inorganic ions, vitamins, and plant hormones.
+
+[END_PAGE]
+
+[PDF_PAGE 34]
+[PRINTED_PAGE 27]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[HEADING level=3 role=subsection]
+Features of phloem translocation
+
+[PARAGRAPH]
+The following are among the important features of phloem translocation.
+
+[LIST style=lettered]
+(a) The amount of materials carried through phloem may be very large. The stored food in plant roots and stems are carried through the phloem. Taking into consideration the amount of food substances consumed and those stored, it is obvious that phloem tissues carry large amounts of food substances.
+(b) There is a higher rate of flow of materials through the phloem sieve tubes. The experiments conducted to trace the food substances carried in the phloem tissue, revealed that the rate of the flow of materials in the phloem is very high.
+(c) The distance through which the food substance travels may be long. Since some trees are very tall, food substances travel along a great distance from the manufacturing site down to the roots.
+(d) The size of phloem is small. It would be recalled that the phloem tissue is a thin layer of an inner layer of tree bark. This is the only part which is concerned with the translocation of food material. Furthermore, it is only the newly formed phloem tissue that is capable of translocating food substances. The older and outer layers cannot translocate food substances because they become stretched and die as the plant grows and increases in circumference. Therefore, the remaining part of the phloem, which is capable of translocating food materials, is very small.
+(e) Sieve tube, which is a very fine part of phloem, is concerned with the movement of materials. The sieve tube elements display various structural adaptations such as lack of nucleus at maturity and the presence of sieve plates which make them well suited for transportation.
+
+[HEADING level=3 role=subsection]
+The mechanism of transporting manufactured food material in a phloem tissue
+
+[PARAGRAPH]
+Several models and hypotheses have been developed to describe the movement of food materials in the plants. However, one common model is the mass flow or the pressure-flow model, which was suggested by Münch in 1930. This is the model for large scale movement of food in plants due to the active transportation of sugars into the phloem. With this model, the process of translocation of the manufactured materials starts when the glucose prepared in the leaves is converted into sugars mainly sucrose. This is then moved into the companion cells and then into the living phloem sieve tube cells by active transport. A hypertonic condition in the phloem is created as a result of this movement. This involves the movement of sugar from the sources such as leaves, followed by the passive entry of water. This creates a pressure forcing the fluid to move to a sugar sink like the root, where cells actively take up sugar from the phloem and the water returns to the xylem. Osmotic pressure rises and phloem sap moves from an area of higher osmotic pressure to the area of low pressure.
+
+[END_PAGE]
+
+[PDF_PAGE 35]
+[PRINTED_PAGE 28]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[PARAGRAPH]
+In his experiment, Münch prepared a model as shown in Figure 1.16 with two containers A and B each of which contained a sugar solution. The solution in container A was more concentrated than that in container B. Each container had a semi-permeable membrane. The two containers were connected by a tube. After being placed in water, the two solutions initially took up the water by osmosis. However, the tendency of water uptake was higher in container A than it was in container B. As the water entered in container A, the hydrostatic pressure built up in the closed system A-C-B tube, which in turn forced water out of container B. Consequently, the mass flow of solution occurred through tube C along the generated pressure gradient; due to osmotic uptake of water, the osmotic gradient also was built from container A to container B. Since the water continued to dilute the contents of container A and solutes accumulated at container B, then the system came into equilibrium.
+
+[CAPTION label="Figure 1.16"]
+Figure 1.16 Illustration of Münch’s mass flow hypothesis
+
+[PARAGRAPH]
+This model can be used to explain the flow of sugar molecules from the leaves to the roots. Container A can represent the leaves, which are the source of sugars manufactured during photosynthesis process as indicated in Figure 1.17. Water then leaks out continuously in the mesophyll cells in the leaves making the solute potential (\(\Psi\mathrm{s}\)) of the leaf cells more negative. This causes the water to be brought to the leaf from xylem by osmosis. The process results in raising the pressure potential (\(\Psi\mathrm{p}\)). Container B can represent the sink, which is the area where sugar is used up or stored in an insoluble form. In this case, it is the root, young shoot, or fruits. The hydrostatic pressure in the leaves increases and the pressure gradient is created between the leaves (source) and the roots (sink) resulting in the mass flow of solute along the gradient. In plants, solutes are constantly being used up at the sink (B) and produced at the source (A), and therefore, the equilibrium state is not reached.
+
+[END_PAGE]
+
+[PDF_PAGE 36]
+[PRINTED_PAGE 29]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[CAPTION label="Figure 1.17"]
+Figure 1.17 Diagram showing phloem translocation of photosynthetic product
+
+[HEADING level=3 role=subsection]
+Evidence of mass flow through the phloem
+
+[PARAGRAPH]
+The studies on plant physiology reveal that food moves through phloem by mass flow mechanism. This is because the phloem sap flows out of the cut phloem by mass flow. This signifies a pressure gradient. Since hydrogen is actively transported out of the phloem, then the phloem sap has a high pH than it is expected. Moreover, when a feeding aphid is anaesthetized and its mouthparts carefully cut, sucrose solution flows out of the stylet of the aphid. The prolonged flow of this solution suggests a hydrostatic pressure in the sieve tubes. The rate of movement in phloem is faster than it would be if the movement was by diffusion. Additionally, the rate of transport, which is measured in the phloem, matches closely with the pressure differences which are measured at the sources and sinks. However, this is only true when the pores are open.
+
+[HEADING level=3 role=subsection]
+Criticism against the mass flow hypothesis
+
+[LIST style=roman]
+(i) The mass flow hypothesis neglects the living nature of the phloem. In other words, it does not explain why sieve tube cells must be living and metabolically active.
+(ii) The hypothesis indicates that all organic substances in the phloem tubes are transported or swept at the same constant speed. However, experiments show that amino acids and sugars are transported at different rates.
+
+[END_PAGE]
+
+[PDF_PAGE 37]
+[PRINTED_PAGE 30]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[LIST style=roman continues_from_pdf_page=36]
+(iii) Bidirectional movement of solutes in the translocation process, as well as the fact that translocation is heavily affected by changes in the environmental conditions such as temperature and metabolic inhibitors, are not fully explained by this hypothesis.
+(iv) Furthermore, the hypothesis does not show the role of metabolism in phloem translocation. For example, the active mechanisms of loading sucrose to the sieve elements at the sources and the unloading of sucrose from the sieve elements at the sinks are not explained.
+
+[BEGIN EXERCISE label="Exercise 1.4"]
+[HEADING level=3 role=other]
+Exercise 1.4
+
+[QUESTION label="1."]
+Explain the features which facilitate passage of manufactured food through the phloem tissue.
+
+[QUESTION label="2."]
+Discuss how the Münch’s model demonstrates translocation of food through the phloem from the source to the sinks.
+
+[QUESTION label="3."]
+Give evidence to show that food passes through the phloem by mass flow.
+
+[QUESTION label="4."]
+Briefly explain the challenges of the mass flow hypothesis of phloem translocation.
+
+[QUESTION label="5."]
+Explain why the end products of photosynthesis are safely transported from the source to the sink without being oxidized on their way.
+[END_EXERCISE]
+
+[HEADING level=2 role=section]
+Transport in animals
+
+[PARAGRAPH]
+Transportation of materials in animals such as vertebrates occurs mainly through the blood vascular system. The heart whose walls are made up of the cardiac muscles pumps the circulating blood. Circulation is the movement of materials within a cell or between parts of an organism. In contrast, transportation is defined as the circulation and all other processes by which substances pass into or out of cells and move within the organism. The vertebrate circulatory system has three major components. First, the blood which is a fluid in which transported materials are dissolved. Second, the blood vessels which form a network of tubes or body spaces through which the fluid flows. A transport network of the vertebrate circulatory system is made up of arteries, veins, and blood cells. The last component of vertebrate circulatory system is the heart which is a means of driving the fluid through the tubes or spaces. Animals have two different types of circulatory systems, which are open circulatory system in arthropods and some molluscs and closed circulatory system in echinoderms, some molluscs and vertebrates. This closed system is either single or double circulatory systems. In mammals, the circulation of blood in foetus differs from that of an adult.
+
+[HEADING level=3 role=subsection]
+The blood
+
+[PARAGRAPH]
+Blood is the first component of the vertebrate circulatory system. It is a constantly circulating fluid in the body of humans and other animals. It has a function of transporting necessary substances such as nutrients and oxygen to the cells and removing metabolic wastes away from the cells. Blood is the main component of the transport system in vertebrates. While 55% of blood is composed of the plasma, the remaining 45% constitute of blood cells. Approximately 8% of an adult’s human body weight is made up of blood. The composition of blood by sex indicates that females have an average of 4 -5 litres while males have 5 - 6 litres. This is due to differences in their body size. Males are relatively bigger in size than their females. The blood has a pH ranging from 7.35 to 7.45. Hence, it is slightly alkaline. Its viscosity is about 4.5 - 5.5 times the viscosity of water making it easier to flow in the vessels than water.
+
+[END_PAGE]
+
+[PDF_PAGE 38]
+[PRINTED_PAGE 31]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[HEADING level=3 role=subsection]
+Functions of the blood
+
+[PARAGRAPH]
+Blood has three major functions in the body, namely: transport, protection, and regulation.
+
+[PARAGRAPH]
+**Transport:** This is the main function of the blood. It is the primary means of transport in the body of vertebrates. Substances transported by the blood include gases, nitrogenous wastes, hormones, and nutrients. One of the transport roles of the blood is to pick up oxygen (\(\ce{O2}\)) processed in the lungs to all body cells. Cells need oxygen for undertaking cellular respiration to generate energy, which will enable them to carry out some metabolic activities. Blood also transports carbon dioxide (\(\ce{CO2}\)) from the metabolic cells to the lungs in order to be removed outside the body. The underlying transport mechanism is summarised in Figure 1.18.
+
+[PARAGRAPH]
+Apart from the transportation of the gases, blood also transports nutrients from the digestive tract and storage sites to the rest of the body. Waste products to be detoxified or removed by the liver and kidneys respectively are also transported by the blood. Moreover, the blood transports hormones from the glands in which they are produced to their target cells. Finally, the blood also transports heat generated during metabolism to the skin that helps to regulate body temperature.
+
+[PARAGRAPH]
+**Protection:** The blood is also involved in body protection and inflammation. For example, leukocytes, or white blood cells tend to destroy the invading microorganisms and cancer cells. Antibodies and other proteins present in blood plasma destroy pathogenic substances.
+
+[CAPTION label="Figure 1.18"]
+Figure 1.18 Mechanism of transportation of carbon dioxide (\(\ce{CO2}\)) and oxygen (\(\ce{O2}\)) in the body
+
+[END_PAGE]
+
+[PDF_PAGE 39]
+[PRINTED_PAGE 32]
+
+[RUNNING_HEADER]
+Biology for Advanced Level Secondary Schools
+
+[PARAGRAPH]
+Platelets or thrombocytes also tend to initiate the process of blood clotting and helps to minimize blood loss during an injury.
+
+[PARAGRAPH]
+**Regulation:** The blood is involved in regulating the functions of many factors in the body. For example, it is responsible for controlling the concentration of hydrogen ions or pH in the body by interacting with acids and bases. It regulates the temperature of the body and maintaining it at tolerable levels. Furthermore, it controls body water balance by transferring water to and from tissues. The blood also regulates the levels of salt required in the body.
+
+[HEADING level=3 role=subsection]
+Composition of the blood
+
+[PARAGRAPH]
+In vertebrates, blood is composed of two main components, namely: plasma and the formed elements. The formed elements of the blood include red blood cells, white blood cells and platelets or thrombocytes. They are named so because they are enclosed in a plasma membrane and they have a definite shape and structure. With the exception of platelets, all the other formed elements are cells. Platelets are tiny fragments of bone marrow cells. Figure 1.19 summarises the major components of the vertebrate blood.
+
+[PARAGRAPH]
+**Blood plasma:** Plasma is a pale yellow sticky liquid component of the blood. It forms about 55% of the total blood's volume in the body. About 90% of plasma consists of water and the remaining 10% is a variety of substances in solution and suspension forms.These substances include proteins, electrolytes, nutrients, gases, hormones, and waste products. Plasma proteins are the most abundant plasma solutes and they account for about 8% by weight of plasma volume in the blood. Most plasma proteins are produced by the liver, except hormones and gamma globulins. Although they serve a number of functions such as maintenance of osmotic pressure and water balance in blood and tissues, they have other functions such as transport. The components of plasma vary considerably as new substances are removed or added in the blood. If a person eats a balanced diet, plasma composition is kept relatively constant by various homeostatic mechanisms. When plasma protein levels drop, the liver is stimulated to produce more proteins. In addition, when the blood becomes too acidic (acidosis), the respiratory system and kidneys restore the normal and slightly alkaline state.
+
+[CAPTION label="Figure 1.19"]
+Figure 1.19 Composition of blood
+
+[END_PAGE]
+
+[PDF_PAGE 40]
+[PRINTED_PAGE 33]
+
+[RUNNING_HEADER]
+Transportation in living organisms
+
+[HEADING level=3 role=subsection]
+Plasma proteins
+
+[PARAGRAPH]
+There are three major categories of plasma proteins, each having its own properties and functions. They include albumins, globulins, and fibrinogens.
+
+[PARAGRAPH]
+**Albumins:** These are the smallest and most abundant form of plasma proteins. About 60% of plasma proteins are albumin. These proteins act as a carrier to transport some molecules such as drugs, hormones, and fatty acids through the blood circulation. With the help of sodium ions, these are the major blood proteins which are involved in maintaining osmotic pressure of the blood. Osmotic pressure helps in maintaining water in the blood stream. It has been observed that reductions in the amount of albumin content in the plasma result in a loss of fluid from the blood and the increase of fluid in the interstitial space and tissues. This allows easier movement of ions and nutrients across cell barriers.
+
+[PARAGRAPH]
+**Globulins:** These are the second category of plasma protein, which are important in immune globulin. Their abundance ranges from 36% to 38% of the total plasma proteins in the blood. These proteins can be subdivided into three classes based on their molecular weight. These are alpha, beta and gamma globulins. They include high-density lipoproteins, an alpha-1 globulin, and a low-density lipoproteins called beta-1 globulin. Lipoproteins with high density are involved in lipid and fat transport to the cells for use in metabolism, membrane synthesis, and function of hormones. They also tend to prevent cholesterol from invading and staying in the walls of blood vessels. On the other hand, the lipoprotein of low density transports cholesterol and fats to tissues to be involved in manufacturing steroid hormones and cell membranes. Therefore, globulins play a vital role in the regulation of cholesterol, and hence, they help in preventing cardiovascular diseases.
+
+[PARAGRAPH]
+**Fibrinogens:** These proteins constitute 4% of the total plasma proteins. The liver produces them and they are responsible for the formation of fibrin threads of a blood clot. They are soluble precursors of a protein called fibrin and forms the framework of the blood clot.
+
+[HEADING level=3 role=subsection]
+Other components of blood plasma
+
+[PARAGRAPH]
+**Nitrogenous wastes:** These form another group of solutes found in the blood plasma. They are the by-products of metabolism which include urea, uric acid, creatinine, and ammonium salts. They are toxic in nature, hence, they are cleared from the blood stream and excreted by the kidneys.
+
+[PARAGRAPH]
+**Nutrients:** These include some materials absorbed from digestion including glucose, amino acids, fatty acids, glycerol and triglycerides, cholesterol, and vitamins. They are absorbed by the digestive tract and are transported in the blood plasma.
+
+[PARAGRAPH]
+**Respiratory gases:** The blood plasma transports some amounts of oxygen and carbon dioxide. In this case, oxygen is transported as it binds to the haemoglobin inside the red blood cells, while carbon dioxide is transported after it dissolves in plasma to form bicarbonate ions.
+
+[END_PAGE]
+
+[END_EXTRACTION]
+Completed PDF pages: 21-40
+Pending PDF pages: none
+Text uncertainties: none
+Images: intentionally omitted; not assessed

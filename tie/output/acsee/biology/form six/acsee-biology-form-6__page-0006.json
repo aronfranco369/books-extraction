@@ -1,0 +1,839 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      6
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 6,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0006-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "v",
+          "printed_page_system": "roman",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0006-001",
+              "type": "running_header",
+              "surface_id": "s-p0006-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Biology for Advanced Level Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Biology for Advanced Level Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0006-002",
+              "type": "heading",
+              "surface_id": "s-p0006-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Table of contents",
+                "level": 1,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Table of contents"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0006-003",
+              "type": "toc",
+              "surface_id": "s-p0006-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "entries": [
+                  {
+                    "text": "Preface",
+                    "page_ref_printed": "iii",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Preface"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Acknowledgements",
+                    "page_ref_printed": "iv",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Acknowledgements"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Chapter One: Transportation in living organisms",
+                    "page_ref_printed": "1",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Chapter One: Transportation in living organisms"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Transportation in plants",
+                    "page_ref_printed": "1",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Transportation in plants"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "The movement of materials across the root",
+                    "page_ref_printed": "9",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The movement of materials across the root"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Upward movement of water and mineral salts",
+                    "page_ref_printed": "12",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Upward movement of water and mineral salts"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Translocation of manufactured food",
+                    "page_ref_printed": "26",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Translocation of manufactured food"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Transport in animals",
+                    "page_ref_printed": "30",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Transport in animals"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "The blood",
+                    "page_ref_printed": "30",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The blood"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "The heart",
+                    "page_ref_printed": "38",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The heart"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "The cardiac cycle",
+                    "page_ref_printed": "42",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The cardiac cycle"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "The circulatory systems in animals",
+                    "page_ref_printed": "46",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "The circulatory systems in animals"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Double circulatory system",
+                    "page_ref_printed": "49",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Double circulatory system"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Foetal and adult blood circulation in mammals",
+                    "page_ref_printed": "51",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Foetal and adult blood circulation in mammals"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Chapter Two: Growth and development",
+                    "page_ref_printed": "55",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Chapter Two: Growth and development"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Mitosis",
+                    "page_ref_printed": "55",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Mitosis"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Growth patterns",
+                    "page_ref_printed": "61",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Growth patterns"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Growth and development in plants",
+                    "page_ref_printed": "66",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Growth and development in plants"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Primary and secondary growth in angiosperms",
+                    "page_ref_printed": "67",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Primary and secondary growth in angiosperms"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Seed dormancy and viability",
+                    "page_ref_printed": "73",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Seed dormancy and viability"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Chapter Three: Reproduction",
+                    "page_ref_printed": "77",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Chapter Three: Reproduction"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Meiosis",
+                    "page_ref_printed": "77",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Meiosis"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Gametogenesis in animals",
+                    "page_ref_printed": "88",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Gametogenesis in animals"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Gametogenesis in flowering plants",
+                    "page_ref_printed": "92",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Gametogenesis in flowering plants"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Reproduction in plants",
+                    "page_ref_printed": "95",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Reproduction in plants"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fertilisation in plants",
+                    "page_ref_printed": "96",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Fertilisation in plants"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fruit and seed development",
+                    "page_ref_printed": "98",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Fruit and seed development"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Life cycles of selected plants",
+                    "page_ref_printed": "101",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Life cycles of selected plants"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Reproduction in animals",
+                    "page_ref_printed": "109",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Reproduction in animals"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Menstruation cycle",
+                    "page_ref_printed": "109",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Menstruation cycle"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Oestrus cycle",
+                    "page_ref_printed": "112",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Oestrus cycle"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fertilisation and zygote development in mammals",
+                    "page_ref_printed": "113",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Fertilisation and zygote development in mammals"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Birth",
+                    "page_ref_printed": "119",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Birth"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0006-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0006-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "v",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "v"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0006-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 6,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 4,
+    "types": {
+      "running_header": 1,
+      "heading": 1,
+      "toc": 1,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

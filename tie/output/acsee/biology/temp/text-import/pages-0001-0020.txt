@@ -1,0 +1,791 @@
+[BOOK] Source PDF: acsee_biology_form_6.pdf Catalogue level: acsee Catalogue
+subject: Biology Catalogue form: 6 Requested PDF pages: 1-20 Printed title
+observed: Biology for Advanced Level Secondary Schools Student's Book Form Six
+Language observed: English Edition or year observed: 2019
+
+[PDF_PAGE 1] [PRINTED_PAGE not_printed]
+
+[HEADING level=1 role=title] Biology for Advanced Level Secondary Schools
+
+[COVER_DETAIL] Student's Book
+
+[COVER_DETAIL] Form Six
+
+[PUBLISHER_NOTICE] Tanzania Institute of Education
+
+[END_PAGE]
+
+[PDF_PAGE 2] [PRINTED_PAGE not_printed]
+
+[HEADING level=1 role=title] Biology for Advanced Level Secondary Schools
+
+[COVER_DETAIL] Student’s Book
+
+[COVER_DETAIL] Form Six
+
+[OMITTED kind=peripheral_front_matter] Certificate of Approval by the Ministry
+of Education, Science and Technology.
+
+[PUBLISHER_NOTICE] Tanzania Institute of Education
+
+[END_PAGE]
+
+[PDF_PAGE 3] [PRINTED_PAGE ii]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[OMITTED kind=peripheral_front_matter] Copyright, publication year (2019), ISBN,
+and publisher contact details.
+
+[END_PAGE]
+
+[PDF_PAGE 4] [PRINTED_PAGE iii]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[HEADING level=1 role=other] Preface
+
+[PARAGRAPH] This book, Biology for Advanced Level Secondary Schools, is written
+specifically for Form Six Biology Students in the United Republic of Tanzania.
+The book is prepared according to the 2009 Biology Syllabus for Advanced Level
+Secondary Education, Form V-VI, issued by the Ministry of Education and
+Vocational Training.
+
+[PARAGRAPH] The book is divided into six chapters, which are: Transportation in
+living organisms, Growth and development, Reproduction, Genetics, Evolution, and
+Ecology. In addition to the content, each chapter contains activities,
+illustrations, exercises, and revision questions. Learners are encouraged to do
+all activities and answer all questions so as to enhance their understanding and
+promote the acquisition of the intended skills, knowledge, and attitudes.
+
+[PARAGRAPH] Tanzania Institute of Education
+
+[END_PAGE]
+
+[PDF_PAGE 5] [PRINTED_PAGE iv]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[HEADING level=1 role=other] Acknowledgements
+
+[PARAGRAPH] The Tanzania Institute of Education (TIE) would like to acknowledge
+the contributions of all organisations and individuals who participated in
+design and development of this textbook.
+
+[PARAGRAPH] Writers: Dr Neema G. Mogha, Dr Jamal Jumanne, Dr Heriel N. Moshi, Ms
+Juliana B.R. Mosi, Mr Fortunatus Kyobya, & Ms Gladness Kirei
+
+[PARAGRAPH] Editors: Prof. Agnes M.S. Nyomora, Ms Judith Kahamba, Ms Consolata
+Blasi & Dr Emmanuel K. Laisser (Chairperson of the panel)
+
+[PARAGRAPH] Illustrators: Mr Fikiri A. Msimbe & Alama Art and Media Production
+Co.Ltd.
+
+[PARAGRAPH] Designer: Mr Anton K. Asukile
+
+[PARAGRAPH] Coordinator: Ms Juliana B.R. Mosi
+
+[PARAGRAPH] TIE also extends its sincere gratitude to the secondary school
+teachers who participated in the trial phase of the manuscript.
+
+[PARAGRAPH] Likewise, the Institute would like to thank the Ministry of
+Education, Science and Technology for facilitating the writing of this textbook.
+
+[PARAGRAPH] Dr Aneth A. Komba Director General Tanzania Institute of Education
+
+[END_PAGE]
+
+[PDF_PAGE 6] [PRINTED_PAGE v]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[HEADING level=1 role=other] Table of contents
+
+[TOC] Preface	iii Acknowledgements	iv Chapter One: Transportation in living
+organisms	1 Transportation in plants	1 The movement of materials across the
+root	9 Upward movement of water and mineral salts	12 Translocation of
+manufactured food	26 Transport in animals	30 The blood	30 The heart	38 The
+cardiac cycle	42 The circulatory systems in animals	46 Double circulatory
+system	49 Foetal and adult blood circulation in mammals	51 Chapter Two: Growth
+and development	55 Mitosis	55 Growth patterns	61 Growth and development in
+plants	66 Primary and secondary growth in angiosperms	67 Seed dormancy and
+viability	73 Chapter Three: Reproduction	77 Meiosis	77 Gametogenesis in
+animals	88 Gametogenesis in flowering plants	92 Reproduction in plants	95
+Fertilisation in plants	96 Fruit and seed development	98 Life cycles of selected
+plants	101 Reproduction in animals	109 Menstruation cycle	109 Oestrus cycle	112
+Fertilisation and zygote development in mammals	113 Birth	119
+
+[END_PAGE]
+
+[PDF_PAGE 7] [PRINTED_PAGE vi]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[TOC] Life cycles of selected animals	122 Chapter Four: Genetics	129 Hereditary
+material	129 Types of genetic material	133 Ribonucleic acid (RNA)	133
+Deoxyribonucleic acid (DNA)	136 Genetic code	142 Mendelian Principles of
+Inheritance	149 Non-Mendelian inheritance	164 Sex linkage	182 Mutation	191
+Genetic engineering	197 Chapter Five: Evolution	202 Theories of origin of
+life	202 Theories of organic evolution	207 Evidence of evolution	216 Comparative
+morphology and anatomy	219 Comparative biochemistry	223 Biogeography	224
+Selective breeding	226 Speciation	227 Chapter six: Ecology	233 The ecosystem	233
+Nutrients circulation	242 Ecological pyramids	248 Methods of studying
+ecology	253 Population dynamics	273 Population growth patterns and their
+interpretation	284 Ecological succession	290 Glossary	295 Bibliography	306
+Index	308
+
+[END_PAGE]
+
+[PDF_PAGE 8] [PRINTED_PAGE 1]
+
+[HEADING level=1 role=chapter] Chapter One: Transportation in living organisms
+
+[HEADING level=3 role=other] Introduction
+
+[PARAGRAPH] Every living organism constantly needs the exchange of substances
+such as nutrients, waste products, and respiratory gases with the environment in
+order to survive and grow. In this chapter, you will learn about transportation
+in plants, types of vascular tissues in plants, and movement of materials across
+the roots. While learning about transportation in plants, you will do several
+activities, including demonstration of the movement of water and sap in plants.
+You will also learn about transportation in animals, particularly components of
+vertebrate circulatory systems, the blood, mechanism of blood clotting,
+structure of the heart, the cardiac cycle, and the foetal circulatory system.
+
+[HEADING level=2 role=section] Transportation in plants
+
+[PARAGRAPH] Plants absorb water and minerals through their roots and transport
+them to the leaves for metabolic use such as photosynthesis. Transportation in
+plants mainly occurs through a vascular system, which is made up of different
+types of tissues. These vascular tissues are structurally different and have
+various adaptations to suit their roles. The transportation of materials in
+plants from soil to the leaves and that of photosynthetic products from leaves
+to various parts can be either passive or active.
+
+[HEADING level=3 role=subsection] Types of vascular tissues in plants
+
+[PARAGRAPH] Plants have tissues which transport food, water, and dissolved
+mineral salts from one part to another. There are two types of vascular tissues
+in plants, namely: xylem and phloem, which together form the vascular system as
+shown in Figure 1.1. Between phloem and xylem, there is a layer called cambium
+whose function is to divide and to form new xylem and phloem cells.
+
+[PARAGRAPH] The vascular system is made up of complex tissues, which have
+different types of cells that work together to achieve the essential function of
+transporting materials in plants. The vascular tissues also provide mechanical
+support to the plant. Xylem transports water and dissolved mineral salts from
+the soil to the upper part of a plant while phloem is involved in the
+transportation of photosynthetic products from the leaves to other parts of the
+plant such as stems, leaves, fruits, and roots.
+
+[END_PAGE]
+
+[PDF_PAGE 9] [PRINTED_PAGE 2]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[CAPTION label="Figure 1.1"] Figure 1.1 Longitudinal section of vascular tissues
+in plants
+
+[BEGIN ACTIVITY label="Activity 1.1"] [HEADING level=3 role=other] Activity 1.1
+Identification of vascular tissues and their arrangement in the stem and root of
+monocots and dicots
+
+[PARAGRAPH] Materials: Sharp razor blade, dropper, microscopic slides,
+coverslips, light microscope, young maize, and bean plants of 2-3 weeks old,
+watch glass, petri dish, white tiles, and safranin stain.
+
+[HEADING level=4 role=other] Procedure
+
+[LIST style=roman] (i) Collect samples of young maize and bean plants. Make sure
+you uproot the whole plant with its roots intact. (ii) Cut through a transverse
+section a thin layer of a young stem of a maize plant. Mount it on a microscopic
+slide. Stain it with safranin and cover it with coverslip. (iii) Place the
+mounted slide under the light microscope and start to observe using a low
+magnifying lens. Then, you can increase magnification accordingly. (iv) Observe
+the distribution and arrangement of vascular tissues, which are arranged in
+bundles in the young stem of a maize plant. Draw a well-labelled diagram to
+represent what you have observed. (v) Repeat steps (ii) to (iv) for the young
+root of a maize plant as well as the young stem and root of a bean plant.
+
+[PARAGRAPH] Results: In a transverse section of a young dicot stem or root, the
+vascular bundles are arranged in a ring. In a young monocot stem and root, the
+vascular bundles are scattered. [END ACTIVITY]
+
+[HEADING level=3 role=subsection] The xylem tissue
+
+[PARAGRAPH] This forms a continuous system of columns stretching from roots to
+the leaves. It has two major functions, which are mechanical support and
+conduction of water and mineral salts. It is composed of four types of cells,
+namely: tracheids, xylem fibres, vessel elements, and xylem parenchyma cells as
+shown in Figure 1.2.
+
+[END_PAGE]
+
+[PDF_PAGE 10] [PRINTED_PAGE 3]
+
+[RUNNING_HEADER] Transportation in living organisms
+
+[CAPTION label="Figure 1.2"] Figure 1.2 The structure of xylem
+
+[HEADING level=3 role=subsection] Structural components of xylem and their
+functions
+
+[PARAGRAPH] As shown in figure 1.2, one of the structural components of the
+xylem tissue is the tracheids. These are made up of secondary cellulose cell
+wall thickened with lignin and consist of single elongated cells with pointed
+ends. Their walls contain numerous pits but have no perforations in the primary
+cell wall. They lack living protoplasm at maturity and their tubular shape at
+maturity allows vertical transportation of water and mineral salts. The vertical
+upward movement of substances in the xylem is by conduction. The lignin helps in
+strengthening the cell walls to make them rigid.
+
+[PARAGRAPH] The xylem fibres are shorter and narrower than tracheids and have
+much thicker and overlapping end walls. These overlapping end walls have pits
+but they do not conduct water. They are stronger and provide additional
+mechanical strength to the xylem tissue.
+
+[PARAGRAPH] Like tracheids, vessel elements are tubular xylem structures which
+allow vertical transportation of water and mineral salts (upward the plant).
+Each vessel has a typical length of 10\,\mathrm{cm}. The walls are made up of
+cellulose and lignin, which provide structural support to the vessel elements.
+They are connected together into long tubes which enables easier transportation
+of water and mineral salts. They possess perforation plates in their end walls
+which are not found in tracheids. These perforations help to adjoin other vessel
+elements. Furthermore, the vessel elements have no cytoplasm and nuclei at
+maturity. These features enable them to transport large volumes of water and
+mineral salts. Like tracheids, the vessel elements have pits on their lateral
+walls. However, vessel cells are continuous through their perforation plates,
+while tracheids are discontinuous in their arrangement.
+
+[PARAGRAPH] The xylem parenchyma is present in both primary and secondary xylem.
+It has a cellulose cell wall and a living protoplasm. Its function is to store
+food and conduct water sideways. In some cases, the xylem parenchyma cells serve
+as storage devices for starch.
+
+[PARAGRAPH] There are pieces of evidence to show that the xylem tissue
+transports water and mineral salts in plants. Such evidences are supported by
+the following explanations.
+
+[LIST style=lettered] (a) If a leafy shoot is cut and placed in water containing
+a dye such as red eosin, it takes up the dye. When the shoot is removed from the
+dye and cut at various heights, only the xylem tissue is stained red indicating
+that it transports water. (b) The removal of a ring of tissues outside a woody
+stem does not affect the flow of water. This is because only the bark, including
+the phloem is removed. However, if the outer layers of the woody part (xylem)
+are removed, upward transport of water stops and the leaves wilt.
+
+[END_PAGE]
+
+[PDF_PAGE 11] [PRINTED_PAGE 4]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[LIST style=lettered continues_from_pdf_page=10] (c) Metabolic poisons, such as
+cyanide, do not impede water flow through the xylem. This proves that
+transportation of water is a passive process and takes place in the dead cells
+of vessel elements and tracheids. (d) If the lumen of the vessel element and
+tracheid cells are artificially blocked by fats, the uptake and transportation
+of water cease and the plant wilts.
+
+[BEGIN ACTIVITY label="Activity 1.2"] [HEADING level=3 role=other] Activity 1.2
+Demonstration of the movement of water through xylem tissue
+
+[PARAGRAPH] Materials: Razor blade, young bean seedlings, potassium permanganate
+solution, and light microscope.
+
+[HEADING level=4 role=other] Procedure
+
+[LIST style=roman] (i) Cut a section of the shoot and place it in a dilute
+solution of potassium permanganate (\ce{KMnO4}) or a dye such as eosin. (ii)
+Wait for ten minutes and observe the movement of the dye in the xylem vessel to
+the shoot system. (iii) Cut a cross section of the shoot and examine it under a
+light microscope. (iv) Record and draw what you have observed.
+
+[PARAGRAPH] Results: The xylem tissue will take the stain of potassium
+permanganate solution or eosin, indicating that, the xylem is responsible for
+conducting water from the soil. [END ACTIVITY]
+
+[HEADING level=3 role=subsection] Adaptation of the xylem to its functions
+
+[PARAGRAPH] The xylem is capable of transporting water and dissolved mineral
+salts from the roots to the shoot. This is because, firstly, the vessel elements
+and tracheids have narrow lumina that allow water to rise up the stem by
+capillary action. Secondly, these cells have lateral pits that allow lateral
+movement of water. Thirdly, they have dead cells at maturity, which enable them
+to transport large amount of water and dissolved mineral salts. Fourthly, the
+vessel elements and tracheids have lignified walls to prevent them from
+collapsing and withstand the high pressure created by moving water. The presence
+of lignified walls also provide strength and support to the plant. Fifthly, the
+vessel elements have perforations at their end walls and are joined end to end
+to enable a continuous flow of water between the vessel elements. Lastly, the
+overlapping xylem fibres provide additional strength to xylem tracheids and the
+overall plant.
+
+[HEADING level=3 role=subsection] The phloem tissue
+
+[PARAGRAPH] The phloem forms the primary food conducting tissue in vascular
+plants. It possesses tubular structures that are modified for translocation. It
+is composed of living cells with cytoplasm, some of which have mechanical
+functions. It consists four types of cells, namely: sieve elements, phloem
+parenchyma cells, companion cells, and fibres as shown in Figure 1.3.
+
+[END_PAGE]
+
+[PDF_PAGE 12] [PRINTED_PAGE 5]
+
+[RUNNING_HEADER] Transportation in living organisms
+
+[CAPTION label="Figure 1.3"] Figure 1.3 (a) Transverse section of phloem and (b)
+Longitudinal section of phloem
+
+[HEADING level=3 role=subsection] The structural components of phloem and their
+functions
+
+[PARAGRAPH] As indicated in figure 1.3 (a) and (b), one of the structural
+components of the phloem tissue is sieve elements, also called sieve members.
+These are conducting cells responsible for transporting food substances. They
+also constitute sieve tubes. Each sieve element is separated from the other by a
+sieve plate, which contains pores that allow the flow of fluid from one element
+to the other. The pores occur when the plasmodesmata of the end walls enlarge
+greatly or expand. The pores are open channels for transportation in sieve plate
+between sieve elements. Each sieve element is associated with one or more
+companion cells as shown in Figure 1.4.
+
+[PARAGRAPH] The phloem parenchyma cells are generally, living and elongated
+cells. They are mainly for storage and consist of stored carbohydrates and
+accumulated tannins and resins. When tightly packed together, they provide
+mechanical support to the plant. The companion cells have dense cytoplasm with
+small vacuoles and other cell organelles. They are very crucial for regulating
+the activities of sieve elements. The companion cells are metabolically active
+since they contain many mitochondria for cellular respiration, which produce the
+energy needed for active transport. There are also numerous ribosomes which are
+responsible for the active and constant production of respiratory enzymes.
+Companion cells and sieve tube elements are connected by strands of cytoplasm
+called plasmodesmata.
+
+[END_PAGE]
+
+[PDF_PAGE 13] [PRINTED_PAGE 6]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[CAPTION label="Figure 1.4"] Figure 1.4 A longitudinal section of sieve element
+and companion cell
+
+[PARAGRAPH] The phloem fibres are slender, flexible and elongated sclerenchyma
+cells with tapering ends. They are found in the inner bark of the stem. Their
+main role is to provide strength or mechanical support to mature plant stems.
+
+[PARAGRAPH] Generally, phloem is responsible for the translocation of soluble
+synthesized foods, such as sugars and proteins. It is also responsible for
+transporting ions and hormones from the source tissues such as photosynthetic
+leaf cells to the sink tissues such as non-photosynthetic root cells or
+developing flowers.
+
+[PARAGRAPH] There are pieces of evidence that show organic materials formed
+during photosynthesis are carried in the phloem tissue. Such evidences are
+supported by the following explanations.
+
+[LIST style=roman] (i) Cutting of the phloem makes the solution contained in the
+sieve tubes to exude. Examination of this solution reveals the presence of
+organic materials such as carbohydrates. The exudation of food solution from the
+sieve tubes shows that the contents of the phloem are transported under
+pressure.
+
+[END_PAGE]
+
+[PDF_PAGE 14] [PRINTED_PAGE 7]
+
+[RUNNING_HEADER] Transportation in living organisms
+
+[LIST style=roman continues_from_pdf_page=13] (ii) The concentration of sugars
+in the phloem depends on environmental conditions. During the day when
+photosynthesis is taking place, the concentration of sugars in the phloem is
+higher compared to the concentration in the dark when there is no
+photosynthesis. (iii) When a ring of the phloem is removed from around the stem,
+movement of food materials downwards becomes interfered; and because of this,
+food accumulates above the ring. (iv) If a photosynthesizing plant is subjected
+to \ce{CO2} from a radioactive isotope of \ce{^{14}C} as a photosynthetic
+substrate, the end products of photosynthesis if traced later in the phloem will
+be found to contain \ce{^{14}C}. (v) Aphids are insects that feed on the
+contents of the sieve tubes of a living plant. Analysis of the juice extracted
+from the aphids reveals the presence of sugars and amino acids that are products
+of photosynthesis. The juice is obtained after anesthetising the feeding aphid,
+then cutting off its body to let its stylet exude juice sucked from the sieve
+tubes.
+
+[HEADING level=3 role=subsection] Adaptations of phloem tissues to their
+functions
+
+[PARAGRAPH] The structure of the phloem tissue suit its function of
+translocation of food in that, its sieve tubes form a tubing column through
+which the food solution flows. There are lateral pits in the walls of the sieve
+tube members which allow lateral movement of food materials. The food materials
+flow through the phloem tissue by an active mechanism. The energy to facilitate
+this flow is supplied by the mitochondria present in the companion cells.
+Additionally, the sieve tube elements have a tendency of losing organelles in
+order to increase the size of the lumen for easy passage of food.
+
+[HEADING level=3 role=subsection] Passive and active transport in plants
+
+[PARAGRAPH] The plant can absorb water and dissolved mineral salts using two
+transportation mechanisms, namely: active and passive transports.
+
+[PARAGRAPH] Active transport: In active transport, materials or molecules are
+transported against the concentration gradient. For example, sometimes the soil
+may have a low concentration of mineral salts than the cell sap, but mineral
+salts can still move from the soil to the cell sap by active transport, which
+requires energy to pump materials against the concentration gradient.
+
+[PARAGRAPH] Passive transport: In passive transport, materials move along their
+concentration gradient. In this case, energy is not required. For example, ions
+from the soil, which are in high concentration can diffuse to the cell sap with
+low concentration. However, passive transport may involve the movement of water
+molecules from a region of low solute concentration to a region of high solute
+concentration. Thus, the mechanisms for passive transport are osmosis and
+diffusion.
+
+[PARAGRAPH] Osmosis: This is a special kind of diffusion that moves water
+molecules from a place of its higher concentration to a place of lower
+concentration to create a stable and equal cellular environment. It may also
+involve the movement of liquids or molecules from a region of low solute
+concentration (high water potential) to the region of high solute concentration
+(low water potential) through a differentially permeable membrane. Osmosis is an
+important process in the transport of materials for the proper
+
+[END_PAGE]
+
+[PDF_PAGE 15] [PRINTED_PAGE 8]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[PARAGRAPH continues_from_pdf_page=14] functioning, growth and stability of
+plants. For example, if osmosis was not present, photosynthesis would never
+occur, and the plant would wilt and finally die. This is because the stomatal
+guard cells have vacuoles that filled up with water and other fluids. During
+osmosis, the guard cells becomes turgid as they swell and the resulting turgor
+pressure triggers the stomata to open. The stomata then take in carbon dioxide
+from the air to be used in the production of food through photosynthesis.
+Furthermore, osmosis distributes water through selectively permeable membranes
+in order to maintain the volume and pressure of all plant cells. For instance,
+the movement of water and dissolved substances from one cell to another is
+largely facilitated by the osmosis process. A wilted plant looks weak because
+the vacuoles of their cells do not have proper amounts of water mainly obtained
+through osmosis. In plant roots, osmosis occurs when the water concentration
+outside roots is higher than inside. This pressure difference triggers the roots
+to take in water through the root cell walls thereby creating a pressure
+balance.
+
+[PARAGRAPH] Diffusion: This involves the movement of molecules of liquid and
+gases or ions from a region of high concentration to that of low concentration.
+Movements of materials of this nature may also be called simple diffusion.
+Sometimes, movement can be aided by channel and carrier proteins. In this case,
+it is called a facilitated diffusion, which refers to the type of passive
+transport under the aid of proteins. The transport proteins, which allow the
+passage of ions are called ion channels. These are selective and therefore, they
+open or close in response to certain signals. For example, the binding of
+specific ions, make them open and in the absence of such ions, the channels are
+closed. This helps the cell to control the movement of molecules and ions in and
+out of it. The rate at which diffusion occurs is affected by various factors.
+Firstly, the diffusion gradients or the difference in the concentration
+gradients between two points, the higher the gradient the faster the rate of
+diffusion. For example, in the lungs, diffusion is achieved by speeding up the
+flow of blood through the lungs or by breathing faster. Secondly, the large the
+surface area of a membrane through which diffusion is taking place, the greater
+the rate of diffusion. For example, membranes with microvilli, have a large
+surface area for the absorption. Lastly, the rate of diffusion decreases rapidly
+with the increase in the distance; for effective diffusion, a very short
+distance is required. The differences between passive and active transport in
+plants are summarised in Table 1.1.
+
+[END_PAGE]
+
+[PDF_PAGE 16] [PRINTED_PAGE 9]
+
+[RUNNING_HEADER] Transportation in living organisms
+
+[CAPTION label="Table 1.1"] Table 1.1 Differences between passive and active
+transport in plants
+
+[TABLE columns=2 header_rows=1 label="Table 1.1"] Passive transport	Active
+transport It does not require cellular energy for the movement of molecules from
+high to low concentrations.	With active transport, cellular energy in the form
+of Adenosine Triphosphate (ATP) is needed to pump molecules against the
+concentration gradient. Occurs along the concentration gradient. The movement of
+molecules occurs from a low concentration of solute to high concentration in
+order to maintain equilibrium.	Occurs against the concentration gradient. The
+movement of molecules occurs from a high concentration of solute to a low
+concentration of solute. It maintains the dynamic equilibrium of water, gases
+and nutrients between cells and extracellular environment. No net diffusion or
+osmosis after the equilibrium is established.	It disrupts equilibrium, which is
+established by diffusion. Involves channel protein molecules for transporting
+anything soluble in lipids, monosaccharaides, water, oxygen, carbon dioxides,
+and hormones.	Involves carrier protein molecules for the transportation of
+larger particles such as protein, ions, large cells, and complex sugars. It is a
+physical process such as osmosis, diffusion, filtration, and facilitated
+diffusion.	Chemical processes to release energy are involved.
+
+[BEGIN EXERCISE label="Exercise 1.1"] [HEADING level=3 role=other] Exercise 1.1
+
+[QUESTION label="1."] Describe the structure, function, and adaptations of the
+xylem tissue.
+
+[QUESTION label="2."] Differentiate between the following terms as used in
+transportation in plants:
+
+[QUESTION label="(a)" parent="2."] Osmosis and diffusion.
+
+[QUESTION label="(b)" parent="2."] Passive and active transport.
+
+[QUESTION label="3."] Provide evidence to show that the xylem and phloem tissues
+perform their respective roles.
+
+[QUESTION label="4."] Describe the structure, function and adaptations of phloem
+tissue.
+
+[QUESTION label="5."] With the aid of a diagram, describe the structure of the
+phloem tissue. [END_EXERCISE]
+
+[HEADING level=3 role=subsection] The movement of materials across the root
+
+[PARAGRAPH] The plant root has three main functions, which altogether facilitate
+growth and development of the plant. These functions include anchoring of the
+plant in the soil, absorption of water and soluble mineral salts, and storage of
+food in some plants such as cassava and sweet potatoes. A plant requires water
+and mineral salts from the soil for its growth and development. There are
+different pathways in the plant through which water and mineral salts move from
+the soil into its entire body across the roots. The endodermis of the roots has
+waterproof suberized bands or Casparian strips, which control the movement of
+water between cell wall and cytoplasm.
+
+[END_PAGE]
+
+[PDF_PAGE 17] [PRINTED_PAGE 10]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[HEADING level=3 role=subsection] Pathway of water and mineral salts movement
+across the root
+
+[PARAGRAPH] Absorption of water and mineral salts mostly takes place in the root
+hair zone. The root hairs, which extend from the epidermal cells are delicate
+structures which are always replaced by new ones through active mitosis. They
+lack cuticle to allow absorption of water, the root hairs provide a large
+surface area for absorption. They also have sticky walls through which they
+adhere tightly to soil particles. Their large numbers and possession of
+extremely thin layers provide a large surface area for absorption. Root hairs
+take in water from the soil mainly through the process of osmosis.
+
+[PARAGRAPH] The passage of water into the roots is through the thin walls of the
+root hair and the epidermal cells of the root tips. From the epidermal cells,
+the water passes laterally through thin-walled cortical cells and then through
+the endodermal cells. From the endodermis, the water moves into the xylem tissue
+where the direction of movement is upward. The xylem tissue is continuous from
+the root to the aerial parts of the plant and through the stems to the petioles
+of leaves and terminates in the mesophyll of the leaf. There are three pathways
+in which water move in the roots. These pathways are apoplast, symplast and
+vacuolar pathways as indicated in Figure 1.5.
+
+[CAPTION label="Figure 1.5"] Figure 1.5 Apoplast, Symplast and Vacuolar pathways
+in plants
+
+[HEADING level=3 role=subsection] The apoplast pathway
+
+[PARAGRAPH] This is the movement of water across the cell wall through
+intercellular space. The highest percentage of water movement in plants goes
+through the apoplast pathway. The movement of water in this pathway occurs
+exclusively through the cell wall and intercellular spaces without the
+involvement of any membranes or cytoplasm. In the apoplast pathway, the system
+of adjacent cell walls is continuous throughout the plant. Around 50% of a
+cellulose cell wall is ‘free space’, which can be occupied by water. When water
+evaporates from the mesophyll cell walls into the intercellular air spaces, a
+tension develops in the continuous stream of water in the apoplast. As a result,
+water is drawn through the walls in a mass flow by the cohesion of water
+molecules.
+
+[END_PAGE]
+
+[PDF_PAGE 18] [PRINTED_PAGE 11]
+
+[RUNNING_HEADER] Transportation in living organisms
+
+[PARAGRAPH] The movement of water through the cell walls in the apoplast is
+prevented by wax-like material known as suberin, which is deposited in the cell
+wall to form Casparian strips in the endodermis. In this movement, water is
+thereby forced to enter the living protoplast of the endodermal cell, as the
+only available route to the xylem. The movement of water is important because
+salts from the endodermal cells may then be actively deposited into the vascular
+tissues. This process lowers the water potential in the xylem, which becomes
+more negative causing water to be drawn in from the endodermis.
+
+[HEADING level=3 role=subsection] Roles of Casparian strips
+
+[PARAGRAPH] The Casparian strip is a band of water proof which provides living
+support to the endodermis of roots. For example, if a root endodermal cell
+undergoes plasmolysis, the loss of water results into the falling off of the
+cell surface membrane onto the cytoplasmic region. However, due to the presence
+of Casparian strips, the membrane remains held in place. Therefore, when the
+cell gains water, the whole membrane goes back to the cell wall and the entire
+cell resumes a normal life. Additionally, the Casparian strips cause an active
+secretion of salts from endodermal cells into the xylem. This leads to more
+negative water potential in the xylem and as a result, it enhances the movement
+of water from the endodermal cells to the xylem. Moreover, by restricting the
+movement of water passing through the protoplasm, the Casparian strips limit
+large volumes of water which could be contaminated with toxins to pass through
+the cells. In this way, the strip offers a protective function against the entry
+of toxic substances.
+
+[HEADING level=3 role=subsection] The symplast pathway
+
+[PARAGRAPH] Symplast pathway involves the movement of water and other low
+molecular weight solutes such as sugars, amino acid and ions between adjacent
+cells through the cytoplasm. In this pathway, there is the movement of water and
+mineral salt molecules from cell to cell by means of plasmodesmata, which are
+the cytoplasmic strands extending through pores in adjacent cell walls. The
+plasmodesmata forms a network of the cytoplasm of all cells. Water and solutes
+contained in the cytoplasm of one cell can move through the symplast pathway
+without crossing further membranes. The movements in the symplast pathway are
+aided by cytoplasmic streaming.
+
+[PARAGRAPH] Apoplast and symplast pathways are both involved in the movement of
+water across the root. Water flows through apoplast in the cortex, enters the
+symplast pathway in the endodermis where the walls are impermeable to the flow
+of water due to the presence of Casparian strips.
+
+[PARAGRAPH] In the endodermis, plasmodesmata help to allow the passage of water
+into pericycle from where it enters the xylem. Mineral nutrients also use the
+same pathway as that of water. However, their absorption and passage into the
+symplast pathway mostly occur through active absorption. The movement of water
+inside the xylem is purely along the pressure gradient.
+
+[END_PAGE]
+
+[PDF_PAGE 19] [PRINTED_PAGE 12]
+
+[RUNNING_HEADER] Biology for Advanced Level Secondary Schools
+
+[HEADING level=3 role=subsection] The vacuolar pathway
+
+[PARAGRAPH] In this pathway, water moves from vacuole to vacuole of neighbouring
+cells, crossing both symplast and apoplast pathways. In the process, water
+passes through membranes and tonoplasts by osmosis. However, the water molecules
+encounter high resistance; as a result, little flow usually occurs making this
+pathway insignificant. Therefore, apoplast and symplast pathways are the major
+routes for the movement of water in plants. Water moves by osmosis across the
+vacuoles of the cells of the root system and it moves down the concentration
+gradient from the soil solution to the xylem.
+
+[BEGIN EXERCISE label="Exercise 1.2"] [HEADING level=3 role=other] Exercise 1.2
+
+[QUESTION label="1."] With the help of a diagram, briefly describe how plants
+obtain water and dissolved mineral salts from the soil to the xylem.
+
+[QUESTION label="2."] Describe the structure of a root hair cell and state the
+ways in which its structure relates to its function.
+
+[QUESTION label="3."] Discuss the location of a Casparian strip and explain its
+role in water movement in higher plants.
+
+[QUESTION label="4."] Briefly differentiate between apoplast and symplast
+pathways of water movement and state which one of these would need active
+transport. [END_EXERCISE]
+
+[HEADING level=3 role=subsection] Upward movement of water and mineral salts
+
+[PARAGRAPH] The upward movement of water and mineral salts from the soil to the
+upper part of the plant occurs as a result of a number of forces. These forces
+include osmosis, diffusion, transpiration, and capillary action. Water from the
+soil enters the root hairs by the process of osmosis. This is possible because
+water potential is higher in the soil than in the roots. The rise up of water at
+the base of the stem is caused by the capillary action whereas the root pressure
+pushes water upward the stem.
+
+[PARAGRAPH] The adhesion and cohesion make columns of water to move up through
+the xylem. The continuous pull of water in the xylem is due to transpiration
+pull caused by water evaporation through stomata in the leaves. This upward
+movement of water and mineral salts from the soil to the shoot through the xylem
+tissues of a plant is known as the ascent of sap. It is called the sap because
+it contains many dissolved minerals. The movement of sap is facilitated by
+cohesion, adhesion, root pressure, capillarity, and transpiration pull. At the
+leaf surface, the plant loses water by transpiration and guttation processes.
+However, the plant loses much water by transpiration through stomata pores than
+by guttation through hydathodes. The process of transpiration has a number of
+effects to the plants including traspiration pull and cooling of the plant.
+Explanation of the forces responsible for upward movement of materials in plants
+is provided in the following subsections.
+
+[HEADING level=3 role=subsection] The cohesion-tension theory
+
+[PARAGRAPH] The upward movement of water by cohesion is bestly explained using
+cohesion-tension theory. The theory suggests that plants are able to get water
+from the soil because water molecules are cohesive in nature. Since water
+molecules have an ability to hold each other without breaking, then they can be
+drawn up from soil particles into the root hairs by osmosis. Water is a polar
+molecule such that, when its two molecules approach one another, the slightly
+negatively
+
+[END_PAGE]
+
+[PDF_PAGE 20] [PRINTED_PAGE 13]
+
+[RUNNING_HEADER] Transportation in living organisms
+
+[PARAGRAPH continues_from_pdf_page=19] charged oxygen atom of one molecule forms
+a hydrogen bond with a slightly positively charged hydrogen atom of the other
+molecule. This attractive force along with other intermolecular forces is one of
+the principal factors that are responsible for the occurrence of surface tension
+in liquid water. These forces also allow plants to draw water from the root
+through the xylem to the leaf. The theory further holds that, water is
+constantly lost through transpiration from the leaf, when one water molecule is
+lost, another is pulled along by the processes of cohesion and tension. Apart
+from cohesion, another force of attraction between water molecules and the
+vessel wall also facilitates the upward movement of water. This force is called
+adhesion.
+
+[HEADING level=3 role=subsection] Root pressure
+
+[PARAGRAPH] Roots absorb water from the soil by osmosis. The absorption takes
+place in the intercellular spaces of the root cells in the root hairs. There is
+a higher concentration of water in the soil than in the roots. This difference
+in the concentration of water between the soil and the roots creates a
+concentration gradient, which results into the movement of water from the soil
+to the roots. Thus, the xylem in the root develops a positive water potential
+and the water is pushed up the tubes which are formed by the xylem elements. The
+pressure with which the water is pushed to the xylem of the root is called root
+pressure. This is a force, which aids water movement up the xylem. It is caused
+by an active distribution of mineral nutrient ions into the root xylem. When
+transpiration rate is low, the ions are not carried up the stem; instead, they
+accumulate in the root xylem and lower the water potential thus creating a water
+potential gradient between the soil and root xylem. Water then diffuses from the
+soil into the root xylem due to water potential difference. Root pressure is
+caused by this accumulation of water in the xylem which pushes on the rigid
+cells. The pressure then provides a force which pushes the water up the stem.
+
+[PARAGRAPH] The root pressure is responsible for transporting water to the
+leaves of herbaceous plants and grasses. However, in tall trees such as
+Eucalyptus and redwood whose heights may sometimes exceed 100\,\mathrm{m}, root
+pressure is not sufficient to transport the water up to the leaves and therefore
+transpiration pull complements the movement. Moreover, the ascent of sap
+continues even when the root pressure is absent and under normal conditions, the
+xylem sap is under tension (pulled) rather than pressure (pushed).
+
+[HEADING level=3 role=subsection] Capillarity
+
+[PARAGRAPH] Capillary action is the movement of liquid within narrow spaces of a
+solid. It is caused by the attraction of intermolecular forces between the
+liquid and the solid surfaces. The xylem cells are part of the plant’s
+transpiration system through which nutrients are transported throughout the
+plant. Capillarity is responsible for the movement of water up the xylem vessels
+because these vessels are very narrow. The capillary action brings water from
+the soil up to the roots, stems and the rest of the plant. The molecules of
+water are attracted to the walls of the xylem vessels inside the stem. As
+explained earlier, water molecules are also attracted to each other. Therefore,
+although the attraction between water molecules and xylem vessel walls is
+strong, the water molecules are still attracted to each other. This attraction
+helps to force water up from the ground and disperse throughout the plant.
+
+[END_PAGE]
+
+[END_EXTRACTION] Completed PDF pages: 1-20 Pending PDF pages: none Text
+uncertainties: none Images: intentionally omitted; not assessed

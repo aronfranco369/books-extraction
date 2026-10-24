@@ -1,0 +1,747 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      9
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 9,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0009-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "2",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0009-001",
+              "type": "running_header",
+              "surface_id": "s-p0009-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Biology for Advanced Level Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Biology for Advanced Level Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-002-image",
+              "type": "figure",
+              "surface_id": "s-p0009-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0009-figure-1-1"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-002",
+              "type": "caption",
+              "surface_id": "s-p0009-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 1.1 Longitudinal section of vascular tissues in plants",
+                "target_refs": [
+                  "e-p0009-002-image"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.1 Longitudinal section of vascular tissues in plants"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-004",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0009-001"
+              ],
+              "payload": {
+                "text": "Activity 1.1 Identification of vascular tissues and their arrangement in the stem and root of monocots and dicots",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Activity 1.1 Identification of vascular tissues and their arrangement in the stem and root of monocots and dicots"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-005",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0009-001"
+              ],
+              "payload": {
+                "text": "Materials: Sharp razor blade, dropper, microscopic slides, coverslips, light microscope, young maize, and bean plants of 2-3 weeks old, watch glass, petri dish, white tiles, and safranin stain.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Materials: Sharp razor blade, dropper, microscopic slides, coverslips, light microscope, young maize, and bean plants of 2-3 weeks old, watch glass, petri dish, white tiles, and safranin stain."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-006",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0009-001"
+              ],
+              "payload": {
+                "text": "Procedure",
+                "level": 4,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Procedure"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-007",
+              "type": "list",
+              "surface_id": "s-p0009-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0009-001"
+              ],
+              "payload": {
+                "style": "roman",
+                "items": [
+                  {
+                    "label_printed": "(i)",
+                    "text": "Collect samples of young maize and bean plants. Make sure you uproot the whole plant with its roots intact.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Collect samples of young maize and bean plants. Make sure you uproot the whole plant with its roots intact."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(ii)",
+                    "text": "Cut through a transverse section a thin layer of a young stem of a maize plant. Mount it on a microscopic slide. Stain it with safranin and cover it with coverslip.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Cut through a transverse section a thin layer of a young stem of a maize plant. Mount it on a microscopic slide. Stain it with safranin and cover it with coverslip."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iii)",
+                    "text": "Place the mounted slide under the light microscope and start to observe using a low magnifying lens. Then, you can increase magnification accordingly.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Place the mounted slide under the light microscope and start to observe using a low magnifying lens. Then, you can increase magnification accordingly."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(iv)",
+                    "text": "Observe the distribution and arrangement of vascular tissues, which are arranged in bundles in the young stem of a maize plant. Draw a well-labelled diagram to represent what you have observed.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Observe the distribution and arrangement of vascular tissues, which are arranged in bundles in the young stem of a maize plant. Draw a well-labelled diagram to represent what you have observed."
+                      }
+                    ]
+                  },
+                  {
+                    "label_printed": "(v)",
+                    "text": "Repeat steps (ii) to (iv) for the young root of a maize plant as well as the young stem and root of a bean plant.",
+                    "runs": [
+                      {
+                        "t": "text",
+                        "v": "Repeat steps (ii) to (iv) for the young root of a maize plant as well as the young stem and root of a bean plant."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-008",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0009-001"
+              ],
+              "payload": {
+                "text": "Results: In a transverse section of a young dicot stem or root, the vascular bundles are arranged in a ring. In a young monocot stem and root, the vascular bundles are scattered.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Results: In a transverse section of a young dicot stem or root, the vascular bundles are arranged in a ring. In a young monocot stem and root, the vascular bundles are scattered."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-009",
+              "type": "heading",
+              "surface_id": "s-p0009-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The xylem tissue",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The xylem tissue"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-010",
+              "type": "paragraph",
+              "surface_id": "s-p0009-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "This forms a continuous system of columns stretching from roots to the leaves. It has two major functions, which are mechanical support and conduction of water and mineral salts. It is composed of four types of cells, namely: tracheids, xylem fibres, vessel elements, and xylem parenchyma cells as shown in Figure 1.2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "This forms a continuous system of columns stretching from roots to the leaves. It has two major functions, which are mechanical support and conduction of water and mineral salts. It is composed of four types of cells, namely: tracheids, xylem fibres, vessel elements, and xylem parenchyma cells as shown in Figure 1.2."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0009-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0009-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "2",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0009-001",
+      "kind": "activity",
+      "label_printed": "Activity 1.1",
+      "title": "Activity 1.1",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0009-004",
+        "e-p0009-005",
+        "e-p0009-006",
+        "e-p0009-007",
+        "e-p0009-008"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "r-e-p0009-002",
+      "kind": "caption_of",
+      "from_ref": "e-p0009-002",
+      "to_ref": "e-p0009-002-image",
+      "resolution": "resolved",
+      "printed_text": "Figure 1.1 Longitudinal section of vascular tissues in plants"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0009-figure-1-1",
+      "kind": "diagram",
+      "page": 9,
+      "surface_id": "s-p0009-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0009-002-image"
+      ],
+      "printed_label": "Figure 1.1",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0009-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 9,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 11,
+    "types": {
+      "running_header": 1,
+      "figure": 1,
+      "caption": 1,
+      "heading": 3,
+      "paragraph": 3,
+      "list": 1,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 1
+  }
+}

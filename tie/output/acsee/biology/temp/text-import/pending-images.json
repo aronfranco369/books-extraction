@@ -1,0 +1,173 @@
+[
+  {
+    "pdf_page": 9,
+    "printed_label": "Figure 1.1",
+    "figure_id": "f-p0009-figure-1-1",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0009.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0009-figure-1-1.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 10,
+    "printed_label": "Figure 1.2",
+    "figure_id": "f-p0010-figure-1-2",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0010.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0010-figure-1-2.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 12,
+    "printed_label": "Figure 1.3",
+    "figure_id": "f-p0012-figure-1-3",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0012.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0012-figure-1-3.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 13,
+    "printed_label": "Figure 1.4",
+    "figure_id": "f-p0013-figure-1-4",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0013.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0013-figure-1-4.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 17,
+    "printed_label": "Figure 1.5",
+    "figure_id": "f-p0017-figure-1-5",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0017.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0017-figure-1-5.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 22,
+    "printed_label": "Figure 1.6",
+    "figure_id": "f-p0022-figure-1-6",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0022.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0022-figure-1-6.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 23,
+    "printed_label": "Figure 1.7",
+    "figure_id": "f-p0023-figure-1-7",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0023.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0023-figure-1-7.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 23,
+    "printed_label": "Figure 1.8",
+    "figure_id": "f-p0023-figure-1-8",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0023.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0023-figure-1-8.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 24,
+    "printed_label": "Figure 1.9",
+    "figure_id": "f-p0024-figure-1-9",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0024.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0024-figure-1-9.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 25,
+    "printed_label": "Figure 1.10",
+    "figure_id": "f-p0025-figure-1-10",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0025.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0025-figure-1-10.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 26,
+    "printed_label": "Figure 1.11",
+    "figure_id": "f-p0026-figure-1-11",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0026.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0026-figure-1-11.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 27,
+    "printed_label": "Figure 1.12",
+    "figure_id": "f-p0027-figure-1-12",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0027.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0027-figure-1-12.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 28,
+    "printed_label": "Figure 1.13",
+    "figure_id": "f-p0028-figure-1-13",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0028.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0028-figure-1-13.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 29,
+    "printed_label": "Figure 1.14",
+    "figure_id": "f-p0029-figure-1-14",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0029.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0029-figure-1-14.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 30,
+    "printed_label": "Figure 1.15",
+    "figure_id": "f-p0030-figure-1-15",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0030.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0030-figure-1-15.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 35,
+    "printed_label": "Figure 1.16",
+    "figure_id": "f-p0035-figure-1-16",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0035.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0035-figure-1-16.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 36,
+    "printed_label": "Figure 1.17",
+    "figure_id": "f-p0036-figure-1-17",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0036.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0036-figure-1-17.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 38,
+    "printed_label": "Figure 1.18",
+    "figure_id": "f-p0038-figure-1-18",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0038.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0038-figure-1-18.png",
+    "status": "pending",
+    "geometry_available": false
+  },
+  {
+    "pdf_page": 39,
+    "printed_label": "Figure 1.19",
+    "figure_id": "f-p0039-figure-1-19",
+    "page_json": "tie/output/acsee/biology/form six/acsee-biology-form-6__page-0039.json",
+    "suggested_asset_file": "assets/books/acsee-biology-form-6-text-import-8ffa8c688e45/f-p0039-figure-1-19.png",
+    "status": "pending",
+    "geometry_available": false
+  }
+]

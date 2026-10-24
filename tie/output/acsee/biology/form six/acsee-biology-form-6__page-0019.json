@@ -1,0 +1,730 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      19
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 19,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0019-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "12",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0019-001",
+              "type": "running_header",
+              "surface_id": "s-p0019-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Biology for Advanced Level Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Biology for Advanced Level Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-002",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The vacuolar pathway",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The vacuolar pathway"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-003",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "In this pathway, water moves from vacuole to vacuole of neighbouring cells, crossing both symplast and apoplast pathways. In the process, water passes through membranes and tonoplasts by osmosis. However, the water molecules encounter high resistance; as a result, little flow usually occurs making this pathway insignificant. Therefore, apoplast and symplast pathways are the major routes for the movement of water in plants. Water moves by osmosis across the vacuoles of the cells of the root system and it moves down the concentration gradient from the soil solution to the xylem.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "In this pathway, water moves from vacuole to vacuole of neighbouring cells, crossing both symplast and apoplast pathways. In the process, water passes through membranes and tonoplasts by osmosis. However, the water molecules encounter high resistance; as a result, little flow usually occurs making this pathway insignificant. Therefore, apoplast and symplast pathways are the major routes for the movement of water in plants. Water moves by osmosis across the vacuoles of the cells of the root system and it moves down the concentration gradient from the soil solution to the xylem."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-004",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0019-001"
+              ],
+              "payload": {
+                "text": "Exercise 1.2",
+                "level": 3,
+                "role": "other",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Exercise 1.2"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-005",
+              "type": "question",
+              "surface_id": "s-p0019-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0019-001"
+              ],
+              "payload": {
+                "text": "With the help of a diagram, briefly describe how plants obtain water and dissolved mineral salts from the soil to the xylem.",
+                "label_printed": "1.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "With the help of a diagram, briefly describe how plants obtain water and dissolved mineral salts from the soil to the xylem."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-006",
+              "type": "question",
+              "surface_id": "s-p0019-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0019-001"
+              ],
+              "payload": {
+                "text": "Describe the structure of a root hair cell and state the ways in which its structure relates to its function.",
+                "label_printed": "2.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Describe the structure of a root hair cell and state the ways in which its structure relates to its function."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-007",
+              "type": "question",
+              "surface_id": "s-p0019-01",
+              "order": 6,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0019-001"
+              ],
+              "payload": {
+                "text": "Discuss the location of a Casparian strip and explain its role in water movement in higher plants.",
+                "label_printed": "3.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Discuss the location of a Casparian strip and explain its role in water movement in higher plants."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-008",
+              "type": "question",
+              "surface_id": "s-p0019-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0019-001"
+              ],
+              "payload": {
+                "text": "Briefly differentiate between apoplast and symplast pathways of water movement and state which one of these would need active transport.",
+                "label_printed": "4.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Briefly differentiate between apoplast and symplast pathways of water movement and state which one of these would need active transport."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-009",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Upward movement of water and mineral salts",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Upward movement of water and mineral salts"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-010",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The upward movement of water and mineral salts from the soil to the upper part of the plant occurs as a result of a number of forces. These forces include osmosis, diffusion, transpiration, and capillary action. Water from the soil enters the root hairs by the process of osmosis. This is possible because water potential is higher in the soil than in the roots. The rise up of water at the base of the stem is caused by the capillary action whereas the root pressure pushes water upward the stem.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The upward movement of water and mineral salts from the soil to the upper part of the plant occurs as a result of a number of forces. These forces include osmosis, diffusion, transpiration, and capillary action. Water from the soil enters the root hairs by the process of osmosis. This is possible because water potential is higher in the soil than in the roots. The rise up of water at the base of the stem is caused by the capillary action whereas the root pressure pushes water upward the stem."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-011",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The adhesion and cohesion make columns of water to move up through the xylem. The continuous pull of water in the xylem is due to transpiration pull caused by water evaporation through stomata in the leaves. This upward movement of water and mineral salts from the soil to the shoot through the xylem tissues of a plant is known as the ascent of sap. It is called the sap because it contains many dissolved minerals. The movement of sap is facilitated by cohesion, adhesion, root pressure, capillarity, and transpiration pull. At the leaf surface, the plant loses water by transpiration and guttation processes. However, the plant loses much water by transpiration through stomata pores than by guttation through hydathodes. The process of transpiration has a number of effects to the plants including traspiration pull and cooling of the plant. Explanation of the forces responsible for upward movement of materials in plants is provided in the following subsections.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The adhesion and cohesion make columns of water to move up through the xylem. The continuous pull of water in the xylem is due to transpiration pull caused by water evaporation through stomata in the leaves. This upward movement of water and mineral salts from the soil to the shoot through the xylem tissues of a plant is known as the ascent of sap. It is called the sap because it contains many dissolved minerals. The movement of sap is facilitated by cohesion, adhesion, root pressure, capillarity, and transpiration pull. At the leaf surface, the plant loses water by transpiration and guttation processes. However, the plant loses much water by transpiration through stomata pores than by guttation through hydathodes. The process of transpiration has a number of effects to the plants including traspiration pull and cooling of the plant. Explanation of the forces responsible for upward movement of materials in plants is provided in the following subsections."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-012",
+              "type": "heading",
+              "surface_id": "s-p0019-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The cohesion-tension theory",
+                "level": 3,
+                "role": "subsection",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The cohesion-tension theory"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-013",
+              "type": "paragraph",
+              "surface_id": "s-p0019-01",
+              "order": 12,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "The upward movement of water by cohesion is bestly explained using cohesion-tension theory. The theory suggests that plants are able to get water from the soil because water molecules are cohesive in nature. Since water molecules have an ability to hold each other without breaking, then they can be drawn up from soil particles into the root hairs by osmosis. Water is a polar molecule such that, when its two molecules approach one another, the slightly negatively",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The upward movement of water by cohesion is bestly explained using cohesion-tension theory. The theory suggests that plants are able to get water from the soil because water molecules are cohesive in nature. Since water molecules have an ability to hold each other without breaking, then they can be drawn up from soil particles into the root hairs by osmosis. Water is a polar molecule such that, when its two molecules approach one another, the slightly negatively"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0019-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0019-01",
+              "order": 13,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "12",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "12"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-p0019-001",
+      "kind": "exercise",
+      "label_printed": "Exercise 1.2",
+      "title": "Exercise 1.2",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0019-004",
+        "e-p0019-005",
+        "e-p0019-006",
+        "e-p0019-007",
+        "e-p0019-008"
+      ]
+    }
+  ],
+  "relations": [],
+  "figures": [],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0019-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 19,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 14,
+    "types": {
+      "running_header": 1,
+      "heading": 4,
+      "paragraph": 4,
+      "question": 4,
+      "page_number": 1
+    },
+    "figures": 0,
+    "open_issues": 1
+  }
+}

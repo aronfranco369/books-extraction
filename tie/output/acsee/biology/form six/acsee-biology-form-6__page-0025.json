@@ -1,0 +1,607 @@
+{
+  "schema_version": "book-pages-1.1",
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "status": "partial",
+  "schema": {
+    "registry": {
+      "schema_version": "book-pages-1.1",
+      "group_kinds": [
+        "part",
+        "chapter",
+        "section",
+        "subsection",
+        "exercise",
+        "question",
+        "example",
+        "solution",
+        "activity",
+        "task",
+        "project",
+        "list",
+        "table",
+        "figure",
+        "verse",
+        "dialogue",
+        "proof",
+        "answers",
+        "front_matter",
+        "back_matter"
+      ],
+      "common_optional": {
+        "text": "string",
+        "runs": "array",
+        "label_printed": "nullable_string",
+        "title": "nullable_string",
+        "source_printed": "nullable_string",
+        "continuation_of": "string",
+        "continued_by": "string",
+        "typography": "array"
+      },
+      "types": {
+        "paragraph": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "heading": {
+          "required": {
+            "text": "string",
+            "level": "positive_integer",
+            "role": "string"
+          },
+          "optional": {
+            "role_printed": "string"
+          }
+        },
+        "running_header": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "running_footer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "page_number": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "exercise": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "question": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "response_type": "string"
+          }
+        },
+        "example": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "solution": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "activity": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "task": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "project": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "note": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "note_kind": "string"
+          }
+        },
+        "summary": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "objectives": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "instruction": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "answer": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "proof": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "publisher_notice": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {}
+        },
+        "cover_detail": {
+          "required": {},
+          "optional": {
+            "text": "string",
+            "ref": "string"
+          }
+        },
+        "list": {
+          "required": {
+            "style": "string",
+            "items": "array"
+          },
+          "optional": {}
+        },
+        "mcq_options": {
+          "required": {
+            "options": "array"
+          },
+          "optional": {}
+        },
+        "matching": {
+          "required": {
+            "list_a_title": "string",
+            "list_b_title": "string",
+            "list_a": "array",
+            "list_b": "array"
+          },
+          "optional": {}
+        },
+        "table": {
+          "required": {
+            "columns": "positive_integer",
+            "header_rows": "nonnegative_integer",
+            "rows": "array"
+          },
+          "optional": {
+            "printed_label": "nullable_string",
+            "caption": "nullable_string"
+          }
+        },
+        "figure": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "map": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "image": {
+          "required": {
+            "ref": "string"
+          },
+          "optional": {}
+        },
+        "caption": {
+          "required": {
+            "text": "string",
+            "target_refs": "array"
+          },
+          "optional": {}
+        },
+        "math": {
+          "required": {
+            "latex": "string"
+          },
+          "optional": {
+            "printed_label": "nullable_string"
+          }
+        },
+        "chemical_structure": {
+          "required": {
+            "format": "string",
+            "source": "string"
+          },
+          "optional": {
+            "rendered_asset": "string"
+          }
+        },
+        "verse": {
+          "required": {
+            "stanzas": "array"
+          },
+          "optional": {}
+        },
+        "dialogue": {
+          "required": {
+            "turns": "array"
+          },
+          "optional": {}
+        },
+        "definition_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "reference_list": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "index": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "toc": {
+          "required": {
+            "entries": "array"
+          },
+          "optional": {}
+        },
+        "footnote": {
+          "required": {
+            "text": "string"
+          },
+          "optional": {
+            "marker_refs": "array"
+          }
+        },
+        "code": {
+          "required": {
+            "text": "string",
+            "language": "nullable_string"
+          },
+          "optional": {}
+        },
+        "unresolved_region": {
+          "required": {
+            "reason": "string",
+            "evidence": "object"
+          },
+          "optional": {
+            "proposed_type": "string"
+          }
+        }
+      },
+      "closed_values": {
+        "heading.role": [
+          "title",
+          "part",
+          "chapter",
+          "section",
+          "subsection",
+          "subsubsection",
+          "other"
+        ],
+        "list.style": [
+          "numbered",
+          "lettered",
+          "roman",
+          "bullet",
+          "plain"
+        ],
+        "question.response_type": [
+          "structured",
+          "mcq",
+          "matching",
+          "true_false",
+          "fill_blank",
+          "fill_table",
+          "short_answer",
+          "calculation",
+          "essay",
+          "composition",
+          "translation",
+          "drawing",
+          "graph_plot",
+          "map_work",
+          "practical"
+        ],
+        "note.note_kind": [
+          "note",
+          "warning",
+          "definition",
+          "tip",
+          "reflection",
+          "other"
+        ],
+        "chemical_structure.format": [
+          "chemfig"
+        ]
+      }
+    },
+    "sha256": "674c70b94516fc4cb658d01a27b8e0c7b4fe313fefd4334471b00b88e9113587"
+  },
+  "metadata": {
+    "level": "acsee",
+    "subject": "biology",
+    "form": 6,
+    "title_printed": "Biology for Advanced Level Secondary Schools Student's Book Form Six",
+    "language": "en",
+    "edition_year_printed": "2019"
+  },
+  "source": {
+    "pdf": "acsee_biology_form_6.pdf",
+    "sha256": null,
+    "pdf_page_count": null,
+    "completeness": "unchecked"
+  },
+  "extraction": {
+    "method": "user_supplied_text",
+    "prompt_version": "book-text-light-import-1",
+    "requested_pdf_pages": [
+      25
+    ],
+    "front_details_in_scope": false,
+    "transcript_sources": [
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+        "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+      },
+      {
+        "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+        "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+      }
+    ],
+    "text_import_status": "imported_for_manual_review",
+    "geometry_status": "unavailable",
+    "images_status": "pending",
+    "runs": []
+  },
+  "pages": [
+    {
+      "pdf_page": 25,
+      "width_pt": null,
+      "height_pt": null,
+      "rotation": null,
+      "state": "transcribed",
+      "visual_qa": "pending",
+      "surfaces": [
+        {
+          "id": "s-p0025-01",
+          "order": 0,
+          "bbox_pt": null,
+          "printed_page": "18",
+          "printed_page_system": "arabic",
+          "printed_page_status": "observed",
+          "elements": [
+            {
+              "id": "e-p0025-001",
+              "type": "running_header",
+              "surface_id": "s-p0025-01",
+              "order": 0,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Biology for Advanced Level Secondary Schools",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Biology for Advanced Level Secondary Schools"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0025-002-image",
+              "type": "figure",
+              "surface_id": "s-p0025-01",
+              "order": 1,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "ref": "f-p0025-figure-1-10"
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0025-002",
+              "type": "caption",
+              "surface_id": "s-p0025-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Figure 1.10 Passive and Active transport of solutes across the cell membrane",
+                "target_refs": [
+                  "e-p0025-002-image"
+                ],
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Figure 1.10 Passive and Active transport of solutes across the cell membrane"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0025-004",
+              "type": "paragraph",
+              "surface_id": "s-p0025-01",
+              "order": 3,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "**Ion-channel proteins:** These are proteins in the cell membrane which form pores that allow ions to pass through and move to the cytosol or tonoplast. Their functions include establishing a resting membrane potential, shaping action potentials and other electrical signals by gating the flow of ions across the membrane. They are selective pores through which ions can diffuse easily across the cell membrane. Movement of ions inside the cell through ion-channels of membranes is passive. Ion-channel proteins are highly specific for one or certain types of ion species. This specificity partly depends on the size of the pore itself and the density of electric charges of the ions. However, these protein channels in the membrane are not open all the time but they are gated. The opening and closing of the gates is always in response to external stimuli. These include: voltage changes, light, hormone binding and ions themselves. When ion gates are open, the ions surrounding the membrane can diffuse passively through the channels and when they are closed ions are stopped to get inside the cell. It is important to note that, channel proteins have a sensing region which responds to the stimulus by changing the conformational shape of the protein thereby opening or closing the gate as summarized in Figure 1.11.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Ion-channel proteins:",
+                    "b": true
+                  },
+                  {
+                    "t": "text",
+                    "v": " These are proteins in the cell membrane which form pores that allow ions to pass through and move to the cytosol or tonoplast. Their functions include establishing a resting membrane potential, shaping action potentials and other electrical signals by gating the flow of ions across the membrane. They are selective pores through which ions can diffuse easily across the cell membrane. Movement of ions inside the cell through ion-channels of membranes is passive. Ion-channel proteins are highly specific for one or certain types of ion species. This specificity partly depends on the size of the pore itself and the density of electric charges of the ions. However, these protein channels in the membrane are not open all the time but they are gated. The opening and closing of the gates is always in response to external stimuli. These include: voltage changes, light, hormone binding and ions themselves. When ion gates are open, the ions surrounding the membrane can diffuse passively through the channels and when they are closed ions are stopped to get inside the cell. It is important to note that, channel proteins have a sensing region which responds to the stimulus by changing the conformational shape of the protein thereby opening or closing the gate as summarized in Figure 1.11."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0025-005",
+              "type": "paragraph",
+              "surface_id": "s-p0025-01",
+              "order": 4,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "Special techniques have been developed to detect electric current in the ion channels proteins. This is possible because these solutes in the form of ions carry a charge and their diffusion across the membrane channel establishes an electric current. A variety of channels exists in the membrane which may open in different voltage ranges or in response to different stimuli such as \\(\\ce{K+}\\) and \\(\\ce{Ca^{2+}}\\) concentrations. Protein channels which allow the influx of ions are called inward rectifying or inward channels and those which allow efflux are termed as outward rectifying or outward channels. For example, specific \\(\\ce{Ca^{2+}}\\) channels are inward rectifying while most anion channels are always outward. Most of the channel membrane proteins are described as inducible proteins because they are synthesized only when a particular solute is available for influx or efflux.",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Special techniques have been developed to detect electric current in the ion channels proteins. This is possible because these solutes in the form of ions carry a charge and their diffusion across the membrane channel establishes an electric current. A variety of channels exists in the membrane which may open in different voltage ranges or in response to different stimuli such as "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{K+}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " and "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{Ca^{2+}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " concentrations. Protein channels which allow the influx of ions are called inward rectifying or inward channels and those which allow efflux are termed as outward rectifying or outward channels. For example, specific "
+                  },
+                  {
+                    "t": "math",
+                    "v": "\\ce{Ca^{2+}}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " channels are inward rectifying while most anion channels are always outward. Most of the channel membrane proteins are described as inducible proteins because they are synthesized only when a particular solute is available for influx or efflux."
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0025-page-number",
+              "type": "page_number",
+              "surface_id": "s-p0025-01",
+              "order": 5,
+              "bbox_pt": null,
+              "group_refs": [],
+              "payload": {
+                "text": "18",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "18"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "groups": [],
+  "relations": [
+    {
+      "id": "r-e-p0025-002",
+      "kind": "caption_of",
+      "from_ref": "e-p0025-002",
+      "to_ref": "e-p0025-002-image",
+      "resolution": "resolved",
+      "printed_text": "Figure 1.10 Passive and Active transport of solutes across the cell membrane"
+    }
+  ],
+  "figures": [
+    {
+      "id": "f-p0025-figure-1-10",
+      "kind": "diagram",
+      "page": 25,
+      "surface_id": "s-p0025-01",
+      "bbox": null,
+      "bbox_norm": null,
+      "file": null,
+      "format": null,
+      "pixel_size": null,
+      "dpi": null,
+      "deskew_deg": null,
+      "used_by": [
+        "e-p0025-002-image"
+      ],
+      "printed_label": "Figure 1.10",
+      "description": null,
+      "crop_check": "pending",
+      "crop_issue": "Image not supplied",
+      "sha256": null,
+      "asset_status": "pending"
+    }
+  ],
+  "exclusions": [],
+  "review": [
+    {
+      "id": "review-p0025-001",
+      "issue": "text_import_unverified",
+      "pdf_page": 25,
+      "element_ref": null,
+      "detail": "Imported from supplied text, not checked against the PDF. PDF hash, total page count, geometry and bounding boxes are unavailable; images and manual review are pending.",
+      "resolved": false
+    }
+  ],
+  "stats": {
+    "pdf_pages": 1,
+    "surfaces": 1,
+    "elements": 6,
+    "types": {
+      "running_header": 1,
+      "figure": 1,
+      "caption": 1,
+      "paragraph": 2,
+      "page_number": 1
+    },
+    "figures": 1,
+    "open_issues": 1
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "book_id": "acsee-biology-form-6-text-import-8ffa8c688e45",
+  "pdf_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "elements": 333,
+  "pending_figures": 19,
+  "input_blocks": {
+    "HEADING": 57,
+    "COVER_DETAIL": 4,
+    "PUBLISHER_NOTICE": 2,
+    "OMITTED": 2,
+    "RUNNING_HEADER": 37,
+    "PARAGRAPH": 119,
+    "TOC": 2,
+    "CAPTION": 21,
+    "LIST": 10,
+    "TABLE": 2,
+    "QUESTION": 22
+  },
+  "converted_blocks": {
+    "HEADING": 57,
+    "COVER_DETAIL": 4,
+    "PUBLISHER_NOTICE": 2,
+    "OMITTED": 2,
+    "RUNNING_HEADER": 37,
+    "PARAGRAPH": 119,
+    "TOC": 2,
+    "CAPTION": 21,
+    "LIST": 10,
+    "TABLE": 2,
+    "QUESTION": 22
+  },
+  "source_pdf_available": false,
+  "pdf_visual_qa_performed": false,
+  "geometry_available": false,
+  "source_uploads": [
+    {
+      "file": "tie/output/acsee/biology/temp/text-import/pages-0001-0020.txt",
+      "sha256": "6211803ff1dd4f2bd504a4bbb25f2fa96fd58f7a9918b60ec08f7309136d9964"
+    },
+    {
+      "file": "tie/output/acsee/biology/temp/text-import/pages-0021-0040.txt",
+      "sha256": "8d19e8a7d4207d9395c3b3cd89942d6a233cf9dc81f18e425b506abd099c19fd"
+    }
+  ],
+  "table_reviews": [
+    {
+      "id": "review-p0016-002",
+      "issue": "table_rows_reconstructed",
+      "pdf_page": 16,
+      "element_ref": null,
+      "detail": "Table 1.1 lost row separators in the upload. Boundaries were reconstructed from text and must be checked against the PDF. Wording is unchanged.",
+      "resolved": false
+    }
+  ]
+}
