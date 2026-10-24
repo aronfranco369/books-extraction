@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -463,9 +463,7 @@
               "surface_id": "s-p0105-01",
               "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0105-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Archimedes' principle states that, \"Any object partially or totally immersed in a fluid experiences an upthrust equal to the weight of the fluid displaced by the object\".",
                 "note_kind": "definition",
@@ -484,9 +482,7 @@
               "surface_id": "s-p0105-01",
               "order": 4,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0105-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "It is important to note that the weight of an object acts downwards while the upthrust exerted by the displaced fluid acts upwards.",
                 "runs": [
@@ -504,9 +500,7 @@
               "surface_id": "s-p0105-01",
               "order": 5,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0105-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Verification of Archimedes' principle",
                 "level": 3,
@@ -526,9 +520,7 @@
               "surface_id": "s-p0105-01",
               "order": 6,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0105-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "To verify the Archimedes principle, perform the following activity.",
                 "runs": [
@@ -547,8 +539,7 @@
               "order": 7,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Activity 5.3",
@@ -570,8 +561,7 @@
               "order": 8,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Aim: To verify the Archimedes' Principle.",
@@ -591,8 +581,7 @@
               "order": 9,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Materials: Beaker, eureka can, spring balance, measuring cylinder, stone, water and digital balance.",
@@ -612,8 +601,7 @@
               "order": 10,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "ref": "f-p0105-001"
@@ -627,8 +615,7 @@
               "order": 11,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Figure 5.5: Experimental setup to verify Archimedes' principle",
@@ -651,8 +638,7 @@
               "order": 12,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Procedure",
@@ -672,8 +658,7 @@
               "order": 13,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "style": "numbered",
@@ -749,8 +734,7 @@
               "order": 14,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Questions",
@@ -772,8 +756,7 @@
               "order": 15,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Determine the mass of the displaced water.",
@@ -794,8 +777,7 @@
               "order": 16,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Calculate the weight of the displaced water.",
@@ -816,8 +798,7 @@
               "order": 17,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Calculate the upthrust exerted by water on the stone.",
@@ -838,8 +819,7 @@
               "order": 18,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "How does the upthrust relate to the weight of the displaced water?",
@@ -860,8 +840,7 @@
               "order": 19,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0105-001",
-                "g-p0105-002"
+                "g-p0105-001"
               ],
               "payload": {
                 "text": "Using the results from this activity and your own words, state the Archimedes' principle.",
@@ -901,39 +880,10 @@
   "groups": [
     {
       "id": "g-p0105-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0105-0004",
-        "e-p0105-0005",
-        "e-p0105-0006",
-        "e-p0105-0007",
-        "e-p0105-0008",
-        "e-p0105-0009",
-        "e-p0105-0010",
-        "e-p0105-0011",
-        "e-p0105-0012",
-        "e-p0105-0013",
-        "e-p0105-0014",
-        "e-p0105-0015",
-        "e-p0105-0016",
-        "e-p0105-0017",
-        "e-p0105-0018",
-        "e-p0105-0019",
-        "e-p0105-0020"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    },
-    {
-      "id": "g-p0105-002",
       "kind": "activity",
       "label_printed": "Activity 5.3",
       "title": "Activity 5.3",
-      "parent_ref": "g-p0105-001",
+      "parent_ref": null,
       "element_refs": [
         "e-p0105-0008",
         "e-p0105-0009",
@@ -997,14 +947,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0105-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 105,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -1025,6 +967,6 @@
       "page_number": 1
     },
     "figures": 1,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

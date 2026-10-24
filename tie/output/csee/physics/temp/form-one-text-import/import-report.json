@@ -1,5 +1,5 @@
 {
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "requested_pdf_pages": "1-232",
   "transcript_header_range": "1-240",
   "supplied_page_count": 232,
@@ -254,29 +254,31 @@
   "source_page_count_basis": "user_confirmed",
   "stale_filename_range": "1-240",
   "approved_import_scope": "1-232",
-  "source_transcript_sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7",
+  "source_transcript_sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26",
   "original_marker_blocks": {
     "PDF_PAGE": 232,
     "PRINTED_PAGE": 232,
     "HEADING": 372,
     "COVER_DETAIL": 4,
     "OMITTED": 3,
-    "END_PAGE": 232,
+    "END_PAGE": 231,
     "TOC": 2,
     "RUNNING_HEADER": 201,
-    "PARAGRAPH": 479,
-    "BEGIN": 181,
+    "PARAGRAPH": 463,
+    "BEGIN": 152,
+    "NOTE": 23,
     "END": 158,
     "CAPTION": 173,
     "INSTRUCTION": 77,
     "LIST": 103,
     "OBJECTIVES": 25,
     "MATERIALS": 3,
-    "QUESTION": 363,
+    "QUESTION": 368,
     "SOLUTION": 57,
     "TABLE": 26,
     "MCQ_OPTIONS": 34,
     "EQUATION": 100,
+    "SUMMARY": 5,
     "TASK": 9,
     "EXAMPLE": 35,
     "MATCHING": 3,
@@ -296,17 +298,19 @@
     "OMITTED": 3,
     "TOC": 2,
     "RUNNING_HEADER": 201,
-    "PARAGRAPH": 479,
+    "PARAGRAPH": 463,
+    "NOTE": 23,
     "CAPTION": 173,
     "INSTRUCTION": 77,
     "LIST": 103,
     "OBJECTIVES": 25,
     "MATERIALS": 3,
-    "QUESTION": 363,
-    "SOLUTION": 57,
+    "QUESTION": 368,
+    "SOLUTION": 73,
     "TABLE": 26,
     "MCQ_OPTIONS": 34,
     "EQUATION": 100,
+    "SUMMARY": 5,
     "TASK": 9,
     "EXAMPLE": 35,
     "MATCHING": 3,
@@ -324,17 +328,19 @@
     "OMITTED": 3,
     "TOC": 2,
     "RUNNING_HEADER": 201,
-    "PARAGRAPH": 479,
+    "PARAGRAPH": 463,
+    "NOTE": 23,
     "CAPTION": 173,
     "INSTRUCTION": 77,
     "LIST": 103,
     "OBJECTIVES": 25,
     "MATERIALS": 3,
-    "QUESTION": 363,
-    "SOLUTION": 57,
+    "QUESTION": 368,
+    "SOLUTION": 73,
     "TABLE": 26,
     "MCQ_OPTIONS": 34,
     "EQUATION": 100,
+    "SUMMARY": 5,
     "TASK": 9,
     "EXAMPLE": 35,
     "MATCHING": 3,
@@ -346,20 +352,19 @@
     "REFERENCE_LIST": 1,
     "ANSWER": 26
   },
-  "elements": 2526,
+  "elements": 2536,
   "pending_figures": 164,
-  "page_boundary_repairs": [],
+  "page_boundary_repairs": [
+    {
+      "pdf_page": 200,
+      "repair": "Inserted missing END_PAGE before next PDF_PAGE marker."
+    }
+  ],
   "math_encoding_repairs": [
     {
       "pdf_page": 38,
       "marker": "EQUATION",
-      "block_index": 355,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 41,
-      "marker": "SOLUTION",
-      "block_index": 395,
+      "block_index": 360,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
@@ -369,186 +374,187 @@
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
+      "pdf_page": 41,
+      "marker": "SOLUTION",
+      "block_index": 405,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
       "pdf_page": 45,
       "marker": "SOLUTION",
-      "block_index": 446,
+      "block_index": 451,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 47,
       "marker": "TABLE",
-      "block_index": 478,
+      "block_index": 483,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 51,
       "marker": "PARAGRAPH",
-      "block_index": 539,
+      "block_index": 544,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 55,
       "marker": "PARAGRAPH",
-      "block_index": 587,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 55,
-      "marker": "SOLUTION",
       "block_index": 592,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 55,
       "marker": "SOLUTION",
-      "block_index": 596,
+      "block_index": 597,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
-      "pdf_page": 201,
-      "marker": "EQUATION",
-      "block_index": 1892,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 201,
-      "marker": "EQUATION",
-      "block_index": 1893,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 202,
-      "marker": "PARAGRAPH",
-      "block_index": 1899,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 202,
-      "marker": "EQUATION",
-      "block_index": 1902,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 202,
-      "marker": "EQUATION",
-      "block_index": 1904,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 202,
-      "marker": "EQUATION",
-      "block_index": 1906,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 206,
+      "pdf_page": 55,
       "marker": "SOLUTION",
-      "block_index": 1942,
+      "block_index": 601,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 201,
+      "marker": "EQUATION",
+      "block_index": 1925,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 201,
+      "marker": "EQUATION",
+      "block_index": 1926,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 202,
+      "marker": "PARAGRAPH",
+      "block_index": 1932,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 202,
+      "marker": "EQUATION",
+      "block_index": 1935,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 202,
+      "marker": "EQUATION",
+      "block_index": 1937,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 202,
+      "marker": "EQUATION",
+      "block_index": 1939,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 206,
-      "marker": "EQUATION",
-      "block_index": 1946,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 207,
-      "marker": "PARAGRAPH",
-      "block_index": 1961,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 207,
-      "marker": "EQUATION",
-      "block_index": 1962,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 208,
       "marker": "SOLUTION",
       "block_index": 1975,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
-      "pdf_page": 209,
-      "marker": "SOLUTION",
+      "pdf_page": 206,
+      "marker": "EQUATION",
       "block_index": 1979,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
-      "pdf_page": 209,
+      "pdf_page": 207,
+      "marker": "PARAGRAPH",
+      "block_index": 1994,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 207,
+      "marker": "EQUATION",
+      "block_index": 1995,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 208,
       "marker": "SOLUTION",
-      "block_index": 1981,
+      "block_index": 2008,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 209,
       "marker": "SOLUTION",
-      "block_index": 1983,
+      "block_index": 2012,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 209,
+      "marker": "SOLUTION",
+      "block_index": 2014,
+      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
+    },
+    {
+      "pdf_page": 209,
+      "marker": "SOLUTION",
+      "block_index": 2016,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 211,
       "marker": "PARAGRAPH",
-      "block_index": 1998,
+      "block_index": 2031,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 211,
       "marker": "PARAGRAPH",
-      "block_index": 2002,
+      "block_index": 2035,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 212,
       "marker": "TABLE",
-      "block_index": 2009,
+      "block_index": 2042,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 212,
       "marker": "EQUATION",
-      "block_index": 2012,
+      "block_index": 2045,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 213,
       "marker": "SOLUTION",
-      "block_index": 2022,
+      "block_index": 2055,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 214,
       "marker": "SOLUTION",
-      "block_index": 2027,
+      "block_index": 2060,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 214,
       "marker": "SOLUTION",
-      "block_index": 2030,
+      "block_index": 2063,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     },
     {
       "pdf_page": 216,
       "marker": "QUESTION",
-      "block_index": 2043,
-      "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
-    },
-    {
-      "pdf_page": 228,
-      "marker": "ANSWER",
-      "block_index": 2102,
+      "block_index": 2076,
       "repair": "Restore escaped TeX control sequences: form-feed+rac, tab+imes, newline+ightarrow."
     }
   ],
   "review_counts": {
     "text_import_unverified": 232,
-    "group_boundary_in_transcript": 23,
-    "transcript_math_encoding_repaired": 32,
+    "group_boundary_in_transcript": 16,
+    "transcript_math_encoding_repaired": 31,
     "table_structure_needs_review": 3,
     "transcript_contents_heading_mismatch": 5,
-    "transcript_sequence_needs_source_review": 44
+    "transcript_sequence_needs_source_review": 44,
+    "page_boundary_repaired": 1
   }
 }

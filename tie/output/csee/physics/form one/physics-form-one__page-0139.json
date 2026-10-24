@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -421,13 +421,24 @@
             },
             {
               "id": "e-p0139-0002",
-              "type": "heading",
+              "type": "summary",
               "surface_id": "s-p0139-01",
               "order": 1,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0139-001"
-              ],
+              "group_refs": [],
+              "payload": {
+                "text": "",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0139-0003",
+              "type": "heading",
+              "surface_id": "s-p0139-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
               "payload": {
                 "text": "Chapter summary",
                 "level": 2,
@@ -442,14 +453,12 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0139-0003",
+              "id": "e-p0139-0004",
               "type": "list",
               "surface_id": "s-p0139-01",
-              "order": 2,
+              "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0139-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "style": "numbered",
                 "items": [
@@ -506,13 +515,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0139-0004",
+              "id": "e-p0139-0005",
               "type": "heading",
               "surface_id": "s-p0139-01",
-              "order": 3,
+              "order": 4,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0139-002"
+                "g-p0139-001"
               ],
               "payload": {
                 "text": "Revision exercise 6",
@@ -528,13 +537,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0139-0005",
+              "id": "e-p0139-0006",
               "type": "heading",
               "surface_id": "s-p0139-01",
-              "order": 4,
+              "order": 5,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0139-002"
+                "g-p0139-001"
               ],
               "payload": {
                 "text": "Section A",
@@ -550,31 +559,188 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0139-0006",
+              "id": "e-p0139-0007",
               "type": "question",
               "surface_id": "s-p0139-01",
-              "order": 5,
+              "order": 6,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0139-002"
+                "g-p0139-001"
               ],
               "payload": {
-                "text": "(i) Limit of proportionality on load-extension graph is point P. (ii) Material returning to original shape undergoes elastic deformation. (iii) Water level higher inside glass capillary tube due to adhesion. (iv) A weight of 2 N causes 6 cm extension; an 8 N weight causes 24 cm extension. (v) Reducing capillary tube radius increases capillary rise.",
+                "text": "Choose the most correct answer among the given options:",
                 "label_printed": "1.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "(i) Limit of proportionality on load-extension graph is point P. (ii) Material returning to original shape undergoes elastic deformation. (iii) Water level higher inside glass capillary tube due to adhesion. (iv) A weight of 2 N causes 6 cm extension; an 8 N weight causes 24 cm extension. (v) Reducing capillary tube radius increases capillary rise."
+                    "v": "Choose the most correct answer among the given options:"
                   }
                 ]
               },
               "legibility": "clear"
             },
             {
-              "id": "e-p0139-0007",
+              "id": "e-p0139-0008",
+              "type": "question",
+              "surface_id": "s-p0139-01",
+              "order": 7,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0139-001"
+              ],
+              "payload": {
+                "text": "The point beyond which a stretched spring does not return to its original length is called the: (a) elastic limit (b) yield point (c) breaking point (d) limit of proportionality",
+                "label_printed": "(i)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The point beyond which a stretched spring does not return to its original length is called the: (a) elastic limit (b) yield point (c) breaking point (d) limit of proportionality"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0139-0009",
+              "type": "question",
+              "surface_id": "s-p0139-01",
+              "order": 8,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0139-001"
+              ],
+              "payload": {
+                "text": "The property of a material to regain its original shape and size after the removal of a deforming force is known as: (a) plasticity (b) elasticity (c) viscosity (d) ductility",
+                "label_printed": "(ii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "The property of a material to regain its original shape and size after the removal of a deforming force is known as: (a) plasticity (b) elasticity (c) viscosity (d) ductility"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0139-0010",
+              "type": "question",
+              "surface_id": "s-p0139-01",
+              "order": 9,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0139-001"
+              ],
+              "payload": {
+                "text": "Water rises in a clean glass capillary tube because: (a) cohesive forces are greater than adhesive forces (b) adhesive forces between water and glass are greater than cohesive forces of water (c) surface tension pushes the water downward (d) gravity pulls water upward",
+                "label_printed": "(iii)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Water rises in a clean glass capillary tube because: (a) cohesive forces are greater than adhesive forces (b) adhesive forces between water and glass are greater than cohesive forces of water (c) surface tension pushes the water downward (d) gravity pulls water upward"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0139-0011",
+              "type": "question",
+              "surface_id": "s-p0139-01",
+              "order": 10,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0139-001"
+              ],
+              "payload": {
+                "text": "If a load of \\(2\\,\\mathrm{N}\\) causes an extension of \\(6\\,\\mathrm{cm}\\) in a spring obeying Hooke's law, what extension will be produced by a load of \\(8\\,\\mathrm{N}\\)? (a) \\(12\\,\\mathrm{cm}\\) (b) \\(18\\,\\mathrm{cm}\\) (c) \\(24\\,\\mathrm{cm}\\) (d) \\(30\\,\\mathrm{cm}\\)",
+                "label_printed": "(iv)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "If a load of "
+                  },
+                  {
+                    "t": "math",
+                    "v": "2\\,\\mathrm{N}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " causes an extension of "
+                  },
+                  {
+                    "t": "math",
+                    "v": "6\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " in a spring obeying Hooke's law, what extension will be produced by a load of "
+                  },
+                  {
+                    "t": "math",
+                    "v": "8\\,\\mathrm{N}"
+                  },
+                  {
+                    "t": "text",
+                    "v": "? (a) "
+                  },
+                  {
+                    "t": "math",
+                    "v": "12\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " (b) "
+                  },
+                  {
+                    "t": "math",
+                    "v": "18\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " (c) "
+                  },
+                  {
+                    "t": "math",
+                    "v": "24\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": " (d) "
+                  },
+                  {
+                    "t": "math",
+                    "v": "30\\,\\mathrm{cm}"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0139-0012",
+              "type": "question",
+              "surface_id": "s-p0139-01",
+              "order": 11,
+              "bbox_pt": null,
+              "group_refs": [
+                "g-p0139-001"
+              ],
+              "payload": {
+                "text": "Which of the following actions will increase the height of liquid rise in a capillary tube? (a) Increasing the diameter of the tube (b) Decreasing the diameter of the tube (c) Adding oil to the liquid (d) Heating the liquid",
+                "label_printed": "(v)",
+                "runs": [
+                  {
+                    "t": "text",
+                    "v": "Which of the following actions will increase the height of liquid rise in a capillary tube? (a) Increasing the diameter of the tube (b) Decreasing the diameter of the tube (c) Adding oil to the liquid (d) Heating the liquid"
+                  }
+                ]
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0139-0013",
               "type": "page_number",
               "surface_id": "s-p0139-01",
-              "order": 6,
+              "order": 12,
               "bbox_pt": null,
               "group_refs": [],
               "payload": {
@@ -596,28 +762,19 @@
   "groups": [
     {
       "id": "g-p0139-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "summary",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0139-0002",
-        "e-p0139-0003"
-      ],
-      "notes": [
-        "Transcript group: summary"
-      ]
-    },
-    {
-      "id": "g-p0139-002",
       "kind": "exercise",
       "label_printed": "Revision exercise 6",
       "title": "Revision exercise 6",
       "parent_ref": null,
       "element_refs": [
-        "e-p0139-0004",
         "e-p0139-0005",
-        "e-p0139-0006"
+        "e-p0139-0006",
+        "e-p0139-0007",
+        "e-p0139-0008",
+        "e-p0139-0009",
+        "e-p0139-0010",
+        "e-p0139-0011",
+        "e-p0139-0012"
       ],
       "notes": [
         "Transcript group: exercise"
@@ -641,6 +798,14 @@
       "issue": "group_boundary_in_transcript",
       "pdf_page": 139,
       "element_ref": null,
+      "detail": "Closing summary has no matching opening marker on this page. No printed text removed.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0139-003",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 139,
+      "element_ref": null,
       "detail": "Page ends with open groups: Revision exercise 6. Group memberships kept on this page only.",
       "resolved": false
     }
@@ -648,15 +813,16 @@
   "stats": {
     "pdf_pages": 1,
     "surfaces": 1,
-    "elements": 7,
+    "elements": 13,
     "types": {
       "running_header": 1,
+      "summary": 1,
       "heading": 3,
       "list": 1,
-      "question": 1,
+      "question": 6,
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 3
   }
 }

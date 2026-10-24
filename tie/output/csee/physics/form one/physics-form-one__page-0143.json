@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -425,9 +425,7 @@
               "surface_id": "s-p0143-01",
               "order": 1,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0143-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Pressure is defined as the force acting normally or perpendicularly per unit surface area of an object.",
                 "note_kind": "definition",
@@ -446,9 +444,7 @@
               "surface_id": "s-p0143-01",
               "order": 2,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0143-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "latex": "P = \\frac{F}{A}"
               },
@@ -460,9 +456,7 @@
               "surface_id": "s-p0143-01",
               "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0143-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The SI unit of pressure is newton per square metre (\\(\\mathrm{N\\,m^{-2}}\\)) or Pascal (Pa). Other units: 1 atm = \\(1.01 \\times 10^5\\,\\mathrm{Pa}\\) = 760 mmHg = 1 bar = 760 torr.",
                 "runs": [
@@ -497,8 +491,7 @@
               "order": 4,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0143-001",
-                "g-p0143-002"
+                "g-p0143-001"
               ],
               "payload": {
                 "text": "Activity 7.1",
@@ -520,8 +513,7 @@
               "order": 5,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0143-001",
-                "g-p0143-002"
+                "g-p0143-001"
               ],
               "payload": {
                 "text": "Aim: To demonstrate the concept of pressure using buckets with thin versus thick handles.",
@@ -541,8 +533,7 @@
               "order": 6,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0143-001",
-                "g-p0143-002"
+                "g-p0143-001"
               ],
               "payload": {
                 "text": "Lifting a heavy bucket with a thin handle exerts higher pressure on the hand causing pain; a thick handle increases surface area and reduces pressure.",
@@ -581,28 +572,10 @@
   "groups": [
     {
       "id": "g-p0143-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0143-0002",
-        "e-p0143-0003",
-        "e-p0143-0004",
-        "e-p0143-0005",
-        "e-p0143-0006",
-        "e-p0143-0007"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    },
-    {
-      "id": "g-p0143-002",
       "kind": "activity",
       "label_printed": "Activity 7.1",
       "title": "Activity 7.1",
-      "parent_ref": "g-p0143-001",
+      "parent_ref": null,
       "element_refs": [
         "e-p0143-0005",
         "e-p0143-0006",
@@ -624,14 +597,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0143-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 143,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -648,6 +613,6 @@
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

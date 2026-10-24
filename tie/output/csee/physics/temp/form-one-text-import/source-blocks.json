@@ -272,10 +272,9 @@
     "raw_content": "Physics is the fundamental branch of science that explores the principles governing the behaviour of matter and energy in the universe. Physics deals with very large objects like planets and very small ones like atoms. It also covers various of concepts, theories and principles that provide insights into the natural world and its interactions. In this chapter, you will learn the concepts, theories and principles of Physics. The competencies developed will enable you to apply the concepts, theories and principles of Physics to solve daily life problems. You will also be able to relate physics with other branches of natural sciences."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "reflection"
+      "kind": "reflection"
     },
     "raw_content": "Think\nhow our life could be without the interaction between matter and energy"
   },
@@ -1485,10 +1484,9 @@
     "raw_content": ""
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "note"
+      "kind": "note"
     },
     "raw_content": "Fact: In science we never prove a hypothesis through a single experiment because there is a chance that you made an error somewhere along the way. What you can say is that, your results support or do not support the original hypothesis."
   },
@@ -1937,10 +1935,9 @@
     "raw_content": "(a) Aim - Brief sentence describing the purpose of the experiment;\n(b) Apparatus - List of the apparatus or equipment;\n(c) Method - List of the steps followed to carry out the experiment;\n(d) Results - Tables, graphs and observations about the experiment;\n(e) Discussion - What your results mean; and\n(f) Conclusion - Brief sentence concluding whether or not the aim was achieved."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "note"
+      "kind": "note"
     },
     "raw_content": "Note: If your results do not support the hypothesis:\n(i) do not leave out the experimental results;\n(ii) suggest possible reasons for the difference between your hypothesis and the experimental results; and\n(iii) suggest ideas for further investigations to find answer to the problem."
   },
@@ -2410,10 +2407,9 @@
     "raw_content": "The principle of conservation of energy emphasises that the total energy in a system is conserved. This principle allows us to analyse complex systems, predict their behaviour, and understand how energy flows and transforms, providing a fundamental framework for understanding the physical world. The principle states that \"Energy can neither be created nor destroyed but it can be transformed from one form to another\"."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "note"
+      "kind": "note"
     },
     "raw_content": "ICT corner: To build scientific literacy use simulations or visit (SGR) https://phet.colorado.edu select the simulation titled pendulum lab and simulation titled curve fitting, to help students collect data, drawing graph and choose the best line of fit."
   },
@@ -2792,10 +2788,9 @@
     "raw_content": "Measurement is a word used in everyday life. We measure a piece of land in hectares or acres, and the circumference of a playground using a tape measure. In physics, accurate and precise measurements enable the collection of useful experimental data that can be tested against theoretical predictions to enhance the development of physical theories. In this chapter, you will learn the concept of measurement of physical quantities, the basic apparatus/equipment used in measurement and how to use them. The competencies developed will enable you to deal with measurements in different context."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "reflection"
+      "kind": "reflection"
     },
     "raw_content": "Think how our life could be without measurement"
   },
@@ -5719,10 +5714,9 @@
     "raw_content": "Figure 2.38: Reading the volume of the stone"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "note"
+      "kind": "note"
     },
     "raw_content": "The volume of solid objects with irregular shape can be determined by using immersion methods."
   },
@@ -6110,10 +6104,9 @@
     "raw_content": "1. Plan the design of the ruler considering the length and width you want to achieve.\n2. Carefully cut the base material (cardboard, wood, or plastic) to the desired length and shape of the ruler using scissors or a craft knife.\n3. Smoothen the edges and surface of the ruler using sandpaper to ensure there are no rough edges that could affect the accuracy of measurements.\n4. Using a standard measuring scale or an existing ruler, scale your ruler with proper graduations.\n5. Test the ruler by measuring various objects found in your environment to check its precision and correctness. Use a standard ruler as a reference.\n6. Share your product with others and discuss the process undertaken to design it.\n7. Establish the measurement error of your designed ruler."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "reflection"
+      "kind": "reflection"
     },
     "raw_content": "Reflection: How will the knowledge and skills gained in this project shape your daily life?"
   },
@@ -6125,10 +6118,9 @@
     "raw_content": ""
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "other"
+      "kind": "other"
     },
     "raw_content": "ICT corner: Visit https://phet.colorado.edu select the simulation involving measurements of various quantities like time, length"
   },
@@ -6157,10 +6149,8 @@
     "raw_content": "Measurement"
   },
   {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "summary"
-    },
+    "marker": "SUMMARY",
+    "attributes": {},
     "raw_content": ""
   },
   {
@@ -6788,10 +6778,9 @@
     "raw_content": "Where, \\(w\\) - Weight of object, \\(m\\) - Mass of object, \\(g\\) - Acceleration due to gravity."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Weight is defined as an attractive force acting on an object due to gravity."
   },
@@ -6974,7 +6963,7 @@
       "header_rows": "1",
       "label": "Table 3.1"
     },
-    "raw_content": "Object\tHard surface\tCushioned surface\tDifference in reading\nBook\t\t\t\nFruit\t\t\t\nStone\t\t\t\n10 g mass\t\t\t\n30 g mass"
+    "raw_content": "Object\tHard surface\tSpring readings Cushioned surface\tDifference in reading\nBook\t\t\t\nFruit\t\t\t\nStone\t\t\t\n10 g mass\t\t\t\n30 g mass"
   },
   {
     "marker": "QUESTION",
@@ -7843,10 +7832,8 @@
     "raw_content": "1. Discuss the four types of contact forces and the properties of each type. State their uses in everyday life.\n2. Hang two balloons on a wall side by side and allow them to touch each other. Rub each one of them with a dry cloth. What happens? Explain.\n3. Place a bar magnet on a smooth table and then bring another bar magnet near it. What happens? Explain.\n4. Starting with two bar magnets parallel to each other, rotate one bar magnet by 90° and bring it near the first magnet. What happens? Explain."
   },
   {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "summary"
-    },
+    "marker": "SUMMARY",
+    "attributes": {},
     "raw_content": ""
   },
   {
@@ -8488,11 +8475,11 @@
   {
     "marker": "TABLE",
     "attributes": {
-      "columns": "9",
+      "columns": "8",
       "header_rows": "2",
       "label": "Table 4.1"
     },
-    "raw_content": "MERGE row=1 col=1 rowspan=2 colspan=1\nMERGE row=1 col=2 rowspan=1 colspan=8\nSolids\tSubstance\tAluminium\tCopper\tGold\tIron\tLead\tGlass\tIce (0 °C)\n\tDensity (kg/m³)\t2 700\t8 800\t19 300\t7 800\t11 300\t2 500\t920\nLiquids\tSubstance\tSeawater\tWater (4 °C)\tWater (20 °C)\tGasoline / petrol\t\t\t\n\tDensity (kg/m³)\t1 030\t1 000\t998\t700\t\t\t\nGases\tSubstance\tAir (at standard conditions)\tCarbon dioxide\tHydrogen\tHelium\t\t\t\n\tDensity (kg/m³)\t1.225\t1.98\t0.820\t0.178"
+    "raw_content": "MERGE row=1 col=1 rowspan=2 colspan=1\nMERGE row=1 col=2 rowspan=1 colspan=7\nSolids\tSubstance\tAluminium\tCopper\tGold\tIron\tLead\tGlass\tIce (0 °C)\n\tDensity (kg/m³)\t2 700\t8 800\t19 300\t7 800\t11 300\t2 500\t920\nLiquids\tSubstance\tSeawater\tWater (4 °C)\tWater (20 °C)\tGasoline / petrol\t[[covered]]\t[[covered]]\t[[covered]]\n\tDensity (kg/m³)\t1 030\t1 000\t998\t700\t[[covered]]\t[[covered]]\t[[covered]]\nGases\tSubstance\tAir (at standard conditions)\tCarbon dioxide\tHydrogen\tHelium\t[[covered]]\t[[covered]]\t[[covered]]\n\tDensity (kg/m³)\t1.225\t1.98\t0.820\t0.178\t[[covered]]\t[[covered]]\t[[covered]]"
   },
   {
     "marker": "BEGIN",
@@ -9663,10 +9650,8 @@
     "raw_content": "Density and relative density"
   },
   {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "summary"
-    },
+    "marker": "SUMMARY",
+    "attributes": {},
     "raw_content": ""
   },
   {
@@ -10541,10 +10526,9 @@
     "raw_content": "If an object is immersed in water, it displaces some of the water. The relationship between the upthrust acting on a body and the weight of the displaced fluid, when the body is partially or totally immersed in the fluid was discovered by a Greek scientist known as Archimedes. This relationship is explained by Archimedes' principle, which is referred to as the law of buoyancy."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Archimedes' principle states that, \"Any object partially or totally immersed in a fluid experiences an upthrust equal to the weight of the fluid displaced by the object\"."
   },
@@ -11492,10 +11476,9 @@
     "raw_content": "Law of floatation"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "The law of floatation states that: \"A floating body displaces its own weight of the fluid in which it floats\"."
   },
@@ -12101,10 +12084,8 @@
     "raw_content": "Physics for Secondary Schools"
   },
   {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "summary"
-    },
+    "marker": "SUMMARY",
+    "attributes": {},
     "raw_content": ""
   },
   {
@@ -12347,14 +12328,6 @@
     "marker": "PRINTED_PAGE",
     "attributes": {
       "value": "120"
-    },
-    "raw_content": ""
-  },
-  {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "exercise",
-      "label": "Revision exercise 5 (continued)"
     },
     "raw_content": ""
   },
@@ -12607,10 +12580,9 @@
     "raw_content": "Physics for Secondary Schools"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Hooke's law states that: \"Provided the elastic limit is not exceeded, the extension is directly proportional to the force applied\"."
   },
@@ -12714,10 +12686,9 @@
     "raw_content": "Adhesion and cohesion"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Cohesion refers to the force of attraction between molecules of the same type, whereas adhesion refers to the force of attraction between molecules of different kinds."
   },
@@ -12843,10 +12814,9 @@
     "raw_content": "Surface tension"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Surface tension is defined as the property of the surface of a liquid that allows it to resist an external force due to the cohesive nature of its molecules."
   },
@@ -13053,10 +13023,9 @@
     "raw_content": "Capillarity"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Capillarity is defined as a phenomenon in which liquid rises or falls in a narrow space such as a thin tube or in voids of porous material without external forces."
   },
@@ -13175,10 +13144,8 @@
     "raw_content": "Mechanical properties of matter"
   },
   {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "summary"
-    },
+    "marker": "SUMMARY",
+    "attributes": {},
     "raw_content": ""
   },
   {
@@ -13232,7 +13199,42 @@
     "attributes": {
       "label": "1."
     },
-    "raw_content": "(i) Limit of proportionality on load-extension graph is point P.\n(ii) Material returning to original shape undergoes elastic deformation.\n(iii) Water level higher inside glass capillary tube due to adhesion.\n(iv) A weight of 2 N causes 6 cm extension; an 8 N weight causes 24 cm extension.\n(v) Reducing capillary tube radius increases capillary rise."
+    "raw_content": "Choose the most correct answer among the given options:"
+  },
+  {
+    "marker": "QUESTION",
+    "attributes": {
+      "label": "(i)"
+    },
+    "raw_content": "The point beyond which a stretched spring does not return to its original length is called the:\n(a) elastic limit\n(b) yield point\n(c) breaking point\n(d) limit of proportionality"
+  },
+  {
+    "marker": "QUESTION",
+    "attributes": {
+      "label": "(ii)"
+    },
+    "raw_content": "The property of a material to regain its original shape and size after the removal of a deforming force is known as:\n(a) plasticity\n(b) elasticity\n(c) viscosity\n(d) ductility"
+  },
+  {
+    "marker": "QUESTION",
+    "attributes": {
+      "label": "(iii)"
+    },
+    "raw_content": "Water rises in a clean glass capillary tube because:\n(a) cohesive forces are greater than adhesive forces\n(b) adhesive forces between water and glass are greater than cohesive forces of water\n(c) surface tension pushes the water downward\n(d) gravity pulls water upward"
+  },
+  {
+    "marker": "QUESTION",
+    "attributes": {
+      "label": "(iv)"
+    },
+    "raw_content": "If a load of \\(2\\,\\mathrm{N}\\) causes an extension of \\(6\\,\\mathrm{cm}\\) in a spring obeying Hooke's law, what extension will be produced by a load of \\(8\\,\\mathrm{N}\\)?\n(a) \\(12\\,\\mathrm{cm}\\)\n(b) \\(18\\,\\mathrm{cm}\\)\n(c) \\(24\\,\\mathrm{cm}\\)\n(d) \\(30\\,\\mathrm{cm}\\)"
+  },
+  {
+    "marker": "QUESTION",
+    "attributes": {
+      "label": "(v)"
+    },
+    "raw_content": "Which of the following actions will increase the height of liquid rise in a capillary tube?\n(a) Increasing the diameter of the tube\n(b) Decreasing the diameter of the tube\n(c) Adding oil to the liquid\n(d) Heating the liquid"
   },
   {
     "marker": "END_PAGE",
@@ -13259,6 +13261,14 @@
     "raw_content": "Physics for Secondary Schools"
   },
   {
+    "marker": "BEGIN",
+    "attributes": {
+      "kind": "exercise",
+      "label": "Revision exercise 6 (continued)"
+    },
+    "raw_content": ""
+  },
+  {
     "marker": "HEADING",
     "attributes": {
       "level": "3",
@@ -13271,14 +13281,14 @@
     "attributes": {
       "label": "2."
     },
-    "raw_content": "(a) State Hooke's law: \\(F = k e\\).\n(b) An object of mass 500 g (\\(F = 5\\,\\mathrm{N}\\)) on spring with \\(k = 20\\,\\mathrm{N\\,m^{-1}}\\):\n(i) Stretch \\(e = \\frac{5}{20} = 0.25\\,\\mathrm{m} = 25\\,\\mathrm{cm}\\).\n(ii) Mass that stretches spring to 35 cm: \\(F = 20 \\times 0.35 = 7\\,\\mathrm{N} \\implies m = 700\\,\\mathrm{g}\\)."
+    "raw_content": "(a) State Hooke's law of elasticity.\n(b) A mass of \\(500\\,\\mathrm{g}\\) is hung from a spiral spring whose spring constant is \\(20\\,\\mathrm{N\\,m^{-1}}\\).\n(i) Calculate the extension produced in the spring.\n(ii) Determine the mass required to produce an extension of \\(35\\,\\mathrm{cm}\\)."
   },
   {
     "marker": "QUESTION",
     "attributes": {
       "label": "3."
     },
-    "raw_content": "(a) Water wets glass because adhesion (water-glass) > cohesion (water-water). Mercury cohesion > adhesion."
+    "raw_content": "(a) Explain why water wets clean glass surfaces whereas mercury forms spherical droplets and does not wet glass.\n(b) Define capillarity and state two practical applications of capillarity in daily life."
   },
   {
     "marker": "END_PAGE",
@@ -13300,6 +13310,11 @@
     "raw_content": ""
   },
   {
+    "marker": "RUNNING_HEADER",
+    "attributes": {},
+    "raw_content": "Mechanical properties of matter"
+  },
+  {
     "marker": "BEGIN",
     "attributes": {
       "kind": "exercise",
@@ -13308,23 +13323,18 @@
     "raw_content": ""
   },
   {
-    "marker": "RUNNING_HEADER",
-    "attributes": {},
-    "raw_content": "Mechanical properties of matter"
-  },
-  {
     "marker": "QUESTION",
     "attributes": {
       "label": "4."
     },
-    "raw_content": "(a) Mosquitoes walk on water surface due to surface tension.\n(b) Soap reduces surface tension of water allowing deeper fabric penetration."
+    "raw_content": "(a) Why are small insects like mosquitoes able to walk on the surface of pond water without sinking?\n(b) Explain why washing clothes with soapy warm water is more effective than using cold plain water."
   },
   {
     "marker": "QUESTION",
     "attributes": {
-      "label": "9."
+      "label": "5."
     },
-    "raw_content": "A force of 9.6 N stretches a spring by 6 cm (\\(k = 1.6\\,\\mathrm{N\\,cm^{-1}}\\)). Force required to stretch by 15 cm: \\(F = 1.6 \\times 15 = 24\\,\\mathrm{N}\\)."
+    "raw_content": "A force of \\(9.6\\,\\mathrm{N}\\) stretches a helical spring by \\(6\\,\\mathrm{cm}\\). Assuming the elastic limit is not exceeded, calculate the force required to stretch the spring by \\(15\\,\\mathrm{cm}\\)."
   },
   {
     "marker": "END",
@@ -13412,10 +13422,9 @@
     "raw_content": "Pressure"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Pressure is defined as the force acting normally or perpendicularly per unit surface area of an object."
   },
@@ -14050,12 +14059,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "F_2 = F_1 \\times \\frac{A_2}{A_1} = 20\\,\\mathrm{N} \\times \\frac{0.8\\,\\mathrm{m^2}}{0.02\\,\\mathrm{m^2}} = 800\\,\\mathrm{N}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The force exerted on the large piston is \\(800\\,\\mathrm{N}\\)."
+    "raw_content": "F_2 = F_1 \\times \\frac{A_2}{A_1} = 20\\,\\mathrm{N} \\times \\frac{0.8\\,\\mathrm{m^2}}{0.02\\,\\mathrm{m^2}} = 800\\,\\mathrm{N}\nThe force exerted on the large piston is \\(800\\,\\mathrm{N}\\)."
   },
   {
     "marker": "END",
@@ -14217,10 +14221,9 @@
     "raw_content": "P_{\\mathrm{atm}} = 0.76\\,\\mathrm{m} \\times 13,600\\,\\mathrm{kg\\,m^{-3}} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\approx 1.013 \\times 10^5\\,\\mathrm{Pa}"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "Mercury is preferred over water in barometers because of its high density (\\(13,600\\,\\mathrm{kg\\,m^{-3}}\\)), requiring a tube length of less than \\(1\\,\\mathrm{m}\\). If water were used, a tube height of over \\(10.3\\,\\mathrm{m}\\) would be required because \\(h_{\\mathrm{water}} = \\frac{1.013 \\times 10^5}{1000 \\times 9.8} \\approx 10.34\\,\\mathrm{m}\\)."
   },
@@ -14571,10 +14574,9 @@
     "raw_content": "Where:\n- \\(W\\) is the work done in Joules (\\(\\mathrm{J}\\))\n- \\(F\\) is the constant force in Newtons (\\(\\mathrm{N}\\))\n- \\(d\\) is the displacement in metres (\\(\\mathrm{m}\\))"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "The SI unit of work is the **Joule** (\\(\\mathrm{J}\\)). One Joule is defined as the work done when a force of one Newton moves an object through a distance of one metre in the direction of the force:"
   },
@@ -14635,12 +14637,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "W = F \\times d = 150\\,\\mathrm{N} \\times 8\\,\\mathrm{m} = 1200\\,\\mathrm{J}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The work done on the box is \\(1200\\,\\mathrm{J}\\) (or \\(1.2\\,\\mathrm{kJ}\\))."
+    "raw_content": "W = F \\times d = 150\\,\\mathrm{N} \\times 8\\,\\mathrm{m} = 1200\\,\\mathrm{J}\nThe work done on the box is \\(1200\\,\\mathrm{J}\\) (or \\(1.2\\,\\mathrm{kJ}\\))."
   },
   {
     "marker": "END",
@@ -14670,12 +14667,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "W = F \\times h = 3920\\,\\mathrm{N} \\times 15\\,\\mathrm{m} = 58,800\\,\\mathrm{J} = 58.8\\,\\mathrm{kJ}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The work done by the crane is \\(58.8\\,\\mathrm{kJ}\\)."
+    "raw_content": "W = F \\times h = 3920\\,\\mathrm{N} \\times 15\\,\\mathrm{m} = 58,800\\,\\mathrm{J} = 58.8\\,\\mathrm{kJ}\nThe work done by the crane is \\(58.8\\,\\mathrm{kJ}\\)."
   },
   {
     "marker": "END",
@@ -14817,12 +14809,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "E_p = mgh = 2.5\\,\\mathrm{kg} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\times 4\\,\\mathrm{m} = 98\\,\\mathrm{J}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The gravitational potential energy of the stone is \\(98\\,\\mathrm{J}\\)."
+    "raw_content": "E_p = mgh = 2.5\\,\\mathrm{kg} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\times 4\\,\\mathrm{m} = 98\\,\\mathrm{J}\nThe gravitational potential energy of the stone is \\(98\\,\\mathrm{J}\\)."
   },
   {
     "marker": "END",
@@ -14875,12 +14862,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "E_k = 600 \\times 400 = 240,000\\,\\mathrm{J} = 240\\,\\mathrm{kJ}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The kinetic energy of the car is \\(240\\,\\mathrm{kJ}\\)."
+    "raw_content": "E_k = 600 \\times 400 = 240,000\\,\\mathrm{J} = 240\\,\\mathrm{kJ}\nThe kinetic energy of the car is \\(240\\,\\mathrm{kJ}\\)."
   },
   {
     "marker": "END",
@@ -14973,32 +14955,17 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "E_p = mgh = 0.8\\,\\mathrm{kg} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\times 10\\,\\mathrm{m} = 78.4\\,\\mathrm{J}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "(b) By conservation of energy, kinetic energy at the bottom equals initial potential energy:"
+    "raw_content": "E_p = mgh = 0.8\\,\\mathrm{kg} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\times 10\\,\\mathrm{m} = 78.4\\,\\mathrm{J}\n(b) By conservation of energy, kinetic energy at the bottom equals initial potential energy:"
   },
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "E_k = 78.4\\,\\mathrm{J}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "To find final velocity \\(v\\):"
+    "raw_content": "E_k = 78.4\\,\\mathrm{J}\nTo find final velocity \\(v\\):"
   },
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "\\frac{1}{2} m v^2 = E_k \\implies v = \\sqrt{\\frac{2 E_k}{m}} = \\sqrt{\\frac{2 \\times 78.4}{0.8}} = \\sqrt{196} = 14\\,\\mathrm{m\\,s^{-1}}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The coconut hits the ground with a speed of \\(14\\,\\mathrm{m\\,s^{-1}}\\)."
+    "raw_content": "\\frac{1}{2} m v^2 = E_k \\implies v = \\sqrt{\\frac{2 E_k}{m}} = \\sqrt{\\frac{2 \\times 78.4}{0.8}} = \\sqrt{196} = 14\\,\\mathrm{m\\,s^{-1}}\nThe coconut hits the ground with a speed of \\(14\\,\\mathrm{m\\,s^{-1}}\\)."
   },
   {
     "marker": "END",
@@ -15145,10 +15112,9 @@
     "raw_content": "Where:\n- \\(P\\) is power in Watts (\\(\\mathrm{W}\\))\n- \\(W\\) is work done in Joules (\\(\\mathrm{J}\\))\n- \\(t\\) is time taken in seconds (\\(\\mathrm{s}\\))"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "The SI unit of power is the **Watt** (\\(\\mathrm{W}\\)), named after Scottish engineer James Watt. One Watt is defined as the power developed when work is done at the rate of one Joule per second:"
   },
@@ -15214,22 +15180,12 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "P = \\frac{W}{t} = \\frac{45,000\\,\\mathrm{J}}{30\\,\\mathrm{s}} = 1500\\,\\mathrm{W}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "In Kilowatts:"
+    "raw_content": "P = \\frac{W}{t} = \\frac{45,000\\,\\mathrm{J}}{30\\,\\mathrm{s}} = 1500\\,\\mathrm{W}\nIn Kilowatts:"
   },
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "P = \\frac{1500\\,\\mathrm{W}}{1000} = 1.5\\,\\mathrm{kW}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The power output of the motor is \\(1500\\,\\mathrm{W}\\) (or \\(1.5\\,\\mathrm{kW}\\))."
+    "raw_content": "P = \\frac{1500\\,\\mathrm{W}}{1000} = 1.5\\,\\mathrm{kW}\nThe power output of the motor is \\(1500\\,\\mathrm{W}\\) (or \\(1.5\\,\\mathrm{kW}\\))."
   },
   {
     "marker": "END",
@@ -15259,22 +15215,12 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "W = mgh = 50\\,\\mathrm{kg} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\times 6\\,\\mathrm{m} = 2940\\,\\mathrm{J}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "Power developed:"
+    "raw_content": "W = mgh = 50\\,\\mathrm{kg} \\times 9.8\\,\\mathrm{N\\,kg^{-1}} \\times 6\\,\\mathrm{m} = 2940\\,\\mathrm{J}\nPower developed:"
   },
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "P = \\frac{W}{t} = \\frac{2940\\,\\mathrm{J}}{5\\,\\mathrm{s}} = 588\\,\\mathrm{W}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The student develops an average power of \\(588\\,\\mathrm{W}\\)."
+    "raw_content": "P = \\frac{W}{t} = \\frac{2940\\,\\mathrm{J}}{5\\,\\mathrm{s}} = 588\\,\\mathrm{W}\nThe student develops an average power of \\(588\\,\\mathrm{W}\\)."
   },
   {
     "marker": "END",
@@ -15796,22 +15742,12 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "m = \\frac{v}{u} = \\frac{0.2\\,\\mathrm{m}}{5\\,\\mathrm{m}} = 0.04"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "(b) Image height, \\(h_i\\):"
+    "raw_content": "m = \\frac{v}{u} = \\frac{0.2\\,\\mathrm{m}}{5\\,\\mathrm{m}} = 0.04\n(b) Image height, \\(h_i\\):"
   },
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "m = \\frac{h_i}{h_o} \\implies h_i = m \\times h_o = 0.04 \\times 10\\,\\mathrm{m} = 0.4\\,\\mathrm{m} = 40\\,\\mathrm{cm}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The image height formed on the screen is \\(40\\,\\mathrm{cm}\\)."
+    "raw_content": "m = \\frac{h_i}{h_o} \\implies h_i = m \\times h_o = 0.04 \\times 10\\,\\mathrm{m} = 0.4\\,\\mathrm{m} = 40\\,\\mathrm{cm}\nThe image height formed on the screen is \\(40\\,\\mathrm{cm}\\)."
   },
   {
     "marker": "END",
@@ -15886,10 +15822,9 @@
     "raw_content": "When light is reflected from a plane surface, it obeys two fundamental laws of reflection:"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "1. **First Law:** The incident ray, the reflected ray, and the normal at the point of incidence all lie in the same plane.\n2. **Second Law:** The angle of incidence (\\(i\\)) is equal to the angle of reflection (\\(r\\)):"
   },
@@ -16038,12 +15973,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "N = \\frac{360^\\circ}{\\theta} - 1 = \\frac{360^\\circ}{60^\\circ} - 1 = 6 - 1 = 5"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The number of images formed is \\(5\\)."
+    "raw_content": "N = \\frac{360^\\circ}{\\theta} - 1 = \\frac{360^\\circ}{60^\\circ} - 1 = 6 - 1 = 5\nThe number of images formed is \\(5\\)."
   },
   {
     "marker": "END",
@@ -16289,10 +16219,9 @@
     "raw_content": "Every magnet possesses two regions of concentrated magnetic strength called magnetic poles:\n- **North-seeking pole (North pole, N):** The pole that points towards the Earth's geographic North pole when freely suspended.\n- **South-seeking pole (South pole, S):** The pole that points towards the Earth's geographic South pole when freely suspended."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "**Fundamental Law of Magnetism:** Like magnetic poles repel each other, while unlike magnetic poles attract each other (North repels North, South repels South, but North attracts South)."
   },
@@ -16806,10 +16735,9 @@
     "raw_content": "There are two fundamental types of electric charge in nature:\n- **Positive charge (+):** Acquired by glass rubbed with silk (due to loss of electrons).\n- **Negative charge (-):** Acquired by ebonite or polythene rubbed with fur or wool (due to gain of electrons)."
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "**Fundamental Law of Electrostatics:** Like electric charges repel each other, while unlike electric charges attract each other."
   },
@@ -16965,10 +16893,9 @@
     "raw_content": "Where:\n- \\(I\\) is current in Amperes (\\(\\mathrm{A}\\))\n- \\(Q\\) is electric charge in Coulombs (\\(\\mathrm{C}\\))\n- \\(t\\) is time in seconds (\\(\\mathrm{s}\\))"
   },
   {
-    "marker": "BEGIN",
+    "marker": "NOTE",
     "attributes": {
-      "kind": "note",
-      "note_kind": "definition"
+      "kind": "definition"
     },
     "raw_content": "The SI unit of electric current is the **Ampere** (\\(\\mathrm{A}\\)). One Ampere is the current flowing when one Coulomb of charge passes through a conductor cross-section per second (\\(1\\,\\mathrm{A} = 1\\,\\mathrm{C\\,s^{-1}}\\))."
   },
@@ -17000,12 +16927,7 @@
   {
     "marker": "EQUATION",
     "attributes": {},
-    "raw_content": "Q = I \\times t = 0.5\\,\\mathrm{A} \\times 240\\,\\mathrm{s} = 120\\,\\mathrm{C}"
-  },
-  {
-    "marker": "PARAGRAPH",
-    "attributes": {},
-    "raw_content": "The electric charge passing through the bulb is \\(120\\,\\mathrm{Coulombs}\\)."
+    "raw_content": "Q = I \\times t = 0.5\\,\\mathrm{A} \\times 240\\,\\mathrm{s} = 120\\,\\mathrm{C}\nThe electric charge passing through the bulb is \\(120\\,\\mathrm{Coulombs}\\)."
   },
   {
     "marker": "END",
@@ -18041,11 +17963,6 @@
     "marker": "INDEX",
     "attributes": {},
     "raw_content": "Upthrust\t95-102\nVectors\t61-63\nVernier calliper\t35-38\nViscosity\t70-71\nVoltmeter\t178-179\nWatt\t157\nWork done\t151-152"
-  },
-  {
-    "marker": "END_PAGE",
-    "attributes": {},
-    "raw_content": ""
   },
   {
     "marker": "PDF_PAGE",
@@ -19507,14 +19424,6 @@
     "raw_content": ""
   },
   {
-    "marker": "BEGIN",
-    "attributes": {
-      "kind": "exercise",
-      "label": "Revision exercise 9 (continued)"
-    },
-    "raw_content": ""
-  },
-  {
     "marker": "RUNNING_HEADER",
     "attributes": {},
     "raw_content": "Work, energy and power"
@@ -20006,7 +19915,7 @@
     "attributes": {
       "label": "Revision exercise 7"
     },
-    "raw_content": "1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J\n4. (b) 0.34 m  7. 179 800 N/m²  10. 106.3 kPa  11. (a) \\(2.74 \times 10^{11}\\,\\mathrm{N}\\)  12. 3.265 cm, 153.125 N  15. 6 times\n[/ANSWER]"
+    "raw_content": "1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J\n4. (b) 0.34 m  7. 179 800 N/m²  10. 106.3 kPa  11. (a) 2.74 x 10^11 N  12. 3.265 cm, 153.125 N  15. 6 times\n[/ANSWER]"
   },
   {
     "marker": "END_PAGE",

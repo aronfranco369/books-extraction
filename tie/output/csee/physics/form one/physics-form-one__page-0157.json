@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -623,9 +623,7 @@
               "surface_id": "s-p0157-01",
               "order": 8,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0157-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The SI unit of work is the **Joule** (\\(\\mathrm{J}\\)). One Joule is defined as the work done when a force of one Newton moves an object through a distance of one metre in the direction of the force:",
                 "note_kind": "definition",
@@ -661,9 +659,7 @@
               "surface_id": "s-p0157-01",
               "order": 9,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0157-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "latex": "1\\,\\mathrm{J} = 1\\,\\mathrm{N\\,m} = 1\\,\\mathrm{kg\\,m^2\\,s^{-2}}"
               },
@@ -692,22 +688,7 @@
       ]
     }
   ],
-  "groups": [
-    {
-      "id": "g-p0157-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0157-0009",
-        "e-p0157-0010"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    }
-  ],
+  "groups": [],
   "relations": [],
   "figures": [],
   "exclusions": [],
@@ -730,6 +711,14 @@
     },
     {
       "id": "review-p0157-003",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 157,
+      "element_ref": null,
+      "detail": "Closing note has no matching opening marker on this page. No printed text removed.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0157-004",
       "issue": "transcript_sequence_needs_source_review",
       "pdf_page": 157,
       "element_ref": null,
@@ -749,6 +738,6 @@
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 3
+    "open_issues": 4
   }
 }

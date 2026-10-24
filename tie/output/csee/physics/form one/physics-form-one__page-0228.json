@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -525,20 +525,12 @@
               "bbox_pt": null,
               "group_refs": [],
               "payload": {
-                "text": "1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J 4. (b) 0.34 m 7. 179 800 N/m² 10. 106.3 kPa 11. (a) \\(2.74 \\times 10^{11}\\,\\mathrm{N}\\) 12. 3.265 cm, 153.125 N 15. 6 times [/ANSWER]",
+                "text": "1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J 4. (b) 0.34 m 7. 179 800 N/m² 10. 106.3 kPa 11. (a) 2.74 x 10^11 N 12. 3.265 cm, 153.125 N 15. 6 times [/ANSWER]",
                 "label_printed": "Revision exercise 7",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J 4. (b) 0.34 m 7. 179 800 N/m² 10. 106.3 kPa 11. (a) "
-                  },
-                  {
-                    "t": "math",
-                    "v": "2.74 \\times 10^{11}\\,\\mathrm{N}"
-                  },
-                  {
-                    "t": "text",
-                    "v": " 12. 3.265 cm, 153.125 N 15. 6 times [/ANSWER]"
+                    "v": "1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J 4. (b) 0.34 m 7. 179 800 N/m² 10. 106.3 kPa 11. (a) 2.74 x 10^11 N 12. 3.265 cm, 153.125 N 15. 6 times [/ANSWER]"
                   }
                 ]
               },
@@ -579,14 +571,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0228-002",
-      "issue": "transcript_math_encoding_repaired",
-      "pdf_page": 228,
-      "element_ref": null,
-      "detail": "Restored TeX commands damaged by string escaping in the uploaded text; original retained in source-blocks.json.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -599,6 +583,6 @@
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

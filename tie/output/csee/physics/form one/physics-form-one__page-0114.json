@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -445,9 +445,7 @@
               "surface_id": "s-p0114-01",
               "order": 2,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0114-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The law of floatation states that: \"A floating body displaces its own weight of the fluid in which it floats\".",
                 "note_kind": "definition",
@@ -467,8 +465,7 @@
               "order": 3,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Activity 5.7",
@@ -490,8 +487,7 @@
               "order": 4,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Aim: To investigate the relationship between upthrust and floatation.",
@@ -511,8 +507,7 @@
               "order": 5,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Material: Piece of wood, transparent beaker, water, spring balance, digital balance, weights",
@@ -532,8 +527,7 @@
               "order": 6,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "ref": "f-p0114-001"
@@ -547,8 +541,7 @@
               "order": 7,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Figure 5.8: Investigating upthrust and floatation",
@@ -571,8 +564,7 @@
               "order": 8,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Procedure",
@@ -592,8 +584,7 @@
               "order": 9,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "style": "numbered",
@@ -689,8 +680,7 @@
               "order": 10,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Questions",
@@ -712,8 +702,7 @@
               "order": 11,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "How the upthrust is related to the ability of the object to float?",
@@ -734,8 +723,7 @@
               "order": 12,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0114-001",
-                "g-p0114-002"
+                "g-p0114-001"
               ],
               "payload": {
                 "text": "Describe the conditions under which the object floats or sinks, based on the balance between the weight of the object and the upthrust.",
@@ -775,33 +763,10 @@
   "groups": [
     {
       "id": "g-p0114-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0114-0003",
-        "e-p0114-0004",
-        "e-p0114-0005",
-        "e-p0114-0006",
-        "e-p0114-0007",
-        "e-p0114-0008",
-        "e-p0114-0009",
-        "e-p0114-0010",
-        "e-p0114-0011",
-        "e-p0114-0012",
-        "e-p0114-0013"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    },
-    {
-      "id": "g-p0114-002",
       "kind": "activity",
       "label_printed": "Activity 5.7",
       "title": "Activity 5.7",
-      "parent_ref": "g-p0114-001",
+      "parent_ref": null,
       "element_refs": [
         "e-p0114-0004",
         "e-p0114-0005",
@@ -862,14 +827,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0114-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 114,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -890,6 +847,6 @@
       "page_number": 1
     },
     "figures": 1,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

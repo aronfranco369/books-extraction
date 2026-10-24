@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -445,9 +445,7 @@
               "surface_id": "s-p0131-01",
               "order": 2,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0131-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Cohesion refers to the force of attraction between molecules of the same type, whereas adhesion refers to the force of attraction between molecules of different kinds.",
                 "note_kind": "definition",
@@ -466,9 +464,7 @@
               "surface_id": "s-p0131-01",
               "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0131-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "ref": "f-p0131-001"
               },
@@ -480,9 +476,7 @@
               "surface_id": "s-p0131-01",
               "order": 4,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0131-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Figure 6.5: Shapes of menisci of mercury and water",
                 "target_refs": [
@@ -503,9 +497,7 @@
               "surface_id": "s-p0131-01",
               "order": 5,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0131-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Water forms a concave meniscus in glass because adhesion between water and glass is stronger than cohesion between water molecules. Mercury forms a convex meniscus because cohesion between mercury molecules is stronger than adhesion with glass.",
                 "runs": [
@@ -540,24 +532,7 @@
       ]
     }
   ],
-  "groups": [
-    {
-      "id": "g-p0131-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0131-0003",
-        "e-p0131-0004",
-        "e-p0131-0005",
-        "e-p0131-0006"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    }
-  ],
+  "groups": [],
   "relations": [
     {
       "id": "r-caption-e-p0131-0005",
@@ -601,14 +576,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0131-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 131,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -625,6 +592,6 @@
       "page_number": 1
     },
     "figures": 1,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

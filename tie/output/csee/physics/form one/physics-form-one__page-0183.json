@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -595,9 +595,7 @@
               "surface_id": "s-p0183-01",
               "order": 7,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0183-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The SI unit of electric current is the **Ampere** (\\(\\mathrm{A}\\)). One Ampere is the current flowing when one Coulomb of charge passes through a conductor cross-section per second (\\(1\\,\\mathrm{A} = 1\\,\\mathrm{C\\,s^{-1}}\\)).",
                 "note_kind": "definition",
@@ -642,7 +640,7 @@
               "order": 8,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0183-002"
+                "g-p0183-001"
               ],
               "payload": {
                 "text": "Calculate the electric charge that passes through a lamp bulb filament carrying a steady current of \\(0.5\\,\\mathrm{A}\\) for a period of \\(4\\,\\mathrm{minutes}\\).",
@@ -678,7 +676,7 @@
               "order": 9,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0183-002"
+                "g-p0183-001"
               ],
               "payload": {
                 "text": "Given: Current, \\(I = 0.5\\,\\mathrm{A}\\) Time, \\(t = 4\\,\\mathrm{minutes} = 4 \\times 60\\,\\mathrm{s} = 240\\,\\mathrm{s}\\) Charge, \\(Q\\):",
@@ -722,7 +720,7 @@
               "order": 10,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0183-002"
+                "g-p0183-001"
               ],
               "payload": {
                 "latex": "Q = I \\times t = 0.5\\,\\mathrm{A} \\times 240\\,\\mathrm{s} = 120\\,\\mathrm{C}"
@@ -731,12 +729,12 @@
             },
             {
               "id": "e-p0183-0012",
-              "type": "paragraph",
+              "type": "solution",
               "surface_id": "s-p0183-01",
               "order": 11,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0183-002"
+                "g-p0183-001"
               ],
               "payload": {
                 "text": "The electric charge passing through the bulb is \\(120\\,\\mathrm{Coulombs}\\).",
@@ -783,19 +781,6 @@
   "groups": [
     {
       "id": "g-p0183-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0183-0008"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    },
-    {
-      "id": "g-p0183-002",
       "kind": "example",
       "label_printed": "Example 11.1",
       "title": "Example 11.1",
@@ -825,6 +810,14 @@
     },
     {
       "id": "review-p0183-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 183,
+      "element_ref": null,
+      "detail": "Closing note has no matching opening marker on this page. No printed text removed.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0183-003",
       "issue": "transcript_sequence_needs_source_review",
       "pdf_page": 183,
       "element_ref": null,
@@ -839,13 +832,13 @@
     "types": {
       "running_header": 1,
       "heading": 2,
-      "paragraph": 5,
+      "paragraph": 4,
       "math": 2,
       "note": 1,
-      "solution": 1,
+      "solution": 2,
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 3
   }
 }

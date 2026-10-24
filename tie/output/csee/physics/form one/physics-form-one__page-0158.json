@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -515,7 +515,7 @@
             },
             {
               "id": "e-p0158-0005",
-              "type": "paragraph",
+              "type": "solution",
               "surface_id": "s-p0158-01",
               "order": 4,
               "bbox_pt": null,
@@ -653,7 +653,7 @@
             },
             {
               "id": "e-p0158-0009",
-              "type": "paragraph",
+              "type": "solution",
               "surface_id": "s-p0158-01",
               "order": 8,
               "bbox_pt": null,
@@ -818,8 +818,8 @@
     "elements": 12,
     "types": {
       "running_header": 1,
-      "paragraph": 5,
-      "solution": 2,
+      "paragraph": 3,
+      "solution": 4,
       "math": 2,
       "heading": 1,
       "page_number": 1

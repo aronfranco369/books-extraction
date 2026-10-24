@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -421,13 +421,24 @@
             },
             {
               "id": "e-p0061-0002",
-              "type": "heading",
+              "type": "summary",
               "surface_id": "s-p0061-01",
               "order": 1,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0061-001"
-              ],
+              "group_refs": [],
+              "payload": {
+                "text": "",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0061-0003",
+              "type": "heading",
+              "surface_id": "s-p0061-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
               "payload": {
                 "text": "Chapter summary",
                 "level": 3,
@@ -442,14 +453,12 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0061-0003",
+              "id": "e-p0061-0004",
               "type": "list",
               "surface_id": "s-p0061-01",
-              "order": 2,
+              "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0061-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "style": "numbered",
                 "items": [
@@ -614,10 +623,10 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0061-0004",
+              "id": "e-p0061-0005",
               "type": "page_number",
               "surface_id": "s-p0061-01",
-              "order": 3,
+              "order": 4,
               "bbox_pt": null,
               "group_refs": [],
               "payload": {
@@ -636,22 +645,7 @@
       ]
     }
   ],
-  "groups": [
-    {
-      "id": "g-p0061-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "summary",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0061-0002",
-        "e-p0061-0003"
-      ],
-      "notes": [
-        "Transcript group: summary"
-      ]
-    }
-  ],
+  "groups": [],
   "relations": [],
   "figures": [],
   "exclusions": [],
@@ -663,27 +657,20 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0061-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 61,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
     "pdf_pages": 1,
     "surfaces": 1,
-    "elements": 4,
+    "elements": 5,
     "types": {
       "running_header": 1,
+      "summary": 1,
       "heading": 1,
       "list": 1,
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

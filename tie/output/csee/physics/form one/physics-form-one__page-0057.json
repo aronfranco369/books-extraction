@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -549,9 +549,7 @@
               "surface_id": "s-p0057-01",
               "order": 7,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0057-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The volume of solid objects with irregular shape can be determined by using immersion methods.",
                 "note_kind": "note",
@@ -571,8 +569,7 @@
               "order": 8,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Activity 2.6",
@@ -594,8 +591,7 @@
               "order": 9,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Aim: To measure volume of an irregular object using a eureka can.",
@@ -615,8 +611,7 @@
               "order": 10,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Materials: eureka can, stone, water, beaker, measuring cylinder and string",
@@ -636,8 +631,7 @@
               "order": 11,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "ref": "f-p0057-003"
@@ -651,8 +645,7 @@
               "order": 12,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Figure 2.39",
@@ -675,8 +668,7 @@
               "order": 13,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Procedure:",
@@ -696,8 +688,7 @@
               "order": 14,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "style": "numbered",
@@ -753,8 +744,7 @@
               "order": 15,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Questions",
@@ -776,8 +766,7 @@
               "order": 16,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Why must the stone be tied and gently lowered into the water?",
@@ -798,8 +787,7 @@
               "order": 17,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0057-001",
-                "g-p0057-002"
+                "g-p0057-001"
               ],
               "payload": {
                 "text": "Why is the water in the eureka can displaced when the stone is immersed?",
@@ -819,9 +807,7 @@
               "surface_id": "s-p0057-01",
               "order": 18,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0057-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The stone is tied before lowering so that it can be gently lowered to prevent water from splashing. If water splashes wrong results may be recorded as the remaining water level would be lower than the spout level. It would also interfere with the volume to be measured.",
                 "runs": [
@@ -839,9 +825,7 @@
               "surface_id": "s-p0057-01",
               "order": 19,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0057-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The water in the eureka can is displaced so as to give room for the stone. The stone occupies a volume which is equal to the volume of water displaced.",
                 "runs": [
@@ -859,9 +843,7 @@
               "surface_id": "s-p0057-01",
               "order": 20,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0057-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "If the solid has an irregular shape such as a stone, it is submerged in a measuring cylinder containing water and the volume of water displaced is taken as the volume of the solid. Note that, the method of immersion can also be used to measure the volume of regular object.",
                 "runs": [
@@ -899,36 +881,10 @@
   "groups": [
     {
       "id": "g-p0057-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0057-0008",
-        "e-p0057-0009",
-        "e-p0057-0010",
-        "e-p0057-0011",
-        "e-p0057-0012",
-        "e-p0057-0013",
-        "e-p0057-0014",
-        "e-p0057-0015",
-        "e-p0057-0016",
-        "e-p0057-0017",
-        "e-p0057-0018",
-        "e-p0057-0019",
-        "e-p0057-0020",
-        "e-p0057-0021"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    },
-    {
-      "id": "g-p0057-002",
       "kind": "activity",
       "label_printed": "Activity 2.6",
       "title": "Activity 2.6",
-      "parent_ref": "g-p0057-001",
+      "parent_ref": null,
       "element_refs": [
         "e-p0057-0009",
         "e-p0057-0010",
@@ -1049,14 +1005,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0057-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 57,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -1077,6 +1025,6 @@
       "page_number": 1
     },
     "figures": 3,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -407,9 +407,7 @@
               "surface_id": "s-p0141-01",
               "order": 0,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0141-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Mechanical properties of matter",
                 "runs": [
@@ -431,12 +429,12 @@
                 "g-p0141-001"
               ],
               "payload": {
-                "text": "(a) Mosquitoes walk on water surface due to surface tension. (b) Soap reduces surface tension of water allowing deeper fabric penetration.",
+                "text": "(a) Why are small insects like mosquitoes able to walk on the surface of pond water without sinking? (b) Explain why washing clothes with soapy warm water is more effective than using cold plain water.",
                 "label_printed": "4.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "(a) Mosquitoes walk on water surface due to surface tension. (b) Soap reduces surface tension of water allowing deeper fabric penetration."
+                    "v": "(a) Why are small insects like mosquitoes able to walk on the surface of pond water without sinking? (b) Explain why washing clothes with soapy warm water is more effective than using cold plain water."
                   }
                 ]
               },
@@ -452,24 +450,32 @@
                 "g-p0141-001"
               ],
               "payload": {
-                "text": "A force of 9.6 N stretches a spring by 6 cm (\\(k = 1.6\\,\\mathrm{N\\,cm^{-1}}\\)). Force required to stretch by 15 cm: \\(F = 1.6 \\times 15 = 24\\,\\mathrm{N}\\).",
-                "label_printed": "9.",
+                "text": "A force of \\(9.6\\,\\mathrm{N}\\) stretches a helical spring by \\(6\\,\\mathrm{cm}\\). Assuming the elastic limit is not exceeded, calculate the force required to stretch the spring by \\(15\\,\\mathrm{cm}\\).",
+                "label_printed": "5.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "A force of 9.6 N stretches a spring by 6 cm ("
+                    "v": "A force of "
                   },
                   {
                     "t": "math",
-                    "v": "k = 1.6\\,\\mathrm{N\\,cm^{-1}}"
+                    "v": "9.6\\,\\mathrm{N}"
                   },
                   {
                     "t": "text",
-                    "v": "). Force required to stretch by 15 cm: "
+                    "v": " stretches a helical spring by "
                   },
                   {
                     "t": "math",
-                    "v": "F = 1.6 \\times 15 = 24\\,\\mathrm{N}"
+                    "v": "6\\,\\mathrm{cm}"
+                  },
+                  {
+                    "t": "text",
+                    "v": ". Assuming the elastic limit is not exceeded, calculate the force required to stretch the spring by "
+                  },
+                  {
+                    "t": "math",
+                    "v": "15\\,\\mathrm{cm}"
                   },
                   {
                     "t": "text",
@@ -510,7 +516,6 @@
       "title": "Revision exercise 6 (continued)",
       "parent_ref": null,
       "element_refs": [
-        "e-p0141-0001",
         "e-p0141-0002",
         "e-p0141-0003"
       ],

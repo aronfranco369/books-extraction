@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -425,7 +425,9 @@
               "surface_id": "s-p0140-01",
               "order": 1,
               "bbox_pt": null,
-              "group_refs": [],
+              "group_refs": [
+                "g-p0140-001"
+              ],
               "payload": {
                 "text": "Section B",
                 "level": 3,
@@ -445,50 +447,36 @@
               "surface_id": "s-p0140-01",
               "order": 2,
               "bbox_pt": null,
-              "group_refs": [],
+              "group_refs": [
+                "g-p0140-001"
+              ],
               "payload": {
-                "text": "(a) State Hooke's law: \\(F = k e\\). (b) An object of mass 500 g (\\(F = 5\\,\\mathrm{N}\\)) on spring with \\(k = 20\\,\\mathrm{N\\,m^{-1}}\\): (i) Stretch \\(e = \\frac{5}{20} = 0.25\\,\\mathrm{m} = 25\\,\\mathrm{cm}\\). (ii) Mass that stretches spring to 35 cm: \\(F = 20 \\times 0.35 = 7\\,\\mathrm{N} \\implies m = 700\\,\\mathrm{g}\\).",
+                "text": "(a) State Hooke's law of elasticity. (b) A mass of \\(500\\,\\mathrm{g}\\) is hung from a spiral spring whose spring constant is \\(20\\,\\mathrm{N\\,m^{-1}}\\). (i) Calculate the extension produced in the spring. (ii) Determine the mass required to produce an extension of \\(35\\,\\mathrm{cm}\\).",
                 "label_printed": "2.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "(a) State Hooke's law: "
+                    "v": "(a) State Hooke's law of elasticity. (b) A mass of "
                   },
                   {
                     "t": "math",
-                    "v": "F = k e"
+                    "v": "500\\,\\mathrm{g}"
                   },
                   {
                     "t": "text",
-                    "v": ". (b) An object of mass 500 g ("
+                    "v": " is hung from a spiral spring whose spring constant is "
                   },
                   {
                     "t": "math",
-                    "v": "F = 5\\,\\mathrm{N}"
+                    "v": "20\\,\\mathrm{N\\,m^{-1}}"
                   },
                   {
                     "t": "text",
-                    "v": ") on spring with "
+                    "v": ". (i) Calculate the extension produced in the spring. (ii) Determine the mass required to produce an extension of "
                   },
                   {
                     "t": "math",
-                    "v": "k = 20\\,\\mathrm{N\\,m^{-1}}"
-                  },
-                  {
-                    "t": "text",
-                    "v": ": (i) Stretch "
-                  },
-                  {
-                    "t": "math",
-                    "v": "e = \\frac{5}{20} = 0.25\\,\\mathrm{m} = 25\\,\\mathrm{cm}"
-                  },
-                  {
-                    "t": "text",
-                    "v": ". (ii) Mass that stretches spring to 35 cm: "
-                  },
-                  {
-                    "t": "math",
-                    "v": "F = 20 \\times 0.35 = 7\\,\\mathrm{N} \\implies m = 700\\,\\mathrm{g}"
+                    "v": "35\\,\\mathrm{cm}"
                   },
                   {
                     "t": "text",
@@ -504,14 +492,16 @@
               "surface_id": "s-p0140-01",
               "order": 3,
               "bbox_pt": null,
-              "group_refs": [],
+              "group_refs": [
+                "g-p0140-001"
+              ],
               "payload": {
-                "text": "(a) Water wets glass because adhesion (water-glass) > cohesion (water-water). Mercury cohesion > adhesion.",
+                "text": "(a) Explain why water wets clean glass surfaces whereas mercury forms spherical droplets and does not wet glass. (b) Define capillarity and state two practical applications of capillarity in daily life.",
                 "label_printed": "3.",
                 "runs": [
                   {
                     "t": "text",
-                    "v": "(a) Water wets glass because adhesion (water-glass) > cohesion (water-water). Mercury cohesion > adhesion."
+                    "v": "(a) Explain why water wets clean glass surfaces whereas mercury forms spherical droplets and does not wet glass. (b) Define capillarity and state two practical applications of capillarity in daily life."
                   }
                 ]
               },
@@ -540,7 +530,23 @@
       ]
     }
   ],
-  "groups": [],
+  "groups": [
+    {
+      "id": "g-p0140-001",
+      "kind": "exercise",
+      "label_printed": "Revision exercise 6 (continued)",
+      "title": "Revision exercise 6 (continued)",
+      "parent_ref": null,
+      "element_refs": [
+        "e-p0140-0002",
+        "e-p0140-0003",
+        "e-p0140-0004"
+      ],
+      "notes": [
+        "Transcript group: exercise"
+      ]
+    }
+  ],
   "relations": [],
   "figures": [],
   "exclusions": [],
@@ -551,6 +557,14 @@
       "pdf_page": 140,
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
+      "resolved": false
+    },
+    {
+      "id": "review-p0140-002",
+      "issue": "group_boundary_in_transcript",
+      "pdf_page": 140,
+      "element_ref": null,
+      "detail": "Page ends with open groups: Revision exercise 6 (continued). Group memberships kept on this page only.",
       "resolved": false
     }
   ],
@@ -565,6 +579,6 @@
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 1
+    "open_issues": 2
   }
 }

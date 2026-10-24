@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -648,14 +648,17 @@
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     }
                   ],
@@ -711,14 +714,17 @@
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     }
                   ],
@@ -779,14 +785,17 @@
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     }
                   ],
@@ -842,14 +851,17 @@
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     },
                     {
                       "text": "",
+                      "source_printed": "[[covered]]",
                       "runs": []
                     }
                   ]
@@ -859,7 +871,7 @@
               "legibility": "clear",
               "notes": [
                 "Unverified source merge directive: MERGE row=1 col=1 rowspan=2 colspan=1",
-                "Unverified source merge directive: MERGE row=1 col=2 rowspan=1 colspan=8"
+                "Unverified source merge directive: MERGE row=1 col=2 rowspan=1 colspan=7"
               ]
             },
             {

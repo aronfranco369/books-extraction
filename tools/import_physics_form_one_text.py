@@ -94,8 +94,8 @@ def convert():
                     yield 'END_PAGE',{},''
                 open_page=int(attrs['value'])
             elif kind=='END_PAGE':open_page=None
-            if kind=='EQUATION' and re.search(r'\n\s*\n',content):
-                parts=re.split(r'\n\s*\n',content)
+            if kind=='EQUATION':
+                parts=re.split(r'\n\s*\n|\n(?=(?:The\b|To\b|In Kilowatts|Power developed|Work done|\([a-z]\)))',content)
                 yield kind,attrs,parts[0]
                 for part in parts[1:]:
                     # Untagged solution prose follows equations in this upload.

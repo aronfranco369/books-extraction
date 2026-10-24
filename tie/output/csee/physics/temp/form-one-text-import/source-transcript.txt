@@ -7,14 +7,10 @@ Requested PDF pages: 1-240
 Printed title observed: Physics for Secondary Schools Student's Book Form One
 Language observed: English
 Edition or year observed: Revised 2023
-Structural & Conversion Notes:
-- Page Scope: The source PDF completes on physical PDF page 232 (printed page 226). Physical pages 233-240 are absent in the source textbook.
-- Chapter Structure Mismatch: The Table of Contents (PDF pages 3-4) lists 9 chapters ending with Chapter 8 (Linear motion) and Chapter 9 (Work, energy, and power). In the body text, physical page 157 introduces Chapter 8 as 'Work, Energy and Power', and physical pages 167-187 introduce 'Chapter Nine: Light', 'Chapter Ten: Magnetism', 'Chapter Eleven: Introduction to Electricity', and 'Chapter Twelve: Form One Revision Questions and Practice Test', before page 201 resumes 'Chapter Nine: Work, energy, and power'. Source text is retained as printed with this discrepancy documented.
-- Repeated Book Endings: PDF pages 196-200 contain a Glossary and Index ending with 'Index & End of Form One Textbook'. Physical page 201 then resumes 'Chapter Nine: Work, energy, and power', followed by a second Glossary (PDF page 219), Bibliography (PDF page 224), Answers (PDF page 225), and Index (PDF pages 231-232). All text is retained in original order.
-- Delimiter Repair: Page 200 was missing its [END_PAGE] delimiter before [PDF_PAGE 201]; [END_PAGE] tag has been inserted.
-- Group Marker Pairs: All [NOTE] blocks updated to [BEGIN NOTE]...[END NOTE], [BEGIN SUMMARY] blocks updated to [BEGIN SUMMARY]...[END SUMMARY], and multi-page exercises provided with page-level [BEGIN EXERCISE] continuation markers so all 12 closing markers have matching openings.
-- Equation & LaTeX Repairs: Displayed equations isolated into pure 1-line [EQUATION] blocks with solution prose separated into [PARAGRAPH] blocks. All TeX math control sequences (rac, 	imes, \implies, \mathrm, etc.) repaired.
-- Table Layouts: Table 3.1 (PDF page 69) header split into 4 clean columns; Table 4.1 (PDF page 85) updated to 9 columns with aligned MERGE directives and clean rectangular grid; Table 4.2 aligned to 7 columns.
+Structural notes:
+- Table of Contents lists 9 chapters (Chapters 1-9 ending with Work, Energy and Power).
+- In pages 167-187, printed headings introduce Light, Magnetism, Electricity, and Practice Test as Chapters 9-12, before page 201 resumes Chapter 9 (Work, Energy and Power). Source text is retained as printed with this structural inconsistency flagged.
+- Displayed equations are isolated in [EQUATION] blocks and unmarked solution prose separated into [SOLUTION] / [PARAGRAPH] blocks for correct LaTeX rendering.
 
 [PDF_PAGE 1]
 [PRINTED_PAGE not_printed]
@@ -176,7 +172,7 @@ Introduction
 [PARAGRAPH]
 Physics is the fundamental branch of science that explores the principles governing the behaviour of matter and energy in the universe. Physics deals with very large objects like planets and very small ones like atoms. It also covers various of concepts, theories and principles that provide insights into the natural world and its interactions. In this chapter, you will learn the concepts, theories and principles of Physics. The competencies developed will enable you to apply the concepts, theories and principles of Physics to solve daily life problems. You will also be able to relate physics with other branches of natural sciences.
 
-[BEGIN NOTE kind=reflection]
+[NOTE kind=reflection]
 Think
 how our life could be without the interaction between matter and energy
 
@@ -688,7 +684,7 @@ You notice that some metal objects left outside during a cold night feel much co
 
 [END TASK]
 
-[BEGIN NOTE kind=note]
+[NOTE kind=note]
 Fact: In science we never prove a hypothesis through a single experiment because there is a chance that you made an error somewhere along the way. What you can say is that, your results support or do not support the original hypothesis.
 
 [HEADING level=4 role=other]
@@ -891,7 +887,7 @@ Scientists communicate their results to others in a final scientific report. It 
 (e) Discussion - What your results mean; and
 (f) Conclusion - Brief sentence concluding whether or not the aim was achieved.
 
-[BEGIN NOTE kind=note]
+[NOTE kind=note]
 Note: If your results do not support the hypothesis:
 (i) do not leave out the experimental results;
 (ii) suggest possible reasons for the difference between your hypothesis and the experimental results; and
@@ -1097,7 +1093,7 @@ The principle of conservation of energy
 [PARAGRAPH]
 The principle of conservation of energy emphasises that the total energy in a system is conserved. This principle allows us to analyse complex systems, predict their behaviour, and understand how energy flows and transforms, providing a fundamental framework for understanding the physical world. The principle states that "Energy can neither be created nor destroyed but it can be transformed from one form to another".
 
-[BEGIN NOTE kind=note]
+[NOTE kind=note]
 ICT corner: To build scientific literacy use simulations or visit (SGR) https://phet.colorado.edu select the simulation titled pendulum lab and simulation titled curve fitting, to help students collect data, drawing graph and choose the best line of fit.
 
 [HEADING level=2 role=section]
@@ -1271,7 +1267,7 @@ Introduction
 [PARAGRAPH]
 Measurement is a word used in everyday life. We measure a piece of land in hectares or acres, and the circumference of a playground using a tape measure. In physics, accurate and precise measurements enable the collection of useful experimental data that can be tested against theoretical predictions to enhance the development of physical theories. In this chapter, you will learn the concept of measurement of physical quantities, the basic apparatus/equipment used in measurement and how to use them. The competencies developed will enable you to deal with measurements in different context.
 
-[BEGIN NOTE kind=reflection]
+[NOTE kind=reflection]
 Think how our life could be without measurement
 
 [HEADING level=2 role=section]
@@ -2563,7 +2559,7 @@ Figure 2.37: Water displaced
 [CAPTION label="Figure 2.38"]
 Figure 2.38: Reading the volume of the stone
 
-[BEGIN NOTE kind=note]
+[NOTE kind=note]
 The volume of solid objects with irregular shape can be determined by using immersion methods.
 
 [BEGIN ACTIVITY label="Activity 2.6"]
@@ -2736,11 +2732,11 @@ Procedure:
 6. Share your product with others and discuss the process undertaken to design it.
 7. Establish the measurement error of your designed ruler.
 
-[BEGIN NOTE kind=reflection]
+[NOTE kind=reflection]
 Reflection: How will the knowledge and skills gained in this project shape your daily life?
 [END PROJECT]
 
-[BEGIN NOTE kind=other]
+[NOTE kind=other]
 ICT corner: Visit https://phet.colorado.edu select the simulation involving measurements of various quantities like time, length
 
 [END_PAGE]
@@ -2751,7 +2747,7 @@ ICT corner: Visit https://phet.colorado.edu select the simulation involving meas
 [RUNNING_HEADER]
 Measurement
 
-[BEGIN SUMMARY]
+[SUMMARY]
 [HEADING level=3 role=other]
 Chapter summary
 
@@ -3031,7 +3027,7 @@ w = mg
 [PARAGRAPH]
 Where, \(w\) - Weight of object, \(m\) - Mass of object, \(g\) - Acceleration due to gravity.
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Weight is defined as an attractive force acting on an object due to gravity.
 
 [PARAGRAPH]
@@ -3126,7 +3122,7 @@ Procedure
 9. Present your results using Table 3.1.
 
 [TABLE columns=4 header_rows=1 label="Table 3.1"]
-Object	Hard surface	Cushioned surface	Difference in reading
+Object	Hard surface	Spring readings Cushioned surface	Difference in reading
 Book			
 Fruit			
 Stone			
@@ -3537,7 +3533,7 @@ Introduction to force
 3. Place a bar magnet on a smooth table and then bring another bar magnet near it. What happens? Explain.
 4. Starting with two bar magnets parallel to each other, rotate one bar magnet by 90° and bring it near the first magnet. What happens? Explain.
 
-[BEGIN SUMMARY]
+[SUMMARY]
 [HEADING level=3 role=other]
 Chapter summary
 
@@ -3844,15 +3840,15 @@ On the other hand, the vertical line that separates \(\rho\) and \(V\) represent
 [RUNNING_HEADER]
 Density and relative density
 
-[TABLE columns=9 header_rows=2 label="Table 4.1"]
+[TABLE columns=8 header_rows=2 label="Table 4.1"]
 MERGE row=1 col=1 rowspan=2 colspan=1
-MERGE row=1 col=2 rowspan=1 colspan=8
+MERGE row=1 col=2 rowspan=1 colspan=7
 Solids	Substance	Aluminium	Copper	Gold	Iron	Lead	Glass	Ice (0 °C)
 	Density (kg/m³)	2 700	8 800	19 300	7 800	11 300	2 500	920
-Liquids	Substance	Seawater	Water (4 °C)	Water (20 °C)	Gasoline / petrol			
-	Density (kg/m³)	1 030	1 000	998	700			
-Gases	Substance	Air (at standard conditions)	Carbon dioxide	Hydrogen	Helium			
-	Density (kg/m³)	1.225	1.98	0.820	0.178			
+Liquids	Substance	Seawater	Water (4 °C)	Water (20 °C)	Gasoline / petrol	[[covered]]	[[covered]]	[[covered]]
+	Density (kg/m³)	1 030	1 000	998	700	[[covered]]	[[covered]]	[[covered]]
+Gases	Substance	Air (at standard conditions)	Carbon dioxide	Hydrogen	Helium	[[covered]]	[[covered]]	[[covered]]
+	Density (kg/m³)	1.225	1.98	0.820	0.178	[[covered]]	[[covered]]	[[covered]]
 
 [BEGIN ACTIVITY label="Activity 4.1"]
 [HEADING level=3 role=other]
@@ -4427,7 +4423,7 @@ Density and relative density has many applications in everyday life, including t
 [RUNNING_HEADER]
 Density and relative density
 
-[BEGIN SUMMARY]
+[SUMMARY]
 [HEADING level=3 role=other]
 Chapter summary
 
@@ -4824,7 +4820,7 @@ Archimedes' Principle
 [PARAGRAPH]
 If an object is immersed in water, it displaces some of the water. The relationship between the upthrust acting on a body and the weight of the displaced fluid, when the body is partially or totally immersed in the fluid was discovered by a Greek scientist known as Archimedes. This relationship is explained by Archimedes' principle, which is referred to as the law of buoyancy.
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Archimedes' principle states that, "Any object partially or totally immersed in a fluid experiences an upthrust equal to the weight of the fluid displaced by the object".
 
 [PARAGRAPH]
@@ -5254,7 +5250,7 @@ Physics for Secondary Schools
 [HEADING level=2 role=section]
 Law of floatation
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 The law of floatation states that: "A floating body displaces its own weight of the fluid in which it floats".
 
 [BEGIN ACTIVITY label="Activity 5.7"]
@@ -5502,7 +5498,7 @@ By law of floatation: \(1.0 \times V_1 = 0.8 \times (V_1 + 8) \implies 0.2 V_1 =
 [RUNNING_HEADER]
 Physics for Secondary Schools
 
-[BEGIN SUMMARY]
+[SUMMARY]
 [HEADING level=2 role=section]
 Chapter summary
 
@@ -5609,8 +5605,6 @@ Two balanced objects in air become unbalanced when submerged in water. Explain w
 [PDF_PAGE 126]
 [PRINTED_PAGE 120]
 
-[BEGIN EXERCISE label="Revision exercise 5 (continued)"]
-
 [RUNNING_HEADER]
 Physics for Secondary Schools
 
@@ -5711,7 +5705,7 @@ For portion OA, tension is directly proportional to extension. Point B represent
 [RUNNING_HEADER]
 Physics for Secondary Schools
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Hooke's law states that: "Provided the elastic limit is not exceeded, the extension is directly proportional to the force applied".
 
 [EQUATION]
@@ -5753,7 +5747,7 @@ Mechanical properties of matter
 [HEADING level=2 role=section]
 Adhesion and cohesion
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Cohesion refers to the force of attraction between molecules of the same type, whereas adhesion refers to the force of attraction between molecules of different kinds.
 
 [CAPTION label="Figure 6.5"]
@@ -5805,7 +5799,7 @@ Mechanical properties of matter
 [HEADING level=2 role=section]
 Surface tension
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Surface tension is defined as the property of the surface of a liquid that allows it to resist an external force due to the cohesive nature of its molecules.
 
 [CAPTION label="Figure 6.6"]
@@ -5887,7 +5881,7 @@ Applications of surface tension
 [HEADING level=2 role=section]
 Capillarity
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Capillarity is defined as a phenomenon in which liquid rises or falls in a narrow space such as a thin tube or in voids of porous material without external forces.
 
 [END_PAGE]
@@ -5936,7 +5930,7 @@ Applications of capillarity
 [RUNNING_HEADER]
 Mechanical properties of matter
 
-[BEGIN SUMMARY]
+[SUMMARY]
 [HEADING level=2 role=section]
 Chapter summary
 
@@ -5955,11 +5949,42 @@ Revision exercise 6
 Section A
 
 [QUESTION label="1."]
-(i) Limit of proportionality on load-extension graph is point P.
-(ii) Material returning to original shape undergoes elastic deformation.
-(iii) Water level higher inside glass capillary tube due to adhesion.
-(iv) A weight of 2 N causes 6 cm extension; an 8 N weight causes 24 cm extension.
-(v) Reducing capillary tube radius increases capillary rise.
+Choose the most correct answer among the given options:
+
+[QUESTION label="(i)"]
+The point beyond which a stretched spring does not return to its original length is called the:
+(a) elastic limit
+(b) yield point
+(c) breaking point
+(d) limit of proportionality
+
+[QUESTION label="(ii)"]
+The property of a material to regain its original shape and size after the removal of a deforming force is known as:
+(a) plasticity
+(b) elasticity
+(c) viscosity
+(d) ductility
+
+[QUESTION label="(iii)"]
+Water rises in a clean glass capillary tube because:
+(a) cohesive forces are greater than adhesive forces
+(b) adhesive forces between water and glass are greater than cohesive forces of water
+(c) surface tension pushes the water downward
+(d) gravity pulls water upward
+
+[QUESTION label="(iv)"]
+If a load of \(2\,\mathrm{N}\) causes an extension of \(6\,\mathrm{cm}\) in a spring obeying Hooke's law, what extension will be produced by a load of \(8\,\mathrm{N}\)?
+(a) \(12\,\mathrm{cm}\)
+(b) \(18\,\mathrm{cm}\)
+(c) \(24\,\mathrm{cm}\)
+(d) \(30\,\mathrm{cm}\)
+
+[QUESTION label="(v)"]
+Which of the following actions will increase the height of liquid rise in a capillary tube?
+(a) Increasing the diameter of the tube
+(b) Decreasing the diameter of the tube
+(c) Adding oil to the liquid
+(d) Heating the liquid
 
 [END_PAGE]
 
@@ -5969,34 +5994,35 @@ Section A
 [RUNNING_HEADER]
 Physics for Secondary Schools
 
+[BEGIN EXERCISE label="Revision exercise 6 (continued)"]
 [HEADING level=3 role=other]
 Section B
 
 [QUESTION label="2."]
-(a) State Hooke's law: \(F = k e\).
-(b) An object of mass 500 g (\(F = 5\,\mathrm{N}\)) on spring with \(k = 20\,\mathrm{N\,m^{-1}}\):
-(i) Stretch \(e = \frac{5}{20} = 0.25\,\mathrm{m} = 25\,\mathrm{cm}\).
-(ii) Mass that stretches spring to 35 cm: \(F = 20 \times 0.35 = 7\,\mathrm{N} \implies m = 700\,\mathrm{g}\).
+(a) State Hooke's law of elasticity.
+(b) A mass of \(500\,\mathrm{g}\) is hung from a spiral spring whose spring constant is \(20\,\mathrm{N\,m^{-1}}\).
+(i) Calculate the extension produced in the spring.
+(ii) Determine the mass required to produce an extension of \(35\,\mathrm{cm}\).
 
 [QUESTION label="3."]
-(a) Water wets glass because adhesion (water-glass) > cohesion (water-water). Mercury cohesion > adhesion.
+(a) Explain why water wets clean glass surfaces whereas mercury forms spherical droplets and does not wet glass.
+(b) Define capillarity and state two practical applications of capillarity in daily life.
 
 [END_PAGE]
 
 [PDF_PAGE 141]
 [PRINTED_PAGE 135]
 
-[BEGIN EXERCISE label="Revision exercise 6 (continued)"]
-
 [RUNNING_HEADER]
 Mechanical properties of matter
 
+[BEGIN EXERCISE label="Revision exercise 6 (continued)"]
 [QUESTION label="4."]
-(a) Mosquitoes walk on water surface due to surface tension.
-(b) Soap reduces surface tension of water allowing deeper fabric penetration.
+(a) Why are small insects like mosquitoes able to walk on the surface of pond water without sinking?
+(b) Explain why washing clothes with soapy warm water is more effective than using cold plain water.
 
-[QUESTION label="9."]
-A force of 9.6 N stretches a spring by 6 cm (\(k = 1.6\,\mathrm{N\,cm^{-1}}\)). Force required to stretch by 15 cm: \(F = 1.6 \times 15 = 24\,\mathrm{N}\).
+[QUESTION label="5."]
+A force of \(9.6\,\mathrm{N}\) stretches a helical spring by \(6\,\mathrm{cm}\). Assuming the elastic limit is not exceeded, calculate the force required to stretch the spring by \(15\,\mathrm{cm}\).
 
 [END EXERCISE]
 
@@ -6028,7 +6054,7 @@ Figure 7.2: Driving wooden blocks of different surface areas into soft surface
 [RUNNING_HEADER]
 Pressure
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Pressure is defined as the force acting normally or perpendicularly per unit surface area of an object.
 
 [EQUATION]
@@ -6282,10 +6308,7 @@ From Pascal's principle:
 \frac{F_1}{A_1} = \frac{F_2}{A_2}
 [EQUATION]
 F_2 = F_1 \times \frac{A_2}{A_1} = 20\,\mathrm{N} \times \frac{0.8\,\mathrm{m^2}}{0.02\,\mathrm{m^2}} = 800\,\mathrm{N}
-
-[PARAGRAPH]
 The force exerted on the large piston is \(800\,\mathrm{N}\).
-
 [END EXAMPLE]
 
 [END_PAGE]
@@ -6352,7 +6375,7 @@ Where \(h = 0.76\,\mathrm{m}\), \(\rho = 13,600\,\mathrm{kg\,m^{-3}}\), and \(g 
 
 [EQUATION]
 P_{\mathrm{atm}} = 0.76\,\mathrm{m} \times 13,600\,\mathrm{kg\,m^{-3}} \times 9.8\,\mathrm{N\,kg^{-1}} \approx 1.013 \times 10^5\,\mathrm{Pa}
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 Mercury is preferred over water in barometers because of its high density (\(13,600\,\mathrm{kg\,m^{-3}}\)), requiring a tube length of less than \(1\,\mathrm{m}\). If water were used, a tube height of over \(10.3\,\mathrm{m}\) would be required because \(h_{\mathrm{water}} = \frac{1.013 \times 10^5}{1000 \times 9.8} \approx 10.34\,\mathrm{m}\).
 [END NOTE]
 
@@ -6495,7 +6518,7 @@ Where:
 - \(F\) is the constant force in Newtons (\(\mathrm{N}\))
 - \(d\) is the displacement in metres (\(\mathrm{m}\))
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 The SI unit of work is the **Joule** (\(\mathrm{J}\)). One Joule is defined as the work done when a force of one Newton moves an object through a distance of one metre in the direction of the force:
 [EQUATION]
 1\,\mathrm{J} = 1\,\mathrm{N\,m} = 1\,\mathrm{kg\,m^2\,s^{-2}}
@@ -6521,10 +6544,7 @@ Distance, \(d = 8\,\mathrm{m}\)
 Work done, \(W\):
 [EQUATION]
 W = F \times d = 150\,\mathrm{N} \times 8\,\mathrm{m} = 1200\,\mathrm{J}
-
-[PARAGRAPH]
 The work done on the box is \(1200\,\mathrm{J}\) (or \(1.2\,\mathrm{kJ}\)).
-
 [END EXAMPLE]
 
 [BEGIN EXAMPLE label="Example 8.2"]
@@ -6540,10 +6560,7 @@ Force required to lift load, \(F = mg = 400\,\mathrm{kg} \times 9.8\,\mathrm{N\,
 Work done against gravity:
 [EQUATION]
 W = F \times h = 3920\,\mathrm{N} \times 15\,\mathrm{m} = 58,800\,\mathrm{J} = 58.8\,\mathrm{kJ}
-
-[PARAGRAPH]
 The work done by the crane is \(58.8\,\mathrm{kJ}\).
-
 [END EXAMPLE]
 
 [HEADING level=2 role=section]
@@ -6610,10 +6627,7 @@ Acceleration due to gravity, \(g = 9.8\,\mathrm{N\,kg^{-1}}\)
 Potential energy, \(E_p\):
 [EQUATION]
 E_p = mgh = 2.5\,\mathrm{kg} \times 9.8\,\mathrm{N\,kg^{-1}} \times 4\,\mathrm{m} = 98\,\mathrm{J}
-
-[PARAGRAPH]
 The gravitational potential energy of the stone is \(98\,\mathrm{J}\).
-
 [END EXAMPLE]
 
 [HEADING level=4 role=other]
@@ -6638,10 +6652,7 @@ Kinetic energy, \(E_k\):
 E_k = \frac{1}{2} m v^2 = \frac{1}{2} \times 1200\,\mathrm{kg} \times (20\,\mathrm{m\,s^{-1}})^2
 [EQUATION]
 E_k = 600 \times 400 = 240,000\,\mathrm{J} = 240\,\mathrm{kJ}
-
-[PARAGRAPH]
 The kinetic energy of the car is \(240\,\mathrm{kJ}\).
-
 [END EXAMPLE]
 
 [END_PAGE]
@@ -6678,22 +6689,13 @@ Determine its kinetic energy and velocity just before hitting the ground. (Take 
 (a) Potential energy at height \(h = 10\,\mathrm{m}\):
 [EQUATION]
 E_p = mgh = 0.8\,\mathrm{kg} \times 9.8\,\mathrm{N\,kg^{-1}} \times 10\,\mathrm{m} = 78.4\,\mathrm{J}
-
-[PARAGRAPH]
 (b) By conservation of energy, kinetic energy at the bottom equals initial potential energy:
-
 [EQUATION]
 E_k = 78.4\,\mathrm{J}
-
-[PARAGRAPH]
 To find final velocity \(v\):
-
 [EQUATION]
 \frac{1}{2} m v^2 = E_k \implies v = \sqrt{\frac{2 E_k}{m}} = \sqrt{\frac{2 \times 78.4}{0.8}} = \sqrt{196} = 14\,\mathrm{m\,s^{-1}}
-
-[PARAGRAPH]
 The coconut hits the ground with a speed of \(14\,\mathrm{m\,s^{-1}}\).
-
 [END EXAMPLE]
 
 [END_PAGE]
@@ -6761,7 +6763,7 @@ Where:
 - \(W\) is work done in Joules (\(\mathrm{J}\))
 - \(t\) is time taken in seconds (\(\mathrm{s}\))
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 The SI unit of power is the **Watt** (\(\mathrm{W}\)), named after Scottish engineer James Watt. One Watt is defined as the power developed when work is done at the rate of one Joule per second:
 [EQUATION]
 1\,\mathrm{W} = 1\,\mathrm{J\,s^{-1}} = 1\,\mathrm{kg\,m^2\,s^{-3}}
@@ -6793,16 +6795,10 @@ Time, \(t = 30\,\mathrm{s}\)
 Power, \(P\):
 [EQUATION]
 P = \frac{W}{t} = \frac{45,000\,\mathrm{J}}{30\,\mathrm{s}} = 1500\,\mathrm{W}
-
-[PARAGRAPH]
 In Kilowatts:
-
 [EQUATION]
 P = \frac{1500\,\mathrm{W}}{1000} = 1.5\,\mathrm{kW}
-
-[PARAGRAPH]
 The power output of the motor is \(1500\,\mathrm{W}\) (or \(1.5\,\mathrm{kW}\)).
-
 [END EXAMPLE]
 
 [BEGIN EXAMPLE label="Example 8.7"]
@@ -6818,16 +6814,10 @@ Time, \(t = 5\,\mathrm{s}\)
 Work done against gravity:
 [EQUATION]
 W = mgh = 50\,\mathrm{kg} \times 9.8\,\mathrm{N\,kg^{-1}} \times 6\,\mathrm{m} = 2940\,\mathrm{J}
-
-[PARAGRAPH]
 Power developed:
-
 [EQUATION]
 P = \frac{W}{t} = \frac{2940\,\mathrm{J}}{5\,\mathrm{s}} = 588\,\mathrm{W}
-
-[PARAGRAPH]
 The student develops an average power of \(588\,\mathrm{W}\).
-
 [END EXAMPLE]
 
 [END_PAGE]
@@ -7041,16 +7031,10 @@ Object height, \(h_o = 10\,\mathrm{m}\)
 (a) Magnification, \(m\):
 [EQUATION]
 m = \frac{v}{u} = \frac{0.2\,\mathrm{m}}{5\,\mathrm{m}} = 0.04
-
-[PARAGRAPH]
 (b) Image height, \(h_i\):
-
 [EQUATION]
 m = \frac{h_i}{h_o} \implies h_i = m \times h_o = 0.04 \times 10\,\mathrm{m} = 0.4\,\mathrm{m} = 40\,\mathrm{cm}
-
-[PARAGRAPH]
 The image height formed on the screen is \(40\,\mathrm{cm}\).
-
 [END EXAMPLE]
 
 [HEADING level=2 role=section]
@@ -7080,7 +7064,7 @@ Laws of reflection
 [PARAGRAPH]
 When light is reflected from a plane surface, it obeys two fundamental laws of reflection:
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 1. **First Law:** The incident ray, the reflected ray, and the normal at the point of incidence all lie in the same plane.
 2. **Second Law:** The angle of incidence (\(i\)) is equal to the angle of reflection (\(r\)):
 [EQUATION]
@@ -7153,10 +7137,7 @@ Given: Angle of inclination, \(\theta = 60^\circ\)
 
 [EQUATION]
 N = \frac{360^\circ}{\theta} - 1 = \frac{360^\circ}{60^\circ} - 1 = 6 - 1 = 5
-
-[PARAGRAPH]
 The number of images formed is \(5\).
-
 [END EXAMPLE]
 
 [END_PAGE]
@@ -7256,7 +7237,7 @@ Every magnet possesses two regions of concentrated magnetic strength called magn
 - **North-seeking pole (North pole, N):** The pole that points towards the Earth's geographic North pole when freely suspended.
 - **South-seeking pole (South pole, S):** The pole that points towards the Earth's geographic South pole when freely suspended.
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 **Fundamental Law of Magnetism:** Like magnetic poles repel each other, while unlike magnetic poles attract each other (North repels North, South repels South, but North attracts South).
 [END NOTE]
 
@@ -7474,7 +7455,7 @@ There are two fundamental types of electric charge in nature:
 - **Positive charge (+):** Acquired by glass rubbed with silk (due to loss of electrons).
 - **Negative charge (-):** Acquired by ebonite or polythene rubbed with fur or wool (due to gain of electrons).
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 **Fundamental Law of Electrostatics:** Like electric charges repel each other, while unlike electric charges attract each other.
 [END NOTE]
 
@@ -7545,7 +7526,7 @@ Where:
 - \(Q\) is electric charge in Coulombs (\(\mathrm{C}\))
 - \(t\) is time in seconds (\(\mathrm{s}\))
 
-[BEGIN NOTE kind=definition]
+[NOTE kind=definition]
 The SI unit of electric current is the **Ampere** (\(\mathrm{A}\)). One Ampere is the current flowing when one Coulomb of charge passes through a conductor cross-section per second (\(1\,\mathrm{A} = 1\,\mathrm{C\,s^{-1}}\)).
 [END NOTE]
 
@@ -7561,10 +7542,7 @@ Time, \(t = 4\,\mathrm{minutes} = 4 \times 60\,\mathrm{s} = 240\,\mathrm{s}\)
 Charge, \(Q\):
 [EQUATION]
 Q = I \times t = 0.5\,\mathrm{A} \times 240\,\mathrm{s} = 120\,\mathrm{C}
-
-[PARAGRAPH]
 The electric charge passing through the bulb is \(120\,\mathrm{Coulombs}\).
-
 [END EXAMPLE]
 
 [END_PAGE]
@@ -8033,8 +8011,6 @@ Viscosity	70-71
 Voltmeter	178-179
 Watt	157
 Work done	151-152
-
-[END_PAGE]
 
 [PDF_PAGE 201]
 [PRINTED_PAGE 195]
@@ -8712,8 +8688,6 @@ Rock A has a mass of 2 kg and a speed of 1 m/s. Rock B has a mass of 1 kg and a 
 [PDF_PAGE 218]
 [PRINTED_PAGE 212]
 
-[BEGIN EXERCISE label="Revision exercise 9 (continued)"]
-
 [RUNNING_HEADER]
 Work, energy and power
 
@@ -8974,7 +8948,7 @@ Chapter Seven
 [/ANSWER]
 [ANSWER label="Revision exercise 7"]
 1. (i) c (ii) a (iii) d (iv) b (v) a (vi) c (vii) c (viii) c (ix) d (x) 1. I, 2. B, 3. C, 4. G, 5. J
-4. (b) 0.34 m  7. 179 800 N/m²  10. 106.3 kPa  11. (a) \(2.74 	imes 10^{11}\,\mathrm{N}\)  12. 3.265 cm, 153.125 N  15. 6 times
+4. (b) 0.34 m  7. 179 800 N/m²  10. 106.3 kPa  11. (a) 2.74 x 10^11 N  12. 3.265 cm, 153.125 N  15. 6 times
 [/ANSWER]
 
 [END_PAGE]

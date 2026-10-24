@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -421,13 +421,24 @@
             },
             {
               "id": "e-p0097-0002",
-              "type": "heading",
+              "type": "summary",
               "surface_id": "s-p0097-01",
               "order": 1,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0097-001"
-              ],
+              "group_refs": [],
+              "payload": {
+                "text": "",
+                "runs": []
+              },
+              "legibility": "clear"
+            },
+            {
+              "id": "e-p0097-0003",
+              "type": "heading",
+              "surface_id": "s-p0097-01",
+              "order": 2,
+              "bbox_pt": null,
+              "group_refs": [],
               "payload": {
                 "text": "Chapter summary",
                 "level": 3,
@@ -442,14 +453,12 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0003",
+              "id": "e-p0097-0004",
               "type": "list",
               "surface_id": "s-p0097-01",
-              "order": 2,
+              "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0097-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "style": "numbered",
                 "items": [
@@ -536,14 +545,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0004",
+              "id": "e-p0097-0005",
               "type": "heading",
               "surface_id": "s-p0097-01",
-              "order": 3,
+              "order": 4,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "Revision exercise 4",
@@ -559,14 +567,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0005",
+              "id": "e-p0097-0006",
               "type": "heading",
               "surface_id": "s-p0097-01",
-              "order": 4,
+              "order": 5,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "Section A",
@@ -582,14 +589,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0006",
+              "id": "e-p0097-0007",
               "type": "question",
               "surface_id": "s-p0097-01",
-              "order": 5,
+              "order": 6,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "Choose the most correct answer.",
@@ -604,14 +610,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0007",
+              "id": "e-p0097-0008",
               "type": "question",
               "surface_id": "s-p0097-01",
-              "order": 6,
+              "order": 7,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "A group of Form One students conducted an experiment to determine the density of wood. They measure the masses and volumes of different sized samples of a type of wood. Furthermore, they plotted the graph based on the data collected shown in Figure 4.11. Which graph depict their results?",
@@ -629,14 +634,13 @@
               ]
             },
             {
-              "id": "e-p0097-0008",
+              "id": "e-p0097-0009",
               "type": "figure",
               "surface_id": "s-p0097-01",
-              "order": 7,
+              "order": 8,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "ref": "f-p0097-001"
@@ -644,19 +648,18 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0009",
+              "id": "e-p0097-0010",
               "type": "caption",
               "surface_id": "s-p0097-01",
-              "order": 8,
+              "order": 9,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "Figure 4.11: Mass versus volume graphs",
                 "target_refs": [
-                  "e-p0097-0008"
+                  "e-p0097-0009"
                 ],
                 "runs": [
                   {
@@ -668,14 +671,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0010",
+              "id": "e-p0097-0011",
               "type": "mcq_options",
               "surface_id": "s-p0097-01",
-              "order": 9,
+              "order": 10,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "options": [
@@ -724,14 +726,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0011",
+              "id": "e-p0097-0012",
               "type": "question",
               "surface_id": "s-p0097-01",
-              "order": 10,
+              "order": 11,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "What is the density of the liquid in Figure 4.12?",
@@ -749,14 +750,13 @@
               ]
             },
             {
-              "id": "e-p0097-0012",
+              "id": "e-p0097-0013",
               "type": "figure",
               "surface_id": "s-p0097-01",
-              "order": 11,
+              "order": 12,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "ref": "f-p0097-002"
@@ -764,19 +764,18 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0013",
+              "id": "e-p0097-0014",
               "type": "caption",
               "surface_id": "s-p0097-01",
-              "order": 12,
+              "order": 13,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "text": "Figure 4.12: Measuring cylinder and balance readings for liquid",
                 "target_refs": [
-                  "e-p0097-0012"
+                  "e-p0097-0013"
                 ],
                 "runs": [
                   {
@@ -788,14 +787,13 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0014",
+              "id": "e-p0097-0015",
               "type": "mcq_options",
               "surface_id": "s-p0097-01",
-              "order": 13,
+              "order": 14,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0097-001",
-                "g-p0097-002"
+                "g-p0097-001"
               ],
               "payload": {
                 "options": [
@@ -844,10 +842,10 @@
               "legibility": "clear"
             },
             {
-              "id": "e-p0097-0015",
+              "id": "e-p0097-0016",
               "type": "page_number",
               "surface_id": "s-p0097-01",
-              "order": 14,
+              "order": 15,
               "bbox_pt": null,
               "group_refs": [],
               "payload": {
@@ -869,37 +867,11 @@
   "groups": [
     {
       "id": "g-p0097-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "summary",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0097-0002",
-        "e-p0097-0003",
-        "e-p0097-0004",
-        "e-p0097-0005",
-        "e-p0097-0006",
-        "e-p0097-0007",
-        "e-p0097-0008",
-        "e-p0097-0009",
-        "e-p0097-0010",
-        "e-p0097-0011",
-        "e-p0097-0012",
-        "e-p0097-0013",
-        "e-p0097-0014"
-      ],
-      "notes": [
-        "Transcript group: summary"
-      ]
-    },
-    {
-      "id": "g-p0097-002",
       "kind": "exercise",
       "label_printed": "Revision exercise 4",
       "title": "Revision exercise 4",
-      "parent_ref": "g-p0097-001",
+      "parent_ref": null,
       "element_refs": [
-        "e-p0097-0004",
         "e-p0097-0005",
         "e-p0097-0006",
         "e-p0097-0007",
@@ -909,7 +881,8 @@
         "e-p0097-0011",
         "e-p0097-0012",
         "e-p0097-0013",
-        "e-p0097-0014"
+        "e-p0097-0014",
+        "e-p0097-0015"
       ],
       "notes": [
         "Transcript group: exercise"
@@ -918,18 +891,18 @@
   ],
   "relations": [
     {
-      "id": "r-caption-e-p0097-0009",
+      "id": "r-caption-e-p0097-0010",
       "kind": "caption_of",
-      "from_ref": "e-p0097-0009",
-      "to_ref": "e-p0097-0008",
+      "from_ref": "e-p0097-0010",
+      "to_ref": "e-p0097-0009",
       "resolution": "resolved",
       "printed_text": "Figure 4.11: Mass versus volume graphs"
     },
     {
-      "id": "r-caption-e-p0097-0013",
+      "id": "r-caption-e-p0097-0014",
       "kind": "caption_of",
-      "from_ref": "e-p0097-0013",
-      "to_ref": "e-p0097-0012",
+      "from_ref": "e-p0097-0014",
+      "to_ref": "e-p0097-0013",
       "resolution": "resolved",
       "printed_text": "Figure 4.12: Measuring cylinder and balance readings for liquid"
     }
@@ -948,7 +921,7 @@
       "dpi": null,
       "deskew_deg": null,
       "used_by": [
-        "e-p0097-0008"
+        "e-p0097-0009"
       ],
       "printed_label": "Figure 4.11",
       "description": null,
@@ -970,7 +943,7 @@
       "dpi": null,
       "deskew_deg": null,
       "used_by": [
-        "e-p0097-0012"
+        "e-p0097-0013"
       ],
       "printed_label": "Figure 4.12",
       "description": null,
@@ -989,22 +962,15 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0097-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 97,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
     "pdf_pages": 1,
     "surfaces": 1,
-    "elements": 15,
+    "elements": 16,
     "types": {
       "running_header": 1,
+      "summary": 1,
       "heading": 3,
       "list": 1,
       "question": 3,
@@ -1014,6 +980,6 @@
       "page_number": 1
     },
     "figures": 2,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

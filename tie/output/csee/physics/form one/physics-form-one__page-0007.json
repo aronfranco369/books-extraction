@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -472,8 +472,7 @@
               "order": 3,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0007-001",
-                "g-p0007-002"
+                "g-p0007-001"
               ],
               "payload": {
                 "text": "Think how our life could be without the interaction between matter and energy",
@@ -494,8 +493,7 @@
               "order": 4,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0007-001",
-                "g-p0007-002"
+                "g-p0007-001"
               ],
               "payload": {
                 "text": "Concept of Physics",
@@ -517,8 +515,7 @@
               "order": 5,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0007-001",
-                "g-p0007-002"
+                "g-p0007-001"
               ],
               "payload": {
                 "text": "The universe is a totality of matter, energy, space, and time. The word universe originates from the Latin word 'universus' which means 'all or everything'. It can therefore be referred to as everything surrounding us; within, near, far and beyond our planet, solar system, and galaxy in which our solar system belongs (the Milky Way Galaxy). We are part of the universe. Science is the major tool for studying and exploring the universe. It begins with inquiries such as what is the universe? What is its origin? What makes up the universe? How does it change with time? Why does the sky look blue? And why does iron turn red when heated? To answer such questions, the applications of theories, principles and laws of science are required.",
@@ -538,8 +535,7 @@
               "order": 6,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0007-001",
-                "g-p0007-002"
+                "g-p0007-001"
               ],
               "payload": {
                 "text": "Physics falls under a broad category of natural science, which is divided into three main branches, namely physics, chemistry, and biology. Physics is the branch of science which deals with the study of matter, energy and their interactions.",
@@ -559,8 +555,7 @@
               "order": 7,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0007-001",
-                "g-p0007-002"
+                "g-p0007-001"
               ],
               "payload": {
                 "text": "The word physics originated from the Greek word 'Physikos' which means 'nature'. Physics involves the study of physical and natural phenomena around us. Examples of these phenomena are the occurrence of eclipses, causes of sunset and sunrise, the formation of the rainbow, and volcanic eruption. Figure 1.1 shows examples of phenomena described by Physics.",
@@ -616,23 +611,6 @@
       "notes": [
         "Transcript group: chapter"
       ]
-    },
-    {
-      "id": "g-p0007-002",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": "g-p0007-001",
-      "element_refs": [
-        "e-p0007-0004",
-        "e-p0007-0005",
-        "e-p0007-0006",
-        "e-p0007-0007",
-        "e-p0007-0008"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
     }
   ],
   "relations": [],
@@ -645,14 +623,6 @@
       "pdf_page": 7,
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
-      "resolved": false
-    },
-    {
-      "id": "review-p0007-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 7,
-      "element_ref": null,
-      "detail": "Nested groups auto-closed at END chapter.",
       "resolved": false
     }
   ],
@@ -667,6 +637,6 @@
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

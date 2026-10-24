@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -425,9 +425,7 @@
               "surface_id": "s-p0130-01",
               "order": 1,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0130-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Hooke's law states that: \"Provided the elastic limit is not exceeded, the extension is directly proportional to the force applied\".",
                 "note_kind": "definition",
@@ -446,9 +444,7 @@
               "surface_id": "s-p0130-01",
               "order": 2,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0130-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "latex": "F = k e \\quad \\implies \\quad k = \\frac{F}{e}"
               },
@@ -460,9 +456,7 @@
               "surface_id": "s-p0130-01",
               "order": 3,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0130-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The constant k is called the elastic force constant, measured in \\(\\mathrm{N\\,m^{-1}}\\).",
                 "runs": [
@@ -489,8 +483,7 @@
               "order": 4,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0130-001",
-                "g-p0130-002"
+                "g-p0130-001"
               ],
               "payload": {
                 "text": "Exercise 6.1",
@@ -512,8 +505,7 @@
               "order": 5,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0130-001",
-                "g-p0130-002"
+                "g-p0130-001"
               ],
               "payload": {
                 "text": "A force of 40 N is applied to a spring with spring constant \\(100\\,\\mathrm{N\\,m^{-1}}\\). Find the extension.",
@@ -542,8 +534,7 @@
               "order": 6,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0130-001",
-                "g-p0130-002"
+                "g-p0130-001"
               ],
               "payload": {
                 "text": "A rubber band of original length 20 cm is stretched to 25 cm. Find the percentage change in length.",
@@ -564,8 +555,7 @@
               "order": 7,
               "bbox_pt": null,
               "group_refs": [
-                "g-p0130-001",
-                "g-p0130-002"
+                "g-p0130-001"
               ],
               "payload": {
                 "text": "A spring has \\(k = 800\\,\\mathrm{N\\,m^{-1}}\\). If compressed by 30 cm, find resulting force.",
@@ -593,9 +583,7 @@
               "surface_id": "s-p0130-01",
               "order": 8,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0130-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Applications of elasticity in daily life",
                 "level": 3,
@@ -615,9 +603,7 @@
               "surface_id": "s-p0130-01",
               "order": 9,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0130-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "At home: rubber gaskets, clothing, furniture springs, rubber bands, toys. In transport: shock absorbers, rubber tyres, bridge support cables. In industry: steel construction beams, conveyor belts, weighing scales.",
                 "runs": [
@@ -655,31 +641,10 @@
   "groups": [
     {
       "id": "g-p0130-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0130-0002",
-        "e-p0130-0003",
-        "e-p0130-0004",
-        "e-p0130-0005",
-        "e-p0130-0006",
-        "e-p0130-0007",
-        "e-p0130-0008",
-        "e-p0130-0009",
-        "e-p0130-0010"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    },
-    {
-      "id": "g-p0130-002",
       "kind": "exercise",
       "label_printed": "Exercise 6.1",
       "title": "Exercise 6.1",
-      "parent_ref": "g-p0130-001",
+      "parent_ref": null,
       "element_refs": [
         "e-p0130-0005",
         "e-p0130-0006",
@@ -702,14 +667,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0130-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 130,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -726,6 +683,6 @@
       "page_number": 1
     },
     "figures": 0,
-    "open_issues": 2
+    "open_issues": 1
   }
 }

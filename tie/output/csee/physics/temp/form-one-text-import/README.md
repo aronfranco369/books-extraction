@@ -1,8 +1,10 @@
 # Physics Form One — latest supplied transcript import
 
 Imported from the user-approved file
-`physics-form-one__pages-1-240__complete_text-v3 (1).txt`.
+`physics-form-one__pages-1-240__complete_text-v3 (2).txt`.
 `source-transcript.txt` preserves those uploaded bytes unchanged.
+
+See [LATEST-CORRECTIONS.md](LATEST-CORRECTIONS.md) for the supplied question corrections and conversion handling.
 
 ## Coverage
 
@@ -53,12 +55,12 @@ for later image attachment. Captions alone may not identify every original visua
 ## Validation
 
 - 232 unique ordered page files; no duplicate or missing pages within 1–232.
-- 2,526 content elements and 164 image placeholders.
+- 2,536 content elements and 164 image placeholders.
 - Parsed content-marker accounting, payload fields, table grids, IDs and group/
   caption references checked by regression tests.
-- Ten regression tests pass across Physics and Biology importers.
+- Eleven regression tests pass across Physics and Biology importers.
 - All 232 pages exercised through the viewer renderer.
-- 946 math expressions checked with KaTeX: zero parse errors.
+- 951 math expressions checked with KaTeX: zero parse errors.
 
 These checks are conversion/render checks, not PDF visual QA.
 

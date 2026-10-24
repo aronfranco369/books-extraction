@@ -58,11 +58,25 @@ class PhysicsTextImportTests(unittest.TestCase):
         self.assertEqual(figures,164)
         report=json.loads((FOLDER/'import-report.json').read_text())
         self.assertEqual(report['input_blocks'],report['converted_blocks'])
-        self.assertEqual(report['page_boundary_repairs'],[])
+        self.assertEqual(report['page_boundary_repairs'],[{'pdf_page':200,'repair':'Inserted missing END_PAGE before next PDF_PAGE marker.'}])
         self.assertEqual(report['missing_pdf_pages'],[])
         self.assertEqual(report['source_pdf_total_pages'],232)
         page200=json.loads((OUTPUT/'physics-form-one__page-0200.json').read_text())
-        self.assertFalse(any(r['issue']=='page_boundary_repaired' for r in page200['review']))
+        self.assertTrue(any(r['issue']=='page_boundary_repaired' for r in page200['review']))
         self.assertTrue(any(r['issue']=='transcript_sequence_needs_source_review' for r in page200['review']))
+
+
+    def test_corrected_revision_questions_are_not_solved_answers(self):
+        page140=json.loads((OUTPUT/'physics-form-one__page-0140.json').read_text())
+        qs={e['payload'].get('label_printed'):e['payload']['text'] for e in page140['pages'][0]['surfaces'][0]['elements'] if e['type']=='question'}
+        self.assertIn('Calculate the extension',qs['2.'])
+        self.assertNotIn('700',qs['2.'])
+        self.assertIn('Define capillarity',qs['3.'])
+        page141=json.loads((OUTPUT/'physics-form-one__page-0141.json').read_text())
+        qs={e['payload'].get('label_printed'):e['payload']['text'] for e in page141['pages'][0]['surfaces'][0]['elements'] if e['type']=='question'}
+        self.assertIn('Why are small insects',qs['4.'])
+        self.assertIn('calculate the force',qs['5.'])
+        self.assertNotIn('9.',qs)
+        self.assertNotIn('24\\,',qs['5.'])
 
 if __name__=='__main__':unittest.main()

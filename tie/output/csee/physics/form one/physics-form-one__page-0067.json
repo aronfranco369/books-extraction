@@ -1,6 +1,6 @@
 {
   "schema_version": "book-pages-1.1",
-  "book_id": "physics-form-one-text-import-96de06abf06e",
+  "book_id": "physics-form-one-text-import-1ba87f3984a2",
   "status": "partial",
   "schema": {
     "registry": {
@@ -376,7 +376,7 @@
     "transcript_sources": [
       {
         "file": "tie/output/csee/physics/temp/form-one-text-import/source-transcript.txt",
-        "sha256": "96de06abf06e2f98f8d74f3bc8c715646040d02605f210744d2d1871f4c686d7"
+        "sha256": "1ba87f3984a2ae850635591fa8e695602757ddede61873c30bab462244706b26"
       }
     ],
     "geometry_status": "unavailable",
@@ -585,9 +585,7 @@
               "surface_id": "s-p0067-01",
               "order": 7,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Weight is defined as an attractive force acting on an object due to gravity.",
                 "note_kind": "definition",
@@ -606,9 +604,7 @@
               "surface_id": "s-p0067-01",
               "order": 8,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "The weight of an object is equal to the gravitational force on it. The following are properties of the gravitational force:",
                 "runs": [
@@ -626,9 +622,7 @@
               "surface_id": "s-p0067-01",
               "order": 9,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "style": "numbered",
                 "items": [
@@ -682,9 +676,7 @@
               "surface_id": "s-p0067-01",
               "order": 10,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Your weight on earth is the gravitational force that the earth exerts on you. Remember that gravity is an action-at-a-distance force, so even when you jump into the air, as shown in Figure 3.4, the earth still exerts its gravitational force on you. This is the force that prevents you from flying off on a spinning earth. The gravity force is also responsible for keeping a satellite in its orbit around the earth and planets in their orbits around the sun.",
                 "runs": [
@@ -702,9 +694,7 @@
               "surface_id": "s-p0067-01",
               "order": 11,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "ref": "f-p0067-001"
               },
@@ -716,9 +706,7 @@
               "surface_id": "s-p0067-01",
               "order": 12,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "Figure 3.4: A boy jumping",
                 "target_refs": [
@@ -739,9 +727,7 @@
               "surface_id": "s-p0067-01",
               "order": 13,
               "bbox_pt": null,
-              "group_refs": [
-                "g-p0067-001"
-              ],
+              "group_refs": [],
               "payload": {
                 "text": "After learning about physical quantities, a student argues that mass and weight represents the same physical quantity. With reasons, support or oppose this argument.",
                 "runs": [
@@ -776,27 +762,7 @@
       ]
     }
   ],
-  "groups": [
-    {
-      "id": "g-p0067-001",
-      "kind": "section",
-      "label_printed": null,
-      "title": "note",
-      "parent_ref": null,
-      "element_refs": [
-        "e-p0067-0008",
-        "e-p0067-0009",
-        "e-p0067-0010",
-        "e-p0067-0011",
-        "e-p0067-0012",
-        "e-p0067-0013",
-        "e-p0067-0014"
-      ],
-      "notes": [
-        "Transcript group: note"
-      ]
-    }
-  ],
+  "groups": [],
   "relations": [
     {
       "id": "r-caption-e-p0067-0013",
@@ -840,14 +806,6 @@
       "element_ref": null,
       "detail": "Imported from another model’s text. Not compared with the PDF. Page geometry, PDF hash is unknown and the 232-page total is user-confirmed; images are pending. The user confirms the source ends at PDF page 232. The 1–240 header is stale; actual supplied coverage is 1–232. The contents and later chapter sequence disagree; manual source review is required.",
       "resolved": false
-    },
-    {
-      "id": "review-p0067-002",
-      "issue": "group_boundary_in_transcript",
-      "pdf_page": 67,
-      "element_ref": null,
-      "detail": "Page ends with open groups: section. Group memberships kept on this page only.",
-      "resolved": false
     }
   ],
   "stats": {
@@ -867,6 +825,6 @@
       "page_number": 1
     },
     "figures": 1,
-    "open_issues": 2
+    "open_issues": 1
   }
 }
