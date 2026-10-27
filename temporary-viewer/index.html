@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book JSON Viewer</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/mhchem.min.js"></script>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#e9edf0;color:#202f3b;font:15px/1.6 system-ui,sans-serif}aside{position:fixed;width:300px;inset:0 auto 0 0;background:#fff;padding:24px;overflow:auto;border-right:1px solid #ccd6de}h1{font-size:22px;margin:0 0 6px}aside p{font-size:13px;color:#52616d}input,button,select{font:inherit;max-width:100%}input[type=search]{padding:9px;width:100%;margin:10px 0}button{cursor:pointer;padding:6px 10px;background:white;border:1px solid #b9c9d4;border-radius:5px}#catalog button{text-align:left;display:block;width:100%;margin:8px 0;font-size:13px}#catalog small{display:block;color:#687883}main{margin-left:300px;padding:30px;max-width:1400px}#toolbar{background:#fff;padding:20px;border-radius:8px;margin-bottom:24px}#toolbar h2{margin:0;font-size:22px}#toolbar a{color:#24647c}#toolbar button,#toolbar select{margin:8px 8px 0 0}.page{background:#fff;padding:32px 44px;max-width:900px;margin:0 auto 26px;box-shadow:0 2px 8px #0001;border-radius:5px}.page-title{font:12px system-ui;color:#667987;border-bottom:1px solid #dfe6eb;padding-bottom:12px;margin-bottom:20px}.surface{font:18px/1.65 Georgia,'Times New Roman',serif}.surface+.surface{border-top:2px dashed #d5dfe6;margin-top:28px;padding-top:20px}.surface-title{font:12px system-ui;color:#526c7c;margin-bottom:16px}.element{margin:12px 0;overflow-wrap:anywhere}.heading{font-weight:bold}.running_header,.running_footer,.page_number{font-size:13px;color:#60717b}.page_number{text-align:center}.note,.summary,.objectives{padding:14px 20px;background:#f0f7f7;border-left:3px solid #5b9797}.exercise,.example,.activity,.task,.project{font-weight:bold;border-top:1px solid #d9e3e8;padding-top:12px}.caption{font-size:15px;font-style:italic}.unresolved_region,.warning{padding:12px;background:#fff1d6;color:#775017}.math{overflow-x:auto;padding:10px 0}img{max-width:100%;max-height:650px;object-fit:contain}figure{margin:14px 0;text-align:center}figure small{display:block;font:12px system-ui;color:#687883}table{border-collapse:collapse;width:100%;font-size:16px}td,th{border:1px solid #80909b;padding:8px;vertical-align:top}pre{white-space:pre-wrap;background:#f3f5f7;padding:15px;font:14px monospace}.uncertain{background:#ffedba}.verse-line{white-space:pre-wrap}.issues{font:13px system-ui}details{margin:10px 0}summary{cursor:pointer}.katex-display{margin:.3em 0}.empty{color:#607583;margin:12vh auto;text-align:center}@media(max-width:800px){aside{position:static;width:auto;max-height:40vh}main{margin:0;padding:15px}.page{padding:20px}.surface{font-size:17px}}@media print{aside,#toolbar{display:none}main{margin:0;padding:0}.page{box-shadow:none;break-after:page}}
+</style></head><body>
+<aside><h1>Book JSON Viewer</h1><p>Saved pages, organized by book. Temporary online copy (read-only snapshot).</p><input id="search" type="search" placeholder="Search subject, form or title" aria-label="Search books"><button id="refresh">Refresh</button><div id="catalog"></div></aside>
+<main><div id="toolbar" hidden></div><div id="pages"><p class="empty">Choose a book to read its available pages.</p></div></main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id), esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const encoded=x=>String(x).split('/').map(encodeURIComponent).join('/');
+let catalog=[], current=null, currentFile=null, selectedBook=null, figures=new Map();
+function asset(path){if(typeof path!=='string'||!path||path.startsWith('/')||path.includes('\\')||path.split('/').some(x=>x==='..')||/^[a-z]+:/i.test(path))return null;return 'assets/'+encoded(path)}
+function tex(source,display=false){try{if(!window.katex)throw Error('KaTeX unavailable');return katex.renderToString(source,{displayMode:display,throwOnError:true,trust:false,strict:'warn'});}catch(e){return '<span class="warning" title="'+esc(e.message)+'">'+esc(source)+'</span>';}}
+function run(r){if(r.t==='math')return tex(r.v);if(r.t==='blank')return '________';if(r.t==='illegible')return '<span class="uncertain">[illegible]</span>';let out=esc(r.v).replace(/\n/g,'<br>');if(r.t==='uncertain')out='<span class="uncertain">'+out+'</span>';if(r.b)out='<strong>'+out+'</strong>';if(r.i)out='<em>'+out+'</em>';return out;}
+function text(p){
+  if(Array.isArray(p.runs)&&!p.typography?.length)return p.runs.map(run).join('');
+  const source=String(p.text??''),chars=Array.from(source);
+  const offset=n=>Array.from(source.slice(0,n)).length;
+  function wrap(html,start,end){for(const span of p.typography||[]){if(span.start<end&&span.end>start){const tag={underline:'u',superscript:'sup',subscript:'sub'}[span.style];if(tag)html='<'+tag+'>'+html+'</'+tag+'>';}}return html;}
+  function plain(a,b){const from=offset(a),to=offset(b),bounds=new Set([from,to]);for(const span of p.typography||[]){if(span.start>from&&span.start<to)bounds.add(span.start);if(span.end>from&&span.end<to)bounds.add(span.end);}let out='',points=[...bounds].sort((a,b)=>a-b);for(let i=1;i<points.length;i++)out+=wrap(esc(chars.slice(points[i-1],points[i]).join('')).replace(/\n/g,'<br>'),points[i-1],points[i]);return out;}
+  const regex=/\\\(([\s\S]+?)\\\)|\*\*([\s\S]+?)\*\*|(?<!\\)\*([^*]+?)\*|\[\[blank\]\]|\[\[\?([\s\S]+?)\]\]|\[\[illegible\]\]/g;
+  let out='',pos=0;for(const m of source.matchAll(regex)){out+=plain(pos,m.index);const token=m[1]?tex(m[1]):m[2]?'<strong>'+esc(m[2])+'</strong>':m[3]?'<em>'+esc(m[3])+'</em>':m[4]?'<span class="uncertain">'+esc(m[4])+'</span>':m[0]==='[[blank]]'?'________':'<span class="uncertain">[illegible]</span>';out+=wrap(token,offset(m.index),offset(m.index+m[0].length));pos=m.index+m[0].length;}return out+plain(pos,source.length);
+}
+function image(ref){const f=figures.get(ref);if(!f)return '<div class="warning">Missing figure '+esc(ref)+'</div>';let url=asset(f.file);return '<figure>'+(url?'<img src="'+url+'" alt="'+esc(f.description||f.printed_label||f.id)+'" onerror="this.replaceWith(document.createTextNode(\'Missing image asset\'))">':'<span class="warning">Invalid asset path</span>')+'<small>'+esc(f.printed_label||'')+(f.crop_check!=='ok'?' · crop QA: '+esc(f.crop_check):'')+'</small></figure>';}
+function items(list){return '<ul style="list-style:none;padding-left:20px">'+list.map(i=>'<li>'+esc(i.label_printed||'')+' '+text(i)+(i.items?items(i.items):'')+'</li>').join('')+'</ul>';}
+function block(e){const p=e.payload||e,type=e.type;let out='',label=p.label_printed?'<strong>'+esc(p.label_printed)+'</strong> ':'';
+switch(type){
+case 'heading':{const n=Math.max(1,Math.min(6,Number(p.level)||2));out='<h'+n+'>'+label+text(p)+'</h'+n+'>';break;}
+case 'math':out=tex(p.latex||'',true)+(p.printed_label?' '+esc(p.printed_label):'');break;
+case 'chemical_structure':{const url=asset(p.rendered_asset);out=url?'<figure><img src="'+url+'" alt="Chemical structure"></figure>':'<div class="warning">Chemfig asset unavailable</div>';out+='<details><summary>Chemfig source</summary><pre>'+esc(p.source)+'</pre></details>';break;}
+case 'figure':case 'map':case 'image':out=image(p.ref);break;
+case 'cover_detail':out=(p.ref?image(p.ref):'')+text(p);break;
+case 'table':{out=(p.printed_label?'<strong>'+esc(p.printed_label)+'</strong>':'')+(p.caption?'<p>'+esc(p.caption)+'</p>':'')+'<div style="overflow:auto"><table>';for(const [r,row] of (p.rows||[]).entries()){out+='<tr>';for(const c of (Array.isArray(row)?row:row.cells||[])){const tag=c.header||r<(p.header_rows||0)?'th':'td';out+='<'+tag+' rowspan="'+Math.max(1,Number(c.rowspan)||1)+'" colspan="'+Math.max(1,Number(c.colspan)||1)+'">'+text(c)+(c.blank?' ________':'')+(c.figure_ref?image(c.figure_ref):'')+(c.blocks||[]).map(block).join('')+'</'+tag+'>';}out+='</tr>';}out+='</table></div>';break;}
+case 'list':out=label+text(p)+items(p.items||[]);break;
+case 'mcq_options':out=(p.options||[]).map(i=>'<p>'+esc(i.key)+' '+text(i)+(i.figure_ref?image(i.figure_ref):'')+'</p>').join('');break;
+case 'matching':out='<table><tr><th>'+esc(p.list_a_title)+'</th><th>'+esc(p.list_b_title)+'</th></tr>';for(let i=0;i<Math.max(p.list_a?.length||0,p.list_b?.length||0);i++){out+='<tr>';for(const col of [p.list_a,p.list_b]){const item=col?.[i];out+='<td>'+(item?esc(item.key)+' '+text(item):'')+'</td>';}out+='</tr>';}out+='</table>';break;
+case 'verse':out=(p.stanzas||[]).map(s=>'<div style="margin:18px 0">'+(s.lines||[]).map(l=>'<div class="verse-line" style="padding-left:'+Math.max(0,Math.min(100,Number(l.indent)||0))*0.5+'em">'+text(l)+'</div>').join('')+'</div>').join('');break;
+case 'dialogue':out=(p.turns||[]).map(t=>'<p><strong>'+esc(t.speaker_printed)+'</strong> '+text(t)+(t.stage_direction?' <em>'+esc(t.stage_direction)+'</em>':'')+'</p>').join('');break;
+case 'definition_list':out='<dl>'+(p.entries||[]).map(i=>'<dt><strong>'+esc(i.term)+'</strong></dt><dd>'+text({text:i.definition,runs:i.definition_runs})+'</dd>').join('')+'</dl>';break;
+case 'reference_list':case 'index':case 'toc':out=(p.entries||[]).map(i=>'<p>'+text({text:i.text??i.term,runs:i.runs})+' '+esc(Array.isArray(i.page_refs_printed)?i.page_refs_printed.join(', '):i.page_ref_printed||'')+'</p>').join('');break;
+case 'code':out='<pre><code>'+esc(p.text)+'</code></pre>';break;
+case 'unresolved_region':out='<strong>Unresolved region</strong><p>'+esc(p.reason)+'</p><pre>'+esc(JSON.stringify(p.evidence,null,2))+'</pre>';break;
+default:{const allowed=['paragraph','running_header','running_footer','page_number','exercise','question','example','solution','activity','task','project','note','summary','objectives','instruction','answer','proof','publisher_notice','caption','footnote'];out=allowed.includes(type)?label+text(p):'<div class="warning">Unrecognized content type: '+esc(type)+'</div><pre>'+esc(JSON.stringify(p,null,2))+'</pre>';}
+}return '<div class="element '+esc(type||'unknown')+'"'+(e.id?' id="'+esc(e.id)+'"':'')+'>'+out+'</div>';}
+function pageRanges(values){let result=[],start=null,last=null;for(const n of values){if(start===null){start=last=n;continue;}if(n===last+1){last=n;continue;}result.push(start===last?String(start):start+'–'+last);start=last=n;}if(start!==null)result.push(start===last?String(start):start+'–'+last);return result.join(', ');}
+function draw(selected='all'){
+ const pages=[...(current.pages||[])].sort((a,b)=>a.pdf_page-b.pdf_page);
+ $('pages').innerHTML=pages.filter(p=>selected==='all'||String(p.pdf_page)===selected).map(p=>{
+   if(p.viewer_figures)figures=new Map(p.viewer_figures.map(f=>[f.id,f]));
+   return '<article class="page" data-pdf-page="'+esc(p.pdf_page)+'"><div class="page-title">PDF page '+esc(p.pdf_page)+(current.book_view?'':' · '+esc(p.state))+'</div>'+(!p.surfaces?.length?'<p class="warning">Page is pending transcription.</p>':p.surfaces.map(s=>'<section class="surface"><div class="surface-title">Printed page '+esc(s.printed_page??'not observed')+(p.surfaces.length>1?' · surface '+esc(s.order+1):'')+'</div>'+(s.elements||[]).map(block).join('')+'</section>').join(''))+'</article>';
+ }).join('');
+}
+function render(data,file=null,selected='all'){
+ if(!String(data.schema_version).startsWith('book-pages-'))throw Error('Select a book-pages JSON');
+ const coverage=[...new Set((data.pages||[]).map(p=>p.pdf_page))].sort((a,b)=>a-b);
+ if(selected!=='all'&&!coverage.some(n=>String(n)===selected))throw Error('Requested page has not been saved');
+ current=data;currentFile=file;figures=new Map((data.figures||[]).map(f=>[f.id,f]));
+ const m=data.metadata||{},title=data.book_view?.label||m.title_printed||data.book_id;
+ const source=data.source?.pdf,sourceLink=source?.startsWith('tie/books/')?'/source/'+encoded(source.slice(10))+'#page='+(selected==='all'?(coverage[0]||1):selected):null;
+ const details=(data.review||[]).filter(r=>!r.resolved).map(r=>'<p>'+esc(r.issue)+': '+esc(r.detail)+'</p>').join('')+(data.relations||[]).map(r=>'<p>'+esc(r.kind)+': '+esc(r.printed_text||r.from_ref)+' → '+esc(r.resolution==='external'?'PDF page '+r.external_target?.pdf_page:r.to_ref||'unresolved')+'</p>').join('');
+ $('toolbar').hidden=false;$('toolbar').innerHTML='<h2>'+esc(title)+'</h2>'+(data.book_view&&m.title_printed?'<div>'+esc(m.title_printed)+'</div>':'')+'<div>'+coverage.length+' saved PDF page'+(coverage.length===1?'':'s')+' · '+esc(pageRanges(coverage))+'</div><p style="font-size:13px;color:#60717b;margin:6px 0">Read all available pages in order. More pages can be added as extraction continues.</p>'+(sourceLink?'<a target="_blank" rel="noopener" href="'+sourceLink+'">Open source PDF</a> · ':'')+'<label>Page <select id="selectPage"><option value="all">All saved pages</option>'+coverage.map(n=>'<option>'+n+'</option>').join('')+'</select></label>'+(file?'<button id="check">Check structure</button><span id="checkResult"></span>':'')+(details?'<details class="issues"><summary>Notes &amp; links</summary>'+details+'</details>':'')+(data.book_view?.duplicate_pages?.length?'<details class="issues"><summary>Overlapping saved pages</summary><p>Shown once: '+esc(pageRanges(data.book_view.duplicate_pages))+'. Individual page files take precedence over range files.</p></details>':'');
+ $('selectPage').value=selected;$('selectPage').onchange=e=>draw(e.target.value);
+ if(file)$('check').onclick=async()=>{try{const response=await fetch('/api/validate?f='+encodeURIComponent(file)),result=await response.json();$('checkResult').textContent=result.error||(result.errors?.length?result.errors.join('; '):'Structure passed; visual QA is separate.');}catch(e){$('checkResult').textContent=e.message;}};
+ draw(selected);
+}
+async function loadBook(key,selected='all'){
+ const response=await fetch('api/book/'+(catalog.find(r=>r.key===key)?.slug||key.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''))+'.json'),data=await response.json();if(!response.ok)throw Error(data.error);
+ selectedBook=key;render(data,null,selected);showCatalog();
+ history.replaceState(null,'','?b='+encodeURIComponent(key));
+}
+function showCatalog(){
+ let query=$('search').value.toLowerCase();$('catalog').innerHTML='';
+ for(const record of catalog.filter(r=>[r.title,r.subject,r.level,'form '+r.form,r.key].join(' ').toLowerCase().includes(query))){
+  const btn=document.createElement('button');btn.setAttribute('aria-pressed',String(record.key===selectedBook));btn.style.background=record.key===selectedBook?'#e4f1f5':'white';
+  btn.innerHTML=esc(record.title)+'<small>'+record.pages.length+' saved page'+(record.pages.length===1?'':'s')+' · '+esc(pageRanges(record.pages))+'</small>';
+  btn.onclick=async()=>{try{await loadBook(record.key);}catch(e){$('pages').textContent=e.message;}};$('catalog').append(btn);
+ }
+ if(!catalog.length)$('catalog').textContent='No saved books yet.';
+}
+async function refresh(){try{const response=await fetch('api/books.json');if(!response.ok)throw Error('Cannot load books');catalog=await response.json();showCatalog();if(selectedBook&&catalog.some(r=>r.key===selectedBook))await loadBook(selectedBook);}catch(e){$('catalog').textContent=e.message;}}
+$('refresh').onclick=refresh;$('search').oninput=showCatalog;refresh();
+(async()=>{const q=new URLSearchParams(location.search);try{if(q.get('b')){await loadBook(q.get('b'),q.get('page')||'all');return;}const file=q.get('f');if(!file)return;const response=await fetch('/api/book?f='+encodeURIComponent(file)),data=await response.json();if(!response.ok)throw Error(data.error);render(data,file,q.get('page')||'all');}catch(error){$('pages').textContent='Cannot open book: '+error.message;}})();
+</script></body></html>

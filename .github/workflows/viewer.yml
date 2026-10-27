@@ -2,7 +2,7 @@ name: Deploy book viewer
 on:
   push:
     branches: [main]
-    paths: ['books2json/**']
+    paths: ['books2json/**', 'temporary-viewer/**', '.github/workflows/viewer.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - run: mkdir _site && cp -r books2json/. _site/ && cp -r temporary-viewer _site/temporary-viewer
       - uses: actions/upload-pages-artifact@v3
-        with: { path: books2json }
+        with: { path: _site }
       - id: d
         uses: actions/deploy-pages@v4
